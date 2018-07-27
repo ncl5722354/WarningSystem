@@ -1,0 +1,33 @@
+D:\Function_Base 2017 12 16\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\Function_Base 2017 12 16\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\Function_Base 2017 12 16\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\Function_Base 2017 12 16\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\Function_Base\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\Function_Base\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\Function_Base\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\Function_Base\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb

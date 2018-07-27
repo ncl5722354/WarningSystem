@@ -1,0 +1,22 @@
+MyLabel 在数库中的结构
+
+
+01.Name
+02.ParentWindow
+03.ParentGrid
+04.Width
+05.Height
+06.HorizontalAlignment
+07.VerticalAlignment
+08.MarginLeft
+09.MarginRight
+10.MarginTop
+11.MarginBottom
+12.LabelHorizontalAlignment
+13.LabelVerticalAlignment
+14.FontSize
+15.Value_Name
+
+还有其他的问题：
+
+1.表现方式，文字与颜色。

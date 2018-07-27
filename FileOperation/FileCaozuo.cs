@@ -1,0 +1,90 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.Collections;
+using System.Windows.Forms;
+
+namespace FileOperation
+{
+    /// <summary>
+    /// Developed by Tom Ni
+    /// 封装文件操作的命令
+    /// 1.读文件（两种方式：a 读某一行，b 全部读出）
+    /// 2.写文件（两种方式：a 追加一行，b 覆盖）
+    /// 3.删某一行
+    /// </summary>
+    public class FileCaozuo
+    {
+        public static string[] Read_All_Line(string filepath)
+        {
+            string read_string;
+            using(StreamReader sr=File.OpenText(filepath))
+            {
+                ArrayList mylist = new ArrayList();        //用来装返回的字符串
+                while((read_string=sr.ReadLine())!=null)
+                {
+                    mylist.Add(read_string);
+                }
+                int count=mylist.Count;
+                if (count <=0) return null;  // 数量不能为0
+                string[] return_string_array=new string[count];
+                for (int i = 0; i < count - 1; i++)
+                {
+                    return_string_array[i] = (string)mylist[i];
+                }
+                sr.Close();
+                return return_string_array;
+            }
+        }
+
+        public static void Read_All_Files_Show_List(string path,string filetype, ListBox listbox)
+        {
+            DirectoryInfo folder = new DirectoryInfo(path);
+            listbox.Items.Clear();
+            foreach (FileInfo file in folder.GetFiles(filetype))
+            {
+                listbox.Items.Add(file.Name);
+                // 创建相关文件
+                Create_File(path+"\\"+file.Name+".config");
+            }
+        }
+
+        public static void Read_All_Files_Show_ComboBox(string path,string filetype,ComboBox combobox)
+        {
+            DirectoryInfo folder = new DirectoryInfo(path);
+            combobox.Items.Clear();
+            foreach (FileInfo file in folder.GetFiles(filetype))
+            {
+                combobox.Items.Add(file.Name);
+                // 创建相关文件
+               //Create_File(path + "\\" + file.Name + ".config");
+            }
+        }
+
+
+        public static void Create_File(string file_path_name)
+        {
+            if(!File.Exists(file_path_name))
+            {
+                // 文件不存在，创建文件
+                FileStream fs = new FileStream(file_path_name,FileMode.Create);
+                fs.Close();
+            }
+            else
+            {
+
+            }
+        }
+
+        public static void Write_Lind_Add(string filepath, string add_line)
+        {
+            using (StreamWriter sw = new StreamWriter(filepath,true))
+            {
+                sw.WriteLine(add_line);
+                sw.Close();
+            }
+        }
+    }
+}

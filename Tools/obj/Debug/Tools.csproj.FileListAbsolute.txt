@@ -1,0 +1,63 @@
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\bin\Debug\Tools.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\bin\Debug\Tools.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\obj\Debug\Tools.ToolsView.resources
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\obj\Debug\Tools.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\obj\Debug\Tools.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\bin\Debug\FileOperation.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\bin\Debug\FileOperation.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\Tools\bin\Debug\Tools.dll
+D:\Function_Base\User_Function_Base\Tools\bin\Debug\Tools.pdb
+D:\Function_Base\User_Function_Base\Tools\bin\Debug\FileOperation.dll
+D:\Function_Base\User_Function_Base\Tools\bin\Debug\FileOperation.pdb
+D:\Function_Base\User_Function_Base\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\Tools\obj\Debug\Tools.ToolsView.resources
+D:\Function_Base\User_Function_Base\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\Function_Base\User_Function_Base\Tools\obj\Debug\Tools.dll
+D:\Function_Base\User_Function_Base\Tools\obj\Debug\Tools.pdb
+D:\User_Function_Base\Tools\bin\Debug\Tools.dll
+D:\User_Function_Base\Tools\bin\Debug\Tools.pdb
+D:\User_Function_Base\Tools\bin\Debug\FileOperation.dll
+D:\User_Function_Base\Tools\bin\Debug\FileOperation.pdb
+D:\User_Function_Base\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\User_Function_Base\Tools\obj\Debug\Tools.ToolsView.resources
+D:\User_Function_Base\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\User_Function_Base\Tools\obj\Debug\Tools.dll
+D:\User_Function_Base\Tools\obj\Debug\Tools.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\bin\Debug\Tools.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\bin\Debug\Tools.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\bin\Debug\FileOperation.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\bin\Debug\FileOperation.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\obj\Debug\Tools.ToolsView.resources
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\obj\Debug\Tools.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Tools\obj\Debug\Tools.pdb
+D:\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.dll
+D:\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.pdb
+D:\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.dll
+D:\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.pdb
+D:\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.ToolsView.resources
+D:\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.dll
+D:\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.ToolsView.resources
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.pdb

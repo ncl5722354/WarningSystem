@@ -1,0 +1,72 @@
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\FileOperation.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\FileOperation.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.AccWizObjects.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.ACTIVEXLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.eawfctrlLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.LCC11.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.MsoEuro.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.MSORUNLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.MSOSOAPLib30.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.Office.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.TASKLAUNCHLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.WinInetConnectorLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\Interop.XDocsDesigner.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\FileOperation.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\obj\Debug\FileOperation.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.AccWizObjects.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.ACTIVEXLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.eawfctrlLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.LCC11.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.MsoEuro.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.MSORUNLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.MSOSOAPLib30.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.Office.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.TASKLAUNCHLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.WinInetConnectorLib.dll
+D:\Function_Base 2017 12 16\User_Function_Base\FileOperation\bin\Debug\Interop.XDocsDesigner.dll
+D:\Function_Base\User_Function_Base\FileOperation\bin\Debug\FileOperation.dll
+D:\Function_Base\User_Function_Base\FileOperation\bin\Debug\FileOperation.pdb
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.AccWizObjects.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.ACTIVEXLib.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.eawfctrlLib.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.LCC11.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.MsoEuro.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.MSORUNLib.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.MSOSOAPLib30.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.Office.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.TASKLAUNCHLib.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.WinInetConnectorLib.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\Interop.XDocsDesigner.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\FileOperation.dll
+D:\Function_Base\User_Function_Base\FileOperation\obj\Debug\FileOperation.pdb
+D:\User_Function_Base\FileOperation\bin\Debug\FileOperation.dll
+D:\User_Function_Base\FileOperation\bin\Debug\FileOperation.pdb
+D:\User_Function_Base\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\User_Function_Base\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\User_Function_Base\FileOperation\obj\Debug\FileOperation.dll
+D:\User_Function_Base\FileOperation\obj\Debug\FileOperation.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\FileOperation\bin\Debug\FileOperation.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\FileOperation\bin\Debug\FileOperation.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\FileOperation\obj\Debug\FileOperation.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\FileOperation\obj\Debug\FileOperation.pdb
+D:\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.dll
+D:\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.pdb
+D:\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.dll
+D:\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb

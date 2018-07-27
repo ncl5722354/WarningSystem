@@ -1,0 +1,11 @@
+﻿<Window x:Class="Ranji_Controlor4._0.Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Start" Height="300" Width="500" WindowStyle="None">
+    <Grid>
+        <Image Source="Resource\timg.jpg" Stretch="Fill"/>
+        <Label Content="印染设备集控终端" HorizontalAlignment="Left" Margin="36,31,0,0" VerticalAlignment="Top" FontSize="36" Foreground="#FF6A8B23"/>
+        <Label Content="V4.0" HorizontalAlignment="Left" Margin="287,94,0,0" VerticalAlignment="Top" Width="47" Foreground="#FF6A8B23" FontWeight="Bold" FontStyle="Italic"/>
+
+    </Grid>
+</Window>

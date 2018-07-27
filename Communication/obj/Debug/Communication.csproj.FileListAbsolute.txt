@@ -1,0 +1,52 @@
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\Function_Base\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\Function_Base\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.dll.config
+D:\User_Function_Base\Communication\bin\Debug\Communication.dll.config
+D:\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.dll.config
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll.config
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.pdb
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.tlb
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.dll
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.pdb
+D:\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.dll
+D:\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll.config
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.pdb

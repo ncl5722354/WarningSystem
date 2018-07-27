@@ -1,0 +1,76 @@
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.dll
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.pdb
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.dll
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.pdb
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.dll
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.pdb
+E:\程序\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.dll
+E:\程序\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.pdb
+E:\程序\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.dll
+E:\程序\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.pdb
+E:\程序\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\程序\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.dll
+E:\程序\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.pdb
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.dll
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.pdb
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.dll
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.pdb
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.dll
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\控制程序\程序 - 副本\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\控制程序\程序 - 副本\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\控制程序\程序 - 副本\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.dll
+D:\控制程序\程序 - 副本\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.pdb
+D:\控制程序\程序 - 副本\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\控制程序\程序 - 副本\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\控制程序\程序 - 副本\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.pdb
+E:\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.dll
+E:\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.pdb
+E:\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.dll
+E:\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.pdb
+E:\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.dll
+E:\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\新版迎宾机器人程序\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\新版迎宾机器人程序\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\新版迎宾机器人程序\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.dll
+D:\新版迎宾机器人程序\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\bin\Debug\DataStructure.pdb
+D:\新版迎宾机器人程序\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\新版迎宾机器人程序\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\新版迎宾机器人程序\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\迎宾机器人去掉激光部分\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\Function_Base 2017 12 16\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\Function_Base 2017 12 16\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\Function_Base 2017 12 16\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.tlb
+D:\Function_Base\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\Function_Base\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\Function_Base\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.tlb
+D:\Function_Base\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\Function_Base\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.tlb
+D:\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\String_Caozuo\bin\Debug\String_Caozuo.tlb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\染机上位机控制软件V4.0\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\染机上位机控制软件V4.0\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\染机上位机控制软件V4.0\String_Caozuo\bin\Debug\String_Caozuo.tlb
+D:\染机上位机控制软件V4.0\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\染机上位机控制软件V4.0\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\染机上位机控制软件V4.0\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\String_Caozuo\obj\Debug\String_Caozuo.pdb

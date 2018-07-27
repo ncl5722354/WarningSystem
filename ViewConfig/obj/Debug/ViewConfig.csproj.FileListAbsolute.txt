@@ -1,0 +1,56 @@
+D:\新版立体货架\Litihuojia\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\新版立体货架\Litihuojia\ViewConfig\bin\Debug\ViewConfig.dll
+D:\新版立体货架\Litihuojia\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\新版立体货架\Litihuojia\ViewConfig\obj\Debug\ViewConfig.dll
+D:\新版立体货架\Litihuojia\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\程序\新版立体货架 2017 8 9\Litihuojia\ViewConfig\bin\Debug\ViewConfig.dll
+D:\程序\新版立体货架 2017 8 9\Litihuojia\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\程序\新版立体货架 2017 8 9\Litihuojia\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\程序\新版立体货架 2017 8 9\Litihuojia\ViewConfig\obj\Debug\ViewConfig.dll
+D:\程序\新版立体货架 2017 8 9\Litihuojia\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\程序\新版立体货架 2017 8 10\新版立体货架 2017 8 9\新版立体货架 2017 8 9\Litihuojia\ViewConfig\bin\Debug\ViewConfig.dll
+D:\程序\新版立体货架 2017 8 10\新版立体货架 2017 8 9\新版立体货架 2017 8 9\Litihuojia\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\程序\新版立体货架 2017 8 10\新版立体货架 2017 8 9\新版立体货架 2017 8 9\Litihuojia\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\程序\新版立体货架 2017 8 10\新版立体货架 2017 8 9\新版立体货架 2017 8 9\Litihuojia\ViewConfig\obj\Debug\ViewConfig.dll
+D:\程序\新版立体货架 2017 8 10\新版立体货架 2017 8 9\新版立体货架 2017 8 9\Litihuojia\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\程序\新立体货架2017 8 11\Litihuojia\ViewConfig\bin\Debug\ViewConfig.dll
+D:\程序\新立体货架2017 8 11\Litihuojia\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\程序\新立体货架2017 8 11\Litihuojia\ViewConfig\obj\Debug\ViewConfig.dll
+D:\程序\新立体货架2017 8 11\Litihuojia\ViewConfig\obj\Debug\ViewConfig.pdb
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\ViewConfig\bin\Debug\ViewConfig.dll
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\ViewConfig\bin\Debug\ViewConfig.pdb
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\ViewConfig\obj\Debug\ViewConfig.dll
+E:\程序\番禺项目程序\Litihuojia(4)\Litihuojia\ViewConfig\obj\Debug\ViewConfig.pdb
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\ViewConfig\bin\Debug\ViewConfig.dll
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\ViewConfig\bin\Debug\ViewConfig.pdb
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\ViewConfig\obj\Debug\ViewConfig.dll
+E:\程序 - 副本\番禺项目程序 修改中\Litihuojia(4)\Litihuojia\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.dll
+D:\Function_Base 2017 12 16\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.dll
+D:\Function_Base 2017 12 16\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.dll
+D:\Function_Base\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\Function_Base\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.dll
+D:\Function_Base\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.dll
+D:\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.dll
+D:\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\染机上位机控制软件V4.0\ViewConfig\bin\Debug\ViewConfig.dll
+D:\染机上位机控制软件V4.0\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\染机上位机控制软件V4.0\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\染机上位机控制软件V4.0\ViewConfig\obj\Debug\ViewConfig.dll
+D:\染机上位机控制软件V4.0\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\ViewConfig\bin\Debug\ViewConfig.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\ViewConfig\obj\Debug\ViewConfig.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\ViewConfig\obj\Debug\ViewConfig.pdb
