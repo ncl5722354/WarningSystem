@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="WpfBrowser_warningsystem.Report"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1000" VerticalAlignment="Top" HorizontalAlignment="Left">
+    <Grid>
+        <WindowsFormsHost Name="windowsformhost" HorizontalAlignment="Left" Height="526" Margin="10,109,0,0" VerticalAlignment="Top" Width="961" Background="#FF473434"/>
+
+    </Grid>
+</UserControl>

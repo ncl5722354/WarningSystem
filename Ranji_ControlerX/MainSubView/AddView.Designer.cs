@@ -88,6 +88,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AddView";
             this.Text = "新建窗体";
+            this.Load += new System.EventHandler(this.AddView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

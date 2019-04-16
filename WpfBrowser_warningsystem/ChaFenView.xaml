@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="WpfBrowser_warningsystem.ChaFenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1000">
+    <Grid>
+        <WindowsFormsHost Name="windowsformshost" HorizontalAlignment="Left" Height="340" Margin="41,25,-21,0" VerticalAlignment="Top" Width="980"/>
+        <Grid Name="grid1" HorizontalAlignment="Left" Height="100" Margin="41,397,-894,0" VerticalAlignment="Top" Width="1853">
+            <Label Content="曲线一基准目录" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line1_jizhun_mulu_combo" HorizontalAlignment="Left" Margin="122,14,0,0" VerticalAlignment="Top" Width="193" MouseEnter="line1_jizhun_mulu_combo_MouseEnter" DropDownOpened="line1_jizhun_mulu_combo_DropDownOpened"/>
+            <Label Content="曲线一基准文件" HorizontalAlignment="Left" Margin="352,14,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line1_jizhun_wenjian_combo" HorizontalAlignment="Left" Margin="468,14,0,0" VerticalAlignment="Top" Width="208" MouseEnter="line1_jizhun_wenjian_combo_MouseEnter" DropDownOpened="line1_jizhun_wenjian_combo_DropDownOpened"/>
+            <Label Content="曲线一目录" HorizontalAlignment="Left" Margin="711,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line1_mulu" HorizontalAlignment="Left" Margin="835,14,0,0" VerticalAlignment="Top" Width="186" MouseEnter="line1_mulu_MouseEnter" DropDownOpened="line1_mulu_DropDownOpened"/>
+            <Label Content="曲线一曲线" HorizontalAlignment="Left" Margin="1054,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line1_wenjian" HorizontalAlignment="Left" Margin="1173,14,0,0" VerticalAlignment="Top" Width="202" MouseEnter="line1_wenjian_MouseEnter" DropDownOpened="line1_wenjian_DropDownOpened"/>
+            <Button Name="button_line1" Content="确定" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-2.846,-0.092" Click="button_line1_Click"/>
+
+        </Grid>
+        <Grid Name="grid2" HorizontalAlignment="Left" Height="100" Margin="41,502,-7051,0" VerticalAlignment="Top" Width="8010">
+            <Label Content="曲线二基准目录" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line2_jizhun_mulu_combo" HorizontalAlignment="Left" Margin="122,14,0,0" VerticalAlignment="Top" Width="193" MouseEnter="line1_jizhun_mulu_combo_MouseEnter" DropDownOpened="line2_jizhun_mulu_combo_DropDownOpened"/>
+            <Label Content="曲线二基准文件" HorizontalAlignment="Left" Margin="352,14,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line2_jizhun_wenjian_combo" HorizontalAlignment="Left" Margin="468,14,0,0" VerticalAlignment="Top" Width="208" MouseEnter="line1_jizhun_wenjian_combo_MouseEnter" DropDownOpened="line2_jizhun_wenjian_combo_DropDownOpened"/>
+            <Label Content="曲线二目录" HorizontalAlignment="Left" Margin="711,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line2_mulu" HorizontalAlignment="Left" Margin="835,14,0,0" VerticalAlignment="Top" Width="186" MouseEnter="line1_mulu_MouseEnter" DropDownOpened="line2_mulu_DropDownOpened"/>
+            <Label Content="曲线二曲线" HorizontalAlignment="Left" Margin="1054,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line2_wenjian" HorizontalAlignment="Left" Margin="1173,14,0,0" VerticalAlignment="Top" Width="202" MouseEnter="line1_wenjian_MouseEnter" DropDownOpened="line2_wenjian_DropDownOpened"/>
+            <Button Name="button_line2" Content="确定" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-2.846,-0.092" Click="button_line2_Click"/>
+
+        </Grid>
+        <Grid Name="grid3" HorizontalAlignment="Left" Height="100" Margin="41,631,-4192,0" VerticalAlignment="Top" Width="5151">
+            <Label Content="曲线三基准目录" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line3_jizhun_mulu_combo" HorizontalAlignment="Left" Margin="122,14,0,0" VerticalAlignment="Top" Width="193" MouseEnter="line1_jizhun_mulu_combo_MouseEnter" DropDownOpened="line3_jizhun_mulu_combo_DropDownOpened"/>
+            <Label Content="曲线三基准文件" HorizontalAlignment="Left" Margin="352,14,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line3_jizhun_wenjian_combo" HorizontalAlignment="Left" Margin="468,14,0,0" VerticalAlignment="Top" Width="208" MouseEnter="line1_jizhun_wenjian_combo_MouseEnter" DropDownOpened="line3_jizhun_wenjian_combo_DropDownOpened"/>
+            <Label Content="曲线三目录" HorizontalAlignment="Left" Margin="711,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line3_mulu" HorizontalAlignment="Left" Margin="835,14,0,0" VerticalAlignment="Top" Width="186" MouseEnter="line1_mulu_MouseEnter" DropDownOpened="line3_mulu_DropDownOpened"/>
+            <Label Content="曲线三曲线" HorizontalAlignment="Left" Margin="1054,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <ComboBox Name="line3_wenjian" HorizontalAlignment="Left" Margin="1173,14,0,0" VerticalAlignment="Top" Width="202" MouseEnter="line1_wenjian_MouseEnter" DropDownOpened="line3_wenjian_DropDownOpened"/>
+            <Button Name="button_line3" Content="确定" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-2.846,-0.092" Click="button_line3_Click"/>
+
+        </Grid>
+        <Grid Name="grid4" HorizontalAlignment="Left" Height="100" Margin="41,755,0,0" VerticalAlignment="Top" Width="932"/>
+
+    </Grid>
+</UserControl>

@@ -55,3 +55,174 @@ D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.exe
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\App.g.cs
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\App.g.cs
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\程序\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\程序\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\程序\预警系统\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\程序\预警系统\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\程序\预警系统\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\程序\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\预警系统\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\预警系统\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\预警系统\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\预警系统\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\预警系统新版\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\程序\预警系统新版\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\程序\预警系统新版\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\程序\预警系统新版\预警系统\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\程序\预警系统新版\预警系统\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\预警系统新版\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\预警系统 2019 1 10\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\预警系统新版\预警系统\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\bin\Debug\WPFDataStruct.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\bin\Debug\WpfControls.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\bin\Debug\WpfControls.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.pdb

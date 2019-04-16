@@ -21,7 +21,7 @@ namespace Communication
     {
         // 成员变量
         TcpClient client = new TcpClient();
-        IPAddress ServerIp;
+        public IPAddress ServerIp;
         int ServerPort;
         public byte[] receive_byte = new byte[8192];
         public int receive_num;
@@ -43,7 +43,8 @@ namespace Communication
                 throw new Exception("ip地址格式不正确！"); 
             }
             ServerPort = serverport;
-            Connect_To_Server();
+            Thread connect = new Thread(Connect_To_Server);
+            connect.Start();
             Thread data_arrival_thread = new Thread(Data_Arrival);
             data_arrival_thread.Start();
         }
@@ -56,14 +57,34 @@ namespace Communication
             {
                 client = null;
                 client = new TcpClient();
+                client.Client.SendTimeout=1000;
+                
+                //IPEndPoint iep = new IPEndPoint(ServerIp, 8880);
+                
+                //client.Client.BeginConnect(ServerIp,8880, new AsyncCallback(Connect),client.Client);
+                //Thread invokeThread = new Thread(new ThreadStart(StartMethod));
+                //invokeThread.Start();
+                Console.WriteLine("连接中……"+ServerIp.ToString()+" "+ServerPort.ToString());
                 client.Client.Connect(ServerIp, ServerPort);
-                Connected_Server_Trigger(new EventArgs());                           // 成功连至服务器端
+
+                
             }
             catch {
-                Thread connect_thread = new Thread(Connect_To_Server);
-                connect_thread.Start();
+                Console.WriteLine("连接失败！");
+                //Thread connect_thread = new Thread(Connect_To_Server);
+                //connect_thread.Start();
             }
         }
+        private void StartMethod()
+        {
+            try
+            {
+                client.Client.Connect(ServerIp, ServerPort);
+            }
+            catch { }
+        }
+
+        
 
         // 接收数据的函数
         private void Data_Arrival()
@@ -79,13 +100,14 @@ namespace Communication
                     else
                     {
                         DisConnected_Server_Trigger(new EventArgs());
-                        Connect_To_Server();                                         //重连
+                        //Connect_To_Server();                                         //重连
                     }
                 }
-                catch 
+                catch (Exception ex)
                 {
                     DisConnected_Server_Trigger(new EventArgs());
-                    Connect_To_Server(); 
+                    Console.WriteLine(ex.ToString());
+                    //Connect_To_Server(); 
                 }
             }
         }
@@ -104,7 +126,7 @@ namespace Communication
             catch
             {
                 DisConnected_Server_Trigger(new EventArgs());
-                Connect_To_Server();
+                //Connect_To_Server();
             }
         }
 

@@ -1,0 +1,13 @@
+D:\程序\预警系统新版\预警系统\Dedusting\bin\Release\Dedusting.exe.config
+D:\程序\预警系统新版\预警系统\Dedusting\bin\Release\Dedusting.exe
+D:\程序\预警系统新版\预警系统\Dedusting\bin\Release\Dedusting.pdb
+D:\程序\预警系统新版\预警系统\Dedusting\bin\Release\ViewConfig.dll
+D:\程序\预警系统新版\预警系统\Dedusting\bin\Release\ViewConfig.pdb
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.Form1.resources
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.控件.ExitButton.resources
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.控件.Title.resources
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.exe
+D:\程序\预警系统新版\预警系统\Dedusting\obj\Release\Dedusting.pdb

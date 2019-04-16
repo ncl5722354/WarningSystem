@@ -1,0 +1,10 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WarningSystem" x:Class="WarningSystem.WarnInfo"
+        Title="信息" Height="700" Width="700" ResizeMode="NoResize" Background="#FF0C2E4F" Closed="Window_Closed">
+    <Grid Name="maingrid">
+       
+
+    </Grid>
+</Window>

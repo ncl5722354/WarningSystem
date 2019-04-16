@@ -1,0 +1,5 @@
+D:\程序\预警系统新版\预警系统\DataGridViewCaoZuo\bin\Release\DataGridViewCaoZuo.dll
+D:\程序\预警系统新版\预警系统\DataGridViewCaoZuo\bin\Release\DataGridViewCaoZuo.pdb
+D:\程序\预警系统新版\预警系统\DataGridViewCaoZuo\obj\Release\DataGridViewCaoZuo.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\DataGridViewCaoZuo\obj\Release\DataGridViewCaoZuo.dll
+D:\程序\预警系统新版\预警系统\DataGridViewCaoZuo\obj\Release\DataGridViewCaoZuo.pdb

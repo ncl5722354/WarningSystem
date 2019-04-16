@@ -31,3 +31,47 @@ D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\预警系统 2019 1 10\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\预警系统 2019 1 10\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统 2019 1 10\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\预警系统 2019 1 10\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\预警系统\预警系统\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\预警系统\预警系统\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\预警系统\预警系统\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\预警系统\预警系统\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\预警系统\预警系统\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb

@@ -1,0 +1,8 @@
+D:\程序\预警系统新版\预警系统\CamearView\bin\Release\CamearView.exe.config
+D:\程序\预警系统新版\预警系统\CamearView\bin\Release\CamearView.exe
+D:\程序\预警系统新版\预警系统\CamearView\bin\Release\CamearView.pdb
+D:\程序\预警系统新版\预警系统\CamearView\obj\Release\CamearView.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\CamearView\obj\Release\CamearView.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\CamearView\obj\Release\CamearView.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\CamearView\obj\Release\CamearView.exe
+D:\程序\预警系统新版\预警系统\CamearView\obj\Release\CamearView.pdb

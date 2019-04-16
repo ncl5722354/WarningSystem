@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="WarningSystem.Map_Set"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1000">
+    <Grid Name="maingrid" >
+        <Border x:Name="Imageborder" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="266" Margin="33,45,0,0" VerticalAlignment="Top" Width="730" CornerRadius="3" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" MouseWheel="Imageborder_MouseWheel" Background="#FFD8BFBF" >
+            <ScrollViewer x:Name="ImageScrollviewer" VerticalScrollBarVisibility="Disabled" MouseWheel="ImageScrollviewer_MouseWheel" MouseDown="ImageScrollviewer_MouseDown">
+                <Image x:Name="myimage" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" MouseDown="myimage_MouseDown" OpacityMask="#FFF7F7F7" MouseWheel="myimage_MouseWheel" Cursor="Hand" MouseMove="myimage_MouseMove" MouseUp="myimage_MouseUp"/>
+
+            </ScrollViewer>
+        </Border>
+        <Button Name="add_dizhuang" Content="设置" HorizontalAlignment="Left" Margin="61,740,0,0" VerticalAlignment="Top" Width="136" Height="28" Click="add_dizhuang_Click"/>
+    </Grid>
+</UserControl>

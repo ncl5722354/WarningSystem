@@ -61,3 +61,89 @@ D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.dll
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.dll
+D:\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.dll
+D:\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.ToolsView.resources
+D:\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.dll
+D:\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\Tools.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\bin\Debug\FileOperation.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.ToolsView.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Tools\obj\Debug\Tools.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\bin\Debug\Tools.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\bin\Debug\Tools.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\obj\Debug\Tools.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Tools\obj\Debug\Tools.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\bin\Debug\Tools.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\bin\Debug\Tools.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\obj\Debug\Tools.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Tools\obj\Debug\Tools.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\bin\Debug\Tools.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\bin\Debug\Tools.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\bin\Debug\FileOperation.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\bin\Debug\FileOperation.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\obj\Debug\Tools.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Tools\obj\Debug\Tools.pdb
+D:\程序\预警系统\Tools\bin\Debug\Tools.dll
+D:\程序\预警系统\Tools\bin\Debug\Tools.pdb
+D:\程序\预警系统\Tools\bin\Debug\FileOperation.dll
+D:\程序\预警系统\Tools\bin\Debug\FileOperation.pdb
+D:\程序\预警系统\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\预警系统\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\预警系统\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\预警系统\Tools\obj\Debug\Tools.dll
+D:\程序\预警系统\Tools\obj\Debug\Tools.pdb
+D:\程序\预警系统新版\预警系统\Tools\obj\Debug\Tools.dll
+D:\程序\预警系统新版\预警系统\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\预警系统新版\预警系统\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\Tools\obj\Debug\Tools.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Tools\bin\Debug\Tools.dll
+D:\程序\预警系统 2019 1 10\预警系统\Tools\bin\Debug\Tools.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Tools\bin\Debug\FileOperation.dll
+D:\程序\预警系统 2019 1 10\预警系统\Tools\bin\Debug\FileOperation.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\预警系统 2019 1 10\预警系统\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\Tools\obj\Debug\Tools.dll
+D:\程序\预警系统 2019 1 10\预警系统\Tools\obj\Debug\Tools.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Tools\bin\Debug\Tools.dll
+D:\程序\预警系统新版\预警系统\预警系统\Tools\bin\Debug\Tools.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Tools\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\预警系统\Tools\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\预警系统新版\预警系统\预警系统\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\Tools\obj\Debug\Tools.dll
+D:\程序\预警系统新版\预警系统\预警系统\Tools\obj\Debug\Tools.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\bin\Debug\Tools.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\bin\Debug\Tools.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\obj\Debug\Tools.ToolsView.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\obj\Debug\Tools.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\obj\Debug\Tools.pdb

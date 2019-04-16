@@ -149,3 +149,218 @@ D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.exe
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Communication.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Communication.dll
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\FileOperation.dll
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Tools.dll
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Communication.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Tools.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Communication.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\FileOperation.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Tools.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Communication.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\Tools.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\预警系统\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\预警系统\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\预警系统\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\预警系统\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\预警系统\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\预警系统\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\预警系统\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\预警系统\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\预警系统\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\预警系统\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\预警系统\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\预警系统新版\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\预警系统新版\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\预警系统新版\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\预警系统新版\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\预警系统 2019 1 10\预警系统\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\预警系统新版\预警系统\预警系统\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.pdb

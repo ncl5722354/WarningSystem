@@ -54,6 +54,7 @@ namespace FileOperation
         public static void Read_All_Files_Show_ComboBox(string path,string filetype,ComboBox combobox)
         {
             DirectoryInfo folder = new DirectoryInfo(path);
+            
             combobox.Items.Clear();
             foreach (FileInfo file in folder.GetFiles(filetype))
             {
@@ -61,6 +62,24 @@ namespace FileOperation
                 // 创建相关文件
                //Create_File(path + "\\" + file.Name + ".config");
             }
+        }
+
+        // 返回所有的文件夹的名称
+        public static DirectoryInfo[] Read_All_FilesDirect(string path)
+        {
+            DirectoryInfo folder = new DirectoryInfo(path);
+            return folder.GetDirectories();
+        }
+
+        public static ArrayList Read_All_Files(string path,string filetype)
+        {
+            ArrayList filename_list = new ArrayList();
+            DirectoryInfo folder = new DirectoryInfo(path);
+            foreach (FileInfo file in folder.GetFiles(filetype))
+            {
+                filename_list.Add(file.Name);
+            }
+            return filename_list;
         }
 
 

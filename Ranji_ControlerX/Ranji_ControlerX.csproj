@@ -44,11 +44,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonFunctionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButtonFunctionConfig.Designer.cs">
+      <DependentUpon>ButtonFunctionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="DataConfigView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConfigView.Designer.cs">
+      <DependentUpon>DataConfigView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditWindow.Designer.cs">
+      <DependentUpon>EditWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainSubView\DataAddView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainSubView\DataAddView.Designer.cs">
+      <DependentUpon>DataAddView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainSubView\DataDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainSubView\DataDelete.Designer.cs">
+      <DependentUpon>DataDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainSubView\UpdataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainSubView\UpdataView.Designer.cs">
+      <DependentUpon>UpdataView.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainSubView\AddView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainSubView\AddView.Designer.cs">
       <DependentUpon>AddView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainSubView\IsDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainSubView\IsDelete.Designer.cs">
+      <DependentUpon>IsDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="MainView.cs">
       <SubType>Form</SubType>
@@ -56,13 +99,109 @@
     <Compile Include="MainView.Designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
+    <Compile Include="NormalControlsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NormalControlsWindow.Designer.cs">
+      <DependentUpon>NormalControlsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalControls\ButtonConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NormalControls\ButtonConfig.Designer.cs">
+      <DependentUpon>ButtonConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalControls\Delete_Is.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NormalControls\Delete_Is.Designer.cs">
+      <DependentUpon>Delete_Is.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalControls\Ligth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NormalControls\Ligth.Designer.cs">
+      <DependentUpon>Ligth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalControls\MyButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NormalControls\MyButton.Designer.cs">
+      <DependentUpon>MyButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalControls\MyLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NormalControls\MyLabel.Designer.cs">
+      <DependentUpon>MyLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalControls\NormalLabelConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NormalControls\NormalLabelConfig.Designer.cs">
+      <DependentUpon>NormalLabelConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunWindow.Designer.cs">
+      <DependentUpon>RunWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tools\ColorConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tools\ColorConfig.Designer.cs">
+      <DependentUpon>ColorConfig.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ButtonFunctionConfig.resx">
+      <DependentUpon>ButtonFunctionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConfigView.resx">
+      <DependentUpon>DataConfigView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWindow.resx">
+      <DependentUpon>EditWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainSubView\DataAddView.resx">
+      <DependentUpon>DataAddView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainSubView\DataDelete.resx">
+      <DependentUpon>DataDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainSubView\UpdataView.resx">
+      <DependentUpon>UpdataView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainSubView\AddView.resx">
       <DependentUpon>AddView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainSubView\IsDelete.resx">
+      <DependentUpon>IsDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalControlsWindow.resx">
+      <DependentUpon>NormalControlsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalControls\ButtonConfig.resx">
+      <DependentUpon>ButtonConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalControls\Delete_Is.resx">
+      <DependentUpon>Delete_Is.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalControls\Ligth.resx">
+      <DependentUpon>Ligth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalControls\MyButton.resx">
+      <DependentUpon>MyButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalControls\MyLabel.resx">
+      <DependentUpon>MyLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalControls\NormalLabelConfig.resx">
+      <DependentUpon>NormalLabelConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +212,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RunWindow.resx">
+      <DependentUpon>RunWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tools\ColorConfig.resx">
+      <DependentUpon>ColorConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

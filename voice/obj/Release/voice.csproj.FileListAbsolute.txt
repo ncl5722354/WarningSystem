@@ -1,0 +1,6 @@
+D:\程序\预警系统新版\预警系统\voice\bin\Release\voice.dll
+D:\程序\预警系统新版\预警系统\voice\bin\Release\voice.pdb
+D:\程序\预警系统新版\预警系统\voice\obj\Release\voice.voiceControls.resources
+D:\程序\预警系统新版\预警系统\voice\obj\Release\voice.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\voice\obj\Release\voice.dll
+D:\程序\预警系统新版\预警系统\voice\obj\Release\voice.pdb

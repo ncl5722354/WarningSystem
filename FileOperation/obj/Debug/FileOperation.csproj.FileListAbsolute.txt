@@ -66,7 +66,68 @@ D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4
 D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.dll
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.pdb
-D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.dll
 D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb
+D:\深圳软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.dll
+D:\深圳软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.pdb
+D:\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.dll
+D:\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\深圳项目\深圳软件2018 11 02\深圳软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\深圳项目\深圳软件2018 11 02\深圳软件\染机上位机控制软件V4.0\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\深圳项目\深圳软件2018 11 02\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\程序\深圳项目\深圳软件2018 11 02\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\深圳项目\深圳软件2018 11 02\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\深圳项目\深圳软件2018 11 02\深圳软件\染机上位机控制软件V4.0\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\预警系统\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\预警系统\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\预警系统\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\预警系统\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\预警系统\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\预警系统新版\预警系统\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\预警系统 2019 1 10\预警系统\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\预警系统 2019 1 10\预警系统\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\预警系统 2019 1 10\预警系统\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\预警系统 2019 1 10\预警系统\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\预警系统\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\预警系统\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.pdb
+D:\预警系统\预警系统\预警系统\FileOperation\bin\Debug\FileOperation.dll
+D:\预警系统\预警系统\预警系统\FileOperation\bin\Debug\FileOperation.pdb
+D:\预警系统\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\预警系统\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\预警系统\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.dll
+D:\预警系统\预警系统\预警系统\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\obj\Debug\FileOperation.pdb

@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="WarningSystem.QuXian_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1000">
+    <Grid Name="maingrid" SizeChanged="maingrid_SizeChanged">
+        <WindowsFormsHost x:Name="chart1_formhost" HorizontalAlignment="Left" Height="300" Margin="125,64,-218,-5348" VerticalAlignment="Top" Width="600" Background="#FFECDBDB"/>
+        <WindowsFormsHost x:Name="chart2_formhost" HorizontalAlignment="Left" Height="300" Margin="125,64,-218,-5348" VerticalAlignment="Top" Width="600" Background="#FFECDBDB"/>
+        <Label Name="label_select_save" Content="选择记录" HorizontalAlignment="Left" Margin="649,637,0,0" VerticalAlignment="Top" Width="112" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox Name="combo_select_save" HorizontalAlignment="Left" Margin="788,637,0,0" VerticalAlignment="Top" Width="189" Drop="combo_select_save_Drop" MouseEnter="combo_select_save_MouseEnter" SelectionChanged="combo_select_save_SelectionChanged" DropDownOpened="combo_select_save_DropDownOpened"/>
+        <Label x:Name="label_select_jizhun" Content="选择基准" HorizontalAlignment="Left" Margin="125,637,0,0" VerticalAlignment="Top" Width="112" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="combo_select_jizhun" HorizontalAlignment="Left" Margin="237,641,0,0" VerticalAlignment="Top" Width="189" Drop="combo_select_save_Drop" MouseEnter="combo_select_jizhun_MouseEnter" SelectionChanged="combo_select_save_SelectionChanged" MouseDown="combo_select_jizhun_MouseDown" DropDownOpened="combo_select_jizhun_DropDownOpened"/>
+        <Button Name="show_real" Content="显示实时" HorizontalAlignment="Left" Margin="125,712,0,0" VerticalAlignment="Top" Width="92" Click="show_real_Click"/>
+        <Button Name="show_shoudong" Content="手动模式" HorizontalAlignment="Left" Margin="237,712,0,0" VerticalAlignment="Top" Width="92" Click="show_shoudong_Click"/>
+        
+        <Button Name="btn_save" Content="文件另存为" HorizontalAlignment="Left" Height="19" Margin="522,712,0,0" VerticalAlignment="Top" Width="116" Click="btn_save_Click"/>
+    </Grid>
+</UserControl>

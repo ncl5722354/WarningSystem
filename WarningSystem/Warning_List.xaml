@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="WarningSystem.Warning_List"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000" SizeChanged="UserControl_SizeChanged">
+    <Grid>
+        <ScrollViewer Name="scrollviewer" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
+            <DataGrid Name="datagridview1" Margin="10,10,0,0" VerticalAlignment="Top" Height="240" Width="264" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="datagridview1_SelectionChanged"/>
+        </ScrollViewer>
+        <WindowsFormsHost Name="mywindowsformshost"  HorizontalAlignment="Left" Height="243" Margin="394,227,0,0" VerticalAlignment="Top" Width="567"/>
+        <Label Name="label_select_riqi" Content="选择报警日期" HorizontalAlignment="Left" Height="32" Margin="394,25,0,0" VerticalAlignment="Top" Width="136" FontSize="20" FontFamily="Microsoft JhengHei UI" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox Name="combobox_riqi" HorizontalAlignment="Left" Margin="555,31,0,0" VerticalAlignment="Top" Width="233" DropDownOpened="combobox_riqi_DropDownOpened"/>
+        <Label x:Name="label_select_shijin" Content="选择报警时间" HorizontalAlignment="Left" Height="32" Margin="394,68,0,0" VerticalAlignment="Top" Width="136" FontSize="20" FontFamily="Microsoft JhengHei UI" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox Name="combobox_shijian" HorizontalAlignment="Left" Margin="555,79,0,0" VerticalAlignment="Top" Width="233" DropDownOpened="combobox_shijian_DropDownOpened" SelectionChanged="combobox_shijian_SelectionChanged" DropDownClosed="combobox_shijian_DropDownClosed"/>
+
+
+    </Grid>
+</UserControl>

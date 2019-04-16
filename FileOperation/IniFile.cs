@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
+using System.Collections;
 
 // ini操作
 // [DllImport("kernel32")] 
@@ -27,6 +28,11 @@ namespace FileOperation
         public IniFile(string path)
         {
             this.Path = path;
+            try
+            {
+                FileCaozuo.Create_File(path); // 尝试创建这个文件
+            }
+            catch { }
         }
         // 声明INI文件的读操作函数 GetPrivateProfileString()
 
@@ -34,6 +40,8 @@ namespace FileOperation
 
         public static extern int GetPrivateProfileString(string section, string key, string def, System.Text.StringBuilder retVal, int size, string filePath);
        
+        [System.Runtime.InteropServices.DllImport("kernel32")]
+        public static extern int GetPrivateProfileSectionNames(byte[] buffer, int iLen, string lpFileName);
 
         /// <summary>
         /// 写INI文件
@@ -59,6 +67,37 @@ namespace FileOperation
             int i = GetPrivateProfileString(section, key, "", temp, 255, this.Path); 
             return temp.ToString();
         }
+
+
+
+        public ArrayList ReadSections()
+        {
+            byte[] buffer = new byte[65535];
+            int rel = GetPrivateProfileSectionNames(buffer, buffer.GetUpperBound(0), this.Path);
+            return Conver2ArrayList(rel, buffer);
+        }
+        public ArrayList Conver2ArrayList(int rel, byte[] buffer)
+        {
+            ArrayList arrayList = new ArrayList();
+            if (rel > 0)
+            {
+                int iCnt, iPos;
+                string tmp;
+                iCnt = 0; iPos = 0;
+                for (iCnt = 0; iCnt < rel; iCnt++)
+                {
+                    if (buffer[iCnt] == 0x00)
+                    {
+                        tmp = System.Text.ASCIIEncoding.Default.GetString(buffer, iPos, iCnt - iPos).Trim();
+                        iPos = iCnt + 1;
+                        if (tmp != "")
+                            arrayList.Add(tmp);
+                    }
+                }
+            }
+            return arrayList;
+        }
+
 
         /// <summary>
         /// 读取INI文件

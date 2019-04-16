@@ -1,0 +1,312 @@
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.exe
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe.config
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.dll
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.dll
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.dll
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.dll
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Form1.resources
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SubView.resources
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.exe
+D:\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.pdb
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.pdb
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.pdb
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.exe
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.pdb
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Interop.MSChartWiz.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\AxInterop.MSChartWiz.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Interop.Office.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\AxInterop.MSChartWiz.dll
+D:\程序\深圳项目\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe.config
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.exe
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Shuini.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\Communication.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\FileOperation.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\ViewConfig.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\bin\Debug\String_Caozuo.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Interop.Office.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Form1.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.SubView.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.exe
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Shuini\obj\Debug\Shuini.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\Shuini.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\Shuini.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\Interop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\bin\Debug\AxInterop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Interop.Office.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\AxInterop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\Shuini.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\Shuini.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\Interop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\bin\Debug\AxInterop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Interop.Office.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\AxInterop.MSChartWiz.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Shuini\obj\Debug\Shuini.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\Shuini.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\Shuini.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\Communication.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\FileOperation.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\Communication.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\Interop.MSChartWiz.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\bin\Debug\AxInterop.MSChartWiz.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Interop.Office.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\AxInterop.MSChartWiz.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Shuini\obj\Debug\Shuini.pdb
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\预警系统\Shuini\obj\Debug\Interop.Office.dll
+D:\程序\预警系统\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\预警系统\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\预警系统\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\预警系统\Shuini\bin\Debug\Shuini.exe
+D:\程序\预警系统\Shuini\bin\Debug\Shuini.pdb
+D:\程序\预警系统\Shuini\bin\Debug\Communication.dll
+D:\程序\预警系统\Shuini\bin\Debug\FileOperation.dll
+D:\程序\预警系统\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\预警系统\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统\Shuini\bin\Debug\Communication.pdb
+D:\程序\预警系统\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\预警系统\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统\Shuini\bin\Debug\Interop.MSChartWiz.dll
+D:\程序\预警系统\Shuini\bin\Debug\AxInterop.MSChartWiz.dll
+D:\程序\预警系统\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\预警系统\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\预警系统\Shuini\obj\Debug\AxInterop.MSChartWiz.dll
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.exe
+D:\程序\预警系统\Shuini\obj\Debug\Shuini.pdb
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\Shuini.exe
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\Shuini.pdb
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\Interop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\Shuini\bin\Debug\AxInterop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Interop.Office.dll
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\AxInterop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.exe
+D:\程序\预警系统新版\预警系统\Shuini\obj\Debug\Shuini.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\Shuini.exe
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\Shuini.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\Communication.dll
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\FileOperation.dll
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\Communication.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Interop.Office.dll
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.exe
+D:\程序\预警系统 2019 1 10\预警系统\Shuini\obj\Debug\Shuini.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\Shuini.exe
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\Shuini.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\Interop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\bin\Debug\AxInterop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\AxInterop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.exe
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Shuini.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Shuini\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\Shuini.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\Shuini.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.pdb

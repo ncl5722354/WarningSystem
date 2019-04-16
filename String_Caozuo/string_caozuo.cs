@@ -104,7 +104,88 @@ namespace String_Caozuo
             catch { return null; }
         }                 // 用下划线分割的标志
 
-        public static string Get_Dian_String(string scr,int index)
+         public static string Get_HengGang_String(string scr,int index)
+        {
+            // 返回下划线第index个量
+            try
+            {
+                int count = 0;   // 下划线的数量
+                int length = scr.Length;
+                char[] char_arraylist = scr.ToCharArray(0, length);
+                for(int i=0;i<length;i++)
+                {
+                    if(char_arraylist[i]=='-')
+                    {
+                        count++;
+                    }
+                }
+                int[] _index = new int[count+2];
+                string[] substring = new string[count+1];
+                _index[0]=-1;
+                int mycount=1;
+                for(int i=0;i<length;i++)
+                {
+                    if(i==length-1)
+                    {
+                        _index[mycount]=i+1;
+                        break;
+                    }
+                    if(char_arraylist[i]=='-')
+                    {
+                        _index[mycount] = i;
+                        mycount++;
+                    }
+                }
+                for(int i=0;i<count+1;i++)
+                {
+                    substring[i] = scr.Substring(_index[i] + 1, _index[i + 1] - _index[i] - 1);
+                }
+                return substring[index - 1];
+            }
+            catch { return null; }
+        }
+
+         public static string Get_Dian_String(string scr, int index)
+         {
+             try
+             {
+                 int count = 0;   // 下划线的数量
+                 int length = scr.Length;
+                 char[] char_arraylist = scr.ToCharArray(0, length);
+                 for (int i = 0; i < length; i++)
+                 {
+                     if (char_arraylist[i] == '.')
+                     {
+                         count++;
+                     }
+                 }
+                 int[] _index = new int[count + 2];
+                 string[] substring = new string[count + 1];
+                 _index[0] = -1;
+                 int mycount = 1;
+                 for (int i = 0; i < length; i++)
+                 {
+                     if (i == length - 1)
+                     {
+                         _index[mycount] = i + 1;
+                         break;
+                     }
+                     if (char_arraylist[i] == '.')
+                     {
+                         _index[mycount] = i;
+                         mycount++;
+                     }
+                 }
+                 for (int i = 0; i < count + 1; i++)
+                 {
+                     substring[i] = scr.Substring(_index[i] + 1, _index[i + 1] - _index[i] - 1);
+                 }
+                 return substring[index - 1];
+             }
+             catch { return null; }
+         }      // 返回点分割的字符串
+
+        public static string Get_Table_String(string scr,int index)
         {
             try
             {
@@ -113,7 +194,7 @@ namespace String_Caozuo
                 char[] char_arraylist = scr.ToCharArray(0, length);
                 for (int i = 0; i < length; i++)
                 {
-                    if (char_arraylist[i] == '.')
+                    if (char_arraylist[i] == '\t')
                     {
                         count++;
                     }
@@ -129,7 +210,7 @@ namespace String_Caozuo
                         _index[mycount] = i + 1;
                         break;
                     }
-                    if (char_arraylist[i] == '.')
+                    if (char_arraylist[i] == '\t')
                     {
                         _index[mycount] = i;
                         mycount++;
@@ -142,7 +223,7 @@ namespace String_Caozuo
                 return substring[index - 1];
             }
             catch { return null; }
-        }      // 返回点分割的字符串
+        }      // 返回\t分割的字符串
 
         public static string Get_Maohao_String(string scr, int index)
         {

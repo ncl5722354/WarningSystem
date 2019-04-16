@@ -34,5 +34,10 @@ namespace Ranji_ControlerX.MainSubView
         {
             this.Dispose();
         }
+
+        private void AddView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

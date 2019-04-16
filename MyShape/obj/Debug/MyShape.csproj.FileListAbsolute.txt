@@ -32,3 +32,64 @@ D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4
 D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
 D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.dll
 D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\bin\Debug\MyShape.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\bin\Debug\MyShape.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.pdb
+D:\深圳软件\染机上位机控制软件V4.0\MyShape\bin\Debug\MyShape.dll
+D:\深圳软件\染机上位机控制软件V4.0\MyShape\bin\Debug\MyShape.pdb
+D:\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.Line.resources
+D:\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.dll
+D:\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\MyShape\bin\Debug\MyShape.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\MyShape\bin\Debug\MyShape.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.Line.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\MyShape\obj\Debug\MyShape.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\MyShape\bin\Debug\MyShape.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\MyShape\bin\Debug\MyShape.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\MyShape\obj\Debug\MyShape.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\MyShape\obj\Debug\MyShape.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\MyShape\bin\Debug\MyShape.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\MyShape\bin\Debug\MyShape.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\MyShape\obj\Debug\MyShape.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\MyShape\obj\Debug\MyShape.pdb
+D:\程序\预警系统\MyShape\bin\Debug\MyShape.dll
+D:\程序\预警系统\MyShape\bin\Debug\MyShape.pdb
+D:\程序\预警系统\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\预警系统\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\预警系统\MyShape\obj\Debug\MyShape.dll
+D:\程序\预警系统\MyShape\obj\Debug\MyShape.pdb
+D:\程序\预警系统新版\预警系统\MyShape\bin\Debug\MyShape.dll
+D:\程序\预警系统新版\预警系统\MyShape\bin\Debug\MyShape.pdb
+D:\程序\预警系统新版\预警系统\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\预警系统新版\预警系统\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\MyShape\obj\Debug\MyShape.dll
+D:\程序\预警系统新版\预警系统\MyShape\obj\Debug\MyShape.pdb
+D:\程序\预警系统 2019 1 10\预警系统\MyShape\bin\Debug\MyShape.dll
+D:\程序\预警系统 2019 1 10\预警系统\MyShape\bin\Debug\MyShape.pdb
+D:\程序\预警系统 2019 1 10\预警系统\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\预警系统 2019 1 10\预警系统\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\MyShape\obj\Debug\MyShape.dll
+D:\程序\预警系统 2019 1 10\预警系统\MyShape\obj\Debug\MyShape.pdb
+D:\程序\预警系统新版\预警系统\预警系统\MyShape\bin\Debug\MyShape.dll
+D:\程序\预警系统新版\预警系统\预警系统\MyShape\bin\Debug\MyShape.pdb
+D:\程序\预警系统新版\预警系统\预警系统\MyShape\obj\Debug\MyShape.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\预警系统新版\预警系统\预警系统\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\MyShape\obj\Debug\MyShape.dll
+D:\程序\预警系统新版\预警系统\预警系统\MyShape\obj\Debug\MyShape.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\bin\Debug\MyShape.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\bin\Debug\MyShape.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\obj\Debug\MyShape.Line.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\obj\Debug\MyShape.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\obj\Debug\MyShape.pdb

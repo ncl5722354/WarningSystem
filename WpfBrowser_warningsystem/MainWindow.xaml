@@ -1,0 +1,74 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfBrowser_warningsystem" x:Class="WpfBrowser_warningsystem.MainWindow"
+        Title="坝光收费站边坡防护预警系统客户端软件" Height="500" Width="700" Foreground="{x:Null}" FontSize="12">
+    <Grid Background="#FF138DF3" Name="mygrid">
+        
+        <Border x:Name="View_Select_Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="358" Margin="36,59,0,0" VerticalAlignment="Top" Width="123" CornerRadius="5,5,5,5" Visibility="Hidden"/>
+        <Border x:Name="Main_View"  BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="189,59,0,0" VerticalAlignment="Top" Width="100" CornerRadius="0,0,0,0">
+            <Grid x:Name="Main_View_Grid"/>
+        </Border>
+        <Button x:Name="btn_mainview" Content="主界面" HorizontalAlignment="Left" Margin="48,80,0,0" VerticalAlignment="Top" Width="97" Height="31" Click="btn_mainview_Click" FontWeight="Bold" UseLayoutRounding="True" Foreground="#FF0A0A0A" Visibility="Hidden" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF117EEC" Offset="0.498"/>
+                    <GradientStop Color="#FF0C59A8" Offset="0.151"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_quxian" Content="数据曲线" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Height="31" Click="btn_quxian_Click" FontWeight="Bold" UseLayoutRounding="True" Foreground="#FF080707" Margin="48,116,0,0" Visibility="Hidden" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF117EEC" Offset="0.498"/>
+                    <GradientStop Color="#FF0C59A8" Offset="0.151"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_value_set" Content="参数设置" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Height="31" Click="btn_value_set_Click" FontWeight="Bold" UseLayoutRounding="True" Foreground="#FF0A0A0A" Margin="48,154,0,0" Visibility="Hidden" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF117EEC" Offset="0.498"/>
+                    <GradientStop Color="#FF0C59A8" Offset="0.151"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_Qushi" Content="趋势曲线" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Height="31" Click="btn_Qushi_Click" FontWeight="Bold" UseLayoutRounding="True" Foreground="#FF080707" Margin="49,192,0,0" Visibility="Hidden" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF117EEC" Offset="0.498"/>
+                    <GradientStop Color="#FF0C59A8" Offset="0.151"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_Set" Content="地图标定" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Height="31" Click="btn_Set_Click" FontWeight="Bold" UseLayoutRounding="True" Foreground="#FF080707" Margin="49,228,0,0" Visibility="Hidden" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF117EEC" Offset="0.498"/>
+                    <GradientStop Color="#FF0C59A8" Offset="0.151"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Menu HorizontalAlignment="Stretch" Height="22" VerticalAlignment="Top" Width="auto" VerticalContentAlignment="Center" FontSize="16">
+            <MenuItem Header="系统" >
+                <MenuItem Header="关闭" Click="MenuItem_Click" />
+
+            </MenuItem>
+            <MenuItem Header="画面" >
+                <MenuItem Header="主页面" Click="MenuItem_Click_1"/>
+                <MenuItem Header="数据曲线" Click="MenuItem_Click_2" />
+                <MenuItem Header="差分查询" Click="MenuItem_Click_4"/>
+                <MenuItem Header="报表查询" Click="MenuItem_Click_6"/>
+                
+
+            </MenuItem>
+            <MenuItem Header="报警记录" Click="MenuItem_Click_5"/>
+
+        </Menu>
+    </Grid>
+</Window>

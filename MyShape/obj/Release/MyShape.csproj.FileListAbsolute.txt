@@ -1,0 +1,6 @@
+D:\程序\预警系统新版\预警系统\MyShape\bin\Release\MyShape.dll
+D:\程序\预警系统新版\预警系统\MyShape\bin\Release\MyShape.pdb
+D:\程序\预警系统新版\预警系统\MyShape\obj\Release\MyShape.Line.resources
+D:\程序\预警系统新版\预警系统\MyShape\obj\Release\MyShape.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\MyShape\obj\Release\MyShape.dll
+D:\程序\预警系统新版\预警系统\MyShape\obj\Release\MyShape.pdb

@@ -32,3 +32,66 @@ D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4
 D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.csproj.GenerateResource.Cache
 D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.dll
 D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\bin\Debug\voice.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\bin\Debug\voice.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.pdb
+D:\深圳软件\染机上位机控制软件V4.0\voice\bin\Debug\voice.dll
+D:\深圳软件\染机上位机控制软件V4.0\voice\bin\Debug\voice.pdb
+D:\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.voiceControls.resources
+D:\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.dll
+D:\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\voice\bin\Debug\voice.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\voice\bin\Debug\voice.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.voiceControls.resources
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\voice\obj\Debug\voice.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\voice\bin\Debug\voice.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\voice\bin\Debug\voice.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\voice\obj\Debug\voice.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\voice\obj\Debug\voice.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\voice\bin\Debug\voice.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\voice\bin\Debug\voice.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\voice\obj\Debug\voice.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\voice\obj\Debug\voice.pdb
+D:\程序\预警系统\voice\bin\Debug\voice.dll
+D:\程序\预警系统\voice\bin\Debug\voice.pdb
+D:\程序\预警系统\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\预警系统\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\预警系统\voice\obj\Debug\voice.dll
+D:\程序\预警系统\voice\obj\Debug\voice.pdb
+D:\程序\预警系统新版\预警系统\voice\bin\Debug\voice.dll
+D:\程序\预警系统新版\预警系统\voice\bin\Debug\voice.pdb
+D:\程序\预警系统新版\预警系统\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\预警系统新版\预警系统\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\voice\obj\Debug\voice.dll
+D:\程序\预警系统新版\预警系统\voice\obj\Debug\voice.pdb
+D:\程序\预警系统 2019 1 10\预警系统\voice\bin\Debug\voice.dll
+D:\程序\预警系统 2019 1 10\预警系统\voice\bin\Debug\voice.pdb
+D:\程序\预警系统 2019 1 10\预警系统\voice\obj\Debug\voice.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\预警系统 2019 1 10\预警系统\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\voice\obj\Debug\voice.dll
+D:\程序\预警系统 2019 1 10\预警系统\voice\obj\Debug\voice.pdb
+D:\程序\预警系统新版\预警系统\预警系统\voice\bin\Debug\voice.dll
+D:\程序\预警系统新版\预警系统\预警系统\voice\bin\Debug\voice.pdb
+D:\程序\预警系统新版\预警系统\预警系统\voice\obj\Debug\voice.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\预警系统新版\预警系统\预警系统\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\voice\obj\Debug\voice.dll
+D:\程序\预警系统新版\预警系统\预警系统\voice\obj\Debug\voice.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\bin\Debug\voice.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\bin\Debug\voice.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\obj\Debug\voice.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\obj\Debug\voice.voiceControls.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\obj\Debug\voice.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\obj\Debug\voice.pdb

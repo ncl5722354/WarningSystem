@@ -1,0 +1,298 @@
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\App.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.exe
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\MainWindow.baml
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao.baml
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\App.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\染机2019\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.exe
+D:\染机2019\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\App.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\bin\Debug\FileOperation.dll
+D:\染机2019\染机上位机控制软件2019\Ranji2019\bin\Debug\FileOperation.pdb
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\MyLabel.baml
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig.baml
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\染机2019\染机上位机控制软件2019\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\App.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\App.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShengchanPaichan_Item.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\Ranji2019\obj\Debug\ShengchanPaichan_Item.g.cs
+D:\程序\预警系统\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\预警系统\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\预警系统\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\预警系统\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\预警系统\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\预警系统\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\App.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\预警系统\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\预警系统\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\预警系统新版\预警系统\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\预警系统新版\预警系统\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\预警系统新版\预警系统\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\预警系统新版\预警系统\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\预警系统新版\预警系统\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\App.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\预警系统 2019 1 10\预警系统\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\预警系统新版\预警系统\预警系统\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Item.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache

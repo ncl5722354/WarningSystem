@@ -1,0 +1,108 @@
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe.config
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\AnShanDataCollection.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\WpfControls.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\SqlConnect.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\WpfControls.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\SqlConnect.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.csprojResolveAssemblyReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\MainWindow.baml
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\MainWindow.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\App.g.cs
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection_MarkupCompile.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.g.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.Properties.Resources.resources
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.csproj.GenerateResource.Cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.exe
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.mychart.resources
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe.config
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.exe
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\AnShanDataCollection.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\WpfControls.exe
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\SqlConnect.dll
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\WpfControls.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\bin\Debug\SqlConnect.pdb
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\MainWindow.baml
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\MainWindow.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\App.g.cs
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection_MarkupCompile.cache
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.g.resources
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.mychart.resources
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.Properties.Resources.resources
+D:\程序\染机上位机控制软件2019 2018 11 9\AnShanDataCollection\obj\Debug\AnShanDataCollection.csproj.GenerateResource.Cache
+D:\程序\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe.config
+D:\程序\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe
+D:\程序\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.pdb
+D:\程序\预警系统\AnShanDataCollection\bin\Debug\WpfControls.exe
+D:\程序\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.dll
+D:\程序\预警系统\AnShanDataCollection\bin\Debug\WpfControls.pdb
+D:\程序\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csprojResolveAssemblyReference.cache
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\MainWindow.baml
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\App.g.cs
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection_MarkupCompile.cache
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.g.resources
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.mychart.resources
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.Properties.Resources.resources
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csproj.GenerateResource.Cache
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.exe
+D:\程序\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.pdb
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe.config
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.pdb
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\bin\Debug\WpfControls.exe
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\bin\Debug\WpfControls.pdb
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.g.resources
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.mychart.resources
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.exe
+D:\程序\预警系统新版\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.pdb
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe.config
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.pdb
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\bin\Debug\WpfControls.exe
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.dll
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\bin\Debug\WpfControls.pdb
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\MainWindow.baml
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\App.g.cs
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection_MarkupCompile.cache
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.g.resources
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.mychart.resources
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.Properties.Resources.resources
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csproj.GenerateResource.Cache
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.exe
+D:\程序\预警系统 2019 1 10\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.pdb
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe.config
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.exe
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\bin\Debug\AnShanDataCollection.pdb
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\bin\Debug\WpfControls.exe
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.dll
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\bin\Debug\WpfControls.pdb
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\bin\Debug\SqlConnect.pdb
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\MainWindow.baml
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\MainWindow.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\App.g.cs
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection_MarkupCompile.cache
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.g.resources
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.mychart.resources
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.Properties.Resources.resources
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.csproj.GenerateResource.Cache
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.exe
+D:\程序\预警系统新版\预警系统\预警系统\AnShanDataCollection\obj\Debug\AnShanDataCollection.pdb

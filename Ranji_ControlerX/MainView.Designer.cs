@@ -32,7 +32,12 @@
             this.contextMenuStrip_viewnoderightmenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.新建ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button_exit = new System.Windows.Forms.Button();
+            this.contextMenuStrip_viewsubnoderightmeun = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer_main = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip_viewnoderightmenu.SuspendLayout();
+            this.contextMenuStrip_viewsubnoderightmeun.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip_viewnoderightmenu
@@ -63,6 +68,33 @@
             this.button_exit.UseVisualStyleBackColor = false;
             this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
             // 
+            // contextMenuStrip_viewsubnoderightmeun
+            // 
+            this.contextMenuStrip_viewsubnoderightmeun.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem,
+            this.重命名ToolStripMenuItem});
+            this.contextMenuStrip_viewsubnoderightmeun.Name = "contextMenuStrip_viewsubnoderightmeun";
+            this.contextMenuStrip_viewsubnoderightmeun.Size = new System.Drawing.Size(113, 48);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
+            // 重命名ToolStripMenuItem
+            // 
+            this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
+            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.重命名ToolStripMenuItem.Text = "重命名";
+            this.重命名ToolStripMenuItem.Click += new System.EventHandler(this.重命名ToolStripMenuItem_Click);
+            // 
+            // timer_main
+            // 
+            this.timer_main.Interval = 1000;
+            this.timer_main.Tick += new System.EventHandler(this.timer_main_Tick);
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -74,6 +106,7 @@
             this.Text = "MainView";
             this.Load += new System.EventHandler(this.MainView_Load);
             this.contextMenuStrip_viewnoderightmenu.ResumeLayout(false);
+            this.contextMenuStrip_viewsubnoderightmeun.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -83,6 +116,10 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_viewnoderightmenu;
         private System.Windows.Forms.ToolStripMenuItem 新建ToolStripMenuItem;
         private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_viewsubnoderightmeun;
+        private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重命名ToolStripMenuItem;
+        private System.Windows.Forms.Timer timer_main;
 
     }
 }

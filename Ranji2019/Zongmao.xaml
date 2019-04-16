@@ -1,0 +1,19 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ranji2019" x:Class="Ranji2019.Zongmao" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid>
+        <local:Zongmao_Subview x:Name="zongmao1" HorizontalAlignment="Left" Margin="28,39,0,0" VerticalAlignment="Top" Height="236" Width="190"/>
+        <local:Zongmao_Subview x:Name="zongmao2" HorizontalAlignment="Left" Margin="246,39,0,0" VerticalAlignment="Top" Height="236" Width="184"/>
+        <local:Zongmao_Subview x:Name="zongmao3" HorizontalAlignment="Left" Margin="453,39,0,0" VerticalAlignment="Top" Height="236" Width="184"/>
+        <local:Zongmao_Subview x:Name="zongmao4" HorizontalAlignment="Left" Margin="655,39,-39,0" VerticalAlignment="Top" Height="236" Width="184"/>
+        <local:Zongmao_Subview x:Name="zongmao5" HorizontalAlignment="Left" Margin="34,301,0,-37" VerticalAlignment="Top" Height="236" Width="184"/>
+        <local:Zongmao_Subview x:Name="zongmao6" HorizontalAlignment="Left" Margin="246,301,0,-37" VerticalAlignment="Top" Height="236" Width="184"/>
+        <local:Zongmao_Subview x:Name="zongmao7" HorizontalAlignment="Left" Margin="453,301,0,-37" VerticalAlignment="Top" Height="236" Width="184"/>
+        <local:Zongmao_Subview x:Name="zongmao8" HorizontalAlignment="Left" Margin="655,301,-39,-37" VerticalAlignment="Top" Height="236" Width="184"/>
+    </Grid>
+</UserControl>
