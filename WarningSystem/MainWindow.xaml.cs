@@ -33,10 +33,15 @@ namespace WarningSystem
         static int[] wendu_start;                 
         static int[] wendu_end;                                                     // 温度的起点终点 
 
+        public static bool gengxin_is = false;
+
         public static double screen_width = SystemParameters.PrimaryScreenWidth;    // 屏幕宽度
         public static double scree_height = SystemParameters.PrimaryScreenHeight;   // 屏幕高度
         public static string User_Name = "";
         public static string User_QuanXian = "";
+
+        public static int all_file_num = 0;
+        public static int copyed_num = 0;
 
         public static bool is_shebei = true;                  // 是否是设备主机
 
@@ -70,11 +75,11 @@ namespace WarningSystem
 
 
 
-     //   public static string path = @"\\172.17.195.187\bgdata\\";
+        public static string path = @"\\172.17.195.187\bgdata\\";
 
-      public static string path = "D:\\bgdata\\";
+       // public static string path = "D:\\bgdata\\";
 
-      //  public static string path = @"\\TDA\bgdata\\";
+       //  public static string path = @"\\TDA\bgdata\\";
 
        // public static string path = "D:\\data\\";
 
@@ -302,7 +307,7 @@ namespace WarningSystem
             datatimer.Tick += new EventHandler(Data_Timer_Tick);
             datatimer.Enabled = true;
 
-            Thread_Tick();
+            //Thread_Tick();
         }
 
         private void Data_Timer_Tick(object sender,EventArgs e)
@@ -326,7 +331,10 @@ namespace WarningSystem
             try
             {
 
-
+                if (gengxin_is == false)
+                    gengxin_is = true;
+                else
+                    return;
                 ArrayList[] yingbian = null;
                 ArrayList[] wendu = null;
                 try
@@ -403,7 +411,35 @@ namespace WarningSystem
                     try
                     {
                         string filename = time.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";
-                        File.Copy(newpath + filename, "D://data//" + filename);
+                        //File.Copy(newpath + filename, "D://data//" + filename);
+                        //all_file_num = timelist.Count;
+                        all_file_num = timelist.IndexOf(time, 0);
+
+                       
+
+                        // 建立数据库
+                        string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
+                        for (int i = 0; i < allline.Length; i++)
+                        {
+                            string line = allline[i];
+                            string tablename = string_caozuo.Get_Table_String(line, 1);
+                            string myvalue = string_caozuo.Get_Table_String(line, 2);
+                            CreateSqlValueType[] create = new CreateSqlValueType[3];
+                            create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
+                            create[1] = new CreateSqlValueType("datetime", "mytime");
+                            create[2] = new CreateSqlValueType("nvarchar(50)", "value");
+                            MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
+
+                            string[] insert_cmd = new string[3];
+                            insert_cmd[0] = time.ToString("yyyyMMddHHmmss");
+                            insert_cmd[1] = time.ToString("yyyy-MM-dd HH:mm:ss");
+                            insert_cmd[2] = myvalue;
+                            bool result = MainWindow.data_builder.Insert("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), insert_cmd);
+                            if (result == false)
+                                break;
+                            copyed_num = i;
+                        }
+
                     }
 
                     catch { }
@@ -532,9 +568,12 @@ namespace WarningSystem
 
                     //int a = 0;
                 }
+                gengxin_is = false;
             }
 
-            catch { }
+
+
+            catch { gengxin_is = false; }
         }
 
 
@@ -575,9 +614,9 @@ namespace WarningSystem
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             Show_SubView(myview);
-            myview.Read_Real_Data();
-            myview.Read_All_Point();
-            myview.Reset_All_Point();
+            //myview.Read_Real_Data();
+            //myview.Read_All_Point();
+            //myview.Reset_All_Point();
         }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)

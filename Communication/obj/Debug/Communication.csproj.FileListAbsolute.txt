@@ -143,3 +143,14 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\b
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\obj\Debug\Communication.dll
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\obj\Debug\Communication.pdb
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll.config
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll
+D:\程序\warningsystem\Communication\bin\Debug\Communication.pdb
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll.CodeAnalysisLog.xml
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll.lastcodeanalysissucceeded
+D:\程序\warningsystem\Communication\bin\Debug\Communication.tlb
+D:\程序\warningsystem\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\warningsystem\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\Communication\obj\Debug\Communication.dll
+D:\程序\warningsystem\Communication\obj\Debug\Communication.pdb

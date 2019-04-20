@@ -134,3 +134,11 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\String_Caozuo\b
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\String_Caozuo\obj\Debug\String_Caozuo.dll
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\String_Caozuo\obj\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\String_Caozuo\bin\Debug\String_Caozuo.dll
+D:\程序\warningsystem\String_Caozuo\bin\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\String_Caozuo\bin\Debug\String_Caozuo.dll.CodeAnalysisLog.xml
+D:\程序\warningsystem\String_Caozuo\bin\Debug\String_Caozuo.dll.lastcodeanalysissucceeded
+D:\程序\warningsystem\String_Caozuo\bin\Debug\String_Caozuo.tlb
+D:\程序\warningsystem\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\String_Caozuo\obj\Debug\String_Caozuo.dll
+D:\程序\warningsystem\String_Caozuo\obj\Debug\String_Caozuo.pdb

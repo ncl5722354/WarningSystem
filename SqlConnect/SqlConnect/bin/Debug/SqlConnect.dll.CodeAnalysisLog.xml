@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="D:\程序\warningsystem\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll">
+   <Modules>
+    <Module Name="sqlconnect.dll">
+     <Namespaces>
+      <Namespace Name="SqlConnect">
+       <Types>
+        <Type Name="SQL_Connect_Builder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Create_Database(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="235">可以在方法 'SQL_Connect_Builder.Create_Database(string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 235</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="228">传递给 'SQL_Connect_Builder.Create_Database(string)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'Database_Name'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Create_Table(System.String,SqlConnect.CreateSqlValueType[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="65">可以在方法 'SQL_Connect_Builder.Create_Table(string, CreateSqlValueType[])' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 65</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="58">传递给 'SQL_Connect_Builder.Create_Table(string, CreateSqlValueType[])' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'table_name', 'create_sql_value_type[i].Get_Value_Name()', 'create_sql_value_type[i].Get_Value_Type()'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Delete(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="187">可以在方法 'SQL_Connect_Builder.Delete(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 187</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="180">传递给 'SQL_Connect_Builder.Delete(string, string)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'table_name', 'where_condition'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Delete_Table(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="253">可以在方法 'SQL_Connect_Builder.Delete_Table(string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 253</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="246">传递给 'SQL_Connect_Builder.Delete_Table(string)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'table_name'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Insert(System.String,System.String[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="159">可以在方法 'SQL_Connect_Builder.Insert(string, string[])' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 159</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="151">传递给 'SQL_Connect_Builder.Insert(string, string[])' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'table_name', 'insert_values[i]'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Select_Table(System.String,System.String,System.String[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="128">可以在方法 'SQL_Connect_Builder.Select_Table(string, string, string[])' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 128</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="99">传递给 'SQL_Connect_Builder.Select_Table(string, string, string[])' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'table_name', 'cols[i]', 'where_condition'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Updata(System.String,System.String,System.String[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="216">可以在方法 'SQL_Connect_Builder.Updata(string, string, string[])' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 216</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="208">传递给 'SQL_Connect_Builder.Updata(string, string, string[])' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'table_name', 'updata_value[i]', 'where_condition'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Updata_Table_Name(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="271">可以在方法 'SQL_Connect_Builder.Updata_Table_Name(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 271</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-04-16 01:00:00Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\程序\warningsystem\SqlConnect\SqlConnect" File="SQL_Connect_Builder.cs" Line="264">传递给 'SQL_Connect_Builder.Updata_Table_Name(string, string)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'old_table_name', 'new_table_name'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 271</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>检查 SQL 查询是否存在安全漏洞</Name>
+   <Description>通过用户输入生成的 SQL 命令字符串容易受到 SQL 注入式攻击。Microsoft SQL Server 和其他数据库服务器支持存储过程和参数化 SQL 查询，这将降低受到注入式攻击的风险。</Description>
+   <Resolution Name="WithNonLiterals">传递给 {1} 中的 {0} 的查询字符串可能包含以下变量 {2}。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

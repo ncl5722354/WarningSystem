@@ -4,8 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="20" d:DesignWidth="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Cursor="SizeAll" MouseDown="UserControl_MouseDown" MouseUp="UserControl_MouseUp" MouseMove="UserControl_MouseMove" MouseDoubleClick="UserControl_MouseDoubleClick" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave">
+             d:DesignHeight="20" d:DesignWidth="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Cursor="SizeAll" MouseDown="UserControl_MouseDown" MouseUp="UserControl_MouseUp" MouseMove="UserControl_MouseMove" MouseDoubleClick="UserControl_MouseDoubleClick" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave" ToolTipService.ShowDuration="3000">
+    
     <Grid >
+        <Grid.ToolTip>
+            <Label Name="tooltoplabel" Width="200" Height="30" Margin="0,0,0,0" Foreground="#FF2B0808" Background="#FFECF0DC" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center"></Label>
+        </Grid.ToolTip>
+         
         <Label Name="label_center" Content="" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="15" Height="15">
         </Label>
         <Label Name="label_left" Content=""  Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="15" HorizontalContentAlignment="Center" Visibility="Hidden"/>

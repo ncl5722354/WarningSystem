@@ -82,6 +82,12 @@
     <Compile Include="ChaFenView.xaml.cs">
       <DependentUpon>ChaFenView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="chulizhong .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chulizhong .Designer.cs">
+      <DependentUpon>chulizhong .cs</DependentUpon>
+    </Compile>
     <Compile Include="DataList.xaml.cs">
       <DependentUpon>DataList.xaml</DependentUpon>
     </Compile>
@@ -264,6 +270,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="chulizhong .resx">
+      <DependentUpon>chulizhong .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mychart.resx">
       <DependentUpon>mychart.cs</DependentUpon>
     </EmbeddedResource>

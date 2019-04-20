@@ -231,6 +231,9 @@ namespace WarningSystem
             {
 
                 // 报警
+
+                 // 试验
+                show.Content = MainWindow.copyed_num.ToString() + ":" + MainWindow.all_file_num.ToString();
                 try
                 {
                     string mystring = (string)all_warn_list[warn_index];

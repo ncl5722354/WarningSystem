@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\
 WPFDataStruct
 none
 false
-DEBUG;TRACE
-D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\App.xaml
+CODE_ANALYSIS;DEBUG;TRACE
+D:\程序\warningsystem\WPFDataStruct\App.xaml
 22021279262
 
 9-559785213
-14-725117438
+141217568949
 MainWindow.xaml;SubWindow.xaml;
 
 False

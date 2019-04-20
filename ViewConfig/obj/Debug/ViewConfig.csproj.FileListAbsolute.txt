@@ -96,3 +96,10 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\ViewConfig\bin\
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\ViewConfig\bin\Debug\ViewConfig.pdb
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\ViewConfig\obj\Debug\ViewConfig.dll
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\程序\warningsystem\ViewConfig\bin\Debug\ViewConfig.dll
+D:\程序\warningsystem\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\程序\warningsystem\ViewConfig\bin\Debug\ViewConfig.dll.CodeAnalysisLog.xml
+D:\程序\warningsystem\ViewConfig\bin\Debug\ViewConfig.dll.lastcodeanalysissucceeded
+D:\程序\warningsystem\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\ViewConfig\obj\Debug\ViewConfig.dll
+D:\程序\warningsystem\ViewConfig\obj\Debug\ViewConfig.pdb

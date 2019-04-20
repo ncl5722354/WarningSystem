@@ -310,3 +310,30 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debu
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Shuini\obj\Debug\Shuini.pdb
+D:\程序\warningsystem\Shuini\bin\Debug\Shuini.exe.config
+D:\程序\warningsystem\Shuini\bin\Debug\Shuini.exe
+D:\程序\warningsystem\Shuini\bin\Debug\Shuini.pdb
+D:\程序\warningsystem\Shuini\bin\Debug\Shuini.exe.CodeAnalysisLog.xml
+D:\程序\warningsystem\Shuini\bin\Debug\Shuini.exe.lastcodeanalysissucceeded
+D:\程序\warningsystem\Shuini\bin\Debug\Communication.dll
+D:\程序\warningsystem\Shuini\bin\Debug\FileOperation.dll
+D:\程序\warningsystem\Shuini\bin\Debug\ViewConfig.dll
+D:\程序\warningsystem\Shuini\bin\Debug\String_Caozuo.dll
+D:\程序\warningsystem\Shuini\bin\Debug\Communication.pdb
+D:\程序\warningsystem\Shuini\bin\Debug\FileOperation.pdb
+D:\程序\warningsystem\Shuini\bin\Debug\ViewConfig.pdb
+D:\程序\warningsystem\Shuini\bin\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\Shuini\obj\Debug\Interop.DataFormWizard6.dll
+D:\程序\warningsystem\Shuini\obj\Debug\Interop.MSChartWiz.dll
+D:\程序\warningsystem\Shuini\obj\Debug\Interop.SubWiz.dll
+D:\程序\warningsystem\Shuini\obj\Debug\Interop.VBIDE.dll
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.csproj.ResolveComReference.cache
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.ConfigView.resources
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.Form1.resources
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.Properties.Resources.resources
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.SetMachine_num.resources
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.SubView.resources
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.exe
+D:\程序\warningsystem\Shuini\obj\Debug\Shuini.pdb

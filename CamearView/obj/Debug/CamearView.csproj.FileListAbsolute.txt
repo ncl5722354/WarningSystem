@@ -114,3 +114,13 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\CamearView\obj\
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\CamearView\obj\Debug\CamearView.csproj.GenerateResource.Cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\CamearView\obj\Debug\CamearView.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\CamearView\obj\Debug\CamearView.pdb
+D:\程序\warningsystem\CamearView\bin\Debug\CamearView.exe.config
+D:\程序\warningsystem\CamearView\bin\Debug\CamearView.exe
+D:\程序\warningsystem\CamearView\bin\Debug\CamearView.pdb
+D:\程序\warningsystem\CamearView\bin\Debug\CamearView.exe.CodeAnalysisLog.xml
+D:\程序\warningsystem\CamearView\bin\Debug\CamearView.exe.lastcodeanalysissucceeded
+D:\程序\warningsystem\CamearView\obj\Debug\CamearView.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\CamearView\obj\Debug\CamearView.Properties.Resources.resources
+D:\程序\warningsystem\CamearView\obj\Debug\CamearView.csproj.GenerateResource.Cache
+D:\程序\warningsystem\CamearView\obj\Debug\CamearView.exe
+D:\程序\warningsystem\CamearView\obj\Debug\CamearView.pdb

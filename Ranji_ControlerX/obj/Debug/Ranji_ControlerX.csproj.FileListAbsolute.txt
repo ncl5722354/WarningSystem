@@ -415,3 +415,43 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_Controler
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.csproj.GenerateResource.Cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.pdb
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe.config
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.pdb
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe.CodeAnalysisLog.xml
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe.lastcodeanalysissucceeded
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Communication.dll
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\DataGridViewCaoZuo.dll
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\FileOperation.dll
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\SqlConnect.dll
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\ViewConfig.dll
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\String_Caozuo.dll
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Communication.pdb
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\DataGridViewCaoZuo.pdb
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\FileOperation.pdb
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\SqlConnect.pdb
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\ViewConfig.pdb
+D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.ButtonFunctionConfig.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.DataConfigView.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.EditWindow.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.MainSubView.DataAddView.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.MainSubView.DataDelete.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.MainSubView.UpdataView.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.MainSubView.AddView.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.MainSubView.IsDelete.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.MainView.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.NormalControlsWindow.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.NormalControls.ButtonConfig.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.NormalControls.Delete_Is.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.NormalControls.Ligth.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.NormalControls.MyButton.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.NormalControls.MyLabel.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.NormalControls.NormalLabelConfig.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.Properties.Resources.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.RunWindow.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.tools.ColorConfig.resources
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.csproj.GenerateResource.Cache
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.exe
+D:\程序\warningsystem\Ranji_ControlerX\obj\Debug\Ranji_ControlerX.pdb

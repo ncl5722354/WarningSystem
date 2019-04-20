@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WpfControls\obj\Debug\
+D:\程序\warningsystem\WpfControls\obj\Debug\
 WpfControls
 none
 false
-DEBUG;TRACE
-D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WpfControls\App.xaml
+CODE_ANALYSIS;DEBUG;TRACE
+D:\程序\warningsystem\WpfControls\App.xaml
 5-410398793
 
 10688622749
-13-1461772100
+13193531886
 MainWindow.xaml;MyChart.xaml;MyLabel.xaml;MyOrderDataGridView.xaml;MyTreeView.xaml;
 
 False

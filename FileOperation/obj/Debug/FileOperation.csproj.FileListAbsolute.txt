@@ -131,3 +131,11 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\o
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\obj\Debug\FileOperation.dll
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\FileOperation\obj\Debug\FileOperation.pdb
+D:\程序\warningsystem\FileOperation\bin\Debug\FileOperation.dll
+D:\程序\warningsystem\FileOperation\bin\Debug\FileOperation.pdb
+D:\程序\warningsystem\FileOperation\bin\Debug\FileOperation.dll.CodeAnalysisLog.xml
+D:\程序\warningsystem\FileOperation\bin\Debug\FileOperation.dll.lastcodeanalysissucceeded
+D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.dll
+D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.pdb

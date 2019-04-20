@@ -364,3 +364,28 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_B
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_Base\obj\Debug\User_Function_Base.pdb
+D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe.config
+D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe
+D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.pdb
+D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe.CodeAnalysisLog.xml
+D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe.lastcodeanalysissucceeded
+D:\程序\warningsystem\User_Function_Base\bin\Debug\Communication.dll
+D:\程序\warningsystem\User_Function_Base\bin\Debug\FileOperation.dll
+D:\程序\warningsystem\User_Function_Base\bin\Debug\SqlConnect.dll
+D:\程序\warningsystem\User_Function_Base\bin\Debug\Tools.dll
+D:\程序\warningsystem\User_Function_Base\bin\Debug\ViewConfig.dll
+D:\程序\warningsystem\User_Function_Base\bin\Debug\String_Caozuo.dll
+D:\程序\warningsystem\User_Function_Base\bin\Debug\Communication.pdb
+D:\程序\warningsystem\User_Function_Base\bin\Debug\FileOperation.pdb
+D:\程序\warningsystem\User_Function_Base\bin\Debug\SqlConnect.pdb
+D:\程序\warningsystem\User_Function_Base\bin\Debug\Tools.pdb
+D:\程序\warningsystem\User_Function_Base\bin\Debug\ViewConfig.pdb
+D:\程序\warningsystem\User_Function_Base\bin\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.DialogView.NewProjectView.resources
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.Form1.resources
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.Properties.Resources.resources
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.View.ProjectManager.resources
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.csproj.GenerateResource.Cache
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.exe
+D:\程序\warningsystem\User_Function_Base\obj\Debug\User_Function_Base.pdb

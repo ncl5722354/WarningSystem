@@ -79,3 +79,11 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\DataGridViewCao
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.tlb
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.dll
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.pdb
+D:\程序\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.dll
+D:\程序\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.pdb
+D:\程序\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.dll.CodeAnalysisLog.xml
+D:\程序\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.dll.lastcodeanalysissucceeded
+D:\程序\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.tlb
+D:\程序\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.dll
+D:\程序\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.pdb

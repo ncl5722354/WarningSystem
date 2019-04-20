@@ -45,6 +45,8 @@ namespace WarningSystem
 
         
 
+        
+
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
 
         public DiZhuang_Item()
@@ -73,6 +75,12 @@ namespace WarningSystem
             {
                 rukou = int.Parse(MainWindow.Point_ini.IniReadValue(Key, "rukou"));
                 chukou = int.Parse(MainWindow.Point_ini.IniReadValue(Key, "chukou"));
+
+                
+                
+                tooltoplabel.Width = 50;
+                tooltoplabel.Height = 50;
+                tooltoplabel.Margin = new Thickness(0, 0, 0, 0);
 
                 ArrayList all_warn_list = new ArrayList();
 
@@ -295,6 +303,35 @@ namespace WarningSystem
                 // 只有没有选中时才可以
 
                 MyView.show_point_name = Key;
+
+                if(left==602)
+                {
+                    tooltoplabel.Content = "二级平台1#测斜管:" + left.ToString() + " - " + right.ToString();
+                }
+                if (left == 742)
+                {
+                    tooltoplabel.Content = "二级平台2#测斜管:" + left.ToString() + " - " + right.ToString();
+                }
+                if (left == 875)
+                {
+                    tooltoplabel.Content = "二级平台3#测斜管:" + left.ToString() + " - " + right.ToString();
+                }
+                if (left == 994)
+                {
+                    tooltoplabel.Content = "二级平台4#测斜管:" + left.ToString() + " - " + right.ToString();
+                }
+                if(left==2361)
+                {
+                    tooltoplabel.Content = "2#护坡:" + left.ToString() + " - " + right.ToString();
+                }
+                if (left == 2934)
+                {
+                    tooltoplabel.Content = "3#护坡:" + left.ToString() + " - " + right.ToString();
+                }
+                if (left == 2164)
+                {
+                    tooltoplabel.Content = "1#护坡:" + left.ToString() + " - " + right.ToString();
+                }
             }
             
         }

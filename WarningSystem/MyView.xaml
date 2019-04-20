@@ -21,6 +21,7 @@
         <ScrollViewer Name="datascrollviewer" HorizontalAlignment="Left" Height="285" Margin="456,545,0,-130" VerticalAlignment="Top" Width="209" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <local:DataList x:Name="myDataList" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </ScrollViewer>
+        <Label  Name="show" Margin="40,20,0,0" Width=" 100" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Visible"/>
         <Label Name="label_updatetime" Content="更新时间" HorizontalAlignment="Left" Margin="724,545,0,0" VerticalAlignment="Top" Background="#4C070449" Foreground="White" FontFamily="Microsoft JhengHei" FontSize="20" FontWeight="Bold"/>
         <Label x:Name="label_warninfo" Content="" HorizontalAlignment="Left" Margin="724,545,0,0" VerticalAlignment="Top" Background="#4C070449" Foreground="White" FontFamily="Microsoft JhengHei" FontSize="20" FontWeight="Bold" Width="500" />
     </Grid>

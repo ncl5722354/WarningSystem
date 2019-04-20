@@ -17,6 +17,7 @@ using System.Data;
 using FileOperation;
 using System.Collections;
 using String_Caozuo;
+using System.Threading;
 
 namespace WarningSystem
 {
@@ -27,6 +28,27 @@ namespace WarningSystem
     public partial class ChaFenView : UserControl
     {
         mychart chart = new mychart();
+        System.Windows.Forms.Timer timer1 = new System.Windows.Forms.Timer();
+
+        public static MessageBox messagebox;
+        string path = "";
+
+
+        string line1_jizhun = "";
+        string[] line1_jizhun_all_string = null;
+        string[] line1_all_string = null;
+        string[] line2_jizhun_all_string = null;
+        string[] line2_all_string = null;
+        int allcount = 0;
+
+        public static chulizhong chulizhongview = new chulizhong();
+
+        string line1_string = "";
+        //string line2_jizhun = "";
+        string line2_string = "";
+        
+        ArrayList kuang1 = new ArrayList();
+        ArrayList kuang2 = new ArrayList();
         
         public ChaFenView()
         {
@@ -34,8 +56,61 @@ namespace WarningSystem
             init();
         }
 
+        private void Tick(object sender,EventArgs e)
+        {
+            Thread thread = new Thread(Update_Kuang);
+            thread.Start();
+        }
+
+
+        private void Update_Kuang()
+        {
+
+            path = Get_Newest_MuLu();
+            ArrayList filelist = FileCaozuo.Read_All_Files(path + "\\", "*.txt");
+
+            try
+            {
+                //path = Get_Newest_MuLu();
+                line1_jizhun = path + "\\" + Get_JiZhun();
+                line1_jizhun_all_string = FileCaozuo.Read_All_Line(line1_jizhun);
+                
+                
+           }
+            catch { }
+
+            try
+            {
+                foreach (string name in filelist)
+                {
+                    if (kuang1.IndexOf(name) == -1)
+                    {
+                        kuang1.Add(name);
+                    }
+                    if (kuang2.IndexOf(name) == -1)
+                    {
+                        kuang2.Add(name);
+                    }
+                   
+
+                }
+               
+            }
+            catch { }
+
+            
+
+          
+        }
+
         private void init()
         {
+
+            timer1.Interval = 15000;
+            timer1.Tick += new EventHandler(Tick);
+            timer1.Enabled = true;
+           
+
             windowsformshost.Margin = new Thickness(MainWindow.screen_width * 0.01, MainWindow.scree_height * 0.01, 0, 0);
             windowsformshost.Width = MainWindow.screen_width * 0.98;
             windowsformshost.Height = MainWindow.scree_height * 0.7;
@@ -356,12 +431,12 @@ namespace WarningSystem
         private void line1_wenjian_DropDownOpened(object sender, EventArgs e)
         {
 
-            string path = Get_Newest_MuLu();
-            ArrayList filelist = FileCaozuo.Read_All_Files(path + "\\", "*.txt");
+            //string path = Get_Newest_MuLu();
+            //ArrayList filelist = FileCaozuo.Read_All_Files(path + "\\", "*.txt");
             line1_wenjian.Items.Clear();
             try
             {
-                foreach (string name in filelist)
+                foreach (string name in kuang1)
                 {
                     line1_wenjian.Items.Add(name);
                 }
@@ -413,12 +488,12 @@ namespace WarningSystem
 
         private void line2_wenjian_DropDownOpened(object sender, EventArgs e)
         {
-            string path = Get_Newest_MuLu();
-            ArrayList filelist = FileCaozuo.Read_All_Files(path + "\\", "*.txt");
+            //string path = Get_Newest_MuLu();
+            //ArrayList filelist = FileCaozuo.Read_All_Files(path + "\\", "*.txt");
             line2_wenjian.Items.Clear();
             try
             {
-                foreach (string name in filelist)
+                foreach (string name in kuang2)
                 {
                     line2_wenjian.Items.Add(name);
                 }
@@ -426,69 +501,62 @@ namespace WarningSystem
             catch { }
         }
 
+        private void Show_Thread1()
+        {
+
+            
+            
+           line1_all_string = FileCaozuo.Read_All_Line(line1_string);
+            
+            // 组二
+            //try
+            //{
+            //    //line2_jizhun = path + "\\" + Get_JiZhun();
+                
+
+            //    //line2_jizhun_all_string = FileCaozuo.Read_All_Line(line2_jizhun);
+
+            //    allcount = line2_jizhun_all_string.Length;
+            //}
+            //catch { }
+           // chulizhongview.Close();
+        }
+
+        private void Show_Thread2()
+        {
+            line2_all_string = FileCaozuo.Read_All_Line(line2_string);
+        }
+
         private void button_line2_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                string path = Get_Newest_MuLu();
+                
                 chart.chart1.Series[0].Points.Clear();
                 chart.chart1.Series[1].Points.Clear();
-                string line1_jizhun = "";
-                string line1_string = "";
-                string line2_jizhun = "";
-                string line2_string = "";
-                // 读最大的文件
-                string[] line1_jizhun_all_string = null;
-                string[] line1_all_string = null;
-                string[] line2_jizhun_all_string = null;
-                string[] line2_all_string = null;
-                int allcount = 0;
-                // 组一
                 try
                 {
-                    line1_jizhun = path + "\\" + Get_JiZhun();
-                    line1_string = path + "\\" + line1_wenjian.Items[line1_wenjian.SelectedIndex].ToString();
 
-                    line1_jizhun_all_string = FileCaozuo.Read_All_Line(line1_jizhun);
-                    line1_all_string = FileCaozuo.Read_All_Line(line1_string);
+
+
+
+
                     allcount = line1_jizhun_all_string.Length;
                 }
                 catch { }
-
+                //MessageBox.Show()
                
-                //for (int i = 0; i < line1_jizhun_all_string.Length; i++)
-                //{
-                //    try
-                //    {
-                //        string str_new = line1_jizhun_all_string[i];
-                //        string str_old = line1_all_string[i];
-                //        double position = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
-                //        double value = double.Parse(string_caozuo.Get_Table_String(str_new, 2));
-                //        double value_old = double.Parse(string_caozuo.Get_Table_String(str_old, 2));
-
-                //        double myvalue = Math.Abs(value - value_old) / 0.0482;
-                //        if (i % 10 == 0)
-                //            chart.Insert_Point(position, MainWindow.Jisuan_Weiyi(myvalue));
-
-                //    }
-                //    catch { }
-                //}
-
-
-
-                // 组二
-                try
-                {
-                    line2_jizhun = path + "\\" + Get_JiZhun();
-                    line2_string = path + "\\" + line2_wenjian.Items[line2_wenjian.SelectedIndex].ToString();
-
-                    line2_jizhun_all_string = FileCaozuo.Read_All_Line(line2_jizhun);
-                    line2_all_string = FileCaozuo.Read_All_Line(line2_string);
-                    allcount = line2_jizhun_all_string.Length;
-                }
-                catch { }
-
+                // 读最大的文件
                 
+               
+                // 组一
+                //Thread thread = new Thread(Show_Thread1);
+                //thread.Start();
+                //chulizhongview.ShowDialog();
+                line1_string = path + "\\" + line1_wenjian.Items[line1_wenjian.SelectedIndex].ToString();
+                line2_string = path + "\\" + line2_wenjian.Items[line2_wenjian.SelectedIndex].ToString();
+                line1_all_string = FileCaozuo.Read_All_Line(line1_string);
+                line2_all_string = FileCaozuo.Read_All_Line(line2_string);
 
                 for (int i = 0; i < allcount; i++)
                 {
@@ -496,6 +564,7 @@ namespace WarningSystem
                     {
 
                         // 一号组
+                        
                         string str_new = line1_jizhun_all_string[i];
                         string str_old = line1_all_string[i];
                         double position = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
@@ -516,7 +585,8 @@ namespace WarningSystem
                        // if (i % 10 == 0)
                             //chart.Insert_Point(position, MainWindow.Jisuan_Weiyi(myvalue));
                         // 二号组
-                        string str_new2 = line2_jizhun_all_string[i];
+                        
+                        string str_new2 = line1_jizhun_all_string[i];
                         string str_old2 = line2_all_string[i];
                         double position2 = double.Parse(string_caozuo.Get_Table_String(str_new2, 1));
                         double value2 = double.Parse(string_caozuo.Get_Table_String(str_new2, 2));

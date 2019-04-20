@@ -15,6 +15,10 @@ using FileOperation;
 using System.IO;
 using String_Caozuo;
 using System.Collections;
+using SqlConnect;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace WarningSystem
 {
@@ -88,77 +92,98 @@ namespace WarningSystem
                 double jizhun = 0; 
                 int myindex = 0;
 
-                // 第一个文件就是基准
-                foreach (string name in filelist)
+
+
+
+                DataTable dt = MainWindow.data_builder.Select_Table("position" + string_caozuo.Get_Dian_String(position.ToString(), 1) + string_caozuo.Get_Dian_String(position.ToString(), 2));
+                 
+                foreach(DataRow dr in dt.Rows)
                 {
-                    // 每个文件的的名称
-                    // 基准里的每个点
                     read_index++;
-                    string filename = string_caozuo.Get_Dian_String(name, 1);
-                    string mydate = string_caozuo.Get_HengGang_String(filename, 1);
-                    string mytime = string_caozuo.Get_HengGang_String(filename, 2);
-                    string year = string_caozuo.Get_Xiahuaxian_String(mydate, 1);
-                    string month = string_caozuo.Get_Xiahuaxian_String(mydate, 2);
-                    string day = string_caozuo.Get_Xiahuaxian_String(mydate, 3);
-
-                    string hour = string_caozuo.Get_Xiahuaxian_String(mytime, 1);
-                    string min = string_caozuo.Get_Xiahuaxian_String(mytime, 2);
-                    string sec = string_caozuo.Get_Xiahuaxian_String(mytime, 3);
-                    DateTime nowtime = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec);
-                    //timelist.Add(nowtime);
-
-
-                    // 寻找每个文件中的某个点
-                    string myname = nowtime.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";    // 某个文件
-                    string[] all_line = FileCaozuo.Read_All_Line(newpath + myname);      // 读取文件中的所有项
-                    double myposition = 0;
-                    double value = 0;
+                    if (read_index == 1)
+                    {
+                        jizhun = double.Parse(dr[2].ToString());
+                    }
                     if(read_index!=1)
                     {
-                        string str_new = all_line[myindex];
-                        //string str_old = all_line_old[i];
-                        myposition = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
-                        value = double.Parse(string_caozuo.Get_Table_String(str_new, 2));
-                    }
-
-
-                    for (int i = 0; i < all_line.Length; i++)
-                    {
-                        if (read_index != 1) break;
-                        try
-                        {
-
-                            string str_new = all_line[i];
-                            //string str_old = all_line_old[i];
-                            myposition = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
-                            value = double.Parse(string_caozuo.Get_Table_String(str_new, 2));
-                            if(myposition.ToString("#0.000")==position.ToString("#0.000"))
-                            {
-                                myindex = i;
-                                break;
-                            }
-                            
-
-                        }
-                        catch { }
-
-                        //int a = 0;
-                    }
-
-
-                    if(read_index==1)
-                    {
-                        jizhun = value;
-
-                    }
-                    else
-                    {
+                        double value = double.Parse(dr[2].ToString());
+                        DateTime nowtime = DateTime.Parse(dr[1].ToString());
                         value = double.Parse(Jisuan_Weiyi(Math.Abs(value - jizhun)).ToString("#0.0000"));
                         chart.Insert(nowtime, value);
                     }
-
-
                 }
+
+                // 第一个文件就是基准
+                //foreach (string name in filelist)
+                //{
+                //    // 每个文件的的名称
+                //    // 基准里的每个点
+                //    read_index++;
+                //    string filename = string_caozuo.Get_Dian_String(name, 1);
+                //    string mydate = string_caozuo.Get_HengGang_String(filename, 1);
+                //    string mytime = string_caozuo.Get_HengGang_String(filename, 2);
+                //    string year = string_caozuo.Get_Xiahuaxian_String(mydate, 1);
+                //    string month = string_caozuo.Get_Xiahuaxian_String(mydate, 2);
+                //    string day = string_caozuo.Get_Xiahuaxian_String(mydate, 3);
+
+                //    string hour = string_caozuo.Get_Xiahuaxian_String(mytime, 1);
+                //    string min = string_caozuo.Get_Xiahuaxian_String(mytime, 2);
+                //    string sec = string_caozuo.Get_Xiahuaxian_String(mytime, 3);
+                //    DateTime nowtime = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec);
+                //    //timelist.Add(nowtime);
+
+
+                //    // 寻找每个文件中的某个点
+                //    string myname = nowtime.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";    // 某个文件
+                //    string[] all_line = FileCaozuo.Read_All_Line(newpath + myname);      // 读取文件中的所有项
+                //    double myposition = 0;
+                //    double value = 0;
+                //    if(read_index!=1)
+                //    {
+                //        string str_new = all_line[myindex];
+                //        //string str_old = all_line_old[i];
+                //        myposition = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
+                //        value = double.Parse(string_caozuo.Get_Table_String(str_new, 2));
+                //    }
+
+
+                //    for (int i = 0; i < all_line.Length; i++)
+                //    {
+                //        if (read_index != 1) break;
+                //        try
+                //        {
+
+                //            string str_new = all_line[i];
+                //            //string str_old = all_line_old[i];
+                //            myposition = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
+                //            value = double.Parse(string_caozuo.Get_Table_String(str_new, 2));
+                //            if(myposition.ToString("#0.000")==position.ToString("#0.000"))
+                //            {
+                //                myindex = i;
+                //                break;
+                //            }
+                            
+
+                //        }
+                //        catch { }
+
+                //        //int a = 0;
+                //    }
+
+
+                //    if(read_index==1)
+                //    {
+                //        jizhun = value;
+
+                //    }
+                //    else
+                //    {
+                //        value = double.Parse(Jisuan_Weiyi(Math.Abs(value - jizhun)).ToString("#0.0000"));
+                //        chart.Insert(nowtime, value);
+                //    }
+
+
+                //}
         
         }
         public static double Jisuan_Weiyi(double value)
