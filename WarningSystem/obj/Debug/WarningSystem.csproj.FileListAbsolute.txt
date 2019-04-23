@@ -196,9 +196,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WarningSystem\o
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WarningSystem\obj\Debug\RdlCompile.compiled
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WarningSystem\obj\Debug\WarningSystem.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WarningSystem\obj\Debug\WarningSystem.pdb
-D:\程序\warningsystem\WarningSystem\bin\Debug\WarningSystem.exe.config
-D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.exe
-D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.pdb
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.csprojResolveAssemblyReference.cache
 D:\程序\warningsystem\WarningSystem\obj\Debug\ChaFenView.baml
 D:\程序\warningsystem\WarningSystem\obj\Debug\DataList.baml
@@ -244,9 +241,7 @@ D:\程序\warningsystem\WarningSystem\obj\Debug\App.g.cs
 D:\程序\warningsystem\WarningSystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem_MarkupCompile.cache
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem_MarkupCompile.lref
-D:\程序\warningsystem\WarningSystem\obj\Debug\MainWindow.baml
-D:\程序\warningsystem\WarningSystem\obj\Debug\MyView.baml
-D:\程序\warningsystem\WarningSystem\obj\Debug\WarnInfo.baml
+D:\程序\warningsystem\WarningSystem\bin\Debug\WarningSystem.exe.config
 D:\程序\warningsystem\WarningSystem\bin\Debug\WarningSystem.exe
 D:\程序\warningsystem\WarningSystem\bin\Debug\WarningSystem.pdb
 D:\程序\warningsystem\WarningSystem\bin\Debug\FileOperation.dll
@@ -255,7 +250,11 @@ D:\程序\warningsystem\WarningSystem\bin\Debug\String_Caozuo.dll
 D:\程序\warningsystem\WarningSystem\bin\Debug\FileOperation.pdb
 D:\程序\warningsystem\WarningSystem\bin\Debug\SqlConnect.pdb
 D:\程序\warningsystem\WarningSystem\bin\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\WarningSystem\obj\Debug\MainWindow.baml
+D:\程序\warningsystem\WarningSystem\obj\Debug\MyView.baml
+D:\程序\warningsystem\WarningSystem\obj\Debug\WarnInfo.baml
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.g.resources
+D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.chulizhong.resources
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.mychart.resources
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.Properties.Resources.resources
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.TimeChart.resources
@@ -263,4 +262,5 @@ D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.myreportview.resou
 D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.csproj.GenerateResource.Cache
 D:\程序\warningsystem\WarningSystem\obj\Debug\RdlCompile.cache
 D:\程序\warningsystem\WarningSystem\obj\Debug\RdlCompile.compiled
-D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.chulizhong.resources
+D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.exe
+D:\程序\warningsystem\WarningSystem\obj\Debug\WarningSystem.pdb

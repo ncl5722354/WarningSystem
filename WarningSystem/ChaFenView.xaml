@@ -6,12 +6,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="900" d:DesignWidth="1000">
     <Grid>
-        <WindowsFormsHost Name="windowsformshost" HorizontalAlignment="Left" Height="601" Margin="41,25,-21,0" VerticalAlignment="Top" Width="980" RenderTransformOrigin="0.5,0.5">
-            <WindowsFormsHost.RenderTransform>
-                <TransformGroup>
-
-                </TransformGroup>
-            </WindowsFormsHost.RenderTransform>
+        <WindowsFormsHost Name="windowsformshost" HorizontalAlignment="Left" Height="601" Margin="41,25,-21,0" VerticalAlignment="Top" Width="980" RenderTransformOrigin="0.5,0.5" Background="#FFF3EEEE">
+            
         </WindowsFormsHost>
         <Grid Name="grid1" HorizontalAlignment="Left" Height="100" Margin="47,646,-900,0" VerticalAlignment="Top" Width="1853">
             <Label Content="曲线一基准目录" HorizontalAlignment="Left" Margin="233,125,0,-50" VerticalAlignment="Top" Width="119"/>
@@ -26,6 +22,9 @@
             <ComboBox Name="line2_wenjian" HorizontalAlignment="Left" Margin="150,50,0,0" VerticalAlignment="Top" Width="202" MouseEnter="line1_wenjian_MouseEnter" DropDownOpened="line2_wenjian_DropDownOpened" Grid.Column="1"/>
             <Button Name="button_line2" Content="确定" HorizontalAlignment="Left" Margin="500,40,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-2.846,-0.092" Click="button_line2_Click" Grid.Column="2"/>
             <Label Content="曲线二曲线" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="119" Grid.ColumnSpan="2"/>
+            <Label Content="阈值设置" HorizontalAlignment="Left" Margin="662,13,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="txt_yuzhi" HorizontalAlignment="Left" Height="23" Margin="741,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Button Name="btn_yuzhi" Content="阈值确定" HorizontalAlignment="Left" Margin="866,15,0,0" VerticalAlignment="Top" Width="75" Click="btn_yuzhi_Click"/>
         </Grid>
         <Grid Name="grid2" HorizontalAlignment="Left" Height="100" Margin="56,712,-7066,0" VerticalAlignment="Top" Width="8010">
             <Grid.ColumnDefinitions>

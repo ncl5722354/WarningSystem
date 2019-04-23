@@ -39,6 +39,13 @@ namespace WarningSystem
            // chart1.Series[3].Name = "无2";
         }
 
+        public void Set_Yuzhi(double yuzhi)
+        {
+            chart1.Series[2].Points.Clear();
+            chart1.Series[2].Points.AddXY(0, yuzhi);
+            chart1.Series[2].Points.AddXY(4000, yuzhi);
+        }
+
         public mychart()
         {
             InitializeComponent();

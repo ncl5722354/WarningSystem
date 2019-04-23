@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:WarningSystem" x:Class="WarningSystem.MainWindow"
         Title="坝光收费站边坡防护预警系统客户端软件" Height="500" Width="700" Foreground="{x:Null}" FontSize="12">
-    <Grid Background="#FF138DF3" Name="mygrid">
+    <Grid Name="mygrid">
         
         <Border x:Name="View_Select_Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="358" Margin="36,59,0,0" VerticalAlignment="Top" Width="123" CornerRadius="5,5,5,5" Visibility="Hidden"/>
         <Border x:Name="Main_View"  BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="189,59,0,0" VerticalAlignment="Top" Width="100" CornerRadius="0,0,0,0">

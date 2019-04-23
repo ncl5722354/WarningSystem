@@ -396,7 +396,7 @@ namespace WarningSystem
                             try
                             {
                                 point.weiyi = data_struct.位移量;
-                                if (point.weiyi >= 2)
+                                if (point.weiyi >= MainWindow.yuzhi)
                                 {
                                     string warn_string = "报警位置：" + data_struct.位置.ToString() + "  位移值：" + data_struct.位移量.ToString() + "mm";
                                     all_warn_list.Add(warn_string);
@@ -495,7 +495,7 @@ namespace WarningSystem
                                 isexit = true;
 
                                 // 在这里判断报警信息
-                                if (data_struct.位移量 >= 2 && warning_is == false && gengxin_is == true)
+                                if (data_struct.位移量 >= MainWindow.yuzhi && warning_is == false && gengxin_is == true)
                                 {
                                     // 产生了报警
                                     // 报警信息：点名称  位置  位移量
@@ -506,7 +506,7 @@ namespace WarningSystem
 
                                 }
 
-                                if (data_struct.位移量 >= 2)
+                                if (data_struct.位移量 >= MainWindow.yuzhi)
                                 {
                                     foreach (DiZhuang_Item item in all_dizhuang_list)
                                     {
@@ -531,7 +531,7 @@ namespace WarningSystem
                                         }
                                     }
                                 }
-                                if (data_struct.位移量 >= 2 && gengxin_is == true)
+                                if (data_struct.位移量 >= MainWindow.yuzhi && gengxin_is == true)
                                 {
                                     // 写入报警信息
                                     StreamWriter sw = new StreamWriter("D:\\config\\warning\\" + MainWindow.updatetime.ToString("yyyy MM dd HH mm ss") + ".txt", true);    // 向文件尾加入报警信息

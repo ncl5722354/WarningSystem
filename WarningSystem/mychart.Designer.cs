@@ -32,6 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label_yidong = new System.Windows.Forms.Label();
             this.trackBar_shu_yidong = new System.Windows.Forms.TrackBar();
@@ -52,26 +53,23 @@
             // 
             // chart1
             // 
-            this.chart1.BackColor = System.Drawing.Color.Black;
+            this.chart1.BorderlineColor = System.Drawing.Color.Black;
             chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea1.AxisX.Interval = 100D;
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea1.AxisX.LineColor = System.Drawing.Color.White;
             chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gray;
             chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
             chartArea1.AxisX.Title = "长度(M)";
             chartArea1.AxisX.TitleAlignment = System.Drawing.StringAlignment.Near;
-            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.White;
             chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.InterlacedColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
             chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray;
             chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             chartArea1.AxisY.Maximum = 4D;
             chartArea1.AxisY.Minimum = 0D;
             chartArea1.AxisY.Title = "值";
-            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea1.BackColor = System.Drawing.Color.Black;
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
             chartArea1.CursorX.IsUserEnabled = true;
             chartArea1.CursorY.IsUserEnabled = true;
             chartArea1.Name = "ChartArea1";
@@ -84,6 +82,7 @@
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Color = System.Drawing.Color.Red;
+            series1.LabelBackColor = System.Drawing.Color.White;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
@@ -92,8 +91,15 @@
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series2.Legend = "Legend1";
             series2.Name = "Series2";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "阈值";
+            series3.YValuesPerPoint = 2;
+            series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(494, 217);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -216,8 +222,9 @@
             this.Controls.Add(this.trackBar_shu_yidong);
             this.Controls.Add(this.label_yidong);
             this.Controls.Add(this.chart1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "mychart";
-            this.Size = new System.Drawing.Size(727, 317);
+            this.Size = new System.Drawing.Size(727, 347);
             this.Load += new System.EventHandler(this.mychart_Load);
             this.Resize += new System.EventHandler(this.mychart_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

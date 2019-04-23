@@ -49,6 +49,8 @@ namespace WarningSystem
         public static SQL_Connect_Builder builder = new SQL_Connect_Builder("172.17.195.187", "SaiGe_Report", 1, 100);
         public static SQL_Connect_Builder data_builder = new SQL_Connect_Builder("172.17.195.187", "bgdata", 1, 100);
         public static IniFile Report_Config = new IniFile("D:\\config\\ReportConfig.ini");
+        public static double yuzhi = 100;
+
 
         // 所有界面
         MyView myview = new MyView();                // 副界面中的主界面
@@ -75,9 +77,9 @@ namespace WarningSystem
 
 
 
-        public static string path = @"\\172.17.195.187\bgdata\\";
+//        public static string path = @"\\172.17.195.187\bgdata\\";
 
-       // public static string path = "D:\\bgdata\\";
+        public static string path = "D:\\bgdata\\";
 
        //  public static string path = @"\\TDA\bgdata\\";
 
@@ -184,7 +186,7 @@ namespace WarningSystem
                 mygrid.Background = new ImageBrush
                 {
                     
-                    ImageSource = new BitmapImage(new Uri(rootpath + "\\bg.jpg"))
+                   //ImageSource = new BitmapImage(new Uri(rootpath + "\\bg.jpg"))
                 };
 
             Show_SubView(myview);
@@ -638,6 +640,7 @@ namespace WarningSystem
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
         {
             Show_SubView(chafenview);
+            chafenview.Show_yuzhi();
         }
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)

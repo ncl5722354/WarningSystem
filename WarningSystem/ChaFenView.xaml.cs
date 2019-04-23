@@ -56,6 +56,15 @@ namespace WarningSystem
             init();
         }
 
+
+
+
+        public void Show_yuzhi()
+        {
+            txt_yuzhi.Text = MainWindow.Report_Config.IniReadValue("yuzhi", "yuzhi");
+            chart.Set_Yuzhi(MainWindow.yuzhi);
+        }
+
         private void Tick(object sender,EventArgs e)
         {
             Thread thread = new Thread(Update_Kuang);
@@ -553,10 +562,19 @@ namespace WarningSystem
                 //Thread thread = new Thread(Show_Thread1);
                 //thread.Start();
                 //chulizhongview.ShowDialog();
-                line1_string = path + "\\" + line1_wenjian.Items[line1_wenjian.SelectedIndex].ToString();
-                line2_string = path + "\\" + line2_wenjian.Items[line2_wenjian.SelectedIndex].ToString();
-                line1_all_string = FileCaozuo.Read_All_Line(line1_string);
-                line2_all_string = FileCaozuo.Read_All_Line(line2_string);
+                try
+                {
+                    line1_string = path + "\\" + line1_wenjian.Items[line1_wenjian.SelectedIndex].ToString();
+                    line1_all_string = FileCaozuo.Read_All_Line(line1_string);
+                }
+                catch { }
+                try
+                {
+                    line2_string = path + "\\" + line2_wenjian.Items[line2_wenjian.SelectedIndex].ToString();
+
+                    line2_all_string = FileCaozuo.Read_All_Line(line2_string);
+                }
+                catch { }
 
                 for (int i = 0; i < allcount; i++)
                 {
@@ -576,7 +594,7 @@ namespace WarningSystem
                         if (i % 10 == 0)
                         {
                             
-                            chart.Insert_Point1(position,  MainWindow.Jisuan_Weiyi( myvalue));
+                            chart.Insert_Point(position,  MainWindow.Jisuan_Weiyi( myvalue));
                             //chart.Insert_Point(position, myvalue2);
                         }
                     }
@@ -602,7 +620,7 @@ namespace WarningSystem
                         if (i % 10 == 0)
                         {
                            // chart.Insert_Point1(position, myvalue);
-                            chart.Insert_Point(position2, MainWindow.Jisuan_Weiyi(myvalue2));
+                            chart.Insert_Point1(position2, MainWindow.Jisuan_Weiyi(myvalue2));
                         }
 
 
@@ -702,6 +720,18 @@ namespace WarningSystem
 
             }
             catch { }
+        }
+
+        private void btn_yuzhi_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.Report_Config.IniWriteValue("yuzhi", "yuzhi", txt_yuzhi.Text);
+            try
+            {
+                MainWindow.yuzhi = double.Parse(txt_yuzhi.Text);
+                chart.Set_Yuzhi(MainWindow.yuzhi);
+            }
+            catch { }
+        
         }
       
     }
