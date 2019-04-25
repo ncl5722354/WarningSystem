@@ -46,10 +46,14 @@ namespace WarningSystem
         public static bool is_shebei = true;                  // 是否是设备主机
 
         string rootpath = Environment.CurrentDirectory;       //系统路径
-        public static SQL_Connect_Builder builder = new SQL_Connect_Builder("172.17.195.187", "SaiGe_Report", 1, 100);
-        public static SQL_Connect_Builder data_builder = new SQL_Connect_Builder("172.17.195.187", "bgdata", 1, 100);
+        public static SQL_Connect_Builder builder = new SQL_Connect_Builder("172.19.38.69\\JS", "SaiGe_Report", 1, 100);
+        public static SQL_Connect_Builder data_builder = new SQL_Connect_Builder("172.19.38.69\\JS", "bgdata", 1, 100);
         public static IniFile Report_Config = new IniFile("D:\\config\\ReportConfig.ini");
         public static double yuzhi = 100;
+
+        public bool first = true;
+
+
 
 
         // 所有界面
@@ -77,9 +81,9 @@ namespace WarningSystem
 
 
 
-//        public static string path = @"\\172.17.195.187\bgdata\\";
+        public static string path = @"\\172.17.195.187\bgdata\\";
 
-        public static string path = "D:\\bgdata\\";
+//        public static string path = "D:\\bgdata\\";
 
        //  public static string path = @"\\TDA\bgdata\\";
 
@@ -104,6 +108,13 @@ namespace WarningSystem
         //[DllImport("FreeConsole")]
         //public static extern bool AllocConsole();
 
+        struct insert_struct
+        {
+            public  string insertcmd;
+            public  string[] insert_object;
+            public string table_name;
+        }
+
         public MainWindow()
         {
             //AllocConsole();
@@ -113,6 +124,8 @@ namespace WarningSystem
             this.Left = 0;
             this.Width = screen_width;
             this.Height = scree_height;
+            ThreadPool.SetMaxThreads(1000,1000);
+            ThreadPool.SetMinThreads(100, 100);
            
             All_Sub_Hide();      // 所有的界面隐藏起来
 
@@ -322,10 +335,26 @@ namespace WarningSystem
             thread.Start();
             
             
+            
             //datasrtuct.
         }
 
+        private void Insert_Cmd(object  mystruct)
+        {
+            insert_struct thisstruct = (insert_struct)mystruct;
+            bool resut= MainWindow.data_builder.Insert(thisstruct.insertcmd, thisstruct.insert_object);
+            if(resut==false)
+            {
+                
+                    CreateSqlValueType[] create = new CreateSqlValueType[3];
+                    create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
+                    create[1] = new CreateSqlValueType("datetime", "mytime");
+                    create[2] = new CreateSqlValueType("nvarchar(50)", "value");
 
+                    MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(thisstruct.table_name, 1) + string_caozuo.Get_Dian_String(thisstruct.table_name, 2), create);
+                    MainWindow.data_builder.Insert(thisstruct.insertcmd, thisstruct.insert_object);
+            }
+        }
        
         
         private void Thread_Tick()
@@ -355,6 +384,7 @@ namespace WarningSystem
 
                 ArrayList allpoints = Point_ini.ReadSections();            // 地图上所有的点
                 bool is_exit = false;                                      // 是否在柱子上
+
 
 
                 foreach (DirectoryInfo dir in dirs)
@@ -401,6 +431,7 @@ namespace WarningSystem
                 // 找出最近的时候
                 foreach (DateTime time in timelist)
                 {
+                    //Thread.Sleep(5000);
                     if (time >= maxtime)
                     {
                         maxtime = time;
@@ -426,21 +457,37 @@ namespace WarningSystem
                             string line = allline[i];
                             string tablename = string_caozuo.Get_Table_String(line, 1);
                             string myvalue = string_caozuo.Get_Table_String(line, 2);
-                            CreateSqlValueType[] create = new CreateSqlValueType[3];
-                            create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
-                            create[1] = new CreateSqlValueType("datetime", "mytime");
-                            create[2] = new CreateSqlValueType("nvarchar(50)", "value");
-                            MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
+                            //if (first == true)
+                            //{
+                            //    CreateSqlValueType[] create = new CreateSqlValueType[3];
+                            //    create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
+                            //    create[1] = new CreateSqlValueType("datetime", "mytime");
+                            //    create[2] = new CreateSqlValueType("nvarchar(50)", "value");
+
+                            //    MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
+                            //}
 
                             string[] insert_cmd = new string[3];
                             insert_cmd[0] = time.ToString("yyyyMMddHHmmss");
                             insert_cmd[1] = time.ToString("yyyy-MM-dd HH:mm:ss");
                             insert_cmd[2] = myvalue;
-                            bool result = MainWindow.data_builder.Insert("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), insert_cmd);
-                            if (result == false)
-                                break;
+
+                            insert_struct mystruct=new insert_struct();
+                            mystruct.insert_object=insert_cmd;
+                            mystruct.insertcmd="position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+                            mystruct.table_name = tablename;
+
+                            ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd), mystruct);
+                            
+                            //Thread thread = new Thread(Insert_Cmd);
+                            //thread.Start(mystruct);
+                            
+                            //bool result = MainWindow.data_builder.Insert("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), insert_cmd);
+                            //if (result == false)
+                            //    break;
                             copyed_num = i;
                         }
+                        
 
                     }
 
