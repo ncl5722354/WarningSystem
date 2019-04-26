@@ -53,6 +53,10 @@ namespace WarningSystem
 
         public bool first = true;
 
+        ArrayList timelist = new ArrayList();
+        string newpath = "";
+
+        Thread mainthread = null;              // 标记主线程
 
 
 
@@ -103,6 +107,9 @@ namespace WarningSystem
 
         public string old_update_file = "";                     // 上次更新的文件名
 
+        public static System.Windows.Forms.Timer timer1 = new System.Windows.Forms.Timer();
+
+
         //[DllImport("FreeConsole")]
         //public static extern bool FreeConsole();
         //[DllImport("FreeConsole")]
@@ -115,6 +122,12 @@ namespace WarningSystem
             public string table_name;
         }
 
+        private void MyTick(object sender,EventArgs e)
+        {
+            gengxin_is = false;
+            Console.WriteLine("stop!");
+        }
+
         public MainWindow()
         {
             //AllocConsole();
@@ -124,8 +137,12 @@ namespace WarningSystem
             this.Left = 0;
             this.Width = screen_width;
             this.Height = scree_height;
-            ThreadPool.SetMaxThreads(1000,1000);
+            ThreadPool.SetMaxThreads(2000,2000);
             ThreadPool.SetMinThreads(100, 100);
+            timer1.Interval=5000;
+            timer1.Tick += new EventHandler(MyTick);
+            timer1.Enabled = true;
+
            
             All_Sub_Hide();      // 所有的界面隐藏起来
 
@@ -179,8 +196,8 @@ namespace WarningSystem
             // 读取柱子数组
             ArrayList list = MainWindow.Point_ini.ReadSections();
             zhuzi_name = new string[list.Count];       // 定义柱子数组
-            rukou = new int[list.Count];            // 定义入口数组
-            chukou = new int[list.Count];           // 定义出口数组
+            rukou = new int[list.Count];               // 定义入口数组
+            chukou = new int[list.Count];              // 定义出口数组
 
             for (int i = 0; i < list.Count;i++)
             {
@@ -339,21 +356,63 @@ namespace WarningSystem
             //datasrtuct.
         }
 
-        private void Insert_Cmd(object  mystruct)
+        private void Insert_Cmd(object mytime)
         {
-            insert_struct thisstruct = (insert_struct)mystruct;
-            bool resut= MainWindow.data_builder.Insert(thisstruct.insertcmd, thisstruct.insert_object);
-            if(resut==false)
+            
+            DateTime time = (DateTime)mytime;
+            string filename = time.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";
+
+            all_file_num = timelist.IndexOf(time, 0);
+
+            
+
+            // 建立数据库
+            string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
+            for (int i = 0; i < allline.Length; i++)
             {
+                lock (timer1)
+                {
+                    timer1.Stop();
+                    timer1.Start();
+                }
                 
+                string line = allline[i];
+                string tablename = string_caozuo.Get_Table_String(line, 1);
+                string myvalue = string_caozuo.Get_Table_String(line, 2);
+                if (first == true)
+                {
                     CreateSqlValueType[] create = new CreateSqlValueType[3];
                     create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
                     create[1] = new CreateSqlValueType("datetime", "mytime");
                     create[2] = new CreateSqlValueType("nvarchar(50)", "value");
 
-                    MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(thisstruct.table_name, 1) + string_caozuo.Get_Dian_String(thisstruct.table_name, 2), create);
-                    MainWindow.data_builder.Insert(thisstruct.insertcmd, thisstruct.insert_object);
+                    MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
+                }
+
+                string[] insert_cmd = new string[3];
+                insert_cmd[0] = time.ToString("yyyyMMddHHmmss");
+                insert_cmd[1] = time.ToString("yyyy-MM-dd HH:mm:ss");
+                insert_cmd[2] = myvalue;
+
+                insert_struct mystruct = new insert_struct();
+                mystruct.insert_object = insert_cmd;
+                mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+                mystruct.table_name = tablename;
+
+
+
+                bool result = MainWindow.data_builder.Insert("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), insert_cmd);
+                lock (timer1)
+                {
+                    timer1.Stop();
+                    timer1.Start();
+                }
+                
+                if (result == false)
+                    break;
+                copyed_num = i;
             }
+           
         }
        
         
@@ -366,6 +425,8 @@ namespace WarningSystem
                     gengxin_is = true;
                 else
                     return;
+
+                Console.WriteLine("开始读取");
                 ArrayList[] yingbian = null;
                 ArrayList[] wendu = null;
                 try
@@ -384,7 +445,7 @@ namespace WarningSystem
 
                 ArrayList allpoints = Point_ini.ReadSections();            // 地图上所有的点
                 bool is_exit = false;                                      // 是否在柱子上
-
+                timelist.Clear();
 
 
                 foreach (DirectoryInfo dir in dirs)
@@ -404,11 +465,11 @@ namespace WarningSystem
                     catch { }
                 }
 
-                string newpath = path + "data" + newtime.ToString("yyyyMMddHHmm") + "\\";
+                newpath = path + "data" + newtime.ToString("yyyyMMddHHmm") + "\\";
 
 
                 ArrayList filelist = FileCaozuo.Read_All_Files(newpath, "*.txt");
-                ArrayList timelist = new ArrayList();                                      // 时间列表
+                                                      // 时间列表
                 foreach (string name in filelist)
                 {
                     // 每个文件的的名称
@@ -428,10 +489,11 @@ namespace WarningSystem
 
                 DateTime maxtime = new DateTime();
                 DateTime mintime = DateTime.Now;
+
                 // 找出最近的时候
                 foreach (DateTime time in timelist)
                 {
-                    //Thread.Sleep(5000);
+                    
                     if (time >= maxtime)
                     {
                         maxtime = time;
@@ -440,58 +502,16 @@ namespace WarningSystem
                     {
                         mintime = time;
                     }
-
-                    try
+                    lock (timer1)
                     {
-                        string filename = time.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";
-                        //File.Copy(newpath + filename, "D://data//" + filename);
-                        //all_file_num = timelist.Count;
-                        all_file_num = timelist.IndexOf(time, 0);
-
-                       
-
-                        // 建立数据库
-                        string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
-                        for (int i = 0; i < allline.Length; i++)
-                        {
-                            string line = allline[i];
-                            string tablename = string_caozuo.Get_Table_String(line, 1);
-                            string myvalue = string_caozuo.Get_Table_String(line, 2);
-                            //if (first == true)
-                            //{
-                            //    CreateSqlValueType[] create = new CreateSqlValueType[3];
-                            //    create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
-                            //    create[1] = new CreateSqlValueType("datetime", "mytime");
-                            //    create[2] = new CreateSqlValueType("nvarchar(50)", "value");
-
-                            //    MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
-                            //}
-
-                            string[] insert_cmd = new string[3];
-                            insert_cmd[0] = time.ToString("yyyyMMddHHmmss");
-                            insert_cmd[1] = time.ToString("yyyy-MM-dd HH:mm:ss");
-                            insert_cmd[2] = myvalue;
-
-                            insert_struct mystruct=new insert_struct();
-                            mystruct.insert_object=insert_cmd;
-                            mystruct.insertcmd="position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
-                            mystruct.table_name = tablename;
-
-                            ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd), mystruct);
-                            
-                            //Thread thread = new Thread(Insert_Cmd);
-                            //thread.Start(mystruct);
-                            
-                            //bool result = MainWindow.data_builder.Insert("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), insert_cmd);
-                            //if (result == false)
-                            //    break;
-                            copyed_num = i;
-                        }
-                        
-
+                        timer1.Stop();
+                        timer1.Start();
                     }
 
-                    catch { }
+                    mainthread = Thread.CurrentThread;
+                    //ThreadPool.SetMaxThreads(1000, 1000);
+                    //ThreadPool.SetMinThreads(100, 100);
+                    ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd),time);   
                 }
 
                 updatetime = maxtime;       //更新时间
@@ -542,7 +562,11 @@ namespace WarningSystem
                 {
                     try
                     {
-
+                        lock (timer1)
+                        {
+                            timer1.Stop();
+                            timer1.Start();
+                        }
                         string str_new = all_line[i];
                         string str_old = all_line_old[i];
                         position = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
@@ -617,12 +641,12 @@ namespace WarningSystem
 
                     //int a = 0;
                 }
-                gengxin_is = false;
+                //gengxin_is = false;
             }
 
 
 
-            catch { gengxin_is = false; }
+            catch {  }
         }
 
 

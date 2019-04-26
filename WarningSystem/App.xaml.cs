@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Runtime.InteropServices;
 
 namespace WarningSystem
 {
@@ -19,5 +20,8 @@ namespace WarningSystem
         //    cracker.Cracker(100);//垃圾回收间隔时间
         //    base.OnStartup(e);
         //}
+        [DllImport("FreeConsole")]
+        public static extern bool AllocConsole();
+
     }
 }

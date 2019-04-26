@@ -129,6 +129,48 @@ namespace SqlConnect
             }
         }           // 查询
 
+        
+        public bool Insert_Array(string table_name,ArrayList insert_info)
+        {
+            using(SqlConnection conn=new SqlConnection(connStr.ConnectionString))
+            {
+                bool success = false;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                string insert_cmd = "insert into " + table_name + "values";
+                int count = 0;
+                foreach (string[] string_array in insert_info)
+                {
+                    insert_cmd = insert_cmd + "(";
+                    for (int i = 0; i < string_array.Length; i++)
+                    {
+                        insert_cmd = insert_cmd + "," + string_array[i] + ",";
+                        if (i != string_array.Length - 1)
+                        {
+                            insert_cmd = insert_cmd + ",";
+                        }
+                    }
+                    insert_cmd = insert_cmd + ")";
+                    count++;
+                    if(count!=string_array.Length)
+                    {
+                        insert_cmd = insert_cmd + ",";
+                    }
+                }
+                cmd.CommandText = insert_cmd;
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    success = true;
+                }
+                catch { success = false; }
+                conn.Close();
+
+                return success;
+            }
+        }         // 批量插入信息
+
         public bool Insert(string table_name,string[] insert_values)
         {
             using(SqlConnection conn=new SqlConnection(connStr.ConnectionString))
