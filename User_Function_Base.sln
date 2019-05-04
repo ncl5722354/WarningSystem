@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_Function_Base", "User_Function_Base\User_Function_Base.csproj", "{BFCE66C9-DA1F-4989-8E8F-D72AF1AA804A}"
 EndProject
@@ -45,9 +45,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranji2019", "Ranji2019\Ranj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBrowser_warningsystem", "WpfBrowser_warningsystem\WpfBrowser_warningsystem.csproj", "{D124D6BB-10BB-479E-B75E-914294C54B70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebWarnSystem", "WebWarnSystem\WebWarnSystem.csproj", "{828AE6F0-EBCA-4DEC-92A5-80E13056A517}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jisuanqi", "jisuanqi\jisuanqi.csproj", "{A98F2FBB-119A-4E4E-B986-ED20F1B122E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webWarningsystem", "webWarningsystem\webWarningsystem.csproj", "{53E760FB-A760-46DA-951C-4B6C31940BAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -269,16 +269,6 @@ Global
 		{D124D6BB-10BB-479E-B75E-914294C54B70}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D124D6BB-10BB-479E-B75E-914294C54B70}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D124D6BB-10BB-479E-B75E-914294C54B70}.Release|Win32.ActiveCfg = Release|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Release|Any CPU.Build.0 = Release|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{828AE6F0-EBCA-4DEC-92A5-80E13056A517}.Release|Win32.ActiveCfg = Release|Any CPU
 		{A98F2FBB-119A-4E4E-B986-ED20F1B122E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A98F2FBB-119A-4E4E-B986-ED20F1B122E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A98F2FBB-119A-4E4E-B986-ED20F1B122E8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -289,6 +279,16 @@ Global
 		{A98F2FBB-119A-4E4E-B986-ED20F1B122E8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A98F2FBB-119A-4E4E-B986-ED20F1B122E8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A98F2FBB-119A-4E4E-B986-ED20F1B122E8}.Release|Win32.ActiveCfg = Release|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{53E760FB-A760-46DA-951C-4B6C31940BAC}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -46,10 +46,18 @@ namespace WarningSystem
         public static bool is_shebei = true;                  // 是否是设备主机
 
         string rootpath = Environment.CurrentDirectory;       //系统路径
-        public static SQL_Connect_Builder builder = new SQL_Connect_Builder("172.17.195.187", "SaiGe_Report", 1, 100);
-        public static SQL_Connect_Builder data_builder = new SQL_Connect_Builder("172.17.195.187", "bgdata", 1, 100);
+        public static SQL_Connect_Builder builder = new SQL_Connect_Builder("172.19.38.69\\JS", "SaiGe_Report", 1, 100);
+        public static SQL_Connect_Builder data_builder = new SQL_Connect_Builder("172.19.38.69\\JS", "bgdata", 1, 100);
         public static IniFile Report_Config = new IniFile("D:\\config\\ReportConfig.ini");
         public static double yuzhi = 100;
+
+        public bool first = true;
+
+        ArrayList timelist = new ArrayList();
+        string newpath = "";
+
+        Thread mainthread = null;              // 标记主线程
+
 
 
         // 所有界面
@@ -77,13 +85,7 @@ namespace WarningSystem
 
 
 
-//        public static string path = @"\\172.17.195.187\bgdata\\";
-
-        public static string path = "D:\\bgdata\\";
-
-       //  public static string path = @"\\TDA\bgdata\\";
-
-       // public static string path = "D:\\data\\";
+        public static string path = @"\\172.17.195.187\\bgdata\\";
 
         public static DateTime updatetime = new DateTime();         //更新时间
 
@@ -99,10 +101,19 @@ namespace WarningSystem
 
         public string old_update_file = "";                     // 上次更新的文件名
 
-        //[DllImport("FreeConsole")]
-        //public static extern bool FreeConsole();
-        //[DllImport("FreeConsole")]
-        //public static extern bool AllocConsole();
+        public static System.Windows.Forms.Timer timer1 = new System.Windows.Forms.Timer();
+        struct insert_struct
+        {
+            public  string insertcmd;
+            public  string[] insert_object;
+            public string table_name;
+        }
+
+        private void MyTick(object sender,EventArgs e)
+        {
+            //gengxin_is = false;
+            //Console.WriteLine("stop!");
+        }
 
         public MainWindow()
         {
@@ -113,6 +124,12 @@ namespace WarningSystem
             this.Left = 0;
             this.Width = screen_width;
             this.Height = scree_height;
+            ThreadPool.SetMaxThreads(2000,2000);
+            ThreadPool.SetMinThreads(100, 100);
+            timer1.Interval=5000;
+            timer1.Tick += new EventHandler(MyTick);
+            timer1.Enabled = true;
+
            
             All_Sub_Hide();      // 所有的界面隐藏起来
 
@@ -166,8 +183,8 @@ namespace WarningSystem
             // 读取柱子数组
             ArrayList list = MainWindow.Point_ini.ReadSections();
             zhuzi_name = new string[list.Count];       // 定义柱子数组
-            rukou = new int[list.Count];            // 定义入口数组
-            chukou = new int[list.Count];           // 定义出口数组
+            rukou = new int[list.Count];               // 定义入口数组
+            chukou = new int[list.Count];              // 定义出口数组
 
             for (int i = 0; i < list.Count;i++)
             {
@@ -298,10 +315,7 @@ namespace WarningSystem
             SubView.Add(report);
             Main_View_Grid.Children.Add(report);
 
-
             //
-            
-
             //Show_SubView(myview);
 
             // 更新数据时钟
@@ -320,12 +334,76 @@ namespace WarningSystem
             // 读取文件夹列表
             Thread thread = new Thread(Thread_Tick);
             thread.Start();
-            
-            
-            //datasrtuct.
         }
 
+        private void Insert_Cmd(DateTime mytime)
+        {
+            
+            DateTime time = mytime;
+            string filename = time.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";
 
+            all_file_num = timelist.IndexOf(time, 0);
+
+            
+
+            // 建立数据库
+            CreateSqlValueType[] create = new CreateSqlValueType[2];
+            create[0] = new CreateSqlValueType("float", "positon", true);
+            create[1] = new CreateSqlValueType("float", "value");
+            //create[2] = new CreateSqlValueType("nvarchar(50)", "value");
+
+            MainWindow.data_builder.Create_Table("data"+time.ToString("yyyyMMddHHmmss"), create);
+
+            //string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
+
+            //ArrayList inser_list = new ArrayList();
+            //for (int i = 0; i < allline.Length; i++)
+            //{
+            //    //lock (timer1)
+            //    //{
+            //    //    timer1.Stop();
+            //    //    timer1.Start();
+            //    //}
+                
+            //    string line = allline[i];
+            //    string tablename = string_caozuo.Get_Table_String(line, 1);
+            //    string myvalue = string_caozuo.Get_Table_String(line, 2);
+            //    ////if (first == true)
+            //    ////{
+            //    ////    //CreateSqlValueType[] create = new CreateSqlValueType[3];
+            //    ////    //create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
+            //    ////    //create[1] = new CreateSqlValueType("datetime", "mytime");
+            //    ////    //create[2] = new CreateSqlValueType("nvarchar(50)", "value");
+
+            //    ////    //MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
+            //    ////}
+
+            //    string[] insert_cmd = new string[2];
+            //    insert_cmd[0] = tablename;
+            //    insert_cmd[1] = myvalue;
+            //    inser_list.Add(insert_cmd);
+
+            //    //insert_struct mystruct = new insert_struct();
+            //    //mystruct.insert_object = insert_cmd;
+            //    //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+            //    //mystruct.table_name = tablename;
+
+
+
+                
+            //    //lock (timer1)
+            //    //{
+            //    //    timer1.Stop();
+            //    //    timer1.Start();
+            //    //}
+                
+            //    //if (result == false)
+            //    //    break;
+            //    copyed_num = i;
+            //}
+            bool result = MainWindow.data_builder.Insert_Data_From_Txt("data" + time.ToString("yyyyMMddHHmmss"), newpath + filename);
+           
+        }
        
         
         private void Thread_Tick()
@@ -337,6 +415,8 @@ namespace WarningSystem
                     gengxin_is = true;
                 else
                     return;
+
+                Console.WriteLine("开始读取");
                 ArrayList[] yingbian = null;
                 ArrayList[] wendu = null;
                 try
@@ -355,6 +435,7 @@ namespace WarningSystem
 
                 ArrayList allpoints = Point_ini.ReadSections();            // 地图上所有的点
                 bool is_exit = false;                                      // 是否在柱子上
+                timelist.Clear();
 
 
                 foreach (DirectoryInfo dir in dirs)
@@ -374,11 +455,11 @@ namespace WarningSystem
                     catch { }
                 }
 
-                string newpath = path + "data" + newtime.ToString("yyyyMMddHHmm") + "\\";
+                newpath ="D:\\bgdata\\" + "data" + newtime.ToString("yyyyMMddHHmm") + "\\";
 
 
                 ArrayList filelist = FileCaozuo.Read_All_Files(newpath, "*.txt");
-                ArrayList timelist = new ArrayList();                                      // 时间列表
+                                                      // 时间列表
                 foreach (string name in filelist)
                 {
                     // 每个文件的的名称
@@ -398,9 +479,11 @@ namespace WarningSystem
 
                 DateTime maxtime = new DateTime();
                 DateTime mintime = DateTime.Now;
+
                 // 找出最近的时候
                 foreach (DateTime time in timelist)
                 {
+                    
                     if (time >= maxtime)
                     {
                         maxtime = time;
@@ -410,41 +493,17 @@ namespace WarningSystem
                         mintime = time;
                     }
 
-                    try
-                    {
-                        string filename = time.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";
-                        //File.Copy(newpath + filename, "D://data//" + filename);
-                        //all_file_num = timelist.Count;
-                        all_file_num = timelist.IndexOf(time, 0);
+                    Insert_Cmd(time);
+                    //lock (timer1)
+                    //{
+                    //    timer1.Stop();
+                    //    timer1.Start();
+                    //}
 
-                       
-
-                        // 建立数据库
-                        string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
-                        for (int i = 0; i < allline.Length; i++)
-                        {
-                            string line = allline[i];
-                            string tablename = string_caozuo.Get_Table_String(line, 1);
-                            string myvalue = string_caozuo.Get_Table_String(line, 2);
-                            CreateSqlValueType[] create = new CreateSqlValueType[3];
-                            create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
-                            create[1] = new CreateSqlValueType("datetime", "mytime");
-                            create[2] = new CreateSqlValueType("nvarchar(50)", "value");
-                            MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
-
-                            string[] insert_cmd = new string[3];
-                            insert_cmd[0] = time.ToString("yyyyMMddHHmmss");
-                            insert_cmd[1] = time.ToString("yyyy-MM-dd HH:mm:ss");
-                            insert_cmd[2] = myvalue;
-                            bool result = MainWindow.data_builder.Insert("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), insert_cmd);
-                            if (result == false)
-                                break;
-                            copyed_num = i;
-                        }
-
-                    }
-
-                    catch { }
+                    //mainthread = Thread.CurrentThread;
+                    ////ThreadPool.SetMaxThreads(1000, 1000);
+                    ////ThreadPool.SetMinThreads(100, 100);
+                    //ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd),time);   
                 }
 
                 updatetime = maxtime;       //更新时间
@@ -495,7 +554,11 @@ namespace WarningSystem
                 {
                     try
                     {
-
+                        lock (timer1)
+                        {
+                            timer1.Stop();
+                            timer1.Start();
+                        }
                         string str_new = all_line[i];
                         string str_old = all_line_old[i];
                         position = double.Parse(string_caozuo.Get_Table_String(str_new, 1));
@@ -570,12 +633,12 @@ namespace WarningSystem
 
                     //int a = 0;
                 }
-                gengxin_is = false;
+                //gengxin_is = false;
             }
 
 
 
-            catch { gengxin_is = false; }
+            catch {  }
         }
 
 

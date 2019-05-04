@@ -23,11 +23,11 @@ namespace SqlConnect
             // 构造函数，用来构造一个连接
             connStr.DataSource = DataSource;                 // 设置连接源
             connStr.InitialCatalog = InitialCatalog;         // 设置数库据
-            connStr.IntegratedSecurity = true;               // true是以windows方式进行访问，false是以用户名密码的方式进行访问
+            connStr.IntegratedSecurity = false;               // true是以windows方式进行访问，false是以用户名密码的方式进行访问
             connStr.MinPoolSize = minpoolsize;               // 设置最小的连接数
             connStr.MaxPoolSize = maxpoolsize;               // 设置最大的连接数
             connStr.UserID = "sa";
-            connStr.Password = "ncl5722354";
+            connStr.Password = "js168";
         }
 
         // 创建表
@@ -128,6 +128,73 @@ namespace SqlConnect
                 return dt;
             }
         }           // 查询
+
+        
+        public bool Insert_Array(string table_name,ArrayList insert_info)
+        {
+            using(SqlConnection conn=new SqlConnection(connStr.ConnectionString))
+            {
+                bool success = false;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                string insert_cmd = "insert into " + table_name + "values";
+                int count = 0;
+                foreach (string[] string_array in insert_info)
+                {
+                    insert_cmd = insert_cmd + "(";
+                    for (int i = 0; i < string_array.Length; i++)
+                    {
+                        insert_cmd = insert_cmd + "'" + string_array[i] + "'";
+                        if (i != string_array.Length - 1)
+                        {
+                            insert_cmd = insert_cmd + ",";
+                        }
+                    }
+                    insert_cmd = insert_cmd + ")";
+                    count++;
+                    if(count!=string_array.Length)
+                    {
+                        insert_cmd = insert_cmd + ",";
+                    }
+                   
+                    Console.WriteLine(count.ToString());
+                }
+                cmd.CommandText = insert_cmd;
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    success = true;
+                }
+                catch { success = false; }
+                conn.Close();
+
+                return success;
+            }
+        }         // 批量插入信息
+
+        public bool Insert_Data_From_Txt(string table_name,string path)
+        {
+            using (SqlConnection conn = new SqlConnection(connStr.ConnectionString))
+            {
+                bool success = false;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                string insert_cmd = "bulk insert " + table_name + " from '" + path + "'" + "with (fieldterminator=' ',rowterminator='\n')";
+                cmd.CommandText = insert_cmd;
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    success = true;
+                }
+                catch { success = false; }
+                conn.Close();
+                return success;
+
+            }
+
+        }
 
         public bool Insert(string table_name,string[] insert_values)
         {
