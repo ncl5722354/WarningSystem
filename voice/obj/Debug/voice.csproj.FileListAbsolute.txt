@@ -97,8 +97,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\obj\Debug
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\voice\obj\Debug\voice.pdb
 D:\程序\warningsystem\voice\bin\Debug\voice.dll
 D:\程序\warningsystem\voice\bin\Debug\voice.pdb
-D:\程序\warningsystem\voice\bin\Debug\voice.dll.CodeAnalysisLog.xml
-D:\程序\warningsystem\voice\bin\Debug\voice.dll.lastcodeanalysissucceeded
 D:\程序\warningsystem\voice\obj\Debug\voice.csprojResolveAssemblyReference.cache
 D:\程序\warningsystem\voice\obj\Debug\voice.voiceControls.resources
 D:\程序\warningsystem\voice\obj\Debug\voice.csproj.GenerateResource.Cache

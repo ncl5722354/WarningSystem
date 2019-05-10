@@ -1,0 +1,6 @@
+D:\程序\warningsystem\newwarningsystem\bin\newwarningsystem.dll.config
+D:\程序\warningsystem\newwarningsystem\bin\newwarningsystem.dll
+D:\程序\warningsystem\newwarningsystem\bin\newwarningsystem.pdb
+D:\程序\warningsystem\newwarningsystem\obj\Debug\newwarningsystem.dll
+D:\程序\warningsystem\newwarningsystem\obj\Debug\newwarningsystem.pdb
+D:\程序\warningsystem\newwarningsystem\obj\Debug\newwarningsystem.csprojResolveAssemblyReference.cache

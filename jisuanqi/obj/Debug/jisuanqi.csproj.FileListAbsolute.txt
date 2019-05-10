@@ -41,3 +41,14 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\jisuanqi\obj\De
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\jisuanqi\obj\Debug\jisuanqi.csproj.GenerateResource.Cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\jisuanqi\obj\Debug\jisuanqi.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\jisuanqi\obj\Debug\jisuanqi.pdb
+D:\程序\warningsystem\jisuanqi\bin\Debug\jisuanqi.exe.config
+D:\程序\warningsystem\jisuanqi\bin\Debug\jisuanqi.exe
+D:\程序\warningsystem\jisuanqi\bin\Debug\jisuanqi.pdb
+D:\程序\warningsystem\jisuanqi\bin\Debug\ViewConfig.dll
+D:\程序\warningsystem\jisuanqi\bin\Debug\ViewConfig.pdb
+D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.Form1.resources
+D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.Properties.Resources.resources
+D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.csproj.GenerateResource.Cache
+D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.exe
+D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.pdb

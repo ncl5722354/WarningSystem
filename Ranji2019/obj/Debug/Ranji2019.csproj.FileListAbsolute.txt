@@ -296,3 +296,36 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\D
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.pdb
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\Ranji2019\bin\Debug\Ranji2019.exe.config
+D:\程序\warningsystem\Ranji2019\bin\Debug\Ranji2019.exe
+D:\程序\warningsystem\Ranji2019\bin\Debug\Ranji2019.pdb
+D:\程序\warningsystem\Ranji2019\bin\Debug\FileOperation.dll
+D:\程序\warningsystem\Ranji2019\bin\Debug\FileOperation.pdb
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\Ranji2019\obj\Debug\MainWindow.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\MyLabel.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\ShenChanPaiChan_View.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\ShengchanPaichan_Item.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\ValueConfig.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\ValueConfig_Item.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\MainWindow.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\MyLabel.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\ShenChanPaiChan_View.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\ShengchanPaichan_Item.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\ShengchanPaichan_Tiao.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\ValueConfig.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\ValueConfig_Item.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\Zongmao.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\Zongmao_Subview.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\App.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.cache
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019_MarkupCompile.lref
+D:\程序\warningsystem\Ranji2019\obj\Debug\Zongmao.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\Zongmao_Subview.baml
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019.g.resources
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019.Properties.Resources.resources
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019.csproj.GenerateResource.Cache
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019.exe
+D:\程序\warningsystem\Ranji2019\obj\Debug\Ranji2019.pdb
