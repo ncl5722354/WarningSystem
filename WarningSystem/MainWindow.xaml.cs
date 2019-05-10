@@ -87,13 +87,7 @@ namespace WarningSystem
 
 
 
-        public static string path = @"\\172.17.195.187\bgdata\\";
-
-//        public static string path = "D:\\bgdata\\";
-
-       //  public static string path = @"\\TDA\bgdata\\";
-
-       // public static string path = "D:\\data\\";
+        public static string path = @"\\172.17.195.187\\bgdata\\";
 
         public static DateTime updatetime = new DateTime();         //更新时间
 
@@ -110,13 +104,6 @@ namespace WarningSystem
         public string old_update_file = "";                     // 上次更新的文件名
 
         public static System.Windows.Forms.Timer timer1 = new System.Windows.Forms.Timer();
-
-
-        [DllImport("FreeConsole")]
-        public static extern bool FreeConsole();
-        [DllImport("FreeConsole")]
-        public static extern bool AllocConsole();
-
         struct insert_struct
         {
             public  string insertcmd;
@@ -126,8 +113,13 @@ namespace WarningSystem
 
         private void MyTick(object sender,EventArgs e)
         {
-           // gengxin_is = false;
-           // Console.WriteLine("stop!");
+//<<<<<<< HEAD
+//           // gengxin_is = false;
+//           // Console.WriteLine("stop!");
+//=======
+//            //gengxin_is = false;
+//            //Console.WriteLine("stop!");
+//>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
         }
 
         public MainWindow()
@@ -332,10 +324,7 @@ namespace WarningSystem
             SubView.Add(report);
             Main_View_Grid.Children.Add(report);
 
-
             //
-            
-
             //Show_SubView(myview);
 
             // 更新数据时钟
@@ -354,10 +343,6 @@ namespace WarningSystem
             // 读取文件夹列表
             Thread thread = new Thread(Thread_Tick);
             thread.Start();
-            
-            
-            
-            //datasrtuct.
         }
 
         private void Insert_Cmd(DateTime mytime)
@@ -371,6 +356,7 @@ namespace WarningSystem
             
 
             // 建立数据库
+//<<<<<<< HEAD
             string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
 
 
@@ -399,14 +385,56 @@ namespace WarningSystem
                 insert_cmd[0] = tablename;
                 //insert_cmd[1] = time.ToString("yyyy-MM-dd HH:mm:ss");
                 insert_cmd[1] = myvalue;
+            CreateSqlValueType[] create = new CreateSqlValueType[2];
+            create[0] = new CreateSqlValueType("float", "positon", true);
+            create[1] = new CreateSqlValueType("float", "value");
+            //create[2] = new CreateSqlValueType("nvarchar(50)", "value");
 
-                //insert_struct mystruct = new insert_struct();
-                //mystruct.insert_object = insert_cmd;
-                //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
-                //mystruct.table_name = tablename;
-                inser_array.Add(insert_cmd);
+            MainWindow.data_builder.Create_Table("data"+time.ToString("yyyyMMddHHmmss"), create);
+
+            //string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
+
+            //ArrayList inser_list = new ArrayList();
+            //for (int i = 0; i < allline.Length; i++)
+            //{
+            //    //lock (timer1)
+            //    //{
+            //    //    timer1.Stop();
+            //    //    timer1.Start();
+            //    //}
+                
+            //    string line = allline[i];
+            //    string tablename = string_caozuo.Get_Table_String(line, 1);
+            //    string myvalue = string_caozuo.Get_Table_String(line, 2);
+            //    ////if (first == true)
+            //    ////{
+            //    ////    //CreateSqlValueType[] create = new CreateSqlValueType[3];
+            //    ////    //create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
+            //    ////    //create[1] = new CreateSqlValueType("datetime", "mytime");
+            //    ////    //create[2] = new CreateSqlValueType("nvarchar(50)", "value");
+
+            //    ////    //MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
+            //    ////}
+
+            //    string[] insert_cmd = new string[2];
+            //    insert_cmd[0] = tablename;
+            //    insert_cmd[1] = myvalue;
+            //    inser_list.Add(insert_cmd);
+
+            //    //insert_struct mystruct = new insert_struct();
+            //    //mystruct.insert_object = insert_cmd;
+            //    //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+            //    //mystruct.table_name = tablename;
+//>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
+
+//                //insert_struct mystruct = new insert_struct();
+//                //mystruct.insert_object = insert_cmd;
+//                //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+//                //mystruct.table_name = tablename;
+//                inser_array.Add(insert_cmd);
 
 
+//<<<<<<< HEAD
                
                 
                 
@@ -415,6 +443,20 @@ namespace WarningSystem
                 copyed_num = i;
             }
             MainWindow.data_builder.Insert_Array("data" + time.ToString("yyyyMMddHHmmss"), inser_array);
+//=======
+                
+//            //    //lock (timer1)
+//            //    //{
+//            //    //    timer1.Stop();
+//            //    //    timer1.Start();
+//            //    //}
+                
+//            //    //if (result == false)
+//            //    //    break;
+//            //    copyed_num = i;
+//            //}
+//            bool result = MainWindow.data_builder.Insert_Data_From_Txt("data" + time.ToString("yyyyMMddHHmmss"), newpath + filename);
+//>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
            
         }
        
@@ -471,7 +513,7 @@ namespace WarningSystem
                     catch { }
                 }
 
-                newpath = path + "data" + newtime.ToString("yyyyMMddHHmm") + "\\";
+                newpath ="D:\\bgdata\\" + "data" + newtime.ToString("yyyyMMddHHmm") + "\\";
 
 
                 ArrayList filelist = FileCaozuo.Read_All_Files(newpath, "*.txt");
@@ -508,24 +550,39 @@ namespace WarningSystem
                     {
                         mintime = time;
                     }
+//<<<<<<< HEAD
+//                    //lock (timer1)
+//                    //{
+//                    //    timer1.Stop();
+//                    //    timer1.Start();
+//                    //}
+
+//                   // mainthread = Thread.CurrentThread;
+//                    //ThreadPool.SetMaxThreads(1000, 1000);
+//                    //ThreadPool.SetMinThreads(100, 100);
+//                    //ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd),time);   
+
+//                    CreateSqlValueType[] create = new CreateSqlValueType[2];
+//                    create[0] = new CreateSqlValueType("float", "position", true);
+//                    //create[1] = new CreateSqlValueType("datetime", "mytime");
+//                    create[1] = new CreateSqlValueType("nvarchar(50)", "value");
+//                    bool result = MainWindow.data_builder.Create_Table("data" + time.ToString("yyyyMMddHHmmss"), create);
+//                    if (result == false) continue;
+//                    Insert_Cmd(time);
+//=======
+
+                    Insert_Cmd(time);
                     //lock (timer1)
                     //{
                     //    timer1.Stop();
                     //    timer1.Start();
                     //}
 
-                   // mainthread = Thread.CurrentThread;
-                    //ThreadPool.SetMaxThreads(1000, 1000);
-                    //ThreadPool.SetMinThreads(100, 100);
+                    //mainthread = Thread.CurrentThread;
+                    ////ThreadPool.SetMaxThreads(1000, 1000);
+                    ////ThreadPool.SetMinThreads(100, 100);
                     //ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd),time);   
 
-                    CreateSqlValueType[] create = new CreateSqlValueType[2];
-                    create[0] = new CreateSqlValueType("float", "position", true);
-                    //create[1] = new CreateSqlValueType("datetime", "mytime");
-                    create[1] = new CreateSqlValueType("nvarchar(50)", "value");
-                    bool result = MainWindow.data_builder.Create_Table("data" + time.ToString("yyyyMMddHHmmss"), create);
-                    if (result == false) continue;
-                    Insert_Cmd(time);
                 }
 
                 updatetime = maxtime;       //更新时间

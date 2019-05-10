@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\程序\预警系统新版\预警系统\WarningSystem\obj\Release\
+D:\程序\warningsystem\WarningSystem\obj\Release\
 WarningSystem
 none
 false
 TRACE
-D:\程序\预警系统新版\预警系统\WarningSystem\App.xaml
-201900212768
+D:\程序\warningsystem\WarningSystem\App.xaml
+21-977013565
 
-32884282594
-22494351537
-ChaFenView.xaml;DataList.xaml;DataQushi.xaml;DiZhuang_Item.xaml;myline.xaml;Login.xaml;MainWindow.xaml;Map_Set.xaml;MyView.xaml;Point_Set_View.xaml;putong.xaml;putongpoint.xaml;QuXian_View.xaml;Report.xaml;Value_Set.xaml;WarnInfo.xaml;warninginfo.xaml;Warning_List.xaml;WarnPoint.xaml;ZhuZi.xaml;
+371525590713
+23-63382809
+ChaFenView.xaml;DataList.xaml;DataQushi.xaml;DiZhuang_Item.xaml;myline.xaml;Login.xaml;MainWindow.xaml;Map_Set.xaml;MyView.xaml;PointChart.xaml;Point_Set_View.xaml;putong.xaml;putongpoint.xaml;QuXian_View.xaml;Report.xaml;Value_Set.xaml;WarnInfo.xaml;warninginfo.xaml;Warning_List.xaml;WarnPoint.xaml;ZhuZi.xaml;
 
 True
 
