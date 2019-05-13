@@ -64,6 +64,9 @@
     <Content Include="MainPage.aspx" />
     <Content Include="MainView.aspx" />
     <Content Include="Resources\pic.png" />
+    <Content Include="Resources\zhu_di.png" />
+    <Content Include="Resources\zhu_shen.png" />
+    <Content Include="Resources\zhu_tou.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

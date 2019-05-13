@@ -1,0 +1,468 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="zhuziview.aspx.cs" Inherits="newwarningsystem.zhuziview" %>
+
+<%@ Register assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 1017px;
+        }
+        .auto-style2 {
+            position: absolute;
+            top: 44px;
+            left: 39px;
+            z-index: 1;
+            width: 99px;
+            height: 25px;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style4 {
+            position: absolute;
+            top: 180px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 260px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 340px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 420px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 500px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style9 {
+            position: absolute;
+            top: 580px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style10 {
+            position: absolute;
+            top: 660px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style11 {
+            position: absolute;
+            top: 740px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style12 {
+            position: absolute;
+            top: 820px;
+            left:  200px;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+        }
+        .auto-style13 {
+            position: absolute;
+            top: 900px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+         .auto-style14 {
+            position: absolute;
+            top: 980px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style15 {
+            position: absolute;
+            top: 1060px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style16 {
+            position: absolute;
+            top: 1140px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+            .auto-style17 {
+            position: absolute;
+            top: 1220px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+             .auto-style18 {
+            position: absolute;
+            top: 1300px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+              .auto-style19 {
+            position: absolute;
+            top: 1380px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+               .auto-style20 {
+            position: absolute;
+            top: 1460px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+                .auto-style21 {
+            position: absolute;
+            top: 1540px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+                 .auto-style22 {
+            position: absolute;
+            top: 1620px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+                  .auto-style23 {
+            position: absolute;
+            top: 1700px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+         .auto-style24 {
+            position: absolute;
+            top: 1780px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style25 {
+            position: absolute;
+            top: 1860px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style26 {
+            position: absolute;
+            top: 1920px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style27 {
+            position: absolute;
+            top: 2000px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style28 {
+            position: absolute;
+            top: 2080px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style29 {
+            position: absolute;
+            top: 2160px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style30 {
+            position: absolute;
+            top: 2240px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+          .auto-style31 {
+            position: absolute;
+            top: 2320px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style32 {
+            position: absolute;
+            top: 2400px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style33 {
+            position: absolute;
+            top: 2480px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style34 {
+            position: absolute;
+            top: 2560px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style35 {
+            position: absolute;
+            top: 2640px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style36 {
+            position: absolute;
+            top: 2720px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style37 {
+            position: absolute;
+            top: 2800px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style38 {
+            position: absolute;
+            top: 2880px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style39 {
+            position: absolute;
+            top: 2960px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style40 {
+            position: absolute;
+            top: 3040px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style41 {
+            position: absolute;
+            top: 3120px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+           .auto-style42 {
+            position: absolute;
+            top: 3200px;
+            left:  200px;
+            z-index: 1;
+            height: 80px;
+            width: 150px;
+        }
+        .auto-style43 {
+            width: 1365px;
+            left:700px;
+        }
+        .auto-style44 {
+            position: absolute;
+            top: 413px;
+            left: 649px;
+            z-index: 1;
+        }
+        .auto-style45 {
+            position: absolute;
+            top: 416px;
+            left: 745px;
+            z-index: 1;
+            width: 172px;
+            height: 262px;
+        }
+        .auto-style46 {
+            position: absolute;
+            top: 421px;
+            left: 926px;
+            z-index: 1;
+        }
+        .auto-style47 {
+            position: absolute;
+            top: 415px;
+            z-index: 1;
+            width: 171px;
+            height: 262px;
+            left: 1029px;
+            margin-top: 7px;
+        }
+        .auto-style48 {
+            position: absolute;
+            top: 707px;
+            left: 747px;
+            z-index: 1;
+        }
+        </style>
+</head>
+<body  id="body1" style="height: 1275px; margin-right: 0px;">
+    <form id="form1" runat="server" class="auto-style43">
+    <div id="div1" class="auto-style1">
+         
+    
+        <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
+        <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/zhu_tou.png" />
+    
+        <asp:Image ID="Image2" runat="server" CssClass="auto-style4" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image3" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image4" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image5" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image6" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image7" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image8" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image9" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image10" runat="server" CssClass="auto-style12" ImageUrl="~/Resource/zhu_shen.png" />
+    
+        <asp:Image ID="Image11" runat="server" CssClass="auto-style13" ImageUrl="~/Resource/zhu_shen.png" />
+
+         <asp:Image ID="Image12" runat="server" CssClass="auto-style14" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image13" runat="server" CssClass="auto-style15" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image14" runat="server" CssClass="auto-style16" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image15" runat="server" CssClass="auto-style17" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image16" runat="server" CssClass="auto-style18" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image17" runat="server" CssClass="auto-style19" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image18" runat="server" CssClass="auto-style20" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image19" runat="server" CssClass="auto-style21" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image20" runat="server" CssClass="auto-style22" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image21" runat="server" CssClass="auto-style23" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image22" runat="server" CssClass="auto-style24" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image23" runat="server" CssClass="auto-style25" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image24" runat="server" CssClass="auto-style26" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image25" runat="server" CssClass="auto-style27" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image26" runat="server" CssClass="auto-style28" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image27" runat="server" CssClass="auto-style29" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image28" runat="server" CssClass="auto-style30" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image29" runat="server" CssClass="auto-style31" ImageUrl="~/Resource/zhu_shen.png" />
+         <asp:Image ID="Image30" runat="server" CssClass="auto-style32" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image31" runat="server" CssClass="auto-style33" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image32" runat="server" CssClass="auto-style34" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image33" runat="server" CssClass="auto-style35" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image34" runat="server" CssClass="auto-style36" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image35" runat="server" CssClass="auto-style37" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image36" runat="server" CssClass="auto-style38" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image37" runat="server" CssClass="auto-style39" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image38" runat="server" CssClass="auto-style40" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image39" runat="server" CssClass="auto-style41" ImageUrl="~/Resource/zhu_shen.png" />
+        <asp:Image ID="Image40" runat="server" CssClass="auto-style42" ImageUrl="~/Resource/zhu_di.png" />
+    
+       
+    
+        <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44">
+            <series>
+                <asp:Series ChartType="Spline" Name="曲线1" Color="Red">
+                </asp:Series>
+            <asp:Series ChartArea="ChartArea1" ChartType="Spline" Color="Blue" Name="曲线2"></asp:Series></series>
+            <chartareas>
+                <asp:ChartArea Name="ChartArea1">
+                </asp:ChartArea>
+            </chartareas>
+        </asp:Chart>
+    
+       
+    
+        <asp:Label ID="Label2" runat="server" CssClass="auto-style44" Text="曲线1选择"></asp:Label>
+        <asp:ListBox ID="ListBox1" runat="server" CssClass="auto-style45" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" OnTextChanged="ListBox1_TextChanged"></asp:ListBox>
+        <asp:Label ID="Label3" runat="server" CssClass="auto-style46" Text="曲线2选择"></asp:Label>
+        <asp:ListBox ID="ListBox2" runat="server" CssClass="auto-style47" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged"></asp:ListBox>
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" />
+    
+       
+    
+    </div>
+    </form>
+</body>
+</html>
