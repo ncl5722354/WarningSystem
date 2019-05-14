@@ -19,6 +19,8 @@ namespace newwarningsystem
 
         }
 
+       
+
         protected void Image_point4_Click(object sender, ImageClickEventArgs e)
         {
             zhuziview.start1 = 602;
@@ -29,21 +31,39 @@ namespace newwarningsystem
             //Response.Redirect(view.GetRouteUrl());
             Response.Redirect("zhuziview.aspx");
             
+            
         }
 
         protected void Image_point5_Click(object sender, ImageClickEventArgs e)
         {
+            zhuziview.start1 = 742;
+            zhuziview.end1 = 773;
+            zhuziview.start2 = 773;
+            zhuziview.end2 = 810;
             Response.Redirect("zhuziview.aspx");
         }
 
         protected void Image_point6_Click(object sender, ImageClickEventArgs e)
         {
+            zhuziview.start1 = 875;
+            zhuziview.end1 = 907;
+            zhuziview.start2 = 907;
+            zhuziview.end2 = 939;
             Response.Redirect("zhuziview.aspx");
         }
 
         protected void Image_point7_Click(object sender, ImageClickEventArgs e)
         {
+            zhuziview.start1 = 994;
+            zhuziview.end1 = 1032;
+            zhuziview.start2 = 1032;
+            zhuziview.end2 = 1069;
             Response.Redirect("zhuziview.aspx");
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

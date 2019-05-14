@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChaFenSearch.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MainMap.aspx" />
     <Content Include="Resource\pic.png" />
@@ -70,6 +71,13 @@
     <Content Include="zhuziview.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChaFenSearch.aspx.cs">
+      <DependentUpon>ChaFenSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChaFenSearch.aspx.designer.cs">
+      <DependentUpon>ChaFenSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,6 +102,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\newweb.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

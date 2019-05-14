@@ -68,9 +68,27 @@ namespace FileOperation
         public static DirectoryInfo[] Read_All_FilesDirect(string path)
         {
             DirectoryInfo folder = new DirectoryInfo(path);
+            
             return folder.GetDirectories();
         }
 
+        public static ArrayList Read_All_Dir(string path)
+        {
+            DirectoryInfo folder = new DirectoryInfo(path);
+            DirectoryInfo[] dirs = folder.GetDirectories();
+            ArrayList dirslist = new ArrayList();
+            foreach(DirectoryInfo info in dirs)
+            {
+                dirslist.Add(info);
+            }
+            return dirslist;
+        }
+
+        public static string Get_Line(string path,int index)
+        {
+            string[] allline = File.ReadAllLines(path);
+            return allline[index];
+        }
         public static ArrayList Read_All_Files(string path,string filetype)
         {
             ArrayList filename_list = new ArrayList();
