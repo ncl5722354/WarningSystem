@@ -9,14 +9,20 @@
     <_PublishTargetUrl>D:\发布</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="bin/FileOperation.dll">
+      <publishTime>05/14/2019 15:42:44</publishTime>
+    </File>
     <File Include="bin/newwarningsystem.dll">
-      <publishTime>05/11/2019 07:40:29</publishTime>
+      <publishTime>05/14/2019 15:42:45</publishTime>
+    </File>
+    <File Include="bin/String_Caozuo.dll">
+      <publishTime>05/14/2019 08:12:17</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>05/11/2019 07:36:39</publishTime>
+      <publishTime>05/14/2019 14:15:57</publishTime>
     </File>
     <File Include="MainMap.aspx">
-      <publishTime>05/11/2019 07:36:40</publishTime>
+      <publishTime>05/14/2019 13:46:04</publishTime>
     </File>
     <File Include="Resource/pic.png">
       <publishTime>05/11/2019 07:36:40</publishTime>
@@ -27,8 +33,20 @@
     <File Include="Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg">
       <publishTime>05/11/2019 07:36:40</publishTime>
     </File>
+    <File Include="Resource/zhu_di.png">
+      <publishTime>05/14/2019 08:01:35</publishTime>
+    </File>
+    <File Include="Resource/zhu_shen.png">
+      <publishTime>05/14/2019 08:01:35</publishTime>
+    </File>
+    <File Include="Resource/zhu_tou.png">
+      <publishTime>05/14/2019 08:01:35</publishTime>
+    </File>
     <File Include="Web.config">
-      <publishTime>05/11/2019 07:40:32</publishTime>
+      <publishTime>05/14/2019 08:12:20</publishTime>
+    </File>
+    <File Include="zhuziview.aspx">
+      <publishTime>05/14/2019 14:55:42</publishTime>
     </File>
   </ItemGroup>
 </Project>

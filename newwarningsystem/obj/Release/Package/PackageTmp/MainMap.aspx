@@ -60,15 +60,15 @@
         }
         .auto-style8 {
             position: absolute;
-            top: 400px;
-            left: 230px;
+            top: 466px;
+            left: 231px;
             z-index: 1;
-            width: 17px;
             height: 20px;
+            right: 1175px;
         }
         .auto-style9 {
             position: absolute;
-            top: 400px;
+            top: 487px;
             left: 350px;
             z-index:1;
             width:17px;
@@ -76,7 +76,7 @@
         }
         .auto-style10 {
             position: absolute;
-            top: 370px;
+            top: 487px;
             left: 460px;
             z-index: 1;
             width: 17px;
@@ -84,7 +84,7 @@
         }
         .auto-style11 {
             position: absolute;
-            top: 370px;
+            top: 487px;
             left: 550px;
             z-index: 1;
             width: 17px;
@@ -97,19 +97,15 @@
     <div class="auto-style1">
         
         <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" />
-
-        
-       
-
         <asp:Image ID="Imagemap" runat="server" CssClass="auto-style2" ImageUrl="~/Resource/pic.png" OnDataBinding="Imagemap_DataBinding" />
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="地图示意" Font-Names="黑体" Font-Size="30pt" ForeColor="White"></asp:Label>
          <asp:ImageButton ID="Image_point1" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/position.png" />
         <asp:ImageButton ID="Image_point2" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/position.png" style="z-index: 1" />
         <asp:ImageButton ID="Image_point3" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/position.png" style="z-index: 1" />
-        <asp:ImageButton ID="Image_point4" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/position.png" />
-        <asp:ImageButton ID="Image_point5" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/position.png" style="z-index: 1" />
-        <asp:ImageButton ID="Image_point6" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/position.png" />
-         <asp:ImageButton ID="Image_point7" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/position.png" />
+        <asp:ImageButton ID="Image_point4" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/position.png" OnClick="Image_point4_Click" />
+        <asp:ImageButton ID="Image_point5" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/position.png" OnClick="Image_point5_Click" />
+        <asp:ImageButton ID="Image_point6" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/position.png" OnClick="Image_point6_Click" />
+         <asp:ImageButton ID="Image_point7" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/position.png" OnClick="Image_point7_Click" />
     </div>
     </form>
 </body>

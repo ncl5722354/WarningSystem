@@ -66,9 +66,16 @@
     <Content Include="MainPage.aspx" />
     <Content Include="MainView.aspx" />
     <Content Include="Resources\pic.png" />
+<<<<<<< HEAD
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+=======
+    <Content Include="Resources\zhu_di.png" />
+    <Content Include="Resources\zhu_shen.png" />
+    <Content Include="Resources\zhu_tou.png" />
+    <Content Include="Web.config" />
+>>>>>>> e215d60c244f73b362d12510504ccf4037619b50
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChaFenChaxun.ascx.cs">
