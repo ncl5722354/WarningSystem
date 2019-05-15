@@ -28,10 +28,10 @@
         }
         .auto-style4 {
             position: absolute;
-            top: 10px;
+            top: 33px;
             left: 10px;
             z-index: 1;
-            width: 300px;
+            width: 575px;
             height: 66px;
         }
         .auto-style5 {
@@ -81,6 +81,7 @@
             z-index: 1;
             width: 17px;
             height: 20px;
+            right: 216px;
         }
         .auto-style11 {
             position: absolute;
@@ -90,15 +91,20 @@
             width: 17px;
             height: 20px;
         }
-    </style>
+        </style>
 </head>
 <body style="height: 1080px; width:1920px;">
     <form id="form1" runat="server">
     <div class="auto-style1">
         
+<<<<<<< HEAD
+=======
+        
+        
+>>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
         <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" />
         <asp:Image ID="Imagemap" runat="server" CssClass="auto-style2" ImageUrl="~/Resource/pic.png" OnDataBinding="Imagemap_DataBinding" />
-        <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="地图示意" Font-Names="黑体" Font-Size="30pt" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="30pt" ForeColor="White"></asp:Label>
          <asp:ImageButton ID="Image_point1" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/position.png" />
         <asp:ImageButton ID="Image_point2" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/position.png" style="z-index: 1" />
         <asp:ImageButton ID="Image_point3" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/position.png" style="z-index: 1" />

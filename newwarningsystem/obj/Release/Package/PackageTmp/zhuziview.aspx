@@ -344,6 +344,7 @@
             width: 1365px;
             left:700px;
         }
+<<<<<<< HEAD
         .auto-style44 {
             position: absolute;
             top: 794px;
@@ -353,6 +354,9 @@
             height: 15px;
         }
         .auto-style45 {
+=======
+         .auto-style45 {
+>>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
             position: absolute;
             top: 416px;
             left: 747px;
@@ -381,6 +385,7 @@
             left: 747px;
             z-index: 1;
         }
+<<<<<<< HEAD
         .auto-style49 {
             position: absolute;
             top: 36px;
@@ -396,6 +401,8 @@
             width: 72px;
             z-index:2;
         }
+=======
+>>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
              .auto-style51 {
             position:absolute;
             top: 432px;
@@ -405,6 +412,137 @@
             z-index:2;
         }
         
+<<<<<<< HEAD
+=======
+        .auto-style53 {
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            z-index: 1;
+            width: 74px;
+            height: 20px;
+        }
+        
+        .auto-style54 {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            z-index: 1;
+            width: 74px;
+            height: 20px;
+        }
+        
+        .auto-style55 {
+            position: absolute;
+            top: 430px;
+            left: 934px;
+            z-index: 1;
+        }
+        .auto-style56 {
+            position: absolute;
+            top: 150px;
+            left: 370px;
+            z-index: 1;
+            width: 74px;
+            height: 20px;
+        }
+        
+        .auto-style57 {
+            position: absolute;
+            top: 150px;
+            left: 450px;
+            z-index: 1;
+            width: 74px;
+            height: 20px;
+        }
+        
+        .auto-style58 {
+            
+            position: absolute;
+            top: 150px;
+            left: 747px;
+            z-index: 1;
+            width: 172px;
+            height: 262px;
+        
+        }
+        
+        .auto-style59 {
+           position: absolute;
+            top:500px;
+            left: 750px;
+            z-index: 1;
+            width: 60px;
+            height: 30px;
+            right: 287px;
+        }
+        
+        .auto-style60 {
+            position: absolute;
+            top: 500px;
+            left: 820px;
+            z-index: 1;
+            width: 60px;
+            height: 30px;
+            right: 104px;
+        }
+        
+        .auto-style61 {
+            position: absolute;
+            top: 200px;
+            left: 500px;
+            z-index: 1;
+            width: 188px;
+            height: 335px;
+        }
+        
+        .auto-style62 {
+            position: absolute;
+            top: 150px;
+            left: 600px;
+            z-index: 1;
+            width: 188px;
+            height: 35px;
+        }
+        
+        .auto-style63 {
+             position: absolute;
+            top: 500px;
+            left: 890px;
+            z-index: 1;
+            width: 60px;
+            height: 30px;
+            right: 147px;
+        }
+        
+        .auto-style64 {
+             position: absolute;
+            top: 500px;
+            left: 960px;
+            z-index: 1;
+            width: 60px;
+            height: 30px;
+            right: 248px;
+        }
+        
+        .auto-style65 {
+            position: absolute;
+            top: 35px;
+            left: 879px;
+            height: 26px;
+            width: 72px;
+            z-index: 2;
+        }
+        .auto-style66 {
+            position: absolute;
+            top: 34px;
+            left: 948px;
+            width: 72px;
+            z-index: 2;
+            right: 62px;
+        }
+        
+>>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
         </style>
 </head>
 <body  id="body1" style="height: 1275px; margin-right: 0px;">
@@ -416,7 +554,9 @@
     
        
     
-        <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44">
+
+        <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False">
+
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="Red">
                 </asp:Series>
@@ -483,10 +623,69 @@
     
        
     
-        <asp:ListBox ID="ListBox1" runat="server" CssClass="auto-style45" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" OnTextChanged="ListBox1_TextChanged"></asp:ListBox>
-        <asp:Label ID="Label3" runat="server" CssClass="auto-style46" Text="曲线2选择"></asp:Label>
-        <asp:ListBox ID="ListBox2" runat="server" CssClass="auto-style47" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged"></asp:ListBox>
-        <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" />
+
+        <asp:ListBox ID="ListBox1" runat="server" CssClass="auto-style45" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" OnTextChanged="ListBox1_TextChanged" Visible="False"></asp:ListBox>
+        <asp:Label ID="Label3" runat="server" CssClass="auto-style46" Text="曲线2选择" Visible="False"></asp:Label>
+        <asp:ListBox ID="ListBox2" runat="server" CssClass="auto-style47" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged" Visible="False"></asp:ListBox>
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" Visible="False" />
+    
+       
+    
+       
+    
+       
+    
+        <asp:LinkButton ID="link" CssClass="auto-style65" Text="主页面" runat="server" OnClick="link0_Click"></asp:LinkButton>
+       
+    
+       
+    
+        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style44" BorderlineColor="Black" BorderlineDashStyle="Solid">
+            <series>
+                <asp:Series ChartType="Spline" Name="曲线1" Color="Red" XValueType="DateTime">
+                </asp:Series>
+            </series>
+            <chartareas>
+                <asp:ChartArea Name="ChartArea1">
+                </asp:ChartArea>
+            </chartareas>
+            <BorderSkin BackColor="Transparent" BackGradientStyle="LeftRight" BackSecondaryColor="White" BorderDashStyle="Dash" BorderWidth="5" SkinStyle="Emboss" />
+        </asp:Chart>
+
+        <asp:Label ID="Label6" runat="server" CssClass="auto-style55" Text="曲线2选择" Visible="False"></asp:Label>
+        <asp:Label ID="Label4" runat="server" CssClass="auto-style51" Text="曲线1选择" Visible="False"></asp:Label>
+        
+        <asp:Label ID="Label7" runat="server" CssClass="auto-style53" Text="测量位置"></asp:Label>
+        
+        <asp:Label ID="Label8" runat="server" CssClass="auto-style54" style="z-index: 1" Text="位移量"></asp:Label>
+        
+        <asp:Label ID="Label9" runat="server" CssClass="auto-style56" style="z-index: 1" Text="测量位置"></asp:Label>
+        
+        <asp:Label ID="Label10" runat="server" CssClass="auto-style57" style="z-index: 1" Text="位移量"></asp:Label>
+        
+        <asp:Label ID="Label11" runat="server" CssClass="auto-style58" Text="趋势曲线"></asp:Label>
+        
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style59" Text="放大" BorderStyle="Solid" BorderWidth="2px" OnClick="Button2_Click" />
+        
+        <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" />
+        
+        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True"></asp:ListBox>
+        
+        <asp:Label ID="Label12" runat="server" CssClass="auto-style62" style="z-index: 1" Text="日期选择"></asp:Label>
+        
+        <asp:Button ID="Button4" runat="server" BorderStyle="Solid" CssClass="auto-style63" Text="前进" OnClick="Button4_Click" />
+        
+        <asp:Button ID="Button5" runat="server" CssClass="auto-style64" style="z-index: 1" Text="后退" BorderStyle="Solid" OnClick="Button5_Click" />
+        
+       
+    
+       
+    
+       
+    
+        <asp:LinkButton ID="link0" CssClass="auto-style66" Text="差分查询" runat="server" OnClick="link_Click"></asp:LinkButton>
+       
+
     
        
     
@@ -497,25 +696,7 @@
         <asp:Label ID="Label5" runat="server" CssClass="auto-style49" Text="差分查询" Font-Bold="True" Font-Names="黑体" Font-Size="30pt"></asp:Label>
     
        
-        <asp:LinkButton ID="link" CssClass="auto-style50" Text="主页面" runat="server" OnClick="link_Click"></asp:LinkButton>
-       
-    
-       
-    
-        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style44">
-            <series>
-                <asp:Series ChartType="Spline" Name="曲线1" Color="Red" XValueType="DateTime">
-                </asp:Series>
-            </series>
-            <chartareas>
-                <asp:ChartArea Name="ChartArea1">
-                </asp:ChartArea>
-            </chartareas>
-        </asp:Chart>
-
-        <asp:Label ID="Label6" runat="server" CssClass="auto-style46" Text="曲线2选择"></asp:Label>
-        <asp:Label ID="Label4" runat="server" CssClass="auto-style51" Text="曲线1选择"></asp:Label>
-        <asp:LinkButton ID="link0" CssClass="auto-style50" Text="主页面" runat="server" OnClick="link_Click"></asp:LinkButton>
+     
     </div>
     </form>
 </body>

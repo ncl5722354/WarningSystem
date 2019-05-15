@@ -12,7 +12,11 @@ TRACE
 D:\程序\warningsystem\WpfControls\App.xaml
 5-410398793
 
+<<<<<<< HEAD
 14-1553372354
+=======
+14-1449908397
+>>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
 13827689746
 MainWindow.xaml;MyChart.xaml;MyLabel.xaml;MyOrderDataGridView.xaml;MyTreeView.xaml;
 

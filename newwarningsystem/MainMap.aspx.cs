@@ -60,5 +60,10 @@ namespace newwarningsystem
             zhuziview.end2 = 1069;
             Response.Redirect("zhuziview.aspx");
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

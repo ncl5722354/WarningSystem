@@ -39,20 +39,7 @@ namespace FileOperation
             }
         }
 
-        public static string Get_Line(string filepath,int read_index)
-        {
-            string read_string = "";
-           
-                try
-                {
-                    string[] allline = File.ReadAllLines(filepath);
-                    read_string = allline[read_index-1];
-                }
-                catch { }
-
-            
-            return read_string;
-        }
+        
 
         public static void Read_All_Files_Show_List(string path,string filetype, ListBox listbox)
         {
@@ -83,9 +70,27 @@ namespace FileOperation
         public static DirectoryInfo[] Read_All_FilesDirect(string path)
         {
             DirectoryInfo folder = new DirectoryInfo(path);
+            
             return folder.GetDirectories();
         }
 
+        public static ArrayList Read_All_Dir(string path)
+        {
+            DirectoryInfo folder = new DirectoryInfo(path);
+            DirectoryInfo[] dirs = folder.GetDirectories();
+            ArrayList dirslist = new ArrayList();
+            foreach(DirectoryInfo info in dirs)
+            {
+                dirslist.Add(info);
+            }
+            return dirslist;
+        }
+
+        public static string Get_Line(string path,int index)
+        {
+            string[] allline = File.ReadAllLines(path);
+            return allline[index-1];
+        }
         public static ArrayList Read_All_Files(string path,string filetype)
         {
             ArrayList filename_list = new ArrayList();
@@ -131,21 +136,7 @@ namespace FileOperation
             catch { }
         }
 
-        public static ArrayList Read_All_Dir(string dir)
-        {
-            try
-            {
-                DirectoryInfo folder = new DirectoryInfo(dir);
-                DirectoryInfo[] dir_list = folder.GetDirectories();
-                ArrayList all = new ArrayList();
-                foreach(DirectoryInfo dirinfo in dir_list)
-                {
-                    all.Add(dirinfo);
-                }
-                return all;
-            }
-            catch { return null; }
-        }
+        
 
         public static void Write_Lind_Add(string filepath, string add_line)
         {
