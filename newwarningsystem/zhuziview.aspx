@@ -344,19 +344,9 @@
             width: 1365px;
             left:700px;
         }
-<<<<<<< HEAD
-        .auto-style44 {
-            position: absolute;
-            top: 794px;
-            left: 736px;
-            z-index: 1;
-            width: 360px;
-            height: 15px;
-        }
-        .auto-style45 {
-=======
+
          .auto-style45 {
->>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
+
             position: absolute;
             top: 416px;
             left: 747px;
@@ -393,27 +383,7 @@
             height: 39px;
             width: 206px;
         }
-            .auto-style50 {
-            position:absolute;
-            top: 34px;
-            left: 1121px;
-            height: 26px;
-            width: 72px;
-            z-index:2;
-        }
-=======
->>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
-             .auto-style51 {
-            position:absolute;
-            top: 432px;
-            left: 637px;
-            height: 39px;
-            width: 83px;
-            z-index:2;
-        }
-        
-<<<<<<< HEAD
-=======
+            
         .auto-style53 {
             position: absolute;
             top: 150px;
@@ -459,11 +429,11 @@
         .auto-style58 {
             
             position: absolute;
-            top: 150px;
-            left: 747px;
+            top: 155px;
+            left: 750px;
             z-index: 1;
             width: 172px;
-            height: 262px;
+            height: 27px;
         
         }
         
@@ -490,7 +460,7 @@
         .auto-style61 {
             position: absolute;
             top: 200px;
-            left: 500px;
+            left: 513px;
             z-index: 1;
             width: 188px;
             height: 335px;
@@ -498,8 +468,8 @@
         
         .auto-style62 {
             position: absolute;
-            top: 150px;
-            left: 600px;
+            top: 158px;
+            left: 599px;
             z-index: 1;
             width: 188px;
             height: 35px;
@@ -542,7 +512,7 @@
             right: 62px;
         }
         
->>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
+
         </style>
 </head>
 <body  id="body1" style="height: 1275px; margin-right: 0px;">
@@ -669,7 +639,7 @@
         
         <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" />
         
-        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True"></asp:ListBox>
+        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged"></asp:ListBox>
         
         <asp:Label ID="Label12" runat="server" CssClass="auto-style62" style="z-index: 1" Text="日期选择"></asp:Label>
         
@@ -693,10 +663,6 @@
     
        
     
-        <asp:Label ID="Label5" runat="server" CssClass="auto-style49" Text="差分查询" Font-Bold="True" Font-Names="黑体" Font-Size="30pt"></asp:Label>
-    
-       
-     
     </div>
     </form>
 </body>

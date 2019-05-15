@@ -19,6 +19,7 @@ namespace newwarningsystem
         public static double end1 = 0;
         public static double start2 = 0;
         public static double end2 = 0;
+        public static string title = "";
 
         //public static Timer timer1 = new Timer();
         protected void Page_Load(object sender, EventArgs e)
@@ -73,6 +74,8 @@ namespace newwarningsystem
             Chart1.Style["top"] = "100px";
             Chart1.Width = 1000;
             Chart1.Height = 300;
+
+            Label5.Text = title;
 
             //timer1.Tick += new EventHandler(Tick);
             //Chart1.Series[0].Points.AddXY(0, 0);

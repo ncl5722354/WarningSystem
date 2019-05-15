@@ -50,11 +50,11 @@
             .auto-style65 {
             position: absolute;
             top: 35px;
-            left: 517px;
+            left: 62px;
             height: 26px;
             width: 72px;
             z-index: 2;
-            right: 104px;
+            right: 1292px;
         }
         .auto-style66 {
             position: absolute;
