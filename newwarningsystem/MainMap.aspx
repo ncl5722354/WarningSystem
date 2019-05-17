@@ -64,7 +64,7 @@
             left: 231px;
             z-index: 1;
             height: 20px;
-            right: 1175px;
+            right: 612px;
         }
         .auto-style9 {
             position: absolute;
