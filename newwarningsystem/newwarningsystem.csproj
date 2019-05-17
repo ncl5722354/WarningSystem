@@ -61,12 +61,17 @@
     <Content Include="ChaFenSearch.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MainMap.aspx" />
+    <Content Include="Resource\1.png" />
+    <Content Include="Resource\2.png" />
+    <Content Include="Resource\3.png" />
+    <Content Include="Resource\bluedot.ico" />
     <Content Include="Resource\pic.png" />
     <Content Include="Resource\position.png" />
     <Content Include="Resource\u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" />
     <Content Include="Resource\zhu_di.png" />
     <Content Include="Resource\zhu_shen.png" />
     <Content Include="Resource\zhu_tou.png" />
+    <Content Include="SubMap.aspx" />
     <Content Include="Web.config" />
     <Content Include="zhuziview.aspx" />
   </ItemGroup>
@@ -93,6 +98,13 @@
       <DependentUpon>MainMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubMap.aspx.cs">
+      <DependentUpon>SubMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubMap.aspx.designer.cs">
+      <DependentUpon>SubMap.aspx</DependentUpon>
+    </Compile>
     <Compile Include="zhuziview.aspx.cs">
       <DependentUpon>zhuziview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,7 +114,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\newweb.pubxml" />
+    <None Include="Properties\PublishProfiles\newweb.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

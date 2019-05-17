@@ -20,6 +20,7 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using SqlConnect;
 
+
 namespace WarningSystem
 {
     /// <summary>
@@ -58,7 +59,8 @@ namespace WarningSystem
 
         Thread mainthread = null;              // 标记主线程
 
-
+//        [DllImport("AllocConsole")]
+        //public static extern bool AllocConsole();
 
         // 所有界面
         MyView myview = new MyView();                // 副界面中的主界面
@@ -111,14 +113,22 @@ namespace WarningSystem
 
         private void MyTick(object sender,EventArgs e)
         {
-            //gengxin_is = false;
-            //Console.WriteLine("stop!");
+//<<<<<<< HEAD
+//           // gengxin_is = false;
+//           // Console.WriteLine("stop!");
+//=======
+//            //gengxin_is = false;
+//            //Console.WriteLine("stop!");
+//>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
         }
 
         public MainWindow()
         {
+            
             //AllocConsole();
+            
             InitializeComponent();
+           
             // 屏幕参数
             this.Top = 0;
             this.Left = 0;
@@ -217,8 +227,7 @@ namespace WarningSystem
         {
             value = Math.Abs(value);
             value = (value-value*Math.Sqrt(3)/2)/0.0482;       
-            // 应变 *1000/0.0482
-            // 温度 *1000/1.12
+           
                                                      
             return value ; 
         }
@@ -344,10 +353,39 @@ namespace WarningSystem
             string filename = time.ToString("yyyy_MM_dd-HH_mm_ss") + ".txt";
 
             all_file_num = timelist.IndexOf(time, 0);
-
+            ArrayList inser_array = new ArrayList();
             
 
             // 建立数据库
+//<<<<<<< HEAD
+            string[] allline = File.ReadAllLines(newpath + filename, Encoding.Default);
+
+
+            for (int i = 0; i < allline.Length; i++)
+            {
+                //lock (timer1)
+                //{
+                //    timer1.Stop();
+                //    timer1.Start();
+                //}
+                
+                string line = allline[i];
+                string tablename = string_caozuo.Get_Table_String(line, 1);
+                string myvalue = string_caozuo.Get_Table_String(line, 2);
+                //if (first == true)
+                //{
+                //    CreateSqlValueType[] create = new CreateSqlValueType[3];
+                //    create[0] = new CreateSqlValueType("nvarchar(50)", "id", true);
+                //    create[1] = new CreateSqlValueType("datetime", "mytime");
+                //    create[2] = new CreateSqlValueType("nvarchar(50)", "value");
+
+                //    MainWindow.data_builder.Create_Table("position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2), create);
+                //}
+
+                string[] insert_cmd = new string[2];
+                insert_cmd[0] = tablename;
+                //insert_cmd[1] = time.ToString("yyyy-MM-dd HH:mm:ss");
+                insert_cmd[1] = myvalue;
             CreateSqlValueType[] create = new CreateSqlValueType[2];
             create[0] = new CreateSqlValueType("float", "positon", true);
             create[1] = new CreateSqlValueType("float", "value");
@@ -388,21 +426,38 @@ namespace WarningSystem
             //    //mystruct.insert_object = insert_cmd;
             //    //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
             //    //mystruct.table_name = tablename;
+//>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
+
+//                //insert_struct mystruct = new insert_struct();
+//                //mystruct.insert_object = insert_cmd;
+//                //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+//                //mystruct.table_name = tablename;
+//                inser_array.Add(insert_cmd);
 
 
-
+//<<<<<<< HEAD
+               
                 
-            //    //lock (timer1)
-            //    //{
-            //    //    timer1.Stop();
-            //    //    timer1.Start();
-            //    //}
                 
-            //    //if (result == false)
-            //    //    break;
-            //    copyed_num = i;
-            //}
-            bool result = MainWindow.data_builder.Insert_Data_From_Txt("data" + time.ToString("yyyyMMddHHmmss"), newpath + filename);
+                //if (result == false)
+                //    break;
+                copyed_num = i;
+            }
+            MainWindow.data_builder.Insert_Array("data" + time.ToString("yyyyMMddHHmmss"), inser_array);
+//=======
+                
+//            //    //lock (timer1)
+//            //    //{
+//            //    //    timer1.Stop();
+//            //    //    timer1.Start();
+//            //    //}
+                
+//            //    //if (result == false)
+//            //    //    break;
+//            //    copyed_num = i;
+//            //}
+//            bool result = MainWindow.data_builder.Insert_Data_From_Txt("data" + time.ToString("yyyyMMddHHmmss"), newpath + filename);
+//>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
            
         }
        
@@ -411,6 +466,9 @@ namespace WarningSystem
         {
             try
             {
+
+                if (gengxin_is == false)
+                    Console.Write("false");
 
                 if (gengxin_is == false)
                     gengxin_is = true;
@@ -493,6 +551,26 @@ namespace WarningSystem
                     {
                         mintime = time;
                     }
+//<<<<<<< HEAD
+//                    //lock (timer1)
+//                    //{
+//                    //    timer1.Stop();
+//                    //    timer1.Start();
+//                    //}
+
+//                   // mainthread = Thread.CurrentThread;
+//                    //ThreadPool.SetMaxThreads(1000, 1000);
+//                    //ThreadPool.SetMinThreads(100, 100);
+//                    //ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd),time);   
+
+//                    CreateSqlValueType[] create = new CreateSqlValueType[2];
+//                    create[0] = new CreateSqlValueType("float", "position", true);
+//                    //create[1] = new CreateSqlValueType("datetime", "mytime");
+//                    create[1] = new CreateSqlValueType("nvarchar(50)", "value");
+//                    bool result = MainWindow.data_builder.Create_Table("data" + time.ToString("yyyyMMddHHmmss"), create);
+//                    if (result == false) continue;
+//                    Insert_Cmd(time);
+//=======
 
                     Insert_Cmd(time);
                     //lock (timer1)
@@ -505,6 +583,7 @@ namespace WarningSystem
                     ////ThreadPool.SetMaxThreads(1000, 1000);
                     ////ThreadPool.SetMinThreads(100, 100);
                     //ThreadPool.QueueUserWorkItem(new WaitCallback(Insert_Cmd),time);   
+
                 }
 
                 updatetime = maxtime;       //更新时间
@@ -634,7 +713,7 @@ namespace WarningSystem
 
                     //int a = 0;
                 }
-                //gengxin_is = false;
+                gengxin_is = false;
             }
 
 

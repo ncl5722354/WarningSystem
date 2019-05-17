@@ -23,5 +23,7 @@ namespace WarningSystem
         [DllImport("FreeConsole")]
         public static extern bool AllocConsole();
 
+        
+
     }
 }

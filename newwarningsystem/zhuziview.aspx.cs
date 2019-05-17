@@ -24,16 +24,20 @@ namespace newwarningsystem
         public static double click_value = 0;
         public static double max = 0;
         public static double min = 0;
+
+        public static string chafen_title = "";
        
 
         protected void Click(object sender, EventArgs e)
         {
-            Chart2.Series[0].Points.Clear();
+                Chart2.Series[0].Points.Clear();
                 LinkButton button = (LinkButton)sender;
                 try
                 {
                     double value = double.Parse(button.Text);
+
                     click_value = value;
+
                     double jizhun = 0;
                     ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
@@ -60,6 +64,10 @@ namespace newwarningsystem
                     ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
                     foreach (DirectoryInfo dirinfo in alldirs)
                     {
+
+                        
+
+
                         try
                         {
                             ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
@@ -74,36 +82,25 @@ namespace newwarningsystem
                             string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
                             DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
                             Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                            Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
                         }
                         catch { }
                     }
-                    max = Chart2.ChartAreas[0].AxisX.Maximum;
-                    min = Chart2.ChartAreas[0].AxisX.Minimum;
 
 
-                    //foreach (string filename in filelist)
-                    //{
-                    //    try
-                    //    {
-                    //        string myline = FileCaozuo.Get_Line("D:\\data\\" + filename, count - 1);
-                    //        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                    //        double myvalue = double.Parse(myvalue_string);
-                    //        string time_string = string_caozuo.Get_Dian_String(filename, 1);
-                    //        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                    //        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                    //        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                    //        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                    //        DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
-                    //        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun-myvalue)*(1 - Math.Sqrt(3) / 2) / 0.0482);
-                    //    }
-                    //    catch { }
-                    //}
+                        max = Chart2.ChartAreas[0].AxisX.Maximum;
+                        min = Chart2.ChartAreas[0].AxisX.Minimum;
+
+
+                    
+                    
 
 
                 }
                 catch { }
             
         }
+
 
         public void ReShow(double value,double max,double min)
         {
@@ -154,17 +151,19 @@ namespace newwarningsystem
                 }
                 Chart2.ChartAreas[0].AxisX.Maximum = max;
                 Chart2.ChartAreas[0].AxisX.Minimum = min;
+                Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
                 //max = Chart2.ChartAreas[0].AxisX.Maximum;
                 //min = Chart2.ChartAreas[0].AxisX.Minimum;
             }
             catch { }
         }
+
         public void Set_Start_End(double start1,double end1,double start2,double end2)
         {
-            
+
             try
             {
-                
+
                 // 读取文件夹中的文件
                 ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
@@ -176,16 +175,16 @@ namespace newwarningsystem
                 int count1 = 0;
                 int count2 = 0;
 
-                string[] jizhun_list= FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+                string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
                 string[] now_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_now);
 
-                for (int i = 0; i < jizhun_list.Length-1; i++) 
+                for (int i = 0; i < jizhun_list.Length - 1; i++)
                 {
                     try
                     {
                         string position_string = string_caozuo.Get_Table_String(jizhun_list[i], 1);
                         double position = double.Parse(position_string);
-                        if(position>=start1 && position<=end1)
+                        if (position >= start1 && position <= end1)
                         {
                             try
                             {
@@ -194,22 +193,24 @@ namespace newwarningsystem
                                 double jizhun = double.Parse(value_jizhun_string);
                                 double now = double.Parse(value_now_string);
                                 // (value-value*Math.Sqrt(3)/2)/0.0482;
-                                double value = Math.Round(Math.Abs(now - jizhun) * (1 - Math.Sqrt(3) / 2)/0.0482,3);
+                                double value = Math.Round(Math.Abs(now - jizhun) * (1 - Math.Sqrt(3) / 2) / 0.0482, 3);
                                 // 左侧
                                 LinkButton label_position = new LinkButton();
-                                
+
                                 //ImageButton label = new ImageButton();
                                 label_position.Click += new EventHandler(Click);
-                               // label_position.Attributes.Add("onclick", "Click()");
+                                // label_position.Attributes.Add("onclick", "Click()");
+
                                 label_position.Text = position.ToString("#0.000");
                                 label_position.BackColor = System.Drawing.Color.Blue;
                                 label_position.ForeColor = System.Drawing.Color.White;
+
                                 Label label_value = new Label();
                                 label_value.Text = value.ToString("#0.000");
                                 count1++;
-                                 //position: absolute
+                                //position: absolute
                                 label_position.Style["position"] = "absolute";
-                                label_position.Style["top"] = (180 + count1 * 17).ToString()+"px";
+                                label_position.Style["top"] = (180 + count1 * 17).ToString() + "px";
                                 label_position.Style["left"] = "20px";
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (180 + count1 * 17).ToString() + "px";
@@ -222,6 +223,31 @@ namespace newwarningsystem
                             catch { }
                         }
 
+                    }
+                    catch { }
+
+                }
+            }
+            catch { }
+            try{
+                ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+
+                // 读取第一个文件作为基准
+                string file_jizhun = (string)filelist[0];
+                string file_now = (string)filelist[filelist.Count - 1];
+
+                // 读取所有的行
+                int count1 = 0;
+                int count2 = 0;
+
+                string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+                string[] now_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_now);
+                for (int i = jizhun_list.Length - 2; i >= 0; i--)
+                {
+                    try
+                    {
+                        string position_string = string_caozuo.Get_Table_String(jizhun_list[i], 1);
+                        double position = double.Parse(position_string);
                         if (position >= start2 && position <= end2)
                         {
                             try
@@ -236,10 +262,12 @@ namespace newwarningsystem
                                 LinkButton label_position = new LinkButton();
                                 label_position.Click += new EventHandler(Click);
                                 //label_position.Attributes.Add("onclick", "Click()");
-                                 
+
+
                                 label_position.Text = position.ToString("#0.000");
                                 label_position.BackColor = System.Drawing.Color.Blue;
                                 label_position.ForeColor = System.Drawing.Color.White;
+
                                 Label label_value = new Label();
                                 label_value.Text = value.ToString("#0.000");
 
@@ -303,7 +331,9 @@ namespace newwarningsystem
 
             Chart2.Style["position"] = "absolute";
             Chart2.Style["left"] = "700px";
+
             Chart2.Style["top"] = "200px";
+
             Chart2.Width = 500;
             Chart2.Height = 300;
 
@@ -409,10 +439,12 @@ namespace newwarningsystem
 
         protected void link_Click(object sender, EventArgs e)
         {
+
             ChaFenSearch.start1 = start1;
             ChaFenSearch.start2 = start2;
             ChaFenSearch.end1 = end1;
             ChaFenSearch.end2 = end2;
+            ChaFenSearch.title = chafen_title+"差分查询";
             Response.Redirect("ChaFenSearch.aspx");
             
         }
@@ -452,6 +484,72 @@ namespace newwarningsystem
         {
             Response.Redirect("MainMap.aspx");
 
+
+        }
+
+        protected void ListBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // 寻找基准
+            ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+
+            // 读取第一个文件作为基准
+            string file_jizhun = (string)filelist_1[0];
+            string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+            int count = 0;
+            double jizhun = 0;
+
+            // 寻找相应的索引
+            foreach (string line in jizhun_list)
+            {
+                string position_string = string_caozuo.Get_Table_String(line, 1);
+                string postion_value_string = string_caozuo.Get_Table_String(line, 2);
+                double positon_value = double.Parse(postion_value_string);
+                double position = double.Parse(position_string);
+                count++;
+                if (position == click_value)
+                {
+                    jizhun = positon_value;
+                    break;
+                }
+            }
+
+
+            // 查询一天的
+            Chart2.Series[0].Points.Clear();
+            try
+            {
+                ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
+                foreach (string file in filelist)
+                {
+                    try
+                    {
+                        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
+
+                        string myline = FileCaozuo.Get_Line("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString()+"\\"+file, count - 1);
+                        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+                        double myvalue = double.Parse(myvalue_string);
+                        string time_string = string_caozuo.Get_Dian_String(file, 1);
+                        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+                        string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
+                        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+                        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+                        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+                        string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
+                        string min = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+                        string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
+                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec);
+                        
+                        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:ss";
+                         DateTime time1= DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
+                        DateTime time2= DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
+                         Chart2.ChartAreas[0].AxisX.Maximum = time1.ToOADate();
+                         Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+                    }
+                    catch { }
+                }
+            }
+            catch { }
         }
     }
 }

@@ -344,7 +344,9 @@
             width: 1365px;
             left:700px;
         }
+
          .auto-style45 {
+
             position: absolute;
             top: 416px;
             left: 747px;
@@ -373,23 +375,15 @@
             left: 747px;
             z-index: 1;
         }
-            .auto-style50 {
-            position:absolute;
-            top: 34px;
-            left: 1121px;
-            height: 26px;
-            width: 72px;
-            z-index:2;
-        }
-             .auto-style51 {
-            position:absolute;
-            top: 432px;
-            left: 637px;
+<<<<<<< HEAD
+        .auto-style49 {
+            position: absolute;
+            top: 36px;
+            left: 755px;
             height: 39px;
-            width: 83px;
-            z-index:2;
+            width: 206px;
         }
-        
+            
         .auto-style53 {
             position: absolute;
             top: 150px;
@@ -435,11 +429,11 @@
         .auto-style58 {
             
             position: absolute;
-            top: 150px;
-            left: 747px;
+            top: 155px;
+            left: 750px;
             z-index: 1;
             width: 172px;
-            height: 262px;
+            height: 27px;
         
         }
         
@@ -460,13 +454,13 @@
             z-index: 1;
             width: 60px;
             height: 30px;
-            right: 217px;
+            right: 104px;
         }
         
         .auto-style61 {
             position: absolute;
             top: 200px;
-            left: 500px;
+            left: 513px;
             z-index: 1;
             width: 188px;
             height: 335px;
@@ -474,8 +468,8 @@
         
         .auto-style62 {
             position: absolute;
-            top: 150px;
-            left: 600px;
+            top: 158px;
+            left: 599px;
             z-index: 1;
             width: 188px;
             height: 35px;
@@ -501,6 +495,24 @@
             right: 248px;
         }
         
+        .auto-style65 {
+            position: absolute;
+            top: 35px;
+            left: 879px;
+            height: 26px;
+            width: 72px;
+            z-index: 2;
+        }
+        .auto-style66 {
+            position: absolute;
+            top: 34px;
+            left: 948px;
+            width: 72px;
+            z-index: 2;
+            right: 62px;
+        }
+        
+
         </style>
 </head>
 <body  id="body1" style="height: 1275px; margin-right: 0px;">
@@ -512,7 +524,9 @@
     
        
     
+
         <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False">
+
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="Red">
                 </asp:Series>
@@ -579,6 +593,7 @@
     
        
     
+
         <asp:ListBox ID="ListBox1" runat="server" CssClass="auto-style45" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" OnTextChanged="ListBox1_TextChanged" Visible="False"></asp:ListBox>
         <asp:Label ID="Label3" runat="server" CssClass="auto-style46" Text="曲线2选择" Visible="False"></asp:Label>
         <asp:ListBox ID="ListBox2" runat="server" CssClass="auto-style47" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged" Visible="False"></asp:ListBox>
@@ -590,7 +605,7 @@
     
        
     
-        <asp:LinkButton ID="link" CssClass="auto-style50" Text="主页面" runat="server" OnClick="link_Click"></asp:LinkButton>
+        <asp:LinkButton ID="link" CssClass="auto-style65" Text="主页面" runat="server" OnClick="link0_Click"></asp:LinkButton>
        
     
        
@@ -609,7 +624,6 @@
 
         <asp:Label ID="Label6" runat="server" CssClass="auto-style55" Text="曲线2选择" Visible="False"></asp:Label>
         <asp:Label ID="Label4" runat="server" CssClass="auto-style51" Text="曲线1选择" Visible="False"></asp:Label>
-        <asp:LinkButton ID="link0" CssClass="auto-style50" Text="主页面" runat="server" OnClick="link_Click"></asp:LinkButton>
         
         <asp:Label ID="Label7" runat="server" CssClass="auto-style53" Text="测量位置"></asp:Label>
         
@@ -625,7 +639,7 @@
         
         <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" />
         
-        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61"></asp:ListBox>
+        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged"></asp:ListBox>
         
         <asp:Label ID="Label12" runat="server" CssClass="auto-style62" style="z-index: 1" Text="日期选择"></asp:Label>
         
@@ -633,6 +647,22 @@
         
         <asp:Button ID="Button5" runat="server" CssClass="auto-style64" style="z-index: 1" Text="后退" BorderStyle="Solid" OnClick="Button5_Click" />
         
+       
+    
+       
+    
+       
+    
+        <asp:LinkButton ID="link0" CssClass="auto-style66" Text="差分查询" runat="server" OnClick="link_Click"></asp:LinkButton>
+       
+
+    
+       
+    
+       
+    
+       
+    
     </div>
     </form>
 </body>

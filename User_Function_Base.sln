@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_Function_Base", "User_Function_Base\User_Function_Base.csproj", "{BFCE66C9-DA1F-4989-8E8F-D72AF1AA804A}"
 EndProject
@@ -50,6 +50,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webWarningsystem", "webWarningsystem\webWarningsystem.csproj", "{53E760FB-A760-46DA-951C-4B6C31940BAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newwarningsystem", "newwarningsystem\newwarningsystem.csproj", "{59C80422-AC0D-4F9E-A40A-8F68181BAB1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "update", "update\update.csproj", "{E47C389F-304B-4540-9CFA-8DAD953AF9DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -301,6 +303,16 @@ Global
 		{59C80422-AC0D-4F9E-A40A-8F68181BAB1C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{59C80422-AC0D-4F9E-A40A-8F68181BAB1C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{59C80422-AC0D-4F9E-A40A-8F68181BAB1C}.Release|Win32.ActiveCfg = Release|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E47C389F-304B-4540-9CFA-8DAD953AF9DA}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

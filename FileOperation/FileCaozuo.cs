@@ -39,6 +39,8 @@ namespace FileOperation
             }
         }
 
+        
+
         public static void Read_All_Files_Show_List(string path,string filetype, ListBox listbox)
         {
             DirectoryInfo folder = new DirectoryInfo(path);
@@ -87,7 +89,7 @@ namespace FileOperation
         public static string Get_Line(string path,int index)
         {
             string[] allline = File.ReadAllLines(path);
-            return allline[index];
+            return allline[index-1];
         }
         public static ArrayList Read_All_Files(string path,string filetype)
         {
@@ -114,6 +116,27 @@ namespace FileOperation
 
             }
         }
+
+        public static void Create_Dir(string dir)
+        {
+            if(!Directory.Exists(dir))
+            {
+                //如果文件夹不存在，创建文件夹
+                Directory.CreateDirectory(dir);
+            }
+        }
+
+        public static void Copy(string scr_file,string mudi)
+        {
+            try
+            {
+                File.Copy(scr_file, mudi,true);
+                
+            }
+            catch { }
+        }
+
+        
 
         public static void Write_Lind_Add(string filepath, string add_line)
         {

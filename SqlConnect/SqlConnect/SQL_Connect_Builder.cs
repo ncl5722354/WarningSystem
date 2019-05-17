@@ -31,8 +31,9 @@ namespace SqlConnect
         }
 
         // 创建表
-        public void Create_Table(string table_name,CreateSqlValueType[] create_sql_value_type)
+        public bool Create_Table(string table_name,CreateSqlValueType[] create_sql_value_type)
         {
+            bool result;
             using(SqlConnection conn=new SqlConnection(connStr.ConnectionString))
             {
                 conn.Open();              //打开此连接
@@ -59,11 +60,15 @@ namespace SqlConnect
                 try
                 {
                     cmd.ExecuteNonQuery();
+                    result = true;
                 }
-                catch {}
+                catch { result = false ; }
                 conn.Close();             //关闭连接
+                return result;
             }
         }
+
+        
 
         // 查找表格
         public DataTable Select_Table(string table_name,string where_condition="",string[] cols=null)
