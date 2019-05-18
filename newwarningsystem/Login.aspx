@@ -15,18 +15,18 @@
         }
         .auto-style3 {
             position: absolute;
-            top: 10px;
-            left: 30px;
+            top: 0%;
+            left: 0%;
             z-index: 1;
-            width: 1000px;
-            height: 800px;
+            width: 100%;
+            height: 100%;
         }
         .auto-style4 {
             position: absolute;
             top: 79px;
             left: 100px;
             z-index: 1;
-            width: 324px;
+            width: 546px;
             height: 47px;
         }
         .auto-style5 {
@@ -82,7 +82,7 @@
         
         
         <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" />
-        <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝体预警系统" Font-Names="黑体" Font-Size="30pt" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="30pt" ForeColor="White"></asp:Label>
         <asp:Label ID="Label_username" runat="server" CssClass="auto-style5" Text="用户名" BorderColor="White" Font-Names="黑体" Font-Size="20pt" ForeColor="White"></asp:Label>
         <asp:Label ID="Label_password" runat="server" CssClass="auto-style6" Text="密  码" style="z-index: 1" Font-Names="黑体" Font-Size="20pt" ForeColor="White"></asp:Label>
         <asp:TextBox ID="TextBox_username" runat="server" CssClass="auto-style7" Font-Names="黑体" Font-Size="20pt"></asp:TextBox>

@@ -15,9 +15,9 @@
         .auto-style2 {
             position: absolute;
             top: 51px;
-            left: 224px;
+            left: 100px;
             z-index: 1;
-            width: 99px;
+            width: 320px;
             height: 25px;
         }
         .auto-style3 {
@@ -354,12 +354,6 @@
             width: 172px;
             height: 262px;
         }
-        .auto-style46 {
-            position: absolute;
-            top: 430px;
-            left: 933px;
-            z-index: 1;
-        }
         .auto-style47 {
             position: absolute;
             top: 415px;
@@ -375,15 +369,7 @@
             left: 747px;
             z-index: 1;
         }
-<<<<<<< HEAD
-        .auto-style49 {
-            position: absolute;
-            top: 36px;
-            left: 755px;
-            height: 39px;
-            width: 206px;
-        }
-            
+
         .auto-style53 {
             position: absolute;
             top: 150px;
@@ -396,7 +382,7 @@
         .auto-style54 {
             position: absolute;
             top: 150px;
-            left: 100px;
+            left: 120px;
             z-index: 1;
             width: 74px;
             height: 20px;
@@ -420,7 +406,7 @@
         .auto-style57 {
             position: absolute;
             top: 150px;
-            left: 450px;
+            left: 360px;
             z-index: 1;
             width: 74px;
             height: 20px;
@@ -432,7 +418,7 @@
             top: 155px;
             left: 750px;
             z-index: 1;
-            width: 172px;
+            width: 230px;
             height: 27px;
         
         }
@@ -444,8 +430,7 @@
             z-index: 1;
             width: 60px;
             height: 30px;
-            right: 287px;
-        }
+            }
         
         .auto-style60 {
             position: absolute;
@@ -460,9 +445,9 @@
         .auto-style61 {
             position: absolute;
             top: 200px;
-            left: 513px;
+            left: 524px;
             z-index: 1;
-            width: 188px;
+            width: 121px;
             height: 335px;
         }
         
@@ -482,7 +467,7 @@
             z-index: 1;
             width: 60px;
             height: 30px;
-            right: 147px;
+            right: 159px;
         }
         
         .auto-style64 {
@@ -509,8 +494,20 @@
             left: 948px;
             width: 72px;
             z-index: 2;
-            right: 62px;
+            right: 89px;
         }
+        .auto-style67 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height:380%;
+            z-index: 0;
+            right: -70px;
+        }
+        
+
+        .auto-style44 {}
         
 
         </style>
@@ -518,14 +515,14 @@
 <body  id="body1" style="height: 1275px; margin-right: 0px;">
     <form id="form1" runat="server" class="auto-style43">
     <div id="div1" class="auto-style1">
-         
+         <asp:Image ID="Image_bg" CssClass="auto-style67" runat="server" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"   />
     
-        <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
+        <asp:Label ID="Label_title" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
     
        
     
 
-        <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False">
+        <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False" BackColor="Transparent">
 
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="Red">
@@ -595,7 +592,6 @@
     
 
         <asp:ListBox ID="ListBox1" runat="server" CssClass="auto-style45" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" OnTextChanged="ListBox1_TextChanged" Visible="False"></asp:ListBox>
-        <asp:Label ID="Label3" runat="server" CssClass="auto-style46" Text="曲线2选择" Visible="False"></asp:Label>
         <asp:ListBox ID="ListBox2" runat="server" CssClass="auto-style47" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged" Visible="False"></asp:ListBox>
         <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" Visible="False" />
     
@@ -610,42 +606,48 @@
     
        
     
-        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style44" BorderlineColor="Black" BorderlineDashStyle="Solid">
+        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style44" BorderlineColor="Black" BorderlineDashStyle="Solid" BackColor="DarkGray" Width="961px">
             <series>
-                <asp:Series ChartType="Spline" Name="曲线1" Color="Red" XValueType="DateTime">
+                <asp:Series ChartType="Spline" Name="曲线1" Color="RoyalBlue" XValueType="DateTime" ToolTip="时间 ：#VALX 位移#VAL " YValuesPerPoint="2">
                 </asp:Series>
             </series>
             <chartareas>
                 <asp:ChartArea Name="ChartArea1">
+                    <AxisY Enabled="True">
+                    </AxisY>
+                    <AxisX Enabled="True">
+                    </AxisX>
                 </asp:ChartArea>
             </chartareas>
-            <BorderSkin BackColor="Transparent" BackGradientStyle="LeftRight" BackSecondaryColor="White" BorderDashStyle="Dash" BorderWidth="5" SkinStyle="Emboss" />
+            <BorderSkin BackColor="Transparent" BackSecondaryColor="White" BorderDashStyle="Dash" BorderWidth="5" />
         </asp:Chart>
 
         <asp:Label ID="Label6" runat="server" CssClass="auto-style55" Text="曲线2选择" Visible="False"></asp:Label>
         <asp:Label ID="Label4" runat="server" CssClass="auto-style51" Text="曲线1选择" Visible="False"></asp:Label>
         
-        <asp:Label ID="Label7" runat="server" CssClass="auto-style53" Text="测量位置"></asp:Label>
         
-        <asp:Label ID="Label8" runat="server" CssClass="auto-style54" style="z-index: 1" Text="位移量"></asp:Label>
         
-        <asp:Label ID="Label9" runat="server" CssClass="auto-style56" style="z-index: 1" Text="测量位置"></asp:Label>
+        <asp:Label ID="Label7" runat="server" CssClass="auto-style53" Text="测量位置" Visible="false"></asp:Label>
         
-        <asp:Label ID="Label10" runat="server" CssClass="auto-style57" style="z-index: 1" Text="位移量"></asp:Label>
+        <asp:Label ID="Label8" runat="server" CssClass="auto-style54" style="z-index: 1" Text="线缆状态" ForeColor="White"></asp:Label>
+        
+        <asp:Label ID="Label9" runat="server" CssClass="auto-style56" style="z-index: 1" Text="测量位置" Visible="false"></asp:Label>
+        
+        <asp:Label ID="Label10" runat="server" CssClass="auto-style57" style="z-index: 1" Text="线缆状态" ForeColor="White"></asp:Label>
         
         <asp:Label ID="Label11" runat="server" CssClass="auto-style58" Text="趋势曲线"></asp:Label>
         
-        <asp:Button ID="Button2" runat="server" CssClass="auto-style59" Text="放大" BorderStyle="Solid" BorderWidth="2px" OnClick="Button2_Click" />
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style59" Text="放大" BorderStyle="Solid" BorderWidth="2px" OnClick="Button2_Click" Visible="False" />
         
-        <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" />
+        <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" Visible="False" />
         
-        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged"></asp:ListBox>
+        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged" BackColor="#9999FF"></asp:ListBox>
         
-        <asp:Label ID="Label12" runat="server" CssClass="auto-style62" style="z-index: 1" Text="日期选择"></asp:Label>
+        <asp:Label ID="Label12" runat="server" CssClass="auto-style62" style="z-index: 1" Text="选择日期"></asp:Label>
         
-        <asp:Button ID="Button4" runat="server" BorderStyle="Solid" CssClass="auto-style63" Text="前进" OnClick="Button4_Click" />
+        <asp:Button ID="Button4" runat="server" BorderStyle="Solid" CssClass="auto-style63" Text="前进" OnClick="Button4_Click" Visible="False" />
         
-        <asp:Button ID="Button5" runat="server" CssClass="auto-style64" style="z-index: 1" Text="后退" BorderStyle="Solid" OnClick="Button5_Click" />
+        <asp:Button ID="Button5" runat="server" CssClass="auto-style64" style="z-index: 1" Text="后退" BorderStyle="Solid" OnClick="Button5_Click" Visible="False" />
         
        
     

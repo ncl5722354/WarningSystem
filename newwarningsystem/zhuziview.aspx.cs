@@ -26,14 +26,18 @@ namespace newwarningsystem
         public static double min = 0;
 
         public static string chafen_title = "";
+
+        double start_position = 160;
+        double end_postion = 780;
        
 
         protected void Click(object sender, EventArgs e)
         {
                 Chart2.Series[0].Points.Clear();
-                LinkButton button = (LinkButton)sender;
+                Button button = (Button)sender;
                 try
                 {
+
                     double value = double.Parse(button.Text);
 
                     click_value = value;
@@ -45,11 +49,11 @@ namespace newwarningsystem
                     string file_jizhun = (string)filelist[0];
                     string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
                     int count = 0;
-                    
+                    string position_string = "";
                     // 寻找相应的索引
                     foreach (string line in jizhun_list)
                     {
-                        string position_string = string_caozuo.Get_Table_String(line, 1);
+                        position_string = string_caozuo.Get_Table_String(line, 1);
                         string postion_value_string = string_caozuo.Get_Table_String(line, 2);
                         double positon_value = double.Parse(postion_value_string);
                         double position = double.Parse(position_string);
@@ -62,6 +66,7 @@ namespace newwarningsystem
                     }
                     // count就是相应的索引数
                     ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
+                    Label11.Text = "位置：" + position_string + "位置曲线";
                     foreach (DirectoryInfo dirinfo in alldirs)
                     {
 
@@ -133,25 +138,57 @@ namespace newwarningsystem
                     }
                 }
                 // count就是相应的索引数
-                ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
-                foreach (DirectoryInfo dirinfo in alldirs)
+                ArrayList file1list = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+                foreach (string file in file1list)
                 {
-                    ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
-                    //string[] alllines = FileCaozuo.Read_All_Line("D:\\data\\"+alldirs[0].ToString());
-                    string myline = FileCaozuo.Get_Line("D:\\data\\" + allfiles[0].ToString(), count - 1);
-                    string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                    double myvalue = double.Parse(myvalue_string);
-                    string time_string = string_caozuo.Get_Dian_String(allfiles[0].ToString(), 1);
-                    string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                    string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                    string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                    string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                    DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
-                    Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                    try
+                    {
+                        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" , "*.txt");
+
+                        string myline = FileCaozuo.Get_Line("D:\\data\\"  + file, count - 1);
+                        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+                        double myvalue = double.Parse(myvalue_string);
+                        string time_string = string_caozuo.Get_Dian_String(file, 1);
+                        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+                        string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
+                        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+                        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+                        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+                        string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
+                        string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+                        string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
+                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
+
+                        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:ss";
+                        DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
+                        DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
+                        Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
+                        Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+                        max = Chart2.ChartAreas[0].AxisX.Maximum;
+                        min = Chart2.ChartAreas[0].AxisX.Minimum;
+                    }
+                    catch { }
                 }
-                Chart2.ChartAreas[0].AxisX.Maximum = max;
-                Chart2.ChartAreas[0].AxisX.Minimum = min;
-                Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
+                //ArrayList alldirs = FileCaozuo.Read_All_Files("D:\\data\\","*.txt");
+                //foreach (DirectoryInfo dirinfo in alldirs)
+                //{
+                //    ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
+                //    //string[] alllines = FileCaozuo.Read_All_Line("D:\\data\\"+alldirs[0].ToString());
+                //    string myline = FileCaozuo.Get_Line("D:\\data\\" + allfiles[0].ToString(), count - 1);
+                //    string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+                //    double myvalue = double.Parse(myvalue_string);
+                //    string time_string = string_caozuo.Get_Dian_String(allfiles[0].ToString(), 1);
+                //    string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+                //    string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+                //    string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+                //    string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+                //    DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
+                //    Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                //}
+                //Chart2.ChartAreas[0].AxisX.Maximum = max;
+                //Chart2.ChartAreas[0].AxisX.Minimum = min;
+                //Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
                 //max = Chart2.ChartAreas[0].AxisX.Maximum;
                 //min = Chart2.ChartAreas[0].AxisX.Minimum;
             }
@@ -205,19 +242,50 @@ namespace newwarningsystem
                                 label_position.BackColor = System.Drawing.Color.Blue;
                                 label_position.ForeColor = System.Drawing.Color.White;
 
-                                Label label_value = new Label();
-                                label_value.Text = value.ToString("#0.000");
+                                Button label_value = new Button();
+                                label_value.Text = "1";
                                 count1++;
                                 //position: absolute
-                                label_position.Style["position"] = "absolute";
-                                label_position.Style["top"] = (180 + count1 * 17).ToString() + "px";
-                                label_position.Style["left"] = "20px";
+                                double danwei = (end_postion - start_position) / (end1 - start1);
+                                    
+
+                                //label_position.Style["position"] = "absolute";
+                                //label_position.Style["top"] = (start_position + count1 * danwei).ToString() + "px";
+                                //label_position.Style["left"] = "20px";
                                 label_value.Style["position"] = "absolute";
-                                label_value.Style["top"] = (180 + count1 * 17).ToString() + "px";
-                                label_value.Style["left"] = "100px";
-                                if (value < 2) label_value.BackColor = System.Drawing.Color.LightBlue;
-                                else label_value.BackColor = System.Drawing.Color.Red;
-                                this.form1.Controls.Add(label_position);
+                                label_value.Style["top"] = (start_position + count1 * danwei).ToString() + "px";
+                                label_value.Style["left"] = "120px";
+                                label_value.Text = position_string;
+
+                                if (value < 0.01)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.DarkBlue;
+                                    label_value.ForeColor = System.Drawing.Color.DarkBlue;
+                                }
+                                else if (value >= 0.01 && value <= 0.5)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.Blue;
+                                    label_value.ForeColor = System.Drawing.Color.Blue;
+                                }
+                                else if (value >= 0.5 && value <= 1.0)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.LightGreen;
+                                    label_value.ForeColor = System.Drawing.Color.LightGreen;
+                                }
+                                else if (value > 1.0 && value < 2)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.Yellow;
+                                    label_value.ForeColor = System.Drawing.Color.Yellow;
+                                }
+
+                                else if (value >= 2)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.Red;
+                                    label_value.ForeColor = System.Drawing.Color.Red;
+                                }
+                                label_value.ToolTip = "位置:" + position_string + " 位移量:" + value.ToString();
+                                label_value.Click += new EventHandler(Click);
+                                //this.form1.Controls.Add(label_position);
                                 this.form1.Controls.Add(label_value);
                             }
                             catch { }
@@ -268,23 +336,50 @@ namespace newwarningsystem
                                 label_position.BackColor = System.Drawing.Color.Blue;
                                 label_position.ForeColor = System.Drawing.Color.White;
 
-                                Label label_value = new Label();
-                                label_value.Text = value.ToString("#0.000");
+                                Button label_value = new Button();
+                                label_value.Text = "1";
 
-                                if (value < 2) label_value.BackColor = System.Drawing.Color.LightBlue;
-                                else label_value.BackColor = System.Drawing.Color.Red;
+                                if (value < 0.01)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.DarkBlue;
+                                    label_value.ForeColor = System.Drawing.Color.DarkBlue;
+                                }
+                                else if(value>=0.01 && value<= 0.5)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.Blue;
+                                    label_value.ForeColor = System.Drawing.Color.Blue;
+                                }
+                                else if (value >= 0.5 && value <= 1.0)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.LightGreen;
+                                    label_value.ForeColor = System.Drawing.Color.LightGreen;
+                                }
+                                else if (value > 1.0 && value < 2)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.Yellow;
+                                    label_value.ForeColor = System.Drawing.Color.Yellow;
+                                }
 
+                                else if(value>=2)
+                                {
+                                    label_value.BackColor = System.Drawing.Color.Red;
+                                    label_value.ForeColor = System.Drawing.Color.Red;
+                                }
+                                double danwei = (end_postion - start_position) / (end1 - start1);
                                 count2++;
                                 //position: absolute
-                                label_position.Style["position"] = "absolute";
-                                label_position.Style["top"] = (180 + count2 * 17).ToString() + "px";
-                                label_position.Style["left"] = "440px";
+                                //label_position.Style["position"] = "absolute";
+                                //label_position.Style["top"] = (180 + count2 * 17).ToString() + "px";
+                                //label_position.Style["left"] = "440px";
                                 label_value.Style["position"] = "absolute";
-                                label_value.Style["top"] = (180 + count2 * 17).ToString() + "px";
+                                label_value.Style["top"] = (start_position + count2 * danwei).ToString() + "px";
                                 label_value.Style["left"] = "370px";
+                                label_value.Text = position_string;
+                                label_value.Click += new EventHandler(Click);
 
+                                label_value.ToolTip = "位置:" + position_string + " 位移量:" + value.ToString();
 
-                                this.form1.Controls.Add(label_position);
+                                //this.form1.Controls.Add(label_position);
                                 this.form1.Controls.Add(label_value);
                             }
                             catch { }
@@ -300,6 +395,8 @@ namespace newwarningsystem
         protected void Page_Load(object sender, EventArgs e)
         {
             Set_Start_End(start1, end1, start2, end2);
+            Label_title.Text = chafen_title;
+            //Chart2.ChartAreas[0].AxisX.ScaleView.Size = 2;
             //Chart1.Style["position"] = "absolute";
             //Chart1.Style["left"] = "700px";
             //Chart1.Style["top"] = "100px";
@@ -334,7 +431,7 @@ namespace newwarningsystem
 
             Chart2.Style["top"] = "200px";
 
-            Chart2.Width = 500;
+            Chart2.Width = 1200;
             Chart2.Height = 300;
 
             ReFlush_List();
@@ -453,31 +550,43 @@ namespace newwarningsystem
         {
             if (max - min >= 0.3)
             {
-                max = max - 0.1;
-                min = min + 0.1;
+                Chart2.ChartAreas[0].AxisX.Maximum = max - 0.1;
+                Chart2.ChartAreas[0].AxisX.Minimum = min + 0.1;
+                max = Chart2.ChartAreas[0].AxisX.Maximum;
+                min = Chart2.ChartAreas[0].AxisX.Minimum;
                 ReShow(click_value, max, min);
+
             }
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            if (Chart2.ChartAreas[0].AxisX.Maximum - Chart2.ChartAreas[0].AxisX.Minimum >= 0.3)
-            {
-                Chart2.ChartAreas[0].AxisX.Maximum = Chart2.ChartAreas[0].AxisX.Maximum - 0.1;
-                Chart2.ChartAreas[0].AxisX.Minimum = Chart2.ChartAreas[0].AxisX.Minimum + 0.1;
-            }
+           
+                Chart2.ChartAreas[0].AxisX.Maximum = max + 0.1;
+                Chart2.ChartAreas[0].AxisX.Minimum = min - 0.1;
+                max = Chart2.ChartAreas[0].AxisX.Maximum;
+                min = Chart2.ChartAreas[0].AxisX.Minimum;
+                ReShow(click_value, max, min);
+                
+            
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Chart2.ChartAreas[0].AxisX.Maximum = Chart2.ChartAreas[0].AxisX.Maximum + 0.1;
-            Chart2.ChartAreas[0].AxisX.Minimum = Chart2.ChartAreas[0].AxisX.Minimum + 0.1;
+            Chart2.ChartAreas[0].AxisX.Maximum = max + 0.1;
+            Chart2.ChartAreas[0].AxisX.Minimum = min + 0.1;
+            max = Chart2.ChartAreas[0].AxisX.Maximum;
+            min = Chart2.ChartAreas[0].AxisX.Minimum; 
+            ReShow(click_value, max, min);
         }
 
         protected void Button5_Click(object sender, EventArgs e)
         {
-            Chart2.ChartAreas[0].AxisX.Maximum = Chart2.ChartAreas[0].AxisX.Maximum - 0.1;
-            Chart2.ChartAreas[0].AxisX.Minimum = Chart2.ChartAreas[0].AxisX.Minimum - 0.1;
+            Chart2.ChartAreas[0].AxisX.Maximum = max - 0.1;
+            Chart2.ChartAreas[0].AxisX.Minimum = min - 0.1;
+            max = Chart2.ChartAreas[0].AxisX.Maximum;
+            min = Chart2.ChartAreas[0].AxisX.Minimum;
+            ReShow(click_value, max, min);
         }
 
         protected void link0_Click(object sender, EventArgs e)
@@ -497,11 +606,11 @@ namespace newwarningsystem
             string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
             int count = 0;
             double jizhun = 0;
-
+            string position_string = "";
             // 寻找相应的索引
             foreach (string line in jizhun_list)
             {
-                string position_string = string_caozuo.Get_Table_String(line, 1);
+                position_string = string_caozuo.Get_Table_String(line, 1);
                 string postion_value_string = string_caozuo.Get_Table_String(line, 2);
                 double positon_value = double.Parse(postion_value_string);
                 double position = double.Parse(position_string);
@@ -535,19 +644,28 @@ namespace newwarningsystem
                         string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
                         string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
                         string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
-                        string min = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+                        string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
                         string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
-                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec);
+                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
                         
                         Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:ss";
+                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
                          DateTime time1= DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
                         DateTime time2= DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
-                         Chart2.ChartAreas[0].AxisX.Maximum = time1.ToOADate();
+                         Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
                          Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+                         Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
+                         Chart2.ChartAreas[0].AxisX.Interval = 1;
+                         max = Chart2.ChartAreas[0].AxisX.Maximum;
+                         min = Chart2.ChartAreas[0].AxisX.Minimum;
+                         Label11.Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线"; 
                     }
                     catch { }
+                    
+
                 }
+
+
             }
             catch { }
         }
