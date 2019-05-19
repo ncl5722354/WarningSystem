@@ -12,11 +12,12 @@
         }
         .auto-style2 {
             position: absolute;
-            top: 100px;
-            left: 10px;
+            top: 11%;
+            left: 10%;
             z-index: 1;
-            width: 1200px;
-            height: 800px;
+            width: 80%;
+            height: 80%;
+            
         }
         .auto-style3 {
             position: absolute;
@@ -36,61 +37,62 @@
         }
         .auto-style5 {
             position: absolute;
-            top: 300px;
-            left: 300px;
+            top: 30%;
+            left: 28%;
             z-index: 1;
-            width: 18px;
-            height: 20px;
+            width: 2%;
+            height: 4%;
         }
         .auto-style6 {
             position: absolute;
-            top: 270px;
-            left: 500px;
+            top: 26%;
+            left: 43%;
             z-index:1;
-            width:17px;
-            height:20px;
+            width:2%;
+            height:4%;
         }
         .auto-style7 {
             position: absolute;
-            top: 330px;
-            left: 500px;
+            top: 32%;
+            left: 43%;
             z-index:1;
-            width:17px;
-            height:20px;
+            width:2%;
+            height:4%;
         }
         .auto-style8 {
             position: absolute;
-            top: 466px;
-            left: 231px;
+            top: 46%;
+            left: 25%;
             z-index: 1;
-            height: 20px;
-            right: 612px;
+            height: 4%;
+            right: 0%;
+            width:2%;
         }
         .auto-style9 {
             position: absolute;
-            top: 487px;
-            left: 350px;
+            top: 48%;
+            left: 34%;
             z-index:1;
-            width:17px;
-            height:20px;
+            width:2%;
+            height:4%;
             right: 1059px;
         }
         .auto-style10 {
             position: absolute;
-            top: 487px;
-            left: 460px;
+            top: 48%;
+            left: 41%;
             z-index: 1;
-            width: 17px;
-            height: 20px;
-            right: 216px;
+            width:2%;
+            height: 4%;
+            right: 522px;
         }
         .auto-style11 {
             position: absolute;
-            top: 487px;
-            left: 550px;
+            top: 48%;
+            left: 47%;
             z-index: 1;
-            width: 17px;
-            height: 20px;
+            width: 2%;
+            height: 4%;
         }
         </style>
 </head>

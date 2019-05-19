@@ -19,11 +19,27 @@
         }
          .auto-style44 {
             position: absolute;
-            top: 35px;
-            left: 1300px;
-            height: 500px;
-            width: 1000px;
+            top: 10%;
+            left: 60%;
+            height: 30%;
+            width: 60%;
             z-index: 2;
+        }
+         .auto-style43 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 200%;
+            z-index: -1;
+        }
+         .auto-style42 {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 60%;
+            width: 50%;
+            z-index: 0;
         }
         </style>
 </head>
@@ -32,8 +48,9 @@
     <div>
     
     </div>
-        <asp:Image ID="Image1" runat="server" Height="621px" style="margin-top: 58px" Width="1226px" />
-    
+        <asp:Image ID="Image2"  CssClass="auto-style43" runat="server"   ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"/>
+        <asp:Image ID="Image1"  CssClass="auto-style42" runat="server" />
+        
        
     
        
@@ -54,7 +71,7 @@
                 <asp:ChartArea Name="ChartArea1">
                 </asp:ChartArea>
             </chartareas>
-            <BorderSkin BackColor="Transparent" BackGradientStyle="LeftRight" BackSecondaryColor="White" BorderDashStyle="Dash" BorderWidth="5" SkinStyle="Emboss" />
+            
         </asp:Chart>
 
     </form>

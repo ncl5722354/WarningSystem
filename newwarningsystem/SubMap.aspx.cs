@@ -168,8 +168,8 @@ namespace newwarningsystem
                             imagebutton.Style["position"] = "absolute";
                             if (map_name == "一号坡")
                             {
-                                imagebutton.Style["top"] = (y * 5-430 ).ToString() + "px";
-                                imagebutton.Style["left"] = (x * 5 - 700).ToString() + "px";
+                                imagebutton.Style["top"] = (y * 3-430 ).ToString() + "px";
+                                imagebutton.Style["left"] = (x * 3 - 700).ToString() + "px";
                                 imagebutton.Style["width"] = "5px";
                                 imagebutton.Style["height"] = "5px";
                                 imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
