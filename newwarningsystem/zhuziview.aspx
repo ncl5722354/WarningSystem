@@ -454,7 +454,7 @@
             left: 524px;
             z-index: 1;
             width: 121px;
-            height: 335px;
+            height: 357px;
         }
         
         .auto-style62 {

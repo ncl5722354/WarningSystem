@@ -259,22 +259,22 @@ namespace newwarningsystem
                                 if (value < 0.01)
                                 {
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
-                                    label_value.ForeColor = System.Drawing.Color.DarkBlue;
+                                    label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value >= 0.01 && value <= 0.5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
-                                    label_value.ForeColor = System.Drawing.Color.Blue;
+                                    label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value >= 0.5 && value <= 1.0)
                                 {
                                     label_value.BackColor = System.Drawing.Color.LightGreen;
-                                    label_value.ForeColor = System.Drawing.Color.LightGreen;
+                                    label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value > 1.0 && value < 2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Yellow;
-                                    label_value.ForeColor = System.Drawing.Color.Yellow;
+                                    label_value.ForeColor = System.Drawing.Color.White;
                                 }
 
                                 else if (value >= 2)
