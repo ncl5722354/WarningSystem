@@ -503,7 +503,7 @@
             width: 200%;
             height:380%;
             z-index: 0;
-            right: -1821px;
+            right: -1831px;
         }
         
         .auto-style68 {

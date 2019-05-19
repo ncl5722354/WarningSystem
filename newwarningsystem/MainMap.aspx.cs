@@ -81,6 +81,11 @@ namespace newwarningsystem
         {
             SubMap.pic_uri = "~/Resource/1.png";
             SubMap.map_name = "一号坡";
+            ImageButton mybutton = (ImageButton)sender;
+            SubMap.chafen_title = mybutton.ToolTip;
+            
+            SubMap.start1 = 2164;
+            SubMap.end2 = 2317;
             Response.Redirect("SubMap.aspx");
         }
 
@@ -88,6 +93,11 @@ namespace newwarningsystem
         {
             SubMap.pic_uri = "~/Resource/2.png";
             SubMap.map_name = "二号坡上";
+            ImageButton mybutton = (ImageButton)sender;
+            SubMap.chafen_title = mybutton.ToolTip;
+            
+            SubMap.start1 = 2361;
+            SubMap.end2 = 2558;
             Response.Redirect("SubMap.aspx");
         }
 
@@ -95,6 +105,11 @@ namespace newwarningsystem
         {
             SubMap.pic_uri = "~/Resource/3.png";
             SubMap.map_name = "二号坡下";
+            ImageButton mybutton = (ImageButton)sender;
+            SubMap.chafen_title = mybutton.ToolTip;
+            
+            SubMap.start1 = 2934;
+            SubMap.end2 = 3074;
             Response.Redirect("SubMap.aspx");
         }
     }
