@@ -9,11 +9,14 @@ using String_Caozuo;
 using System.Collections;
 using System.Text;
 using System.IO;
+using System.IO.Ports;
+
 
 namespace newwarningsystem
 {
     public partial class SubMap : System.Web.UI.Page
     {
+        
         public static string map_name = "";
         public static string pic_uri = "";
 
@@ -27,9 +30,6 @@ namespace newwarningsystem
         public static double end2 = 0;
         public static int selected1 = 0;
         public static int selected2 = 0;
-
-      
-        
 
         public static string chafen_title = "";
 
@@ -45,6 +45,7 @@ namespace newwarningsystem
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
             // Set_Start_End(start1, end1, start2, end2);
+            
             //Chart1.Style["position"] = "absolute";
             //Chart1.Style["left"] = "700px";
             //Chart1.Style["top"] = "100px";
@@ -231,57 +232,61 @@ namespace newwarningsystem
                     int thiscount = 0;
                     for (int j = 0; j < jizhun_list.Length - 1; j++)
                     {
-                        double position = double.Parse(string_caozuo.Get_Table_String(jizhun_list[j], 1));
-                        double jizhun = double.Parse(string_caozuo.Get_Table_String(jizhun_list[j], 2));
-                        double value = (double.Parse(string_caozuo.Get_Table_String(now_list[j], 2)) - jizhun) * (1 - Math.Sqrt(3) / 2) / 0.0482;
-                        
-                        if (position >= rukou && position <= chukou)
+                        try
                         {
-                            thiscount++;
-                            // 加入一个点
-                            double x1 = double.Parse(MainMap.ini.IniReadValue(linename, "X1"));
-                            double x2 = double.Parse(MainMap.ini.IniReadValue(linename, "X2"));
-                            double y1 = double.Parse(MainMap.ini.IniReadValue(linename, "Y1"));
-                            double y2 = double.Parse(MainMap.ini.IniReadValue(linename, "Y2"));
+                            double position = Math.Abs(double.Parse(string_caozuo.Get_Table_String(jizhun_list[j], 1)));
+                            double jizhun = Math.Abs(double.Parse(string_caozuo.Get_Table_String(jizhun_list[j], 2)));
+                            double value = Math.Abs(double.Parse(string_caozuo.Get_Table_String(now_list[j], 2)) - jizhun) * (1 - Math.Sqrt(3) / 2) / 0.0482;
 
-                            // 点的坐标
-                            double x = (x2 - x1) / mycount * thiscount + x1;
-                            double y = (y2 - y1) / mycount * thiscount + y1;
-                            ImageButton imagebutton = new ImageButton();
-                            imagebutton.ImageUrl = "~/Resource/bluedot.ico";
-                            imagebutton.Style["position"] = "absolute";
-                            if (map_name == "一号坡")
+                            if (position >= rukou && position <= chukou)
                             {
-                                imagebutton.Style["top"] = (y * 3-430 ).ToString() + "px";
-                                imagebutton.Style["left"] = (x * 3 - 700).ToString() + "px";
-                                imagebutton.Style["width"] = "5px";
-                                imagebutton.Style["height"] = "5px";
-                                imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
-                                imagebutton.Click += new ImageClickEventHandler(Click);
-                            }
-                            if (map_name == "二号坡上")
-                            {
-                                imagebutton.Style["top"] = (y * 6 - 400).ToString() + "px";
-                                imagebutton.Style["left"] = (x * 6 - 2300).ToString() + "px";
-                                imagebutton.Style["width"] = "5px";
-                                imagebutton.Style["height"] = "5px";
-                                imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
-                                imagebutton.Click += new ImageClickEventHandler(Click);
-                            }
-                            if (map_name == "二号坡下")
-                            {
-                                imagebutton.Style["top"] = (y * 6 - 900).ToString() + "px";
-                                imagebutton.Style["left"] = (x * 6 - 2300).ToString() + "px";
-                                imagebutton.Style["width"] = "5px";
-                                imagebutton.Style["height"] = "5px";
-                                imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
-                                imagebutton.Click += new ImageClickEventHandler(Click);
-                            }
+                                thiscount++;
+                                // 加入一个点
+                                double x1 = double.Parse(MainMap.ini.IniReadValue(linename, "X1"));
+                                double x2 = double.Parse(MainMap.ini.IniReadValue(linename, "X2"));
+                                double y1 = double.Parse(MainMap.ini.IniReadValue(linename, "Y1"));
+                                double y2 = double.Parse(MainMap.ini.IniReadValue(linename, "Y2"));
+
+                                // 点的坐标
+                                double x = (x2 - x1) / mycount * thiscount + x1;
+                                double y = (y2 - y1) / mycount * thiscount + y1;
+                                ImageButton imagebutton = new ImageButton();
+                                imagebutton.ImageUrl = "~/Resource/bluedot.ico";
+                                imagebutton.Style["position"] = "absolute";
+                                if (map_name == "一号坡")
+                                {
+                                    imagebutton.Style["top"] = (y / 2.5 - 17).ToString() + "%";
+                                    imagebutton.Style["left"] = (x / 3.7 - 32).ToString() + "%";
+                                    imagebutton.Style["width"] = "5px";
+                                    imagebutton.Style["height"] = "5px";
+                                    imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
+                                    imagebutton.Click += new ImageClickEventHandler(Click);
+                                }
+                                if (map_name == "二号坡上")
+                                {
+                                    imagebutton.Style["top"] = (y / 1.2 - 63).ToString() + "%";
+                                    imagebutton.Style["left"] = (x / 3.4 - 100).ToString() + "%";
+                                    imagebutton.Style["width"] = "5px";
+                                    imagebutton.Style["height"] = "5px";
+                                    imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
+                                    imagebutton.Click += new ImageClickEventHandler(Click);
+                                }
+                                if (map_name == "二号坡下")
+                                {
+                                    imagebutton.Style["top"] = (y / 1.5 - 92).ToString() + "%";
+                                    imagebutton.Style["left"] = (x / 3 - 115).ToString() + "%";
+                                    imagebutton.Style["width"] = "5px";
+                                    imagebutton.Style["height"] = "5px";
+                                    imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
+                                    imagebutton.Click += new ImageClickEventHandler(Click);
+                                }
 
 
-                            form1.Controls.Add(imagebutton);
+                                form1.Controls.Add(imagebutton);
 
+                            }
                         }
+                        catch { }
                     }
                 }
             }

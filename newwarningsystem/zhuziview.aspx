@@ -15,7 +15,7 @@
         .auto-style2 {
             position: absolute;
             top: 51px;
-            left: 100px;
+            left: 18%;
             z-index: 1;
             width: 320px;
             height: 25px;
@@ -23,322 +23,322 @@
         .auto-style3 {
             position: absolute;
             top: 100px;
-            left: 200px;
+            left: 22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style4 {
             position: absolute;
             top: 180px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style5 {
             position: absolute;
             top: 260px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style6 {
             position: absolute;
             top: 340px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style7 {
             position: absolute;
             top: 420px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style8 {
             position: absolute;
             top: 500px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style9 {
             position: absolute;
             top: 580px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style10 {
             position: absolute;
             top: 660px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style11 {
             position: absolute;
             top: 740px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style12 {
             position: absolute;
             top: 820px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style13 {
             position: absolute;
             top: 900px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
          .auto-style14 {
             position: absolute;
             top: 980px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
           .auto-style15 {
             position: absolute;
             top: 1060px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style16 {
             position: absolute;
             top: 1140px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
-            .auto-style17 {
+        .auto-style17 {
             position: absolute;
             top: 1220px;
-            left:  200px;
+            left: 22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
              .auto-style18 {
             position: absolute;
             top: 1300px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
               .auto-style19 {
             position: absolute;
             top: 1380px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                .auto-style20 {
             position: absolute;
             top: 1460px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                 .auto-style21 {
             position: absolute;
             top: 1540px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                  .auto-style22 {
             position: absolute;
             top: 1620px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                   .auto-style23 {
             position: absolute;
             top: 1700px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
          .auto-style24 {
             position: absolute;
             top: 1780px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style25 {
             position: absolute;
             top: 1860px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style26 {
             position: absolute;
             top: 1920px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
           .auto-style27 {
             position: absolute;
             top: 2000px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style28 {
             position: absolute;
             top: 2080px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style29 {
             position: absolute;
             top: 2160px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+            height: 80px;;
         }
           .auto-style30 {
             position: absolute;
             top: 2240px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style31 {
             position: absolute;
             top: 2320px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style32 {
             position: absolute;
             top: 2400px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
            .auto-style33 {
             position: absolute;
             top: 2480px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style34 {
             position: absolute;
             top: 2560px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style35 {
             position: absolute;
             top: 2640px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
            .auto-style36 {
             position: absolute;
             top: 2720px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style37 {
             position: absolute;
             top: 2800px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
            .auto-style38 {
             position: absolute;
             top: 2880px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style39 {
             position: absolute;
             top: 2960px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style40 {
             position: absolute;
             top: 3040px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style41 {
             position: absolute;
             top: 3120px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style42 {
             position: absolute;
             top: 3200px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
         .auto-style43 {
             width: 1365px;
@@ -381,8 +381,8 @@
         
         .auto-style54 {
             position: absolute;
-            top: 150px;
-            left: 120px;
+            top: 14%;
+            left: 15%;
             z-index: 1;
             width: 74px;
             height: 20px;
@@ -405,18 +405,18 @@
         
         .auto-style57 {
             position: absolute;
-            top: 150px;
-            left: 360px;
+            top: 14%;
+            left: 34%;
             z-index: 1;
-            width: 74px;
+            width: 34%;
             height: 20px;
         }
         
         .auto-style58 {
             
             position: absolute;
-            top: 80px;
-            left: 750px;
+            top: 8%;
+            left: 45%;
             z-index: 1;
             width: 500px;
             height: 27px;
@@ -445,7 +445,7 @@
         .auto-style61 {
             position: absolute;
             top: 450px;
-            left: 450px;
+            left: 45%;
             z-index: 1;
             width: 121px;
             height: 200px;
@@ -454,7 +454,7 @@
         .auto-style62 {
             position: absolute;
             top: 418px;
-            left: 449px;
+            left: 45%;
             z-index: 1;
             width: 188px;
             height: 35px;
@@ -510,10 +510,10 @@
             position: absolute;
             top: 20%;
             left: 0%;
-            width: 9%;
+            width: 8%;
             height:30%;
             z-index: 3;
-            right: -466px;
+           
         }
          .auto-style69 {
             position: absolute;
@@ -626,7 +626,7 @@
              .auto-style81 {
             position: absolute;
             top: 418px;
-            left: 680px;
+            left: 60%;
             z-index: 1;
             width: 188px;
             height: 35px;
@@ -635,7 +635,7 @@
              .auto-style82 {
             position: absolute;
             top: 450px;
-            left: 680px;
+            left: 60%;
             z-index: 1;
             width: 121px;
             height: 200px;

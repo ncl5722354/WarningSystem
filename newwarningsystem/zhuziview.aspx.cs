@@ -256,7 +256,7 @@ namespace newwarningsystem
                                 //label_position.Style["left"] = "20px";
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count1 * danwei).ToString() + "px";
-                                label_value.Style["left"] = "120px";
+                                label_value.Style["left"] = "18%";
                                 label_value.Text = position_string;
 
                                 if (value < 0.01)
@@ -375,7 +375,7 @@ namespace newwarningsystem
                                 //label_position.Style["left"] = "440px";
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count2 * danwei).ToString() + "px";
-                                label_value.Style["left"] = "370px";
+                                label_value.Style["left"] = "34%";
                                 label_value.Text = position_string;
                                 label_value.Click += new EventHandler(Click);
 
@@ -429,7 +429,7 @@ namespace newwarningsystem
             //刷新列表
 
             Chart2.Style["position"] = "absolute";
-            Chart2.Style["left"] = "450px";
+            Chart2.Style["left"] = "40%";
 
             Chart2.Style["top"] = "100px";
 

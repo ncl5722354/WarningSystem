@@ -62,6 +62,22 @@
             left: 282px;
             z-index: 1;
         }
+        .auto-style67 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width:100%;
+            height:100%;
+            z-index: 0;
+        }
+        .auto-style44 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width:70%;
+            height:30%;
+            z-index: 0;
+        }
         
         </style>
 </head>
@@ -69,7 +85,7 @@
     <form id="form1" runat="server">
     
        
-    
+        <asp:Image ID="Image1" runat="server"  CssClass="auto-style67" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"/>
         <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44">
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="Red">
@@ -79,7 +95,7 @@
                 <asp:ChartArea Name="ChartArea1">
                 </asp:ChartArea>
             </chartareas>
-            <BorderSkin BorderDashStyle="Solid" SkinStyle="Emboss" />
+            <BorderSkin BorderDashStyle="Solid" />
         </asp:Chart>
     
        
@@ -101,6 +117,7 @@
        
     
         <asp:Label ID="Label5" runat="server" CssClass="auto-style66" Font-Bold="True" Font-Size="40pt" Text="Label"></asp:Label>
+        
         <p>
         <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" />
     

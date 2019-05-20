@@ -15,330 +15,330 @@
         .auto-style2 {
             position: absolute;
             top: 51px;
-            left: 224px;
+            left: 18%;
             z-index: 1;
-            width: 99px;
+            width: 320px;
             height: 25px;
         }
         .auto-style3 {
             position: absolute;
             top: 100px;
-            left: 200px;
+            left: 22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style4 {
             position: absolute;
             top: 180px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style5 {
             position: absolute;
             top: 260px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style6 {
             position: absolute;
             top: 340px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style7 {
             position: absolute;
             top: 420px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style8 {
             position: absolute;
             top: 500px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style9 {
             position: absolute;
             top: 580px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style10 {
             position: absolute;
             top: 660px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style11 {
             position: absolute;
             top: 740px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style12 {
             position: absolute;
             top: 820px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            width: 150px;
+            width: 10%;
             height: 80px;
         }
         .auto-style13 {
             position: absolute;
             top: 900px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
          .auto-style14 {
             position: absolute;
             top: 980px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
           .auto-style15 {
             position: absolute;
             top: 1060px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style16 {
             position: absolute;
             top: 1140px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
-            .auto-style17 {
+        .auto-style17 {
             position: absolute;
             top: 1220px;
-            left:  200px;
+            left: 22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
              .auto-style18 {
             position: absolute;
             top: 1300px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
               .auto-style19 {
             position: absolute;
             top: 1380px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                .auto-style20 {
             position: absolute;
             top: 1460px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                 .auto-style21 {
             position: absolute;
             top: 1540px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                  .auto-style22 {
             position: absolute;
             top: 1620px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
                   .auto-style23 {
             position: absolute;
             top: 1700px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
          .auto-style24 {
             position: absolute;
             top: 1780px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style25 {
             position: absolute;
             top: 1860px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style26 {
             position: absolute;
             top: 1920px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
           .auto-style27 {
             position: absolute;
             top: 2000px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style28 {
             position: absolute;
             top: 2080px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style29 {
             position: absolute;
             top: 2160px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+            height: 80px;;
         }
           .auto-style30 {
             position: absolute;
             top: 2240px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
           .auto-style31 {
             position: absolute;
             top: 2320px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style32 {
             position: absolute;
             top: 2400px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
            .auto-style33 {
             position: absolute;
             top: 2480px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style34 {
             position: absolute;
             top: 2560px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style35 {
             position: absolute;
             top: 2640px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
            .auto-style36 {
             position: absolute;
             top: 2720px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style37 {
             position: absolute;
             top: 2800px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
-            height: 80px;
-            width: 150px;
+            width: 10%;
+           height: 80px;
         }
            .auto-style38 {
             position: absolute;
             top: 2880px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style39 {
             position: absolute;
             top: 2960px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style40 {
             position: absolute;
             top: 3040px;
-            left:  200px;
+             left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style41 {
             position: absolute;
             top: 3120px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
            .auto-style42 {
             position: absolute;
             top: 3200px;
-            left:  200px;
+            left:  22%;
             z-index: 1;
+            width: 10%;
             height: 80px;
-            width: 150px;
         }
         .auto-style43 {
             width: 1365px;
@@ -353,12 +353,6 @@
             z-index: 1;
             width: 172px;
             height: 262px;
-        }
-        .auto-style46 {
-            position: absolute;
-            top: 430px;
-            left: 933px;
-            z-index: 1;
         }
         .auto-style47 {
             position: absolute;
@@ -375,15 +369,7 @@
             left: 747px;
             z-index: 1;
         }
-<<<<<<< HEAD
-        .auto-style49 {
-            position: absolute;
-            top: 36px;
-            left: 755px;
-            height: 39px;
-            width: 206px;
-        }
-            
+
         .auto-style53 {
             position: absolute;
             top: 150px;
@@ -395,8 +381,8 @@
         
         .auto-style54 {
             position: absolute;
-            top: 150px;
-            left: 100px;
+            top: 14%;
+            left: 15%;
             z-index: 1;
             width: 74px;
             height: 20px;
@@ -419,20 +405,20 @@
         
         .auto-style57 {
             position: absolute;
-            top: 150px;
-            left: 450px;
+            top: 14%;
+            left: 34%;
             z-index: 1;
-            width: 74px;
+            width: 34%;
             height: 20px;
         }
         
         .auto-style58 {
             
             position: absolute;
-            top: 155px;
-            left: 750px;
+            top: 8%;
+            left: 45%;
             z-index: 1;
-            width: 172px;
+            width: 500px;
             height: 27px;
         
         }
@@ -444,8 +430,7 @@
             z-index: 1;
             width: 60px;
             height: 30px;
-            right: 287px;
-        }
+            }
         
         .auto-style60 {
             position: absolute;
@@ -459,17 +444,17 @@
         
         .auto-style61 {
             position: absolute;
-            top: 200px;
-            left: 513px;
+            top: 450px;
+            left: 45%;
             z-index: 1;
-            width: 188px;
-            height: 335px;
+            width: 121px;
+            height: 200px;
         }
         
         .auto-style62 {
             position: absolute;
-            top: 158px;
-            left: 599px;
+            top: 418px;
+            left: 45%;
             z-index: 1;
             width: 188px;
             height: 35px;
@@ -482,7 +467,7 @@
             z-index: 1;
             width: 60px;
             height: 30px;
-            right: 147px;
+            right: 159px;
         }
         
         .auto-style64 {
@@ -509,23 +494,168 @@
             left: 948px;
             width: 72px;
             z-index: 2;
-            right: 62px;
+            right: 89px;
+        }
+        .auto-style67 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 200%;
+            height:380%;
+            z-index: 0;
+            right: -1831px;
         }
         
+        .auto-style68 {
+            position: absolute;
+            top: 20%;
+            left: 0%;
+            width: 8%;
+            height:30%;
+            z-index: 3;
+           
+        }
+         .auto-style69 {
+            position: absolute;
+            top: 15%;
+            left: 2%;
+            width: 13%;
+            height:6%;
+            z-index: 3;
+            right: 3px;
+        }
+          .auto-style70 {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height:3%;
+            z-index: 3;
+           
+        }
+           .auto-style71 {
+            position: absolute;
+            top: 15%;
+            left: 0%;
+            width: 100%;
+            height:3%;
+            z-index: 3;
+           
+        }
+           .auto-style72 {
+            position: absolute;
+            top: 22%;
+            left: 20%;
+            width: 50%;
+            height:6%;
+            z-index: 3;
+           
+        }
+            .auto-style73 {
+            position: absolute;
+            top: 30%;
+            left: 0%;
+            width: 100%;
+            height:3%;
+            z-index: 3;
+           
+        }
+            .auto-style74 {
+            position: absolute;
+            top: 37%;
+            left: 20%;
+            width: 50%;
+            height:6%;
+            z-index: 3;
+           
+        }
+             .auto-style75 {
+            position: absolute;
+            top: 45%;
+            left: 0%;
+            width: 100%;
+            height:3%;
+            z-index: 3;
+           
+        }
+             .auto-style76 {
+            position: absolute;
+            top: 52%;
+            left: 20%;
+            width: 50%;
+            height:6%;
+            z-index: 3;
+           
+        }
+             .auto-style77 {
+            position: absolute;
+            top: 60%;
+            left: 0%;
+            width: 100%;
+            height:3%;
+            z-index: 3;
+           
+        }
+             .auto-style78 {
+            position: absolute;
+            top: 67%;
+            left: 20%;
+            width: 50%;
+            height:6%;
+            z-index: 3;
+           
+        }
+             .auto-style79 {
+            position: absolute;
+            top: 75%;
+            left: 0%;
+            width: 100%;
+            height:3%;
+            z-index: 3;
+           
+        }
+             .auto-style80 {
+            position: absolute;
+            top: 82%;
+            left: 20%;
+            width: 50%;
+            height:6%;
+            z-index: 3;
+           
+        }
+             .auto-style81 {
+            position: absolute;
+            top: 418px;
+            left: 60%;
+            z-index: 1;
+            width: 188px;
+            height: 35px;
+           
+        }
+             .auto-style82 {
+            position: absolute;
+            top: 450px;
+            left: 60%;
+            z-index: 1;
+            width: 121px;
+            height: 200px;
+        }
+                
 
         </style>
 </head>
-<body  id="body1" style="height: 1275px; margin-right: 0px;">
+<body  id="body1"  style="height: 1275px; margin-right: 0px;">
     <form id="form1" runat="server" class="auto-style43">
     <div id="div1" class="auto-style1">
-         
+ 
+         <asp:Image ID="Image_bg" CssClass="auto-style67" runat="server" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"   />
     
-        <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
+        <asp:Label ID="Label_title" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
     
        
     
 
-        <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False">
+        <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False" BackColor="Transparent">
 
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="Red">
@@ -595,7 +725,6 @@
     
 
         <asp:ListBox ID="ListBox1" runat="server" CssClass="auto-style45" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" OnTextChanged="ListBox1_TextChanged" Visible="False"></asp:ListBox>
-        <asp:Label ID="Label3" runat="server" CssClass="auto-style46" Text="曲线2选择" Visible="False"></asp:Label>
         <asp:ListBox ID="ListBox2" runat="server" CssClass="auto-style47" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged" Visible="False"></asp:ListBox>
         <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" Visible="False" />
     
@@ -610,55 +739,73 @@
     
        
     
-        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style44" BorderlineColor="Black" BorderlineDashStyle="Solid">
+        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style44" BorderlineColor="Black" BorderlineDashStyle="Solid" BackColor="DarkGray" Width="961px">
             <series>
-                <asp:Series ChartType="Spline" Name="曲线1" Color="Red" XValueType="DateTime">
+                <asp:Series ChartType="Spline" Name="曲线1" Color="RoyalBlue" XValueType="DateTime" ToolTip="时间 ：#VALX 位移#VAL " YValuesPerPoint="2">
                 </asp:Series>
             </series>
             <chartareas>
                 <asp:ChartArea Name="ChartArea1">
+                    <AxisY Enabled="True">
+                    </AxisY>
+                    <AxisX Enabled="True">
+                    </AxisX>
                 </asp:ChartArea>
             </chartareas>
-            <BorderSkin BackColor="Transparent" BackGradientStyle="LeftRight" BackSecondaryColor="White" BorderDashStyle="Dash" BorderWidth="5" SkinStyle="Emboss" />
+            <BorderSkin BackColor="Transparent" BackSecondaryColor="White" BorderDashStyle="Dash" BorderWidth="5" />
         </asp:Chart>
 
         <asp:Label ID="Label6" runat="server" CssClass="auto-style55" Text="曲线2选择" Visible="False"></asp:Label>
         <asp:Label ID="Label4" runat="server" CssClass="auto-style51" Text="曲线1选择" Visible="False"></asp:Label>
         
-        <asp:Label ID="Label7" runat="server" CssClass="auto-style53" Text="测量位置"></asp:Label>
         
-        <asp:Label ID="Label8" runat="server" CssClass="auto-style54" style="z-index: 1" Text="位移量"></asp:Label>
         
-        <asp:Label ID="Label9" runat="server" CssClass="auto-style56" style="z-index: 1" Text="测量位置"></asp:Label>
+        <asp:Label ID="Label7" runat="server" CssClass="auto-style53" Text="测量位置" Visible="false"></asp:Label>
         
-        <asp:Label ID="Label10" runat="server" CssClass="auto-style57" style="z-index: 1" Text="位移量"></asp:Label>
+        <asp:Label ID="Label8" runat="server" CssClass="auto-style54" style="z-index: 1" Text="线缆状态" ForeColor="White"></asp:Label>
         
-        <asp:Label ID="Label11" runat="server" CssClass="auto-style58" Text="趋势曲线"></asp:Label>
+        <asp:Label ID="Label9" runat="server" CssClass="auto-style56" style="z-index: 1" Text="测量位置" Visible="false"></asp:Label>
         
-        <asp:Button ID="Button2" runat="server" CssClass="auto-style59" Text="放大" BorderStyle="Solid" BorderWidth="2px" OnClick="Button2_Click" />
+        <asp:Label ID="Label10" runat="server" CssClass="auto-style57" style="z-index: 1" Text="线缆状态" ForeColor="White"></asp:Label>
         
-        <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" />
+        <asp:Label ID="Label11" runat="server" CssClass="auto-style58" Text="趋势曲线" ForeColor="White"></asp:Label>
         
-        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged"></asp:ListBox>
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style59" Text="放大" BorderStyle="Solid" BorderWidth="2px" OnClick="Button2_Click" Visible="False" />
         
-        <asp:Label ID="Label12" runat="server" CssClass="auto-style62" style="z-index: 1" Text="日期选择"></asp:Label>
+        <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" Visible="False" />
         
-        <asp:Button ID="Button4" runat="server" BorderStyle="Solid" CssClass="auto-style63" Text="前进" OnClick="Button4_Click" />
+        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged" BackColor="#9999FF"></asp:ListBox>
         
-        <asp:Button ID="Button5" runat="server" CssClass="auto-style64" style="z-index: 1" Text="后退" BorderStyle="Solid" OnClick="Button5_Click" />
+        <asp:Label ID="Label12" runat="server" CssClass="auto-style62" Text="选择日期" ForeColor="White"></asp:Label>
         
-       
+        <asp:Button ID="Button4" runat="server" BorderStyle="Solid" CssClass="auto-style63" Text="前进" OnClick="Button4_Click" Visible="False" />
+        
+        <asp:Button ID="Button5" runat="server" CssClass="auto-style64" style="z-index: 1" Text="后退" BorderStyle="Solid" OnClick="Button5_Click" Visible="False" />
+        
+        <asp:ListBox ID="ListBox4" runat="server" CssClass="auto-style82" AutoPostBack="True" OnSelectedIndexChanged="ListBox4_SelectedIndexChanged" BackColor="#9999FF"></asp:ListBox>
     
-       
+       <asp:Label ID="Label2" runat="server" CssClass="auto-style81" Text="选择时间" ForeColor="White"></asp:Label>
     
        
     
         <asp:LinkButton ID="link0" CssClass="auto-style66" Text="差分查询" runat="server" OnClick="link_Click"></asp:LinkButton>
        
-
+         <asp:Panel ID="Panel1" CssClass="auto-style68" runat="server" BackColor="#CCFFFF">
+             <asp:Label ID="Label14"  CssClass="auto-style70"  runat="server" Text="线缆颜色对应位移量" ForeColor="Black" Font-Size="Smaller"></asp:Label>
+             <asp:Label ID="Label1" CssClass="auto-style71"  runat="server" Text="位移量<0.01mm" ForeColor="Black" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label15" CssClass="auto-style72" runat="server" Text="Label" ForeColor="DarkBlue" BackColor="DarkBlue" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label16" CssClass="auto-style73" runat="server" Text="位移量<=0.5mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label17" CssClass="auto-style74" runat="server" Text="Label" ForeColor="Blue" BackColor="Blue" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label18" CssClass="auto-style75" runat="server" Text="位移量<=1.0mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label19" CssClass="auto-style76" runat="server" Text="Label" ForeColor="LightGreen" BackColor="LightGreen" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label20" CssClass="auto-style77" runat="server" Text="位移量<2.0mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label21" CssClass="auto-style78" runat="server" Text="Label" ForeColor="Yellow" BackColor="Yellow" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label22" CssClass="auto-style79" runat="server" Text="位移量>=2.0mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label23" CssClass="auto-style80" runat="server" Text="Label" ForeColor="Red" BackColor="Red" Font-Size="Small"></asp:Label>
+         </asp:Panel>
     
        
-    
+     <asp:Label ID="Label13" CssClass="auto-style69" runat="server" Text="图例" ForeColor="White"></asp:Label>
        
     
        

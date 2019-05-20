@@ -169,8 +169,8 @@
              .auto-style58 {
             
             position: absolute;
-            top: 80px;
-            left: 1200px;
+            top: 75px;
+            left: 71%;
             z-index: 1;
             width: 500px;
             height: 27px;
@@ -179,7 +179,7 @@
              .auto-style61 {
             position: absolute;
             top: 450px;
-            left:860px;
+            left:70%;
             z-index: 1;
             width: 121px;
             height: 200px;
@@ -187,7 +187,7 @@
               .auto-style81 {
             position: absolute;
             top: 418px;
-            left: 1070px;
+            left: 80%;
             z-index: 1;
             width: 188px;
             height: 35px;
@@ -196,7 +196,7 @@
               .auto-style62 {
             position: absolute;
             top: 418px;
-            left: 870px;
+            left: 70%;
             z-index: 1;
             width: 188px;
             height: 35px;
@@ -205,7 +205,7 @@
              .auto-style82 {
             position: absolute;
             top: 450px;
-            left: 1060px;
+            left: 80%;
             z-index: 1;
             width: 121px;
             height: 200px;
@@ -222,9 +222,9 @@
 
             position: absolute;
             top: 120px;
-            left: 847px;
+            left: 66%;
             z-index: 1;
-            width: 700px;
+            width: 50%;
             height: 262px;
         }
         </style>
@@ -257,7 +257,7 @@
          </asp:Panel>
     <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged" BackColor="#9999FF"></asp:ListBox>
         <asp:ListBox ID="ListBox4" runat="server" CssClass="auto-style82" AutoPostBack="True" OnSelectedIndexChanged="ListBox4_SelectedIndexChanged" BackColor="#9999FF"></asp:ListBox>
-        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style45" BorderlineColor="Black" BorderlineDashStyle="Solid" BackColor="DarkGray" Width="961px">
+        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style45" BorderlineColor="Black" BorderlineDashStyle="Solid" BackColor="DarkGray"  Width="800px">
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="RoyalBlue" XValueType="DateTime" ToolTip="时间 ：#VALX 位移#VAL " YValuesPerPoint="2">
                 </asp:Series>

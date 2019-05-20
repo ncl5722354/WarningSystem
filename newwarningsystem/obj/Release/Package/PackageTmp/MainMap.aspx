@@ -12,11 +12,12 @@
         }
         .auto-style2 {
             position: absolute;
-            top: 100px;
-            left: 10px;
+            top: 11%;
+            left: 10%;
             z-index: 1;
-            width: 1200px;
-            height: 800px;
+            width: 80%;
+            height: 80%;
+            
         }
         .auto-style3 {
             position: absolute;
@@ -36,73 +37,70 @@
         }
         .auto-style5 {
             position: absolute;
-            top: 300px;
-            left: 300px;
+            top: 30%;
+            left: 28%;
             z-index: 1;
-            width: 18px;
-            height: 20px;
+            width: 2%;
+            height: 4%;
         }
         .auto-style6 {
             position: absolute;
-            top: 270px;
-            left: 500px;
+            top: 26%;
+            left: 43%;
             z-index:1;
-            width:17px;
-            height:20px;
+            width:2%;
+            height:4%;
         }
         .auto-style7 {
             position: absolute;
-            top: 330px;
-            left: 500px;
+            top: 32%;
+            left: 43%;
             z-index:1;
-            width:17px;
-            height:20px;
+            width:2%;
+            height:4%;
         }
         .auto-style8 {
             position: absolute;
-            top: 466px;
-            left: 231px;
+            top: 46%;
+            left: 25%;
             z-index: 1;
-            height: 20px;
-            right: 1175px;
+            height: 4%;
+            right: 0%;
+            width:2%;
         }
         .auto-style9 {
             position: absolute;
-            top: 487px;
-            left: 350px;
+            top: 48%;
+            left: 34%;
             z-index:1;
-            width:17px;
-            height:20px;
+            width:2%;
+            height:4%;
             right: 1059px;
         }
         .auto-style10 {
             position: absolute;
-            top: 487px;
-            left: 460px;
+            top: 48%;
+            left: 41%;
             z-index: 1;
-            width: 17px;
-            height: 20px;
-            right: 216px;
+            width:2%;
+            height: 4%;
+            right: 522px;
         }
         .auto-style11 {
             position: absolute;
-            top: 487px;
-            left: 550px;
+            top: 48%;
+            left: 47%;
             z-index: 1;
-            width: 17px;
-            height: 20px;
+            width: 2%;
+            height: 4%;
         }
         </style>
 </head>
-<body style="height: 1080px; width:1920px;">
-    <form id="form1" runat="server">
+<body style="height: 100%; width:100%;">
+    <form id="form1" runat="server" style="width:100%; height:100%">
     <div class="auto-style1">
         
-<<<<<<< HEAD
-=======
-        
-        
->>>>>>> c8fa7e2e15636103619572ef7cf363d771642281
+
         <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" />
         <asp:Image ID="Imagemap" runat="server" CssClass="auto-style2" ImageUrl="~/Resource/pic.png" OnDataBinding="Imagemap_DataBinding" />
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="30pt" ForeColor="White"></asp:Label>
