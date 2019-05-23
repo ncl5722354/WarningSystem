@@ -14,14 +14,21 @@ namespace newwarningsystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
+
+
 
         protected void Imagemap_DataBinding(object sender, EventArgs e)
         {
 
         }
 
+        public string Point1_visibile()
+        {
+            Image_point1.Visible = false;
+            return "0";
+        }
        
 
         protected void Image_point4_Click(object sender, ImageClickEventArgs e)

@@ -93,6 +93,10 @@
             <asp:Series ChartArea="ChartArea1" ChartType="Spline" Color="Blue" Name="曲线2"></asp:Series></series>
             <chartareas>
                 <asp:ChartArea Name="ChartArea1">
+                    <AxisY Title="位移量(mm)">
+                    </AxisY>
+                    <AxisX Title="位置">
+                    </AxisX>
                 </asp:ChartArea>
             </chartareas>
             <BorderSkin BorderDashStyle="Solid" />
