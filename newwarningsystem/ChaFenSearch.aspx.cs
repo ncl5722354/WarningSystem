@@ -100,6 +100,7 @@ namespace newwarningsystem
                 string filename = ListBox1.Items[ListBox1.SelectedIndex].Value.ToString();
                 string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + jizhun_file);
                 string[] now_list = FileCaozuo.Read_All_Line("D:\\data\\" + filename);
+                Label_select1.Text = "第一曲线(红色)选择文件为:" + filename;
 
                 for (int i = 0; i < jizhun_list.Length; i++)
                 {
@@ -124,7 +125,7 @@ namespace newwarningsystem
                 string filename = ListBox2.Items[ListBox2.SelectedIndex].Value.ToString();
                 string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + jizhun_file);
                 string[] now_list = FileCaozuo.Read_All_Line("D:\\data\\" + filename);
-
+                Label_select2.Text = "第二曲线(蓝色)选择文件为:" + filename;
                 for (int i = 0; i < jizhun_list.Length; i++)
                 {
                     string position_string = string_caozuo.Get_Table_String(jizhun_list[i], 1);

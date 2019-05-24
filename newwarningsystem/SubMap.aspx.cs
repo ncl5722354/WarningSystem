@@ -54,13 +54,13 @@ namespace newwarningsystem
             //Chart1.Series[0].Points.AddXY(0, 0);
             //刷新列表
 
-            //Chart2.Style["position"] = "absolute";
-            //Chart2.Style["left"] = "450px";
+            Chart2.Style["position"] = "absolute";
+            Chart2.Style["left"] = "4%";
 
-            //Chart2.Style["top"] = "100px";
+            Chart2.Style["top"] = "76%";
 
-            //Chart2.Width = 1200;
-            //Chart2.Height = 300;
+            Chart2.Width = 1200;
+            Chart2.Height = 200;
             Image1.ImageUrl = pic_uri;
             Label_title.Text = chafen_title;
             ListBox4.Items.Clear();

@@ -256,7 +256,7 @@ namespace newwarningsystem
                                 //label_position.Style["left"] = "20px";
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count1 * danwei).ToString() + "px";
-                                label_value.Style["left"] = "18%";
+                                label_value.Style["left"] = "10%";
                                 label_value.Text = position_string;
 
                                 if (value < 0.01)
@@ -288,7 +288,7 @@ namespace newwarningsystem
                                 label_value.ToolTip = "位置:" + position_string + " 位移量:" + value.ToString();
                                 label_value.Click += new EventHandler(Click);
                                 //this.form1.Controls.Add(label_position);
-                                this.form1.Controls.Add(label_value);
+                                this.Panel2.Controls.Add(label_value);
                             }
                             catch { }
                         }
@@ -375,14 +375,14 @@ namespace newwarningsystem
                                 //label_position.Style["left"] = "440px";
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count2 * danwei).ToString() + "px";
-                                label_value.Style["left"] = "34%";
+                                label_value.Style["left"] = "80%";
                                 label_value.Text = position_string;
                                 label_value.Click += new EventHandler(Click);
 
                                 label_value.ToolTip = "位置:" + position_string + " 位移量:" + value.ToString();
 
                                 //this.form1.Controls.Add(label_position);
-                                this.form1.Controls.Add(label_value);
+                                this.Panel2.Controls.Add(label_value);
                             }
                             catch { }
                         }
@@ -429,12 +429,14 @@ namespace newwarningsystem
             //刷新列表
 
             Chart2.Style["position"] = "absolute";
-            Chart2.Style["left"] = "40%";
+            Chart2.Style["left"] = "4%";
 
-            Chart2.Style["top"] = "100px";
+            Chart2.Style["top"] = "76%";
 
-            Chart2.Width = 1200;
-            Chart2.Height = 300;
+            Chart2.Width = 1000;
+            Chart2.Height = 200;
+
+           
 
             ListBox4.Items.Clear();
             ListBox4.Items.Add("00:00-01:00");
