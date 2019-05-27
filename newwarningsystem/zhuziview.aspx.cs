@@ -31,86 +31,86 @@ namespace newwarningsystem
         double end_postion = 780;
 
         public static string listbox3_select = "";
-       
+
 
         protected void Click(object sender, EventArgs e)
         {
-                Chart2.Series[0].Points.Clear();
-                Calendar1.SelectedDate = DateTime.Parse("1900-01-01");
-                
-                Button button = (Button)sender;
-                try
+            Chart2.Series[0].Points.Clear();
+            Calendar1.SelectedDate = DateTime.Parse("1900-01-01");
+
+            Button button = (Button)sender;
+            try
+            {
+
+                double value = double.Parse(button.Text);
+
+                click_value = value;
+
+
+
+                double jizhun = 0;
+                ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+
+                // 读取第一个文件作为基准
+                string file_jizhun = (string)filelist[0];
+                string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+                int count = 0;
+                string position_string = "";
+                // 寻找相应的索引
+                foreach (string line in jizhun_list)
+                {
+                    position_string = string_caozuo.Get_Table_String(line, 1);
+                    string postion_value_string = string_caozuo.Get_Table_String(line, 2);
+                    double positon_value = double.Parse(postion_value_string);
+                    double position = double.Parse(position_string);
+                    count++;
+                    if (position == value)
+                    {
+                        jizhun = positon_value;
+                        break;
+                    }
+                }
+                // count就是相应的索引数
+                ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
+                Chart2.Titles[0].Text = "位置：" + position_string + "位置曲线";
+                foreach (DirectoryInfo dirinfo in alldirs)
                 {
 
-                    double value = double.Parse(button.Text);
-
-                    click_value = value;
 
 
-                    
-                    double jizhun = 0;
-                    ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
-                    // 读取第一个文件作为基准
-                    string file_jizhun = (string)filelist[0];
-                    string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
-                    int count = 0;
-                    string position_string = "";
-                    // 寻找相应的索引
-                    foreach (string line in jizhun_list)
+                    try
                     {
-                        position_string = string_caozuo.Get_Table_String(line, 1);
-                        string postion_value_string = string_caozuo.Get_Table_String(line, 2);
-                        double positon_value = double.Parse(postion_value_string);
-                        double position = double.Parse(position_string);
-                        count++;
-                        if (position == value)
-                        {
-                            jizhun = positon_value;
-                            break;
-                        }
+                        ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
+                        //string[] alllines = FileCaozuo.Read_All_Line("D:\\data\\"+alldirs[0].ToString());
+                        string myline = FileCaozuo.Get_Line("D:\\data\\" + allfiles[0].ToString(), count - 1);
+                        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+                        double myvalue = double.Parse(myvalue_string);
+                        string time_string = string_caozuo.Get_Dian_String(allfiles[0].ToString(), 1);
+                        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+                        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+                        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+                        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
+                        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
                     }
-                    // count就是相应的索引数
-                    ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
-                    Chart2.Titles[0].Text = "位置：" + position_string + "位置曲线";
-                    foreach (DirectoryInfo dirinfo in alldirs)
-                    {
-
-
-
-
-                        try
-                        {
-                            ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
-                            //string[] alllines = FileCaozuo.Read_All_Line("D:\\data\\"+alldirs[0].ToString());
-                            string myline = FileCaozuo.Get_Line("D:\\data\\" + allfiles[0].ToString(), count - 1);
-                            string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                            double myvalue = double.Parse(myvalue_string);
-                            string time_string = string_caozuo.Get_Dian_String(allfiles[0].ToString(), 1);
-                            string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                            string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                            string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                            string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                            DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
-                            Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                            Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
-                        }
-                        catch { }
-                    }
-
-
-                    max = Chart2.ChartAreas[0].AxisX.Maximum;
-                    min = Chart2.ChartAreas[0].AxisX.Minimum;
+                    catch { }
                 }
-                catch { }
-            
+
+
+                max = Chart2.ChartAreas[0].AxisX.Maximum;
+                min = Chart2.ChartAreas[0].AxisX.Minimum;
+            }
+            catch { }
+
         }
 
 
-        public void ReShow(double value,double max,double min)
+        public void ReShow(double value, double max, double min)
         {
             Chart2.Series[0].Points.Clear();
-                //LinkButton button = (LinkButton)sender;
+            //LinkButton button = (LinkButton)sender;
             try
             {
                 //double value = double.Parse(button.Text);
@@ -143,9 +143,9 @@ namespace newwarningsystem
                 {
                     try
                     {
-                        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" , "*.txt");
+                        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
-                        string myline = FileCaozuo.Get_Line("D:\\data\\"  + file, count - 1);
+                        string myline = FileCaozuo.Get_Line("D:\\data\\" + file, count - 1);
                         string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
                         double myvalue = double.Parse(myvalue_string);
                         string time_string = string_caozuo.Get_Dian_String(file, 1);
@@ -195,7 +195,7 @@ namespace newwarningsystem
             catch { }
         }
 
-        public void Set_Start_End(double start1,double end1,double start2,double end2)
+        public void Set_Start_End(double start1, double end1, double start2, double end2)
         {
 
             try
@@ -247,7 +247,7 @@ namespace newwarningsystem
                                 count1++;
                                 //position: absolute
                                 double danwei = (end_postion - start_position) / (end1 - start1);
-                                    
+
 
                                 //label_position.Style["position"] = "absolute";
                                 //label_position.Style["top"] = (start_position + count1 * danwei).ToString() + "px";
@@ -277,7 +277,6 @@ namespace newwarningsystem
                                     label_value.BackColor = System.Drawing.Color.Yellow;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-
                                 else if (value >= 2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Red;
@@ -297,7 +296,8 @@ namespace newwarningsystem
                 }
             }
             catch { }
-            try{
+            try
+            {
                 ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
                 // 读取第一个文件作为基准
@@ -344,7 +344,7 @@ namespace newwarningsystem
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if(value>=0.01 && value<= 0.5)
+                                else if (value >= 0.01 && value <= 0.5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
                                     label_value.ForeColor = System.Drawing.Color.White;
@@ -360,14 +360,14 @@ namespace newwarningsystem
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
 
-                                else if(value>=2)
+                                else if (value >= 2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Red;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 double danwei = (end_postion - start_position) / (end1 - start1);
                                 count2++;
-                                
+
 
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count2 * danwei).ToString() + "px";
@@ -394,20 +394,20 @@ namespace newwarningsystem
         {
             Set_Start_End(start1, end1, start2, end2);
             Label_title.Text = chafen_title;
-             
-           
-            
-            
+
+
+
+
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-           // Set_Start_End(start1, end1, start2, end2);
+            // Set_Start_End(start1, end1, start2, end2);
             Chart1.Style["position"] = "absolute";
             Chart1.Style["left"] = "700px";
             Chart1.Style["top"] = "100px";
             Chart1.Width = 500;
             Chart1.Height = 300;
-           
+
 
             Chart2.Style["position"] = "absolute";
             Chart2.Style["left"] = "0%";
@@ -416,8 +416,8 @@ namespace newwarningsystem
             string a = Panel2.Style["width"];
             Chart2.Width = 1200;
             Chart2.Height = 200;
-           
-           
+
+
 
             ListBox4.Items.Clear();
             ListBox4.Items.Add("00:00-01:00");
@@ -446,7 +446,7 @@ namespace newwarningsystem
             ListBox4.Items.Add("23:00-23:59");
 
             ReFlush_List();
-            
+
         }
 
         private void ReFlush_List()
@@ -454,15 +454,15 @@ namespace newwarningsystem
             ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
             ListBox1.Items.Clear();
             ListBox2.Items.Clear();
-            foreach(string myline in filelist)
+            foreach (string myline in filelist)
             {
                 ListBox1.Items.Add(myline);
                 ListBox2.Items.Add(myline);
             }
 
-           ArrayList alldirs =  FileCaozuo.Read_All_Dir("D:\\data\\");
-           ListBox3.Items.Clear();
-            foreach(DirectoryInfo info in alldirs)
+            ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
+            ListBox3.Items.Clear();
+            foreach (DirectoryInfo info in alldirs)
             {
                 ListBox3.Items.Add(info.Name);
                 //Calendar1.day
@@ -488,9 +488,9 @@ namespace newwarningsystem
                     string value_now_string = string_caozuo.Get_Table_String(now_list[i], 2);
                     double jizhun = double.Parse(value_jizhun_string);
                     double now = double.Parse(value_now_string);
-                   
+
                     double value = Math.Round(Math.Abs(now - jizhun) * (1 - Math.Sqrt(3) / 2) / 0.0482, 3);
-                    if(position>=start1 && position<=end2)
+                    if (position >= start1 && position <= end2)
                     {
                         Chart1.Series[0].Points.AddXY(position, value);
                     }
@@ -528,7 +528,7 @@ namespace newwarningsystem
         protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ReFlush_Chart();
-            
+
         }
 
         protected void ListBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -553,9 +553,9 @@ namespace newwarningsystem
             ChaFenSearch.start2 = start2;
             ChaFenSearch.end1 = end1;
             ChaFenSearch.end2 = end2;
-            ChaFenSearch.title = chafen_title+"差分查询";
+            ChaFenSearch.title = chafen_title + "差分查询";
             Response.Redirect("ChaFenSearch.aspx");
-            
+
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -573,14 +573,14 @@ namespace newwarningsystem
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-           
-                Chart2.ChartAreas[0].AxisX.Maximum = max + 0.1;
-                Chart2.ChartAreas[0].AxisX.Minimum = min - 0.1;
-                max = Chart2.ChartAreas[0].AxisX.Maximum;
-                min = Chart2.ChartAreas[0].AxisX.Minimum;
-                ReShow(click_value, max, min);
-                
-            
+
+            Chart2.ChartAreas[0].AxisX.Maximum = max + 0.1;
+            Chart2.ChartAreas[0].AxisX.Minimum = min - 0.1;
+            max = Chart2.ChartAreas[0].AxisX.Maximum;
+            min = Chart2.ChartAreas[0].AxisX.Minimum;
+            ReShow(click_value, max, min);
+
+
         }
 
         protected void Button4_Click(object sender, EventArgs e)
@@ -588,7 +588,7 @@ namespace newwarningsystem
             Chart2.ChartAreas[0].AxisX.Maximum = max + 0.1;
             Chart2.ChartAreas[0].AxisX.Minimum = min + 0.1;
             max = Chart2.ChartAreas[0].AxisX.Maximum;
-            min = Chart2.ChartAreas[0].AxisX.Minimum; 
+            min = Chart2.ChartAreas[0].AxisX.Minimum;
             ReShow(click_value, max, min);
         }
 
@@ -646,7 +646,7 @@ namespace newwarningsystem
                     {
                         ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
 
-                        string myline = FileCaozuo.Get_Line("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString()+"\\"+file, count - 1);
+                        string myline = FileCaozuo.Get_Line("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString() + "\\" + file, count - 1);
                         string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
                         double myvalue = double.Parse(myvalue_string);
                         string time_string = string_caozuo.Get_Dian_String(file, 1);
@@ -659,21 +659,21 @@ namespace newwarningsystem
                         string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
                         string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
                         DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
-                        
+
                         Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
                         Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
-                         DateTime time1= DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
-                        DateTime time2= DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
-                         Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
-                         Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
-                         Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
-                         Chart2.ChartAreas[0].AxisX.Interval = 1;
-                         max = Chart2.ChartAreas[0].AxisX.Maximum;
-                         min = Chart2.ChartAreas[0].AxisX.Minimum;
-                         Label11.Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线"; 
+                        DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
+                        DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
+                        Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
+                        Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+                        Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
+                        Chart2.ChartAreas[0].AxisX.Interval = 1;
+                        max = Chart2.ChartAreas[0].AxisX.Maximum;
+                        min = Chart2.ChartAreas[0].AxisX.Minimum;
+                        Label11.Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
                     }
                     catch { }
-                    
+
 
                 }
 
@@ -740,7 +740,7 @@ namespace newwarningsystem
                         string start_min = string_caozuo.Get_Maohao_String(start_time, 2);
                         string end_hour = string_caozuo.Get_Maohao_String(end_time, 1);
                         string end_min = string_caozuo.Get_Maohao_String(end_time, 2);
-                        
+
                         Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
                         Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
                         DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + start_hour + ":" + start_min + ":" + "00");
@@ -751,7 +751,7 @@ namespace newwarningsystem
                         Chart2.ChartAreas[0].AxisX.Interval = 5;
                         max = Chart2.ChartAreas[0].AxisX.Maximum;
                         min = Chart2.ChartAreas[0].AxisX.Minimum;
-                        Label11.Text = year + "年" + month + "月" + day + "日"+start_hour+"时-"+end_hour+"时"+"  位置:" + position_string + " 的趋势区线";
+                        Label11.Text = year + "年" + month + "月" + day + "日" + start_hour + "时-" + end_hour + "时" + "  位置:" + position_string + " 的趋势区线";
                     }
                     catch { }
 
@@ -766,24 +766,37 @@ namespace newwarningsystem
         protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
         {
 
-            
+
+
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+
+
+
+
+        }
+
+        protected void Calendar1_DayRender1(object sender, DayRenderEventArgs e)
+        {
             for (int i = 0; i < ListBox3.Items.Count; i++)
             {
                 string date = ListBox3.Items[i].Value.ToString();
-                string hour=string_caozuo.Get_Xiahuaxian_String(date,1);
-                string min=string_caozuo.Get_Xiahuaxian_String(date,2);
-                string sec=string_caozuo.Get_Xiahuaxian_String(date,3);
+                string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
+                string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
+                string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
                 e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
                 if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
                 {
                     e.Cell.ForeColor = System.Drawing.Color.LightGray;
                 }
-                
+
             }
             if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
             if (e.Day.IsSelected == true)
             {
-                
+
                 // 选择了某日
                 #region
                 DateTime select_datetime = Calendar1.SelectedDate;
@@ -848,22 +861,14 @@ namespace newwarningsystem
                             Chart2.ChartAreas[0].AxisX.Interval = 1;
                             max = Chart2.ChartAreas[0].AxisX.Maximum;
                             min = Chart2.ChartAreas[0].AxisX.Minimum;
-                            Chart2.Titles[0].Text  = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
+                            Chart2.Titles[0].Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
                         }
                         catch { }
                     }
                 }
                 catch { }
-                #endregion 
+                #endregion
             }
-        }
-
-        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
-        {
-            
-
-
-
         }
     }
 }

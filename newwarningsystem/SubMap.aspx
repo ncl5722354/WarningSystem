@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SubMap.aspx.cs" Inherits="newwarningsystem.SubMap" %>
 
+<%@ Register assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -44,10 +46,10 @@
         }
          .auto-style68 {
             position: absolute;
-            top: 20%;
-            left: 5%;
-            width: 9%;
-            height:30%;
+            top: 15%;
+            left: 0%;
+            width: 15%;
+            height:60%;
             z-index: 3;
             right: -466px;
         }
@@ -71,7 +73,7 @@
         }
            .auto-style71 {
             position: absolute;
-            top: 15%;
+            top: 10%;
             left: 0%;
             width: 100%;
             height:3%;
@@ -80,7 +82,7 @@
         }
            .auto-style72 {
             position: absolute;
-            top: 22%;
+            top: 13%;
             left: 20%;
             width: 50%;
             height:6%;
@@ -89,7 +91,7 @@
         }
             .auto-style73 {
             position: absolute;
-            top: 30%;
+            top: 20%;
             left: 0%;
             width: 100%;
             height:3%;
@@ -98,7 +100,7 @@
         }
             .auto-style74 {
             position: absolute;
-            top: 37%;
+            top: 23%;
             left: 20%;
             width: 50%;
             height:6%;
@@ -107,7 +109,7 @@
         }
              .auto-style75 {
             position: absolute;
-            top: 45%;
+            top: 30%;
             left: 0%;
             width: 100%;
             height:3%;
@@ -116,7 +118,7 @@
         }
              .auto-style76 {
             position: absolute;
-            top: 52%;
+            top: 33%;
             left: 20%;
             width: 50%;
             height:6%;
@@ -125,7 +127,7 @@
         }
              .auto-style77 {
             position: absolute;
-            top: 60%;
+            top: 40%;
             left: 0%;
             width: 100%;
             height:3%;
@@ -134,7 +136,7 @@
         }
              .auto-style78 {
             position: absolute;
-            top: 67%;
+            top: 43%;
             left: 20%;
             width: 50%;
             height:6%;
@@ -143,7 +145,7 @@
         }
              .auto-style79 {
             position: absolute;
-            top: 75%;
+            top: 50%;
             left: 0%;
             width: 100%;
             height:3%;
@@ -152,7 +154,7 @@
         }
              .auto-style80 {
             position: absolute;
-            top: 82%;
+            top: 53%;
             left: 20%;
             width: 50%;
             height:6%;
@@ -229,13 +231,13 @@
         <asp:Image ID="Image2"  CssClass="auto-style43" runat="server"   ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"/>
         <asp:Label ID="Label_title"  CssClass="auto-style44" runat="server" Font-Names="微软雅黑" Font-Size="20pt" ForeColor="White" Text="Label"></asp:Label>
         <asp:Image ID="Image_head" runat="server" CssClass="auto-style67" BackColor="#000066" />
-        <asp:Image ID="Image1"  CssClass="auto-style42" runat="server" />
+        <asp:Image ID="Image1"  CssClass="auto-style42" runat="server" BorderColor="#660066" BorderStyle="Solid" BorderWidth="2px" />
         <asp:Label ID="Label12" runat="server" CssClass="auto-style62" Text="选择日期" ForeColor="White"></asp:Label>
         <asp:LinkButton ID="link" CssClass="auto-style65" Text="主页面" runat="server" OnClick="link0_Click" ForeColor="White"></asp:LinkButton>
        <asp:Label ID="Label2" runat="server" CssClass="auto-style81" Text="选择时间" ForeColor="White"></asp:Label>
        <asp:Label ID="Label11" runat="server" CssClass="auto-style58" Text="趋势曲线" ForeColor="White"></asp:Label>
        <asp:LinkButton ID="link0" CssClass="auto-style66" Text="差分查询" runat="server" OnClick="link_Click" ForeColor="White"></asp:LinkButton>
-       <asp:Panel ID="Panel1" CssClass="auto-style68" runat="server" BackColor="#CCFFFF">
+       <asp:Panel ID="Panel1" CssClass="auto-style68" runat="server" BackColor="#CCFFFF" BorderColor="Black" BorderStyle="Solid">
              <asp:Label ID="Label14"  CssClass="auto-style70"  runat="server" Text="线缆颜色对应位移量" ForeColor="Black" Font-Size="Smaller"></asp:Label>
              <asp:Label ID="Label1" CssClass="auto-style71"  runat="server" Text="位移量<0.01mm" ForeColor="Black" Font-Size="Small"></asp:Label>
              <asp:Label ID="Label15" CssClass="auto-style72" runat="server" Text="Label" ForeColor="DarkBlue" BackColor="DarkBlue" Font-Size="Small"></asp:Label>
@@ -248,9 +250,12 @@
              <asp:Label ID="Label22" CssClass="auto-style79" runat="server" Text="位移量>=2.0mm" Font-Size="Small"></asp:Label>
              <asp:Label ID="Label23" CssClass="auto-style80" runat="server" Text="Label" ForeColor="Red" BackColor="Red" Font-Size="Small"></asp:Label>
          </asp:Panel>
+
+        
     <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged" BackColor="#9999FF"></asp:ListBox>
     <asp:ListBox ID="ListBox4" runat="server" CssClass="auto-style82" AutoPostBack="True" OnSelectedIndexChanged="ListBox4_SelectedIndexChanged" BackColor="#9999FF"></asp:ListBox>
-        <asp:Chart ID="Chart2" runat="server"  BorderlineColor="Black" BorderlineDashStyle="Solid" BackColor="DarkGray">
+        
+        <asp:Chart ID="Chart2" runat="server" CssClass="auto-style44" BorderlineColor="Black" BorderlineDashStyle="Solid" BackColor="DarkGray" Width="961px" BorderlineWidth="3">
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="RoyalBlue" XValueType="DateTime" ToolTip="时间 ：#VALX 位移#VAL " YValuesPerPoint="2">
                 </asp:Series>
@@ -259,13 +264,30 @@
                 <asp:ChartArea Name="ChartArea1">
                     <AxisY Enabled="True" Title="位移量(mm)">
                     </AxisY>
-                    <AxisX Enabled="True">
+                    <AxisX Enabled="True" Title="时间">
                     </AxisX>
                 </asp:ChartArea>
             </chartareas>
+            <Titles>
+                <asp:Title Name="Title1" Text="曲线">
+                </asp:Title>
+            </Titles>
             <BorderSkin BackColor="Transparent" BackSecondaryColor="White" BorderDashStyle="Dash" BorderWidth="5" />
         </asp:Chart>
+        <div style="position: absolute; z-index: 5; top: 75%; width: 20%; height: 20%; left: 1200px;">
+         </div>
         <asp:Label ID="Label13" CssClass="auto-style69" runat="server" Text="图例" ForeColor="White"></asp:Label>
+        <div style="position: absolute; z-index: 5; top: 80%; width: 20%; height: 20%; left: 1200px;">
+             <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnDayRender="Calendar1_DayRender" Width="350px" OnSelectionChanged="Calendar1_SelectionChanged" >
+                 <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                 <DayStyle BorderColor="#660066" BorderStyle="Solid" HorizontalAlign="Center" VerticalAlign="Middle" />
+                 <NextPrevStyle BorderColor="White" BorderStyle="Solid" BorderWidth="1px" Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                 <OtherMonthDayStyle ForeColor="#999999" />
+                 <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                 <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Names="微软雅黑" Font-Size="12pt" ForeColor="#333399" />
+                 <TodayDayStyle BackColor="#CCCCCC" />
+             </asp:Calendar>
+         </div>
     </form>
 </body>
 </html>
