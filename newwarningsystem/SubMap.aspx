@@ -40,7 +40,7 @@
             top: 15%;
             left: 15%;
             height: 60%;
-            width: 50%;
+            width: 60%;
             z-index: 0;
         }
          
@@ -261,6 +261,31 @@
             z-index: 6;
             height:10%;
         }
+             .auto-style87 {
+            position: absolute;
+            top: 15%;
+            left: 75%;
+            width: 25%;
+            z-index: 6;
+            height:10%;
+        }
+             .auto-style88 {
+            position: absolute;
+            top: 18%;
+            left: 85%;
+            width: 25%;
+            z-index: 7;
+            height:7%;
+        }
+             .auto-style89 {
+            position: absolute;
+            top: 45%;
+            left: 75%;
+            width: 25%;
+            z-index: 6;
+            height:10%;
+        }
+
              </style>
 </head>
 
@@ -269,6 +294,7 @@
     <div>
     
         <asp:label  ID="label_warnlevel" runat="server" text="报警等级" CssClass="auto-style86" Font-Size="XX-Large" ForeColor="White"></asp:label>
+        <asp:label  ID="label_rili" runat="server" text="日历选择" CssClass="auto-style88" Font-Size="XX-Large" ForeColor="White"></asp:label>
         <asp:Image ID="Image2"  CssClass="auto-style43" runat="server"   ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"/>
         <asp:Label ID="Label_title" CssClass="auto-style44" runat="server" Font-Names="微软雅黑" Font-Size="20pt" ForeColor="White" Text="Label" BackColor="#FF3300" BorderStyle="Solid"></asp:Label>
         <asp:Image ID="Image_icon" CssClass="auto-style83" runat="server"  ImageUrl="~/Resource/图片2.png" />
@@ -276,6 +302,8 @@
         <asp:Image ID="Image_title" CssClass="auto-style84"  runat="server" ImageUrl="~/Resource/图片3.png" />
         <asp:Image ID="Image3" runat="server" />
         <asp:Image ID="Image4" CssClass="auto-style85" runat="server" ImageUrl="~/Resource/图片4.png" />
+        <asp:Image ID="Image5" CssClass="auto-style87"  runat="server" ImageUrl="~/Resource/图片4.png" />
+        <asp:Image ID="Image6" CssClass="auto-style89"  runat="server" ImageUrl="~/Resource/图片4.png"/>
         <asp:Image ID="Image1"  CssClass="auto-style42" runat="server" BorderColor="#660066" BorderStyle="Solid" BorderWidth="2px" />
         <asp:Label ID="Label12" runat="server" CssClass="auto-style62" Text="选择日期" ForeColor="White" Visible="false"></asp:Label>
         <asp:LinkButton ID="link" CssClass="auto-style65" Text="主页面" runat="server" OnClick="link0_Click" ForeColor="White" Visible="false"></asp:LinkButton>
@@ -309,8 +337,8 @@
         <!-- 鼠标点到点上 -->
 
 
-         <div style="position: absolute; z-index: 5; top: 75%; width: 20%; height: 20%; left: 1200px;">
-             <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnDayRender="Calendar1_DayRender1" Width="350px" OnSelectionChanged="Calendar1_SelectionChanged" >
+         <div style="position: absolute; z-index: 5; top: 25%; width: 25%; height: 20%; left: 75%;">
+             <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnDayRender="Calendar1_DayRender1" Width="100%" OnSelectionChanged="Calendar1_SelectionChanged" >
                  <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
                  <DayStyle BorderColor="#660066" BorderStyle="Solid" HorizontalAlign="Center" VerticalAlign="Middle" />
                  <NextPrevStyle BorderColor="White" BorderStyle="Solid" BorderWidth="1px" Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
