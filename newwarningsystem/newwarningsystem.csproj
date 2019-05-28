@@ -74,6 +74,10 @@
     <Content Include="Resource\zhu_di.png" />
     <Content Include="Resource\zhu_shen.png" />
     <Content Include="Resource\zhu_tou.png" />
+    <Content Include="Resource\图片1.png" />
+    <Content Include="Resource\图片2.png" />
+    <Content Include="Resource\图片3.png" />
+    <Content Include="Resource\图片4.png" />
     <Content Include="SubMap.aspx" />
     <Content Include="Web.config" />
     <Content Include="zhuziview.aspx" />
