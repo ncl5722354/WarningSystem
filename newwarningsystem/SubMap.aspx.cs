@@ -40,12 +40,15 @@ namespace newwarningsystem
         protected void Page_Load(object sender, EventArgs e)
         {
 
+          //  Create_Map();
+            ReFlush_List();
             Create_Map();
+            Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
             // Set_Start_End(start1, end1, start2, end2);
-            
+
             //Chart1.Style["position"] = "absolute";
             //Chart1.Style["left"] = "700px";
             //Chart1.Style["top"] = "100px";
@@ -55,11 +58,11 @@ namespace newwarningsystem
             //刷新列表
 
             Chart2.Style["position"] = "absolute";
-            Chart2.Style["left"] = "4%";
+            Chart2.Style["left"] = "0%";
 
-            Chart2.Style["top"] = "76%";
-
-            Chart2.Width = 1000;
+            Chart2.Style["top"] = "75%";
+            Chart2.Style["z-index"] = "5";
+            Chart2.Width = 1200;
             Chart2.Height = 200;
             Image1.ImageUrl = pic_uri;
             Label_title.Text = chafen_title;
@@ -89,7 +92,7 @@ namespace newwarningsystem
             ListBox4.Items.Add("22:00-23:00");
             ListBox4.Items.Add("23:00-23:59");
 
-            ReFlush_List();
+           
 
         }
 
@@ -116,6 +119,7 @@ namespace newwarningsystem
         protected void Click(object sender, EventArgs e)
         {
             Chart2.Series[0].Points.Clear();
+            Calendar1.SelectedDate = DateTime.Parse("1900-01-01");
             ImageButton ib = (ImageButton)sender;
             string tooltip = ib.ToolTip;
             string position_string_wanzheng = string_caozuo.Get_KongGe_String(tooltip, 1);
@@ -152,7 +156,7 @@ namespace newwarningsystem
                 }
                 // count就是相应的索引数
                 ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
-                Label11.Text = "位置：" + position_string1 + "位置曲线";
+               Chart2.Titles[0].Text = "位置：" + position_string1 + "位置曲线";
                 foreach (DirectoryInfo dirinfo in alldirs)
                 {
 
@@ -179,7 +183,7 @@ namespace newwarningsystem
                 max = Chart2.ChartAreas[0].AxisX.Maximum;
                 min = Chart2.ChartAreas[0].AxisX.Minimum;
 
-
+                //Chart2.Titles[0].Text = "2";
 
 
 
@@ -302,75 +306,7 @@ namespace newwarningsystem
         protected void ListBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             // 寻找基准
-            ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
-
-            // 读取第一个文件作为基准
-            string file_jizhun = (string)filelist_1[0];
-            string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
-            int count = 0;
-            double jizhun = 0;
-            string position_string = "";
-            // 寻找相应的索引
-            foreach (string line in jizhun_list)
-            {
-                position_string = string_caozuo.Get_Table_String(line, 1);
-                string postion_value_string = string_caozuo.Get_Table_String(line, 2);
-                double positon_value = double.Parse(postion_value_string);
-                double position = double.Parse(position_string);
-                count++;
-                if (position == click_value)
-                {
-                    jizhun = positon_value;
-                    break;
-                }
-            }
-
-            listbox3_select = ListBox3.Items[ListBox3.SelectedIndex].Value.ToString();
-            // 查询一天的
-            Chart2.Series[0].Points.Clear();
-            try
-            {
-                ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
-                foreach (string file in filelist)
-                {
-                    try
-                    {
-                        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
-
-                        string myline = FileCaozuo.Get_Line("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString() + "\\" + file, count - 1);
-                        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                        double myvalue = double.Parse(myvalue_string);
-                        string time_string = string_caozuo.Get_Dian_String(file, 1);
-                        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                        string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
-                        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                        string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
-                        string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
-                        string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
-                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
-
-                        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
-                        DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
-                        DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
-                        Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
-                        Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
-                        Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
-                        Chart2.ChartAreas[0].AxisX.Interval = 1;
-                        max = Chart2.ChartAreas[0].AxisX.Maximum;
-                        min = Chart2.ChartAreas[0].AxisX.Minimum;
-                        Label11.Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
-                    }
-                    catch { }
-
-
-                }
-
-
-            }
-            catch { }
+            
         }
 
         protected void ListBox4_SelectedIndexChanged(object sender, EventArgs e)
@@ -455,6 +391,217 @@ namespace newwarningsystem
         }
 
         protected void link_Click(object sender, EventArgs e)
+        {
+            ChaFenSearch.start1 = start1;
+            ChaFenSearch.start2 = start2;
+            ChaFenSearch.end1 = end1;
+            ChaFenSearch.end2 = end2;
+            ChaFenSearch.title = chafen_title + "差分查询";
+            Response.Redirect("ChaFenSearch.aspx");
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
+        {
+            Chart2.Titles[0].Text = " 的趋势区线";
+            for (int i = 0; i < ListBox3.Items.Count; i++)
+            {
+                string date = ListBox3.Items[i].Value.ToString();
+                string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
+                string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
+                string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
+                e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
+                if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
+                {
+                    e.Cell.ForeColor = System.Drawing.Color.LightGray;
+                }
+
+            }
+            if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
+            if (e.Day.IsSelected == true)
+            {
+
+                // 选择了某日
+                #region
+                DateTime select_datetime = Calendar1.SelectedDate;
+                string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
+
+                ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+
+                // 读取第一个文件作为基准
+                string file_jizhun = (string)filelist_1[0];
+                string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+                int count = 0;
+                double jizhun = 0;
+                string position_string = "";
+                // 寻找相应的索引
+                foreach (string line in jizhun_list)
+                {
+                    position_string = string_caozuo.Get_Table_String(line, 1);
+                    string postion_value_string = string_caozuo.Get_Table_String(line, 2);
+                    double positon_value = double.Parse(postion_value_string);
+                    double position = double.Parse(position_string);
+                    count++;
+                    if (position == click_value)
+                    {
+                        jizhun = positon_value;
+                        break;
+                    }
+                }
+
+                listbox3_select = date_string;
+                // 查询一天的
+                Chart2.Series[0].Points.Clear();
+                try
+                {
+                    ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+                    foreach (string file in filelist)
+                    {
+                        try
+                        {
+                            ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+
+                            string myline = FileCaozuo.Get_Line("D:\\data\\" + listbox3_select + "\\" + file, count - 1);
+                            string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+                            double myvalue = double.Parse(myvalue_string);
+                            string time_string = string_caozuo.Get_Dian_String(file, 1);
+                            string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+                            string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
+                            string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+                            string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+                            string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+                            string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
+                            string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+                            string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
+                            DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
+
+                            Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                            Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
+                            DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
+                            DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
+                            Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
+                            Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+                            Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
+                            Chart2.ChartAreas[0].AxisX.Interval = 1;
+                            max = Chart2.ChartAreas[0].AxisX.Maximum;
+                            min = Chart2.ChartAreas[0].AxisX.Minimum;
+                            Chart2.Titles[0].Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
+                        }
+                        catch { }
+                    }
+                    return;
+                }
+                catch { }
+                #endregion
+            }
+        }
+
+        protected void Calendar1_DayRender1(object sender, DayRenderEventArgs e)
+        {
+            //Chart2.Titles[0].Text = " 的趋势区线";
+            for (int i = 0; i < ListBox3.Items.Count; i++)
+            {
+                string date = ListBox3.Items[i].Value.ToString();
+                string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
+                string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
+                string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
+                e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
+                if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
+                {
+                    e.Cell.ForeColor = System.Drawing.Color.LightGray;
+                }
+
+            }
+            if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
+            if (e.Day.IsSelected == true)
+            {
+
+                // 选择了某日
+                #region
+                DateTime select_datetime = Calendar1.SelectedDate;
+                string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
+
+                ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+
+                // 读取第一个文件作为基准
+                string file_jizhun = (string)filelist_1[0];
+                string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+                int count = 0;
+                double jizhun = 0;
+                string position_string = "";
+                // 寻找相应的索引
+                foreach (string line in jizhun_list)
+                {
+                    position_string = string_caozuo.Get_Table_String(line, 1);
+                    string postion_value_string = string_caozuo.Get_Table_String(line, 2);
+                    double positon_value = double.Parse(postion_value_string);
+                    double position = double.Parse(position_string);
+                    count++;
+                    if (position == click_value)
+                    {
+                        jizhun = positon_value;
+                        break;
+                    }
+                }
+
+                listbox3_select = date_string;
+                // 查询一天的
+                Chart2.Series[0].Points.Clear();
+                try
+                {
+                    ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+                    foreach (string file in filelist)
+                    {
+                        try
+                        {
+                            ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+
+                            string myline = FileCaozuo.Get_Line("D:\\data\\" + listbox3_select + "\\" + file, count - 1);
+                            string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+                            double myvalue = double.Parse(myvalue_string);
+                            string time_string = string_caozuo.Get_Dian_String(file, 1);
+                            string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+                            string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
+                            string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+                            string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+                            string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+                            string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
+                            string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+                            string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
+                            DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
+
+                            Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                            Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
+                            DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
+                            DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
+                            Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
+                            Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+                            Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
+                            Chart2.ChartAreas[0].AxisX.Interval = 1;
+                            max = Chart2.ChartAreas[0].AxisX.Maximum;
+                            min = Chart2.ChartAreas[0].AxisX.Minimum;
+                            Chart2.Titles[0].Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
+                            //Label11.Text = "执行了";
+                        }
+                        catch { }
+                    }
+                    return;
+                }
+                catch { }
+                #endregion
+            }
+        }
+
+        protected void ImageButton_home_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainMap.aspx");
+        }
+
+        protected void ImageButton_chafen_Click(object sender, ImageClickEventArgs e)
         {
             ChaFenSearch.start1 = start1;
             ChaFenSearch.start2 = start2;

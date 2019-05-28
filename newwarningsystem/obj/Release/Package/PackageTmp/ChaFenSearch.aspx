@@ -44,21 +44,21 @@
              .auto-style48 {
             position: absolute;
             top: 708px;
-            left: 83px;
+            left: 96px;
             z-index: 1;
         }
             .auto-style65 {
             position: absolute;
-            top: 35px;
-            left: 62px;
-            height: 26px;
-            width: 72px;
-            z-index: 2;
-            right: 1292px;
+            top: 1%;
+            left: 10%;
+            height: 4%;
+            width: 10%;
+            z-index: 4;
+            
         }
         .auto-style66 {
             position: absolute;
-            top: 28px;
+            top: 5%;
             left: 282px;
             z-index: 1;
         }
@@ -78,12 +78,45 @@
             height:30%;
             z-index: 0;
         }
+
+        .auto-style68 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width:100%;
+            height:5%;
+            z-index: 3;
+        }
         
+        .auto-style69 {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            width:30%;
+            height:5%;
+            z-index: 4;
+        }
+        .auto-style70 {
+            position: absolute;
+            top: 55%;
+            left: 40%;
+            width:30%;
+            height:5%;
+            z-index: 4;
+        }
         </style>
 </head>
 <body style="height: 632px">
     <form id="form1" runat="server">
     
+       
+        <asp:Image ID="Image2" CssClass="auto-style68" BackColor="DarkBlue" runat="server" />
+    
+       
+        <asp:Label ID="Label_select1" CssClass="auto-style69" runat="server" Text="" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_select2" CssClass="auto-style70" runat="server" Text="" ForeColor="White"></asp:Label>
+       
+        <asp:Button ID="Button3" runat="server" Height="25px" Text="Button" Width="133px" />
        
         <asp:Image ID="Image1" runat="server"  CssClass="auto-style67" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"/>
         <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44">
@@ -93,6 +126,10 @@
             <asp:Series ChartArea="ChartArea1" ChartType="Spline" Color="Blue" Name="曲线2"></asp:Series></series>
             <chartareas>
                 <asp:ChartArea Name="ChartArea1">
+                    <AxisY Title="位移量(mm)">
+                    </AxisY>
+                    <AxisX Title="位置">
+                    </AxisX>
                 </asp:ChartArea>
             </chartareas>
             <BorderSkin BorderDashStyle="Solid" />
@@ -111,15 +148,25 @@
     
        
     
-        <asp:LinkButton ID="link" CssClass="auto-style65" Text="主页面" runat="server" OnClick="link_Click"></asp:LinkButton>
+        <asp:LinkButton ID="link" CssClass="auto-style65" Text="主页面" runat="server" OnClick="link_Click" ForeColor="White"></asp:LinkButton>
        
     
        
     
-        <asp:Label ID="Label5" runat="server" CssClass="auto-style66" Font-Bold="True" Font-Size="40pt" Text="Label"></asp:Label>
+        <asp:Label ID="Label5" runat="server" CssClass="auto-style66" Font-Bold="True" Font-Size="30pt" ForeColor= "White" Text="Label"></asp:Label>
         
         <p>
         <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" />
+    
+       
+    
+       
+    
+       
+    
+        </p>
+        <p>
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" />
     
        
     

@@ -71,8 +71,8 @@ namespace newwarningsystem
         protected void Image_point7_Click(object sender, ImageClickEventArgs e)
         {
             zhuziview.start1 = 994;
-            zhuziview.end1 = 1032;
-            zhuziview.start2 = 1032;
+            zhuziview.end1 = 1031.5;
+            zhuziview.start2 = 1031.5;
             zhuziview.end2 = 1069;
             ImageButton mybutton = (ImageButton)sender;
             zhuziview.chafen_title = mybutton.ToolTip;
@@ -118,6 +118,11 @@ namespace newwarningsystem
             SubMap.start1 = 2934;
             SubMap.end2 = 3074;
             Response.Redirect("SubMap.aspx");
+        }
+
+        protected void LinkButton1_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("report.aspx");
         }
     }
 }
