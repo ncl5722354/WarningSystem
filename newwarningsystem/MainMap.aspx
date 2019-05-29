@@ -145,7 +145,7 @@
         <!-- 鼠标点到点上 -->
 
         <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC"  />
-        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style15" ForeColor="White" OnClick="LinkButton1_Click1">报表查询</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style15" ForeColor="White" OnClick="LinkButton1_Click1" Visible="false">报表查询</asp:LinkButton>
         <asp:Image ID="Image_time" CssClass="auto-style13" runat="server" BackColor="#0066FF" />
         <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" BackColor="#333300" />
         <asp:Image ID="Imagemap" runat="server" CssClass="auto-style2" ImageUrl="~/Resource/pic.png" OnDataBinding="Imagemap_DataBinding" BorderStyle="Solid" />

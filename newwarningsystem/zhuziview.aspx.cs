@@ -207,6 +207,8 @@ namespace newwarningsystem
                 // 读取第一个文件作为基准
                 string file_jizhun = (string)filelist[0];
                 string file_now = (string)filelist[filelist.Count - 1];
+                end1 = end1 - 1;
+                start2 = start2 + 1;
 
                 // 读取所有的行
                 int count1 = 0;
@@ -254,7 +256,7 @@ namespace newwarningsystem
                                 //label_position.Style["left"] = "20px";
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count1 * danwei).ToString() + "px";
-                                label_value.Style["left"] = "35%";
+                                label_value.Style["left"] = "33%";
                                 label_value.Text = position_string;
 
                                 if (value < 0.01)
@@ -395,7 +397,7 @@ namespace newwarningsystem
             Set_Start_End(start1, end1, start2, end2);
             Label_title.Text = chafen_title;
 
-
+            Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
 
         }
@@ -786,10 +788,10 @@ namespace newwarningsystem
                 string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
                 string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
                 string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
-                e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
+                //e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
                 if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
                 {
-                    e.Cell.ForeColor = System.Drawing.Color.LightGray;
+                  //  e.Cell.ForeColor = System.Drawing.Color.LightGray;
                 }
 
             }
@@ -869,6 +871,21 @@ namespace newwarningsystem
                 catch { }
                 #endregion
             }
+        }
+
+        protected void ImageButton_home_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainMap.aspx");
+        }
+
+        protected void ImageButton_chafen_Click(object sender, ImageClickEventArgs e)
+        {
+            ChaFenSearch.start1 = start1;
+            ChaFenSearch.start2 = start2;
+            ChaFenSearch.end1 = end1;
+            ChaFenSearch.end2 = end2;
+            ChaFenSearch.title = chafen_title + "差分查询";
+            Response.Redirect("ChaFenSearch.aspx");
         }
     }
 }

@@ -414,7 +414,7 @@ namespace newwarningsystem
                 string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
                 string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
                 string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
-                e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
+                //e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
                 if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
                 {
                     e.Cell.ForeColor = System.Drawing.Color.LightGray;
@@ -502,18 +502,18 @@ namespace newwarningsystem
 
         protected void Calendar1_DayRender1(object sender, DayRenderEventArgs e)
         {
-            Chart2.Titles[0].Text = " 的趋势区线";
+            //Chart2.Titles[0].Text = " 的趋势区线";
             for (int i = 0; i < ListBox3.Items.Count; i++)
             {
                 string date = ListBox3.Items[i].Value.ToString();
                 string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
                 string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
                 string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
-                e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
-                if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
-                {
-                    e.Cell.ForeColor = System.Drawing.Color.LightGray;
-                }
+                //e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
+                //if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
+                //{
+                //    e.Cell.ForeColor = System.Drawing.Color.LightGray;
+                //}
 
             }
             if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
@@ -585,7 +585,7 @@ namespace newwarningsystem
                             max = Chart2.ChartAreas[0].AxisX.Maximum;
                             min = Chart2.ChartAreas[0].AxisX.Minimum;
                             Chart2.Titles[0].Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
-                            Label11.Text = "执行了";
+                            //Label11.Text = "执行了";
                         }
                         catch { }
                     }
@@ -594,6 +594,21 @@ namespace newwarningsystem
                 catch { }
                 #endregion
             }
+        }
+
+        protected void ImageButton_home_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainMap.aspx");
+        }
+
+        protected void ImageButton_chafen_Click(object sender, ImageClickEventArgs e)
+        {
+            ChaFenSearch.start1 = start1;
+            ChaFenSearch.start2 = start2;
+            ChaFenSearch.end1 = end1;
+            ChaFenSearch.end2 = end2;
+            ChaFenSearch.title = chafen_title + "差分查询";
+            Response.Redirect("ChaFenSearch.aspx");
         }
 
     }

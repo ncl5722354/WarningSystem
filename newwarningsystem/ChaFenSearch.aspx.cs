@@ -24,7 +24,7 @@ namespace newwarningsystem
         //public static Timer timer1 = new Timer();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
         private void ReFlush_List()
         {
@@ -147,6 +147,11 @@ namespace newwarningsystem
         }
 
         protected void link_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MainMap.aspx");
+        }
+
+        protected void ImageButton_home_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("MainMap.aspx");
         }

@@ -520,10 +520,10 @@
             position: absolute;
             top: 15%;
             left: 2%;
-            width: 13%;
-            height:6%;
+            
+           
             z-index: 3;
-            right: 3px;
+            
         }
           .auto-style70 {
             position: absolute;
@@ -536,91 +536,91 @@
         }
            .auto-style71 {
             position: absolute;
-            top: 15%;
-            left: 0%;
+            top: 23%;
+            left: 5%;
             width: 100%;
             height:3%;
-            z-index: 3;
+            z-index: 4;
            
         }
            .auto-style72 {
             position: absolute;
             top: 22%;
-            left: 20%;
-            width: 50%;
-            height:6%;
+            left: 5%;
+            width: 55%;
+            height:7%;
             z-index: 3;
            
         }
             .auto-style73 {
             position: absolute;
-            top: 30%;
-            left: 0%;
+            top: 38%;
+            left: 5%;
             width: 100%;
             height:3%;
-            z-index: 3;
+            z-index: 4;
            
         }
             .auto-style74 {
             position: absolute;
             top: 37%;
-            left: 20%;
-            width: 50%;
-            height:6%;
+            left: 5%;
+            width: 65%;
+            height:7%;
             z-index: 3;
            
         }
              .auto-style75 {
             position: absolute;
-            top: 45%;
-            left: 0%;
+            top: 53%;
+            left: 5%;
             width: 100%;
             height:3%;
-            z-index: 3;
+            z-index: 4;
            
         }
              .auto-style76 {
             position: absolute;
             top: 52%;
-            left: 20%;
-            width: 50%;
-            height:6%;
+            left: 5%;
+            width: 75%;
+            height:7%;
             z-index: 3;
            
         }
              .auto-style77 {
             position: absolute;
-            top: 60%;
-            left: 0%;
+            top: 68%;
+            left: 5%;
             width: 100%;
             height:3%;
-            z-index: 3;
+            z-index: 4;
            
         }
              .auto-style78 {
             position: absolute;
             top: 67%;
-            left: 20%;
-            width: 50%;
-            height:6%;
+            left: 5%;
+            width: 85%;
+            height:7%;
             z-index: 3;
            
         }
              .auto-style79 {
             position: absolute;
-            top: 75%;
-            left: 0%;
+            top: 83%;
+            left: 5%;
             width: 100%;
             height:3%;
-            z-index: 3;
+            z-index: 4;
            
         }
              .auto-style80 {
             position: absolute;
             top: 82%;
-            left: 20%;
-            width: 50%;
-            height:6%;
+            left: 5%;
+            width: 95%;
+            height:7%;
             z-index: 3;
            
         }
@@ -646,7 +646,7 @@
             top: 20%;
             left: 0%;
             z-index: 1;
-            width: 80%;
+            width: 70%;
             height: 60%;
         }
                .auto-style84 {
@@ -657,13 +657,112 @@
             width: 100%;
             height: 5%;
         }
-               .auto-style85 {
+             .auto-style85 {
             position: absolute;
-            top: 20%;
-            left: 0%;
+            top: 0px;
+            left: 20px;
+            width: 3%;
+            z-index: 5;
+            height:5%;
+        }
+
+             .auto-style86 {
+            position: absolute;
+            top: 0px;
+            left: 20%;
+            width: 40%;
+            z-index: 5;
+            height:5%;
+        }
+        .auto-style87 {
+            position: absolute;
+            top: 1%;
+            left: 70%;
+            height: 4%;
+            width: 20%;
             z-index: 4;
         }
-                               
+        .auto-style88 {
+            position: absolute;
+            top: 20%;
+            left: 71%;
+            width: 30%;
+            z-index: 6;
+            height: 10%;
+        }      
+         .auto-style89 {
+            position: absolute;
+            top: 22%;
+            left: 80%;
+            width: 25%;
+            z-index: 7;
+            height:7%;
+        }     
+         .auto-style90 {
+            position: absolute;
+            top: 53%;
+            left: 71%;
+            width: 30%;
+            z-index: 6;
+            height:7%;
+        }
+         .auto-style91 {
+            position: absolute;
+            top: 53%;
+            left: 75%;
+            width: 25%;
+            z-index: 7;
+            height:10%;
+        }
+         .auto-style92 {
+            position: absolute;
+            top: 60%;
+            left: 71%;
+            width: 28%;
+            z-index: 6;
+            height:20%;
+        }
+
+         .auto-style93 {
+            position: absolute;
+            top: 68%;
+            left: 75%;
+            width: 10%;
+            z-index: 7;
+            height:10%;
+        }
+          .auto-style94 {
+            position: absolute;
+            top: 68%;
+            left: 83%;
+            width: 10%;
+            z-index: 7;
+            height:10%;
+        }
+          .auto-style95 {
+            position: absolute;
+            top: 6%;
+            left: 60%;
+            width: 5%;
+            z-index: 7;
+            height:8%;
+        }
+           .auto-style96 {
+            position: absolute;
+            top: 6%;
+            left: 68%;
+            width: 5%;
+            z-index: 7;
+            height:8%;
+        }
+           .auto-style97 {
+            position: absolute;
+            top: 6%;
+            left: 76%;
+            width: 5%;
+            z-index: 7;
+            height:8%;
+        }
 
         </style>
 </head>
@@ -671,8 +770,10 @@
     <form id="form1" runat="server" class="auto-style43">
     <div id="div1" class="auto-style1">
  
+         <asp:Image ID="Image_icon" CssClass="auto-style85" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
+
          <asp:Panel ID="Panel2" CssClass="auto-style83" runat="server" ScrollBars="Vertical" BorderColor="Black" BackColor="#66CCFF" BorderStyle="Solid" BorderWidth="4px">
-             <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/zhu_tou.png" />
+         <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/zhu_tou.png" />
     
         <asp:Image ID="Image2" runat="server" CssClass="auto-style4" ImageUrl="~/Resource/zhu_shen.png" />
     
@@ -694,6 +795,7 @@
     
         <asp:Image ID="Image11" runat="server" CssClass="auto-style13" ImageUrl="~/Resource/zhu_shen.png" />
 
+        
          <asp:Image ID="Image12" runat="server" CssClass="auto-style14" ImageUrl="~/Resource/zhu_shen.png" />
          <asp:Image ID="Image13" runat="server" CssClass="auto-style15" ImageUrl="~/Resource/zhu_shen.png" />
          <asp:Image ID="Image14" runat="server" CssClass="auto-style16" ImageUrl="~/Resource/zhu_shen.png" />
@@ -724,12 +826,17 @@
         <asp:Image ID="Image39" runat="server" CssClass="auto-style41" ImageUrl="~/Resource/zhu_shen.png" />
         <asp:Image ID="Image40" runat="server" CssClass="auto-style42" ImageUrl="~/Resource/zhu_di.png" />
          </asp:Panel>
- 
-         <asp:Image ID="Image41" runat="server" CssClass="auto-style84" BackColor="#0000CC"/>
- 
-         
- 
-         <div style="position: absolute; z-index: 5; top: 80%; width: 20%; height: 20%; left: 1200px;">
+        <asp:Label ID="Label_weizhi" CssClass="auto-style93" runat="server" Text="位置" Font-Names="微软雅黑"></asp:Label>
+        <asp:Label ID="Label_weiyiliang" CssClass="auto-style94" runat="server" Text="位移量" Font-Names="微软雅黑"></asp:Label>
+       
+         <asp:Image ID="Image41" runat="server" CssClass="auto-style84" BackColor="#0000CC" ImageUrl="~/Resource/图片1.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3" />
+         <asp:Image ID="Image43" CssClass="auto-style90"  runat="server" ImageUrl="~/Resource/图片4.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px"/>
+        <asp:label  ID="label_baojing" runat="server" text="报警显示" CssClass="auto-style91" Font-Size="XX-Large" ForeColor="White"></asp:label>
+        <asp:Image ID="Image44" CssClass="auto-style92" runat="server" ImageUrl="~/Resource/dise.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
+        <asp:ImageButton ID="ImageButton_chafen" runat="server" BackColor="#3366FF" CssClass="auto-style97" ImageUrl="~/Resource/find_magnifier_magnifying_glass_search_zoom_64px_1225492_easyicon.net.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" OnClick="ImageButton_chafen_Click" />
+         <asp:ImageButton ID="ImageButton_home" runat="server" BackColor="#3366FF" CssClass="auto-style95" ImageUrl="~/Resource/home.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" OnClick="ImageButton_home_Click" />
+
+         <div style="position: absolute; z-index: 5; top: 30%; width: 30%; height: 20%; left: 71%;">
              <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnDayRender="Calendar1_DayRender1" Width="350px" OnSelectionChanged="Calendar1_SelectionChanged" >
                  <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
                  <DayStyle BorderColor="#660066" BorderStyle="Solid" HorizontalAlign="Center" VerticalAlign="Middle" />
@@ -745,7 +852,8 @@
     
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
     
-       
+        <asp:ImageButton ID="ImageButton_set" CssClass="auto-style96" runat="server" ImageUrl="~/Resource/settings_64px_1229386_easyicon.net.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" BackColor="#3366FF"/>
+
     
 
         <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False" BackColor="Transparent">
@@ -772,7 +880,7 @@
         <asp:Button ID="Button1" runat="server" CssClass="auto-style48" OnClick="Button1_Click" Text="确认" Visible="False" />
     
   
-        <asp:LinkButton ID="link" CssClass="auto-style65" ForeColor="White" Text="主页面" runat="server" OnClick="link0_Click"></asp:LinkButton>
+        <asp:LinkButton ID="link" CssClass="auto-style65" ForeColor="White" Text="主页面" runat="server" OnClick="link0_Click" Visible="false"></asp:LinkButton>
        
     
        
@@ -828,29 +936,40 @@
     
        <asp:Label ID="Label2" runat="server" CssClass="auto-style81" Text="选择时间" ForeColor="White" Visible="false"></asp:Label>
     
-       
-    
-        <asp:LinkButton ID="link0" CssClass="auto-style66" Text="差分查询" runat="server" OnClick="link_Click" ForeColor="White"></asp:LinkButton>
+       <asp:Image ID="Image42" CssClass="auto-style88" runat="server" ImageUrl="~/Resource/图片4.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px"/>
+
+    <asp:label  ID="label_rili" runat="server" text="日历选择" CssClass="auto-style89" Font-Size="XX-Large" ForeColor="White"></asp:label>
+        <asp:LinkButton ID="link0" CssClass="auto-style66" Text="差分查询" runat="server" OnClick="link_Click" ForeColor="White" Visible="false"></asp:LinkButton>
        
          <asp:Panel ID="Panel1" CssClass="auto-style68" runat="server" BackColor="#CCFFFF" BorderColor="Black" BorderStyle="Solid">
              <asp:Label ID="Label14"  CssClass="auto-style70"  runat="server" Text="线缆颜色对应位移量" ForeColor="Black" Font-Size="Smaller"></asp:Label>
-             <asp:Label ID="Label1" CssClass="auto-style71"  runat="server" Text="位移量<0.01mm" ForeColor="Black" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label1" CssClass="auto-style71"  runat="server" Text="<0.01mm" ForeColor="White" Font-Size="Small"></asp:Label>
              <asp:Label ID="Label15" CssClass="auto-style72" runat="server" Text="Label" ForeColor="DarkBlue" BackColor="DarkBlue" Font-Size="Small"></asp:Label>
-             <asp:Label ID="Label16" CssClass="auto-style73" runat="server" Text="位移量<=0.5mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label16" CssClass="auto-style73" runat="server" Text="<=0.5mm" ForeColor="White" Font-Size="Small"></asp:Label>
              <asp:Label ID="Label17" CssClass="auto-style74" runat="server" Text="Label" ForeColor="Blue" BackColor="Blue" Font-Size="Small"></asp:Label>
-             <asp:Label ID="Label18" CssClass="auto-style75" runat="server" Text="位移量<=1.0mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label18" CssClass="auto-style75" runat="server" Text="<=1.0mm" ForeColor="White" Font-Size="Small"></asp:Label>
              <asp:Label ID="Label19" CssClass="auto-style76" runat="server" Text="Label" ForeColor="LightGreen" BackColor="LightGreen" Font-Size="Small"></asp:Label>
-             <asp:Label ID="Label20" CssClass="auto-style77" runat="server" Text="位移量<2.0mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label20" CssClass="auto-style77" runat="server" Text="<2.0mm"  ForeColor="White" Font-Size="Small"></asp:Label>
              <asp:Label ID="Label21" CssClass="auto-style78" runat="server" Text="Label" ForeColor="Yellow" BackColor="Yellow" Font-Size="Small"></asp:Label>
-             <asp:Label ID="Label22" CssClass="auto-style79" runat="server" Text="位移量>=2.0mm" Font-Size="Small"></asp:Label>
+             <asp:Label ID="Label22" CssClass="auto-style79" runat="server" Text=">=2.0mm" Font-Size="Small" ForeColor="White"></asp:Label>
              <asp:Label ID="Label23" CssClass="auto-style80" runat="server" Text="Label" ForeColor="Red" BackColor="Red" Font-Size="Small"></asp:Label>
          </asp:Panel>
     
        
-     <asp:Label ID="Label13" CssClass="auto-style69" runat="server" Text="图例" ForeColor="White"></asp:Label>
+     <asp:Label ID="Label13" CssClass="auto-style69" runat="server" Text="预警等级" ForeColor="White" BackColor="Blue" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px"></asp:Label>
        
-    
-       
+     <asp:Image ID="Image_title" CssClass="auto-style86"  runat="server" ImageUrl="~/Resource/图片3.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
+
+       <!-- 关于时间的更新-->
+        <asp:ScriptManager ID="ScriptManager1" runat="Server" ></asp:ScriptManager><!--必须包含这个控件，否则UpdatePanel无法使用-->  
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">  
+                <ContentTemplate>当前时间是：  
+            <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
+                    <asp:Label ID="Label_timer" CssClass="auto-style87" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White" Font-Size="Large"></asp:Label>  <!--用于显示时间-->  
+                    <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
+                </ContentTemplate>                  
+            </asp:UpdatePanel>     
+        <!-- 鼠标点到点上 -->
     
     </div>
     </form>
