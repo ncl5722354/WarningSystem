@@ -279,11 +279,11 @@
         }
              .auto-style89 {
             position: absolute;
-            top: 45%;
+            top: 48%;
             left: 75%;
             width: 25%;
             z-index: 6;
-            height:10%;
+            height:7%;
         }
              .auto-style90 {
             position: absolute;

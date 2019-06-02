@@ -40,7 +40,7 @@
             position: absolute;
             top: 30%;
             left: 28%;
-            z-index: 1;
+            z-index: 4;
             width: 2%;
             height: 4%;
         }
@@ -48,7 +48,7 @@
             position: absolute;
             top: 26%;
             left: 43%;
-            z-index:1;
+            z-index:4;
             width:2%;
             height:4%;
         }
@@ -56,7 +56,7 @@
             position: absolute;
             top: 32%;
             left: 43%;
-            z-index:1;
+            z-index:3;
             width:2%;
             height:4%;
         }
@@ -64,7 +64,7 @@
             position: absolute;
             top: 46%;
             left: 25%;
-            z-index: 1;
+            z-index: 3;
             height: 4%;
             right: 74%;
             width:2%;
@@ -73,7 +73,7 @@
             position: absolute;
             top: 48%;
             left: 34%;
-            z-index:1;
+            z-index:3;
             width:2%;
             height:4%;
             right: 920px;
@@ -82,7 +82,7 @@
             position: absolute;
             top: 48%;
             left: 41%;
-            z-index: 1;
+            z-index: 3;
             width:2%;
             height: 4%;
             right: 822px;
@@ -91,7 +91,7 @@
             position: absolute;
             top: 48%;
             left: 47%;
-            z-index: 1;
+            z-index: 3;
             width: 2%;
             height: 4%;
         }
@@ -135,14 +135,27 @@
         
         <!-- 关于时间的更新-->
         <asp:ScriptManager ID="ScriptManager1" runat="Server" ></asp:ScriptManager><!--必须包含这个控件，否则UpdatePanel无法使用-->  
-        <asp:UpdatePanel ID="UpdatePanel1" runat="server">  
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">  
                 <ContentTemplate>当前时间是：  
             <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
-                    <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
-                    <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
+                        <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
+                        <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
+                        
                 </ContentTemplate>                  
-            </asp:UpdatePanel>     
-        <!-- 鼠标点到点上 -->
+            </asp:UpdatePanel>  
+        <!--这里加了conditional之后，各自更新更自的-->
+         <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">  
+                <ContentTemplate>
+                        <asp:ImageButton ID="Image_point1" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/position.png" OnClick="Image_point1_Click" ToolTip="一号坡 2164-2317" />
+                        <asp:ImageButton ID="Image_point2" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/position.png" OnClick="Image_point2_Click" ToolTip="二号坡 2361-2558" />
+                        <asp:ImageButton ID="Image_point3" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/position.png" OnClick="Image_point3_Click" ToolTip="三号坡 2934-3074" />
+                        <asp:ImageButton ID="Image_point4" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/position.png" OnClick="Image_point4_Click" ToolTip="侧斜管标定1号管 602-675" />
+                        <asp:ImageButton ID="Image_point5" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/position.png" OnClick="Image_point5_Click" ToolTip="侧斜管标定2号管 742-810" />
+                        <asp:ImageButton ID="Image_point6" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/position.png" OnClick="Image_point6_Click" ToolTip="侧斜管标定3号管 875-939" />
+                        <asp:ImageButton ID="Image_point7" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/position.png" OnClick="Image_point7_Click" ToolTip="侧斜管标定4号管 994-1069" />
+                        <asp:Timer ID="Timer2" runat="server" Interval="20000" ></asp:Timer>
+                 </ContentTemplate>
+             </asp:UpdatePanel>
 
         <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC"  />
         <asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style15" ForeColor="White" OnClick="LinkButton1_Click1" Visible="false">报表查询</asp:LinkButton>
@@ -150,13 +163,7 @@
         <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" BackColor="#333300" />
         <asp:Image ID="Imagemap" runat="server" CssClass="auto-style2" ImageUrl="~/Resource/pic.png" OnDataBinding="Imagemap_DataBinding" BorderStyle="Solid" />
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="15pt" ForeColor="White"></asp:Label>
-         <asp:ImageButton ID="Image_point1" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/position.png" OnClick="Image_point1_Click" ToolTip="一号坡 2164-2317" />
-        <asp:ImageButton ID="Image_point2" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/position.png" style="z-index: 1" OnClick="Image_point2_Click" ToolTip="二号坡 2361-2558" />
-        <asp:ImageButton ID="Image_point3" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/position.png" style="z-index: 1" OnClick="Image_point3_Click" ToolTip="三号坡 2934-3074" />
-        <asp:ImageButton ID="Image_point4" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/position.png" OnClick="Image_point4_Click" ToolTip="侧斜管标定1号管 602-675" />
-        <asp:ImageButton ID="Image_point5" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/position.png" OnClick="Image_point5_Click" ToolTip="侧斜管标定2号管 742-810" />
-        <asp:ImageButton ID="Image_point6" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/position.png" OnClick="Image_point6_Click" ToolTip="侧斜管标定3号管 875-939" />
-         <asp:ImageButton ID="Image_point7" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/position.png" OnClick="Image_point7_Click" ToolTip="侧斜管标定4号管 994-1069" />
+         
     </div>
     </form>
 </body>

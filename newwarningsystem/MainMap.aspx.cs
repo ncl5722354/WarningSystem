@@ -15,6 +15,14 @@ namespace newwarningsystem
         protected void Page_Load(object sender, EventArgs e)
         {
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            if (Image_point1.Visible == false)
+            {
+                Image_point1.Visible = true;
+            }
+            else
+            {
+                Image_point1.Visible = false;
+            }
         }
 
 
@@ -123,6 +131,11 @@ namespace newwarningsystem
         protected void LinkButton1_Click1(object sender, EventArgs e)
         {
             Response.Redirect("report.aspx");
+        }
+
+        protected void Timer2_Tick(object sender, EventArgs e)
+        {
+            Image_point1.Visible = false;
         }
     }
 }

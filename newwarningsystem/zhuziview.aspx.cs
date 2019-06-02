@@ -788,10 +788,10 @@ namespace newwarningsystem
                 string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
                 string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
                 string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
-                e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
+                //e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
                 if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
                 {
-                    e.Cell.ForeColor = System.Drawing.Color.LightGray;
+                  //  e.Cell.ForeColor = System.Drawing.Color.LightGray;
                 }
 
             }
