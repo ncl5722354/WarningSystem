@@ -14,7 +14,7 @@ namespace newwarningsystem
     {
         public static IniFile ini = new IniFile("D:\\config\\Map.ini");
 
-        public static int update_panel2_count = 0;
+        public static int update_panel2_count = 1;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +24,15 @@ namespace newwarningsystem
             Circle_Yanse();    // 界面变化颜色
             Update_Panel2();   // 更新panel2
             //Image_point1.Attributes.Add("onMouseOver", "VisiblePanel2();");
-            
+            //System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width
+            //System.Windows.
+        }
+
+        protected void Page_LoadComplete(object sender, EventArgs e)
+        {
+            //System.Web.UI.WebControls.Unit width = Panel3.Width;
+            HttpBrowserCapabilities bc = Request.Browser;
+            int a = bc.ScreenPixelsWidth;
         }
 
         private void Circle_Yanse()
@@ -37,7 +45,7 @@ namespace newwarningsystem
 
             string file_now = (string)filelist_1[filelist_1.Count - 1];
             string[] now_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_now);
-
+            Chart1.Series[0].Points.Clear();
             double circle1_max = 0; 
             double circle2_max = 0;
             double circle3_max = 0;
@@ -340,12 +348,13 @@ namespace newwarningsystem
                         double position1 = double.Parse(position_string1);
 
 
-                        double value =Math.Round(Math.Abs(positon_value - positon_value1) * (1 - Math.Sqrt(3) / 2) / 0.0482,2);
+                        double value =Math.Abs(positon_value - positon_value1) * (1 - Math.Sqrt(3) / 2) / 0.0482;
 
                         
                         // 
                         if (position >= 2164 && position <= 2317 && update_panel2_count == 1)
                         {
+
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
@@ -367,6 +376,8 @@ namespace newwarningsystem
            
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point1.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 2361 && position <= 2558 && update_panel2_count == 2)
                         {
@@ -389,6 +400,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point2.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 2934 && position <= 3074 && update_panel2_count == 3)
                         {
@@ -411,6 +424,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point3.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 602 && position <= 675 && update_panel2_count == 4)
                         {
@@ -433,6 +448,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point4.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 742 && position <= 810 && update_panel2_count == 5)
                         {
@@ -455,6 +472,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point5.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 875 && position <= 939 && update_panel2_count == 6)
                         {
@@ -477,6 +496,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point6.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 994 && position <= 1069 && update_panel2_count == 7)
                         {
@@ -499,6 +520,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point7.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
 
                     }

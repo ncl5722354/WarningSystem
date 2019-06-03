@@ -600,7 +600,7 @@
              .auto-style78 {
             position: absolute;
             top: 67%;
-            left: 5%;
+            left: 4%;
             width: 85%;
             height:7%;
             z-index: 3;

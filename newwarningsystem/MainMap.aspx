@@ -30,7 +30,7 @@
         .auto-style4 {
             position: absolute;
             top: 1%;
-            left: 0%;
+            left: 40%;
             z-index: 4;
             width: 100%;
             height: 4%;
@@ -364,6 +364,31 @@
             height:85%;
             z-index: 6;    
         }
+           .auto-style84 {
+            position: absolute;
+            top: 80%;
+            left: 0%;
+            width: 100%;
+            height:20%;
+            z-index: 6; 
+            opacity: 0.75;   
+        }
+           .auto-style85 {
+            position: absolute;
+            width:100%;
+            height:100%;
+            left:0px;
+            top:0px;
+            
+        }
+            .auto-style86 {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            width: 3%;
+            z-index: 4;
+            height:5%;
+        }
             </style>
      
 <script type="text/javascript">
@@ -424,6 +449,26 @@
                      <asp:Panel ID="Panel2" CssClass="auto-style82" BackColor="Blue" runat="server" >
                          
                      </asp:Panel>
+
+                    <asp:Panel ID="Panel3" CssClass="auto-style84" runat="server" BackColor="#3333FF">
+            <asp:Chart ID="Chart1" runat="server" Width="1200px" Height="200px">
+                <Series>
+                    <asp:Series Name="Series1" ChartType="Spline"></asp:Series>
+                </Series>
+                <ChartAreas>
+                    <asp:ChartArea Name="ChartArea1">
+                        <AxisY Title="位移量(毫米)">
+                        </AxisY>
+                        <AxisX Title="位置(米)">
+                        </AxisX>
+                    </asp:ChartArea>
+                </ChartAreas>
+                <Titles>
+                    <asp:Title Name="Title1">
+                    </asp:Title>
+                </Titles>
+            </asp:Chart>
+        </asp:Panel>
                     <asp:Timer ID="timer2" Interval="4000" runat="server" OnTick="timer2_Tick1"/>
                 </ContentTemplate>
                 <Triggers>
@@ -444,11 +489,12 @@
              <asp:Label ID="Label22" CssClass="auto-style79" runat="server" Text=">=2.0mm" Font-Size="Small" ForeColor="White" Visible="false"></asp:Label>
              <asp:Label ID="Label23" CssClass="auto-style80" runat="server" Text="Label" ForeColor="Red" BackColor="Red" Font-Size="Small"></asp:Label>
          </asp:Panel>
-        <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC"  />
+        <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC" ImageUrl="~/Resource/图片1.png"  />
         <asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style15" ForeColor="White" OnClick="LinkButton1_Click1" Visible="false">报表查询</asp:LinkButton>
         <asp:Image ID="Image_time" CssClass="auto-style13" runat="server" BackColor="#0066FF" />
-        <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" BackColor="#333300" />
         
+        <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" BackColor="#333300" />
+         <asp:Image ID="Image_icon" CssClass="auto-style86" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
         <asp:Label ID="Label24" runat="server" Text="报警等级" CssClass="auto-style81" BackColor="#000099" ForeColor="White"></asp:Label>
         
         
