@@ -1,0 +1,16 @@
+D:\程序\warningsystem\webWarningsystem\bin\webWarningsystem.dll.config
+D:\程序\warningsystem\webWarningsystem\bin\webWarningsystem.dll
+D:\程序\warningsystem\webWarningsystem\bin\webWarningsystem.pdb
+D:\程序\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.dll
+D:\程序\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.pdb
+D:\程序\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.Properties.Resources.resources
+D:\程序\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.csproj.GenerateResource.Cache
+D:\warningsystem\webWarningsystem\bin\webWarningsystem.dll.config
+D:\warningsystem\webWarningsystem\bin\webWarningsystem.dll
+D:\warningsystem\webWarningsystem\bin\webWarningsystem.pdb
+D:\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.csprojResolveAssemblyReference.cache
+D:\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.Properties.Resources.resources
+D:\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.csproj.GenerateResource.Cache
+D:\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.dll
+D:\warningsystem\webWarningsystem\obj\Debug\webWarningsystem.pdb

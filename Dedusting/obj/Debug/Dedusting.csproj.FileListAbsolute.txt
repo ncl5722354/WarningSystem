@@ -141,3 +141,16 @@ D:\程序\warningsystem\Dedusting\obj\Debug\Dedusting.控件.Title.resources
 D:\程序\warningsystem\Dedusting\obj\Debug\Dedusting.csproj.GenerateResource.Cache
 D:\程序\warningsystem\Dedusting\obj\Debug\Dedusting.exe
 D:\程序\warningsystem\Dedusting\obj\Debug\Dedusting.pdb
+D:\warningsystem\Dedusting\bin\Debug\Dedusting.exe.config
+D:\warningsystem\Dedusting\bin\Debug\Dedusting.exe
+D:\warningsystem\Dedusting\bin\Debug\Dedusting.pdb
+D:\warningsystem\Dedusting\bin\Debug\ViewConfig.dll
+D:\warningsystem\Dedusting\bin\Debug\ViewConfig.pdb
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.csprojResolveAssemblyReference.cache
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.Form1.resources
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.Properties.Resources.resources
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.控件.ExitButton.resources
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.控件.Title.resources
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.csproj.GenerateResource.Cache
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.exe
+D:\warningsystem\Dedusting\obj\Debug\Dedusting.pdb

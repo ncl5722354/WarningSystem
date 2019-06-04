@@ -162,6 +162,8 @@ namespace SqlConnect
                     {
                         insert_cmd = insert_cmd + ",";
                     }
+                   
+                    Console.WriteLine(count.ToString());
                 }
                 cmd.CommandText = insert_cmd;
                 try
@@ -175,6 +177,29 @@ namespace SqlConnect
                 return success;
             }
         }         // 批量插入信息
+
+        public bool Insert_Data_From_Txt(string table_name,string path)
+        {
+            using (SqlConnection conn = new SqlConnection(connStr.ConnectionString))
+            {
+                bool success = false;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                string insert_cmd = "bulk insert " + table_name + " from '" + path + "'" + "with (fieldterminator=' ',rowterminator='\n')";
+                cmd.CommandText = insert_cmd;
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    success = true;
+                }
+                catch { success = false; }
+                conn.Close();
+                return success;
+
+            }
+
+        }
 
         public bool Insert(string table_name,string[] insert_values)
         {

@@ -154,3 +154,12 @@ D:\程序\warningsystem\Communication\bin\Debug\String_Caozuo.pdb
 D:\程序\warningsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
 D:\程序\warningsystem\Communication\obj\Debug\Communication.dll
 D:\程序\warningsystem\Communication\obj\Debug\Communication.pdb
+D:\warningsystem\Communication\bin\Debug\Communication.dll.config
+D:\warningsystem\Communication\bin\Debug\Communication.dll
+D:\warningsystem\Communication\bin\Debug\Communication.pdb
+D:\warningsystem\Communication\bin\Debug\Communication.tlb
+D:\warningsystem\Communication\bin\Debug\String_Caozuo.dll
+D:\warningsystem\Communication\bin\Debug\String_Caozuo.pdb
+D:\warningsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\warningsystem\Communication\obj\Debug\Communication.dll
+D:\warningsystem\Communication\obj\Debug\Communication.pdb

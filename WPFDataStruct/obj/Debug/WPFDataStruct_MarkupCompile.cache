@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\程序\warningsystem\WPFDataStruct\obj\Debug\
+D:\warningsystem\WPFDataStruct\obj\Debug\
 WPFDataStruct
 none
 false
-CODE_ANALYSIS;DEBUG;TRACE
-D:\程序\warningsystem\WPFDataStruct\App.xaml
+DEBUG;TRACE
+D:\warningsystem\WPFDataStruct\App.xaml
 22021279262
 
 9-559785213
-141217568949
+142025728610
 MainWindow.xaml;SubWindow.xaml;
 
 False
