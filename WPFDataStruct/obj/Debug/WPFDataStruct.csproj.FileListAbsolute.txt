@@ -226,6 +226,18 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\o
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\WPFDataStruct.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\MainWindow.baml
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\SubWindow.baml
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\MainWindow.g.cs
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\SubWindow.g.cs
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\App.g.cs
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\WPFDataStruct_MarkupCompile.cache
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\WPFDataStruct.g.resources
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\WPFDataStruct.Properties.Resources.resources
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\WPFDataStruct.csproj.GenerateResource.Cache
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\WPFDataStruct.exe
+D:\程序\warningsystem\WPFDataStruct\obj\Debug\WPFDataStruct.pdb
 D:\warningsystem\WPFDataStruct\bin\Debug\WPFDataStruct.exe.config
 D:\warningsystem\WPFDataStruct\bin\Debug\WPFDataStruct.exe
 D:\warningsystem\WPFDataStruct\bin\Debug\WPFDataStruct.pdb

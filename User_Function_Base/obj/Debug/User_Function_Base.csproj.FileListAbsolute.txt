@@ -367,8 +367,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\User_Function_B
 D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe.config
 D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe
 D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.pdb
-D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe.CodeAnalysisLog.xml
-D:\程序\warningsystem\User_Function_Base\bin\Debug\User_Function_Base.exe.lastcodeanalysissucceeded
 D:\程序\warningsystem\User_Function_Base\bin\Debug\Communication.dll
 D:\程序\warningsystem\User_Function_Base\bin\Debug\FileOperation.dll
 D:\程序\warningsystem\User_Function_Base\bin\Debug\SqlConnect.dll

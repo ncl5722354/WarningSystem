@@ -277,8 +277,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\WpfControls\obj
 D:\程序\warningsystem\WpfControls\bin\Debug\WpfControls.exe.config
 D:\程序\warningsystem\WpfControls\bin\Debug\WpfControls.exe
 D:\程序\warningsystem\WpfControls\bin\Debug\WpfControls.pdb
-D:\程序\warningsystem\WpfControls\bin\Debug\WpfControls.exe.CodeAnalysisLog.xml
-D:\程序\warningsystem\WpfControls\bin\Debug\WpfControls.exe.lastcodeanalysissucceeded
 D:\程序\warningsystem\WpfControls\bin\Debug\SqlConnect.dll
 D:\程序\warningsystem\WpfControls\bin\Debug\SqlConnect.pdb
 D:\程序\warningsystem\WpfControls\obj\Debug\WpfControls.csprojResolveAssemblyReference.cache

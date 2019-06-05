@@ -129,8 +129,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Dedusting\obj\D
 D:\程序\warningsystem\Dedusting\bin\Debug\Dedusting.exe.config
 D:\程序\warningsystem\Dedusting\bin\Debug\Dedusting.exe
 D:\程序\warningsystem\Dedusting\bin\Debug\Dedusting.pdb
-D:\程序\warningsystem\Dedusting\bin\Debug\Dedusting.exe.CodeAnalysisLog.xml
-D:\程序\warningsystem\Dedusting\bin\Debug\Dedusting.exe.lastcodeanalysissucceeded
 D:\程序\warningsystem\Dedusting\bin\Debug\ViewConfig.dll
 D:\程序\warningsystem\Dedusting\bin\Debug\ViewConfig.pdb
 D:\程序\warningsystem\Dedusting\obj\Debug\Dedusting.csprojResolveAssemblyReference.cache

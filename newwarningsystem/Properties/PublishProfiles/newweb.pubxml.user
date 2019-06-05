@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\发布</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/FileOperation.dll">
+      <publishTime>05/15/2019 08:17:50</publishTime>
+    </File>
+    <File Include="bin/newwarningsystem.dll">
+      <publishTime>06/03/2019 10:46:49</publishTime>
+    </File>
+    <File Include="bin/String_Caozuo.dll">
+      <publishTime>05/15/2019 07:39:12</publishTime>
+    </File>
+    <File Include="ChaFenSearch.aspx">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="MainMap.aspx">
+      <publishTime>06/03/2019 10:44:26</publishTime>
+    </File>
+    <File Include="report.aspx">
+      <publishTime>05/24/2019 13:42:11</publishTime>
+    </File>
+    <File Include="Resource/1.png">
+      <publishTime>05/15/2019 12:16:40</publishTime>
+    </File>
+    <File Include="Resource/2.png">
+      <publishTime>05/15/2019 12:16:40</publishTime>
+    </File>
+    <File Include="Resource/3.png">
+      <publishTime>05/15/2019 12:16:40</publishTime>
+    </File>
+    <File Include="Resource/bluedot.ico">
+      <publishTime>05/15/2019 12:33:55</publishTime>
+    </File>
+    <File Include="Resource/dise.png">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Resource/find_magnifier_magnifying_glass_search_zoom_64px_1225492_easyicon.net.png">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Resource/home.png">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Resource/home_29.1328px_1217329_easyicon.net.png">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Resource/loginbg.png">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Resource/minibg.png">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Resource/pic.png">
+      <publishTime>05/11/2019 07:36:40</publishTime>
+    </File>
+    <File Include="Resource/position.png">
+      <publishTime>05/11/2019 07:36:40</publishTime>
+    </File>
+    <File Include="Resource/settings_64px_1229386_easyicon.net.png">
+      <publishTime>05/29/2019 07:38:39</publishTime>
+    </File>
+    <File Include="Resource/timg.jpg">
+      <publishTime>05/25/2019 12:47:46</publishTime>
+    </File>
+    <File Include="Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg">
+      <publishTime>05/11/2019 07:36:40</publishTime>
+    </File>
+    <File Include="Resource/zhu_di.png">
+      <publishTime>05/14/2019 08:01:35</publishTime>
+    </File>
+    <File Include="Resource/zhu_shen.png">
+      <publishTime>05/14/2019 08:01:35</publishTime>
+    </File>
+    <File Include="Resource/zhu_tou.png">
+      <publishTime>05/14/2019 08:01:35</publishTime>
+    </File>
+    <File Include="Resource/图片1.png">
+      <publishTime>05/28/2019 09:34:00</publishTime>
+    </File>
+    <File Include="Resource/图片2.png">
+      <publishTime>05/28/2019 09:39:08</publishTime>
+    </File>
+    <File Include="Resource/图片3.png">
+      <publishTime>05/28/2019 09:46:40</publishTime>
+    </File>
+    <File Include="Resource/图片4.png">
+      <publishTime>05/28/2019 10:51:36</publishTime>
+    </File>
+    <File Include="SubMap.aspx">
+      <publishTime>05/29/2019 08:23:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/24/2019 13:42:13</publishTime>
+    </File>
+    <File Include="zhuziview.aspx">
+      <publishTime>06/03/2019 07:44:23</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

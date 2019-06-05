@@ -95,8 +95,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\obj\Deb
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\MyShape\obj\Debug\MyShape.pdb
 D:\程序\warningsystem\MyShape\bin\Debug\MyShape.dll
 D:\程序\warningsystem\MyShape\bin\Debug\MyShape.pdb
-D:\程序\warningsystem\MyShape\bin\Debug\MyShape.dll.CodeAnalysisLog.xml
-D:\程序\warningsystem\MyShape\bin\Debug\MyShape.dll.lastcodeanalysissucceeded
 D:\程序\warningsystem\MyShape\obj\Debug\MyShape.csprojResolveAssemblyReference.cache
 D:\程序\warningsystem\MyShape\obj\Debug\MyShape.Line.resources
 D:\程序\warningsystem\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache

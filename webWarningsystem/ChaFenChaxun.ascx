@@ -4,8 +4,13 @@
 <style type="text/css">
     .auto-style1 {
         position: absolute;
+<<<<<<< HEAD
         top: 35px;
         left: 29px;
+=======
+        top: 163px;
+        left: 83px;
+>>>>>>> d77b2e3d832c78131b7dd5fe38714cde60dd8d39
         z-index: 1;
         width: 102px;
         margin-bottom: 0px;
@@ -45,8 +50,17 @@
             </asp:ChartArea>
         </chartareas>
     </asp:Chart>
+<<<<<<< HEAD
 
 <asp:Label ID="Label1" runat="server" CssClass="auto-style3" Text="曲线2选择"/>
+=======
+</p>
+<p>
+    &nbsp;</p>
+<p>
+    <asp:Label ID="Label1" runat="server" CssClass="auto-style3" Text="曲线2选择"></asp:Label>
+</p>
+>>>>>>> d77b2e3d832c78131b7dd5fe38714cde60dd8d39
 <asp:ListBox ID="ListBox1" runat="server" CssClass="auto-style2"></asp:ListBox>
 <asp:ListBox ID="ListBox2" runat="server" CssClass="auto-style4"></asp:ListBox>
 <asp:Label ID="Label2" runat="server" CssClass="auto-style1" Text="曲线1选择"></asp:Label>

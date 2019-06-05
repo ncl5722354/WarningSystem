@@ -149,8 +149,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\obj\Debug
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Tools\obj\Debug\Tools.pdb
 D:\程序\warningsystem\Tools\bin\Debug\Tools.dll
 D:\程序\warningsystem\Tools\bin\Debug\Tools.pdb
-D:\程序\warningsystem\Tools\bin\Debug\Tools.dll.CodeAnalysisLog.xml
-D:\程序\warningsystem\Tools\bin\Debug\Tools.dll.lastcodeanalysissucceeded
 D:\程序\warningsystem\Tools\bin\Debug\FileOperation.dll
 D:\程序\warningsystem\Tools\bin\Debug\FileOperation.pdb
 D:\程序\warningsystem\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache

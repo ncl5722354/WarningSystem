@@ -366,6 +366,29 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_Controlor
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.csproj.GenerateResource.Cache
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.exe
 D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.pdb
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\Ranji_Controlor4.0.exe.config
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\Ranji_Controlor4.0.exe
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\Ranji_Controlor4.0.pdb
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\SqlConnect.dll
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\ViewConfig.dll
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\WpfControls.exe
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\WPFDataStruct.exe
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\SqlConnect.pdb
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\ViewConfig.pdb
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\WpfControls.pdb
+D:\程序\warningsystem\Ranji_Controlor4.0\bin\Debug\WPFDataStruct.pdb
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\MainWindow.baml
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Start.baml
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\MainWindow.g.cs
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Start.g.cs
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\App.g.cs
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0_MarkupCompile.cache
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.g.resources
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4._0.Properties.Resources.resources
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.csproj.GenerateResource.Cache
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.exe
+D:\程序\warningsystem\Ranji_Controlor4.0\obj\Debug\Ranji_Controlor4.0.pdb
 D:\warningsystem\Ranji_Controlor4.0\bin\Debug\Ranji_Controlor4.0.exe.config
 D:\warningsystem\Ranji_Controlor4.0\bin\Debug\Ranji_Controlor4.0.exe
 D:\warningsystem\Ranji_Controlor4.0\bin\Debug\Ranji_Controlor4.0.pdb

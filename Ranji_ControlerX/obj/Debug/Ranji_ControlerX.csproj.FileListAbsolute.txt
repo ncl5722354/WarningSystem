@@ -418,8 +418,6 @@ D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Ranji_Controler
 D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe.config
 D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe
 D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.pdb
-D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe.CodeAnalysisLog.xml
-D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Ranji_ControlerX.exe.lastcodeanalysissucceeded
 D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\Communication.dll
 D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\DataGridViewCaoZuo.dll
 D:\程序\warningsystem\Ranji_ControlerX\bin\Debug\FileOperation.dll

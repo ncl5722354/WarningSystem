@@ -134,13 +134,13 @@ namespace WarningSystem
             this.Left = 0;
             this.Width = screen_width;
             this.Height = scree_height;
-            ThreadPool.SetMaxThreads(2000,2000);
+            ThreadPool.SetMaxThreads(2000, 2000);
             ThreadPool.SetMinThreads(100, 100);
-            timer1.Interval=5000;
+            timer1.Interval = 5000;
             timer1.Tick += new EventHandler(MyTick);
             timer1.Enabled = true;
 
-           
+
             All_Sub_Hide();      // 所有的界面隐藏起来
 
             // 登陆界面
@@ -185,7 +185,7 @@ namespace WarningSystem
                     wendu_end[i - 1] = int.Parse(myPoint_ini.IniReadValue("wendu" + i.ToString(), "end"));
 
                 }
-               
+
             }
             catch { }
 
@@ -196,7 +196,7 @@ namespace WarningSystem
             rukou = new int[list.Count];               // 定义入口数组
             chukou = new int[list.Count];              // 定义出口数组
 
-            for (int i = 0; i < list.Count;i++)
+            for (int i = 0; i < list.Count; i++)
             {
                 try
                 {
@@ -207,20 +207,21 @@ namespace WarningSystem
                 }
                 catch { }
             }
-            init_view(); 
-              
+            init_view();
 
-                mygrid.Background = new ImageBrush
-                {
-                    
-                   //ImageSource = new BitmapImage(new Uri(rootpath + "\\bg.jpg"))
-                };
+
+            mygrid.Background = new ImageBrush
+            {
+
+                //ImageSource = new BitmapImage(new Uri(rootpath + "\\bg.jpg"))
+            };
 
             Show_SubView(myview);
             myview.Read_Real_Data();
             myview.Read_All_Point();
-            
+
         }
+
 
         public static double Jisuan_Weiyi(double value)
         {
@@ -427,6 +428,7 @@ namespace WarningSystem
             //    //mystruct.table_name = tablename;
 //>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
 
+
 //                //insert_struct mystruct = new insert_struct();
 //                //mystruct.insert_object = insert_cmd;
 //                //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
@@ -434,7 +436,16 @@ namespace WarningSystem
 //                inser_array.Add(insert_cmd);
 
 
-//<<<<<<< HEAD
+
+
+//                //insert_struct mystruct = new insert_struct();
+//                //mystruct.insert_object = insert_cmd;
+//                //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+//                //mystruct.table_name = tablename;
+//                inser_array.Add(insert_cmd);
+
+
+
                
                 
                 
