@@ -32,6 +32,11 @@ namespace newwarningsystem
 
         public static string listbox3_select = "";
 
+        static double value1 = 0;
+        static double value2 = 0;
+        static double value3 = 0;
+        static double value4 = 0;
+        static double value5 = 0;
 
         protected void Click(object sender, EventArgs e)
         {
@@ -75,9 +80,6 @@ namespace newwarningsystem
                 Chart2.Titles[0].Text = "位置：" + position_string + "位置曲线";
                 foreach (DirectoryInfo dirinfo in alldirs)
                 {
-
-
-
 
                     try
                     {
@@ -170,27 +172,7 @@ namespace newwarningsystem
                     }
                     catch { }
                 }
-                //ArrayList alldirs = FileCaozuo.Read_All_Files("D:\\data\\","*.txt");
-                //foreach (DirectoryInfo dirinfo in alldirs)
-                //{
-                //    ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
-                //    //string[] alllines = FileCaozuo.Read_All_Line("D:\\data\\"+alldirs[0].ToString());
-                //    string myline = FileCaozuo.Get_Line("D:\\data\\" + allfiles[0].ToString(), count - 1);
-                //    string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                //    double myvalue = double.Parse(myvalue_string);
-                //    string time_string = string_caozuo.Get_Dian_String(allfiles[0].ToString(), 1);
-                //    string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                //    string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                //    string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                //    string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                //    DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
-                //    Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                //}
-                //Chart2.ChartAreas[0].AxisX.Maximum = max;
-                //Chart2.ChartAreas[0].AxisX.Minimum = min;
-                //Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
-                //max = Chart2.ChartAreas[0].AxisX.Maximum;
-                //min = Chart2.ChartAreas[0].AxisX.Minimum;
+                
             }
             catch { }
         }
@@ -259,27 +241,27 @@ namespace newwarningsystem
                                 label_value.Style["left"] = "33%";
                                 label_value.Text = position_string;
 
-                                if (value < 0.01)
+                                if (value < value1)
                                 {
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.01 && value <= 0.5)
+                                else if (value >= 0.01 && value <= value2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.5 && value <= 1.0)
+                                else if (value >= 0.5 && value <= value3)
                                 {
                                     label_value.BackColor = System.Drawing.Color.LightGreen;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value > 1.0 && value < 2)
+                                else if (value > 1.0 && value < value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Yellow;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 2)
+                                else if (value >= value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Red;
                                     label_value.ForeColor = System.Drawing.Color.White;
@@ -341,28 +323,28 @@ namespace newwarningsystem
                                 Button label_value = new Button();
                                 label_value.Text = "1";
 
-                                if (value < 0.01)
+                                if (value < value1)
                                 {
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.01 && value <= 0.5)
+                                else if (value >= value1 && value <= value2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.5 && value <= 1.0)
+                                else if (value >= value2 && value <= value3)
                                 {
                                     label_value.BackColor = System.Drawing.Color.LightGreen;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value > 1.0 && value < 2)
+                                else if (value > value3 && value < value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Yellow;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
 
-                                else if (value >= 2)
+                                else if (value >= value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Red;
                                     label_value.ForeColor = System.Drawing.Color.White;
@@ -394,12 +376,19 @@ namespace newwarningsystem
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
             Set_Start_End(start1, end1, start2, end2);
             Label_title.Text = chafen_title;
 
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
+           
 
+           
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
@@ -886,6 +875,11 @@ namespace newwarningsystem
             ChaFenSearch.end2 = end2;
             ChaFenSearch.title = chafen_title + "差分查询";
             Response.Redirect("ChaFenSearch.aspx");
+        }
+
+        protected void ImageButton_set_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Set.aspx");
         }
     }
 }

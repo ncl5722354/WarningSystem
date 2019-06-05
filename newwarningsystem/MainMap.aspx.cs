@@ -14,7 +14,14 @@ namespace newwarningsystem
     {
         public static IniFile ini = new IniFile("D:\\config\\Map.ini");
 
-        public static int update_panel2_count = 0;
+        public static int update_panel2_count = 1;
+
+        static double value1 = 0;
+        static double value2 = 0;
+        static double value3 = 0;
+        static double value4 = 0;
+        static double value5 = 0;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,21 +30,34 @@ namespace newwarningsystem
             Label_timer.Text = mytime.ToString("yyyy-MM-dd HH:mm:ss");
             Circle_Yanse();    // 界面变化颜色
             Update_Panel2();   // 更新panel2
-            //Image_point1.Attributes.Add("onMouseOver", "VisiblePanel2();");
             
+
+
+            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
+        }
+
+        protected void Page_LoadComplete(object sender, EventArgs e)
+        {
+            
+            HttpBrowserCapabilities bc = Request.Browser;
+            int a = bc.ScreenPixelsWidth;
         }
 
         private void Circle_Yanse()
         {
             ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
-            // 读取第一个文件作为基准
+            
             string file_jizhun = (string)filelist_1[0];
             string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
 
             string file_now = (string)filelist_1[filelist_1.Count - 1];
             string[] now_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_now);
-
+            Chart1.Series[0].Points.Clear();
             double circle1_max = 0; 
             double circle2_max = 0;
             double circle3_max = 0;
@@ -65,7 +85,7 @@ namespace newwarningsystem
 
 
                         double value = Math.Abs(positon_value - positon_value1) * (1 - Math.Sqrt(3) / 2) / 0.0482;
-
+                        value = Math.Round(value, 3);
                         // 
                         if (position >= 2164 && position <= 2317)
                         {
@@ -108,26 +128,26 @@ namespace newwarningsystem
 
                 }
 
-                if (circle1_max <= 0.01)
+                if (circle1_max <= value1)
                     Circle1.BackColor = System.Drawing.Color.DarkBlue;
-                else if (circle1_max <= 0.1)
+                else if (circle1_max <= value2)
                     Circle1.BackColor = System.Drawing.Color.Blue;
-                else if (circle1_max <= 1.0)
+                else if (circle1_max <= value3)
                     Circle1.BackColor = System.Drawing.Color.LightGreen;
-                else if (circle1_max < 2)
+                else if (circle1_max < value5)
                     Circle1.BackColor = System.Drawing.Color.Yellow;
-                else if (circle1_max >=2)
+                else if (circle1_max >=value5)
                     Circle1.BackColor = System.Drawing.Color.Red;
 
-                if (circle2_max <= 0.01)
+                if (circle2_max <= value1)
                     Circle2.BackColor = System.Drawing.Color.DarkBlue;
-                else if (circle2_max <= 0.1)
+                else if (circle2_max <= value2)
                     Circle2.BackColor = System.Drawing.Color.Blue;
-                else if (circle2_max <= 1.0)
+                else if (circle2_max <= value3)
                     Circle2.BackColor = System.Drawing.Color.LightGreen;
-                else if (circle2_max < 2)
+                else if (circle2_max < value5)
                     Circle2.BackColor = System.Drawing.Color.Yellow;
-                else if (circle2_max >= 2)
+                else if (circle2_max >= value5)
                     Circle2.BackColor = System.Drawing.Color.Red;
 
                 if (circle3_max <= 0.01)
@@ -152,42 +172,42 @@ namespace newwarningsystem
                 else if (circle4_max >= 2)
                     Circle4.BackColor = System.Drawing.Color.Red;
 
-                if (circle5_max <= 0.01)
+                if (circle5_max <= value1)
                     Circle5.BackColor = System.Drawing.Color.DarkBlue;
-                else if (circle5_max <= 0.1)
+                else if (circle5_max <= value2)
                     Circle5.BackColor = System.Drawing.Color.Blue;
-                else if (circle5_max <= 1.0)
+                else if (circle5_max <= value3)
                     Circle5.BackColor = System.Drawing.Color.LightGreen;
-                else if (circle5_max < 2)
+                else if (circle5_max < value5)
                     Circle5.BackColor = System.Drawing.Color.Yellow;
-                else if (circle5_max >= 2)
+                else if (circle5_max >= value5)
                     Circle5.BackColor = System.Drawing.Color.Red;
 
-                if (circle6_max <= 0.01)
+                if (circle6_max <= value1)
                     Circle6.BackColor = System.Drawing.Color.DarkBlue;
-                else if (circle6_max <= 0.1)
+                else if (circle6_max <= value2)
                     Circle6.BackColor = System.Drawing.Color.Blue;
-                else if (circle6_max <= 1.0)
+                else if (circle6_max <= value3)
                     Circle6.BackColor = System.Drawing.Color.LightGreen;
-                else if (circle6_max < 2)
+                else if (circle6_max < value5)
                     Circle6.BackColor = System.Drawing.Color.Yellow;
-                else if (circle6_max >= 2)
+                else if (circle6_max >= value5)
                     Circle6.BackColor = System.Drawing.Color.Red;
 
-                if (circle7_max <= 0.01)
+                if (circle7_max <= value1)
                     Circle7.BackColor = System.Drawing.Color.DarkBlue;
-                else if (circle7_max <= 0.1)
+                else if (circle7_max <= value2)
                     Circle7.BackColor = System.Drawing.Color.Blue;
-                else if (circle7_max <= 1.0)
+                else if (circle7_max <= value3)
                     Circle7.BackColor = System.Drawing.Color.LightGreen;
-                else if (circle7_max < 2)
+                else if (circle7_max < value5)
                     Circle7.BackColor = System.Drawing.Color.Yellow;
-                else if (circle7_max >= 2)
+                else if (circle7_max >= value5)
                     Circle7.BackColor = System.Drawing.Color.Red;
             }
             catch { }
 
-        }           // 更新圆圈的颜色
+        }           
 
         private void Update_Panel2()
         {
@@ -340,12 +360,13 @@ namespace newwarningsystem
                         double position1 = double.Parse(position_string1);
 
 
-                        double value =Math.Round(Math.Abs(positon_value - positon_value1) * (1 - Math.Sqrt(3) / 2) / 0.0482,2);
-
+                        double value =Math.Abs(positon_value - positon_value1) * (1 - Math.Sqrt(3) / 2) / 0.0482;
+                        value = Math.Round(value, 3);
                         
                         // 
                         if (position >= 2164 && position <= 2317 && update_panel2_count == 1)
                         {
+
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
@@ -357,7 +378,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count*5).ToString()+"%";
+                                mylabel.Style["top"] = (count*7).ToString()+"%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString()+"mm";
@@ -367,6 +388,8 @@ namespace newwarningsystem
            
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point1.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 2361 && position <= 2558 && update_panel2_count == 2)
                         {
@@ -380,7 +403,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -389,6 +412,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point2.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 2934 && position <= 3074 && update_panel2_count == 3)
                         {
@@ -402,7 +427,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -411,6 +436,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point3.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 602 && position <= 675 && update_panel2_count == 4)
                         {
@@ -424,7 +451,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -433,6 +460,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point4.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 742 && position <= 810 && update_panel2_count == 5)
                         {
@@ -446,7 +475,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -455,6 +484,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point5.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 875 && position <= 939 && update_panel2_count == 6)
                         {
@@ -468,7 +499,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -477,6 +508,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point6.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 994 && position <= 1069 && update_panel2_count == 7)
                         {
@@ -490,7 +523,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -499,6 +532,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
+                            Chart1.Titles[0].Text = Image_point7.ToolTip;
+                            Chart1.Series[0].Points.AddXY(position, value);
                         }
 
                     }
@@ -511,7 +546,7 @@ namespace newwarningsystem
                 Label label = new Label();
                 label.Style["position"] = "absolute";
                 label.Font.Size = FontUnit.Medium;
-                label.Style["top"] = (count * 5).ToString() + "%";
+                label.Style["top"] = (count * 7).ToString() + "%";
                 label.Style["left"] = "0%";
                 label.Style["z-index"] = "5";
                 label.Text = "位移最大值 位置：" + max_position + "m " + "位移量：" + circle1_max.ToString() + "mm";
@@ -544,8 +579,7 @@ namespace newwarningsystem
             zhuziview.end1 = 638;
             zhuziview.start2 = 638;
             zhuziview.end2 = 674;
-            //view.Set_Start_End(602, 675, 0, 0);
-            //Response.Redirect(view.GetRouteUrl());
+           
             ImageButton mybutton = (ImageButton)sender;
             zhuziview.chafen_title = mybutton.ToolTip;
             Response.Redirect("zhuziview.aspx");

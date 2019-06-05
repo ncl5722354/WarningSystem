@@ -52,3 +52,14 @@ D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.Properties.Resources.resourc
 D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.csproj.GenerateResource.Cache
 D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.exe
 D:\程序\warningsystem\jisuanqi\obj\Debug\jisuanqi.pdb
+D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.csprojResolveAssemblyReference.cache
+D:\warningsystem\jisuanqi\bin\Debug\jisuanqi.exe.config
+D:\warningsystem\jisuanqi\bin\Debug\jisuanqi.exe
+D:\warningsystem\jisuanqi\bin\Debug\jisuanqi.pdb
+D:\warningsystem\jisuanqi\bin\Debug\ViewConfig.dll
+D:\warningsystem\jisuanqi\bin\Debug\ViewConfig.pdb
+D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.Form1.resources
+D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.Properties.Resources.resources
+D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.csproj.GenerateResource.Cache
+D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.exe
+D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.pdb

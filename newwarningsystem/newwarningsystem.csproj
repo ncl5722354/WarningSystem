@@ -66,6 +66,7 @@
     <Content Include="Resource\1.png" />
     <Content Include="Resource\2.png" />
     <Content Include="Resource\3.png" />
+    <Content Include="Resource\bg.png" />
     <Content Include="Resource\bluedot.ico" />
     <Content Include="Resource\dise.png" />
     <Content Include="Resource\find_magnifier_magnifying_glass_search_zoom_64px_1225492_easyicon.net.png" />
@@ -85,6 +86,7 @@
     <Content Include="Resource\图片2.png" />
     <Content Include="Resource\图片3.png" />
     <Content Include="Resource\图片4.png" />
+    <Content Include="Set.aspx" />
     <Content Include="SubMap.aspx" />
     <Content Include="Web.config" />
     <Content Include="zhuziview.aspx" />
@@ -118,6 +120,13 @@
     </Compile>
     <Compile Include="report.aspx.designer.cs">
       <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Set.aspx.cs">
+      <DependentUpon>Set.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Set.aspx.designer.cs">
+      <DependentUpon>Set.aspx</DependentUpon>
     </Compile>
     <Compile Include="SubMap.aspx.cs">
       <DependentUpon>SubMap.aspx</DependentUpon>

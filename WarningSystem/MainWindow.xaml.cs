@@ -428,6 +428,7 @@ namespace WarningSystem
             //    //mystruct.table_name = tablename;
 //>>>>>>> 5238b9f6468378890bb9d93c3da65cd0380fb016
 
+
 //                //insert_struct mystruct = new insert_struct();
 //                //mystruct.insert_object = insert_cmd;
 //                //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
@@ -435,7 +436,16 @@ namespace WarningSystem
 //                inser_array.Add(insert_cmd);
 
 
-//<<<<<<< HEAD
+
+
+//                //insert_struct mystruct = new insert_struct();
+//                //mystruct.insert_object = insert_cmd;
+//                //mystruct.insertcmd = "position" + string_caozuo.Get_Dian_String(tablename, 1) + string_caozuo.Get_Dian_String(tablename, 2);
+//                //mystruct.table_name = tablename;
+//                inser_array.Add(insert_cmd);
+
+
+
                
                 
                 

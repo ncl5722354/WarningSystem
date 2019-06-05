@@ -80,3 +80,8 @@ D:\程序\warningsystem\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
 D:\程序\warningsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
 D:\程序\warningsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
 D:\程序\warningsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+D:\warningsystem\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+D:\warningsystem\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+D:\warningsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+D:\warningsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+D:\warningsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb

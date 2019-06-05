@@ -36,6 +36,12 @@ namespace newwarningsystem
         double start_position = 160;
         double end_postion = 780;
 
+        double value1 = 0;
+        double value2 = 0;
+        double value3 = 0;
+        double value4 = 0;
+        double value5 = 0;
+
         public static string listbox3_select = "";
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -44,6 +50,11 @@ namespace newwarningsystem
             ReFlush_List();
             Create_Map();
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
@@ -609,6 +620,11 @@ namespace newwarningsystem
             ChaFenSearch.end2 = end2;
             ChaFenSearch.title = chafen_title + "差分查询";
             Response.Redirect("ChaFenSearch.aspx");
+        }
+
+        protected void ImageButton_set_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Set.aspx");
         }
 
     }

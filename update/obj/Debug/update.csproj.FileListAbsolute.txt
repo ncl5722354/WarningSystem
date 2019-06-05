@@ -11,3 +11,16 @@ D:\程序\warningsystem\update\obj\Debug\update.Properties.Resources.resources
 D:\程序\warningsystem\update\obj\Debug\update.csproj.GenerateResource.Cache
 D:\程序\warningsystem\update\obj\Debug\update.exe
 D:\程序\warningsystem\update\obj\Debug\update.pdb
+D:\warningsystem\update\bin\Debug\update.exe.config
+D:\warningsystem\update\bin\Debug\update.exe
+D:\warningsystem\update\bin\Debug\update.pdb
+D:\warningsystem\update\bin\Debug\FileOperation.dll
+D:\warningsystem\update\bin\Debug\String_Caozuo.dll
+D:\warningsystem\update\bin\Debug\FileOperation.pdb
+D:\warningsystem\update\bin\Debug\String_Caozuo.pdb
+D:\warningsystem\update\obj\Debug\update.csprojResolveAssemblyReference.cache
+D:\warningsystem\update\obj\Debug\update.Form1.resources
+D:\warningsystem\update\obj\Debug\update.Properties.Resources.resources
+D:\warningsystem\update\obj\Debug\update.csproj.GenerateResource.Cache
+D:\warningsystem\update\obj\Debug\update.exe
+D:\warningsystem\update\obj\Debug\update.pdb
