@@ -386,7 +386,44 @@ namespace newwarningsystem
 
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-           
+            Chart_bingzhuangtu.Series[0].Points.Clear();
+            Chart_bingzhuangtu.Series[0].Points.AddY(40);
+            Chart_bingzhuangtu.Series[0].Points.AddY(35);
+            Chart_bingzhuangtu.Series[0].Points.AddY(30);
+            Chart_bingzhuangtu.Series[0].Points.AddY(20);
+            Chart_bingzhuangtu.Series[0].Points.AddY(10);
+
+
+            Chart_bingzhuangtu.Style["width"] = "200px";
+            Chart_bingzhuangtu.Style["height"] = "200px";
+
+            Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
+            Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
+            Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
+            Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+
+            Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
+            Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
+            Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
+            Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
+            Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
+
+            Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
+            Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //for(int i=0;i<=4;i++)
+            //{
+            //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
+            //}
+
+            biaozhi1_label.Text = "<" + value1.ToString() + " mm";
+            biaozhi2_label.Text = "<" + value2.ToString() + " mm";
+            biaozhi3_label.Text = "<" + value3.ToString() + " mm";
+            biaozhi4_label.Text = "<" + value5.ToString() + " mm";
+            biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
 
            
         }
