@@ -95,6 +95,8 @@ namespace newwarningsystem
             biaozhi3_label.Text = "<" + value3.ToString() + " mm";
             biaozhi4_label.Text = "<" + value5.ToString() + " mm";
             biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
+
+
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
@@ -150,13 +152,7 @@ namespace newwarningsystem
         private void ReFlush_List()
         {
             ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
-            //ListBox1.Items.Clear();
-            //ListBox2.Items.Clear();
-            //foreach (string myline in filelist)
-            //{
-            //    ListBox1.Items.Add(myline);
-            //    ListBox2.Items.Add(myline);
-            //}
+            
 
             ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
             ListBox3.Items.Clear();

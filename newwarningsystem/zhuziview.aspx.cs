@@ -18,6 +18,8 @@ namespace newwarningsystem
         public static double end1 = 0;
         public static double start2 = 0;
         public static double end2 = 0;
+
+
         public static int selected1 = 0;
         public static int selected2 = 0;
 
@@ -112,10 +114,10 @@ namespace newwarningsystem
         public void ReShow(double value, double max, double min)
         {
             Chart2.Series[0].Points.Clear();
-            //LinkButton button = (LinkButton)sender;
+            
             try
             {
-                //double value = double.Parse(button.Text);
+                
                 click_value = value;
                 double jizhun = 0;
                 ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");

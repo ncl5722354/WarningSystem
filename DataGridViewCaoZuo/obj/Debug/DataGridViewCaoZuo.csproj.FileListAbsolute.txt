@@ -87,3 +87,9 @@ D:\程序\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.tlb
 D:\程序\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.csprojResolveAssemblyReference.cache
 D:\程序\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.dll
 D:\程序\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.pdb
+D:\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.dll
+D:\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.pdb
+D:\warningsystem\DataGridViewCaoZuo\bin\Debug\DataGridViewCaoZuo.tlb
+D:\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.csprojResolveAssemblyReference.cache
+D:\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.dll
+D:\warningsystem\DataGridViewCaoZuo\obj\Debug\DataGridViewCaoZuo.pdb

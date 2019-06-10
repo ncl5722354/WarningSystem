@@ -62,6 +62,11 @@ namespace newwarningsystem
             Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
             Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
 
+            Label_label1.Text = "小于" + value1.ToString() + "mm";
+            Label_label2.Text = "大于" + value1.ToString() + "mm 小于" + value2.ToString() + "mm";
+            Label_label3.Text = "大于" + value2.ToString() + "mm 小于" + value5.ToString() + "mm";
+            Label_label4.Text = "大于" + value5.ToString()+"mm";
+
             Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
             Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
             Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
@@ -71,13 +76,13 @@ namespace newwarningsystem
             //{
             //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
             //}
-
             biaozhi1_label.Text = "<" + value1.ToString() + " mm";
             biaozhi2_label.Text = "<" + value2.ToString() + " mm";
             biaozhi3_label.Text = "<" + value3.ToString() + " mm";
             biaozhi4_label.Text = "<" + value5.ToString() + " mm";
             biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
 
+            
 
             // 设备状态饼状图
             Chart_shebeizhuangtai.Style["width"] = "200px";
@@ -99,9 +104,18 @@ namespace newwarningsystem
 
         private void Circle_Yanse()
         {
+            // 计算比例
+            float allcount = 0;
+            float count1 = 0;
+            float count2 = 0;
+            float count3 = 0;
+            float count4 = 0;
+            int warning_count = 0;
+
             ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
             
+
             string file_jizhun = (string)filelist_1[0];
             string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
 
@@ -115,12 +129,14 @@ namespace newwarningsystem
             double circle5_max = 0;
             double circle6_max = 0;
             double circle7_max = 0;
+            Panel_baojing_info.Controls.Clear();
             try
             {
                 for (int i = 0; i < jizhun_list.Length; i++)
                 {
                     try
                     {
+                        
                         string line = now_list[i];
                         string position_string = string_caozuo.Get_Table_String(line, 1);
                         string postion_value_string = string_caozuo.Get_Table_String(line, 2);
@@ -172,11 +188,97 @@ namespace newwarningsystem
                             if (value >= circle7_max)
                                 circle7_max = value;
                         }
+
+                        if((position >= 2164 && position <= 2317)||(position >= 2361 && position <= 2558)||(position >= 2934 && position <= 3074)||(position >= 602 && position <= 675)||(position >= 742 && position <= 810)||(position >= 875 && position <= 939)||(position >= 994 && position <= 1069))
+                        {
+                            allcount++;
+                            if (value < value1)
+                                count1++;
+                            else if (value < value2)
+                                count2++;
+                            else if (value < value5)
+                                count3++;
+                            else if (value >= value5)
+                            {
+                                count4++;
+                                
+                                warning_count++;
+                                // 地点
+                                Label labelposition = new Label();
+                                if (position >= 2164 && position <= 2317)
+                                {
+                                    labelposition.Text = "坡道1";
+                                }
+
+                                if (position >= 2361 && position <= 2558)
+                                {
+                                    labelposition.Text = "坡道2";
+                                }
+
+                                if (position >= 2934 && position <= 3074)
+                                {
+                                    labelposition.Text = "坡道3";
+                                }
+
+                                if (position >= 602 && position <= 675)
+                                {
+                                    labelposition.Text = "管道1";
+                                }
+
+                                if (position >= 742 && position <= 810)
+                                {
+                                    labelposition.Text = "管道2";
+                                }
+
+                                if (position >= 875 && position <= 939)
+                                {
+                                    labelposition.Text = "管道3";
+                                }
+
+                                if (position >= 994 && position <= 1069)
+                                {
+                                    labelposition.Text = "管道4";
+                                }
+
+                                labelposition.ForeColor = System.Drawing.Color.White;
+                                labelposition.Style["z-index"] = "8";
+                                labelposition.Style["left"] = "0%";
+                                labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
+                                labelposition.Style["width"] = "20%";
+                                labelposition.Style["position"] = "absolute";
+                                Panel_baojing_info.Controls.Add(labelposition);
+
+                                // 位置
+                                Label pos = new Label();
+                                pos.Text = position_string;
+                                pos.ForeColor = System.Drawing.Color.White;
+                                pos.Style["z-index"] = "8";
+                                pos.Style["left"] = "40%";
+                                pos.Style["top"] = (warning_count * 30).ToString() + "%";
+                                pos.Style["width"] = "20%";
+                                pos.Style["position"] = "absolute";
+                                Panel_baojing_info.Controls.Add(pos);
+
+                                // 位移值
+                                Label labelvalue = new Label();
+                                labelvalue.Text = value.ToString();
+                                labelvalue.ForeColor = System.Drawing.Color.White;
+                                labelvalue.Style["z-index"] = "8";
+                                labelvalue.Style["left"] = "80%";
+                                labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
+                                labelvalue.Style["width"] = "20%";
+                                labelvalue.Style["position"] = "absolute";
+                                Panel_baojing_info.Controls.Add(labelvalue);
+
+                            }
+                           
+                        }
                     }
                     catch { break; }
 
 
                 }
+                
 
                 if (circle1_max <= value1)
                     Circle1.BackColor = System.Drawing.Color.DarkBlue;
@@ -186,8 +288,13 @@ namespace newwarningsystem
                     Circle1.BackColor = System.Drawing.Color.LightGreen;
                 else if (circle1_max < value5)
                     Circle1.BackColor = System.Drawing.Color.Yellow;
-                else if (circle1_max >=value5)
+                else if (circle1_max >= value5)
+                {
                     Circle1.BackColor = System.Drawing.Color.Red;
+
+                   
+
+                }
 
                 if (circle2_max <= value1)
                     Circle2.BackColor = System.Drawing.Color.DarkBlue;
@@ -254,6 +361,18 @@ namespace newwarningsystem
                     Circle7.BackColor = System.Drawing.Color.Yellow;
                 else if (circle7_max >= value5)
                     Circle7.BackColor = System.Drawing.Color.Red;
+                if (allcount != 0)
+                {
+                    Label_baifenbi1.Text = (Math.Round(count1 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi2.Text = (Math.Round(count2 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi3.Text = (Math.Round(count3 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi4.Text = (Math.Round(count4 / allcount * 100, 2)).ToString() + "%";
+
+                    Panel_value1.Style["width"] = (70 * (count1 / allcount)).ToString() + "%";
+                    Panel_value2.Style["width"] = (70 * (count2 / allcount)).ToString() + "%";
+                    Panel_value3.Style["width"] = (70 * (count3 / allcount)).ToString() + "%";
+                    Panel_value4.Style["width"] = (70 * (count4 / allcount)).ToString() + "%";
+                }
             }
             catch { }
 

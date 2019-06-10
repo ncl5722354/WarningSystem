@@ -100,3 +100,10 @@ D:\程序\warningsystem\MyShape\obj\Debug\MyShape.Line.resources
 D:\程序\warningsystem\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
 D:\程序\warningsystem\MyShape\obj\Debug\MyShape.dll
 D:\程序\warningsystem\MyShape\obj\Debug\MyShape.pdb
+D:\warningsystem\MyShape\bin\Debug\MyShape.dll
+D:\warningsystem\MyShape\bin\Debug\MyShape.pdb
+D:\warningsystem\MyShape\obj\Debug\MyShape.csprojResolveAssemblyReference.cache
+D:\warningsystem\MyShape\obj\Debug\MyShape.Line.resources
+D:\warningsystem\MyShape\obj\Debug\MyShape.csproj.GenerateResource.Cache
+D:\warningsystem\MyShape\obj\Debug\MyShape.dll
+D:\warningsystem\MyShape\obj\Debug\MyShape.pdb
