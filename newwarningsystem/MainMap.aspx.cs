@@ -16,11 +16,11 @@ namespace newwarningsystem
 
         public static int update_panel2_count = 1;
 
-        double value1 = 0;
-        double value2 = 0;
-        double value3 = 0;
-        double value4 = 0;
-        double value5 = 0;
+        static double value1 = 0;
+        static double value2 = 0;
+        static double value3 = 0;
+        static double value4 = 0;
+        static double value5 = 0;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,29 +30,92 @@ namespace newwarningsystem
             Label_timer.Text = mytime.ToString("yyyy-MM-dd HH:mm:ss");
             Circle_Yanse();    // 界面变化颜色
             Update_Panel2();   // 更新panel2
-            //Image_point1.Attributes.Add("onMouseOver", "VisiblePanel2();");
-            //System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width
-            //System.Windows.
+            
+
 
             value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
             value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
             value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
             value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
             value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
+
+            Chart_bingzhuangtu.Series[0].Points.Clear();
+            Chart_bingzhuangtu.Series[0].Points.AddY(40);
+            Chart_bingzhuangtu.Series[0].Points.AddY(35);
+            Chart_bingzhuangtu.Series[0].Points.AddY(30);
+            Chart_bingzhuangtu.Series[0].Points.AddY(20);
+            Chart_bingzhuangtu.Series[0].Points.AddY(10);
+
+
+            Chart_bingzhuangtu.Style["width"] = "200px";
+            Chart_bingzhuangtu.Style["height"] = "200px";
+
+            Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
+            Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
+            Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
+            Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+
+            Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
+            Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
+            Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
+            Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
+            Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
+
+            Label_label1.Text = "小于" + value1.ToString() + "mm";
+            Label_label2.Text = "大于" + value1.ToString() + "mm 小于" + value2.ToString() + "mm";
+            Label_label3.Text = "大于" + value2.ToString() + "mm 小于" + value5.ToString() + "mm";
+            Label_label4.Text = "大于" + value5.ToString()+"mm";
+
+            Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
+            Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //for(int i=0;i<=4;i++)
+            //{
+            //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
+            //}
+
+            biaozhi1_label.Text = "<" + value1.ToString() + " mm";
+            biaozhi2_label.Text = "<" + value2.ToString() + " mm";
+            biaozhi3_label.Text = "<" + value3.ToString() + " mm";
+            biaozhi4_label.Text = "<" + value5.ToString() + " mm";
+            biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
+
+            
+
+            // 设备状态饼状图
+            Chart_shebeizhuangtai.Style["width"] = "200px";
+            Chart_shebeizhuangtai.Style["height"] = "200px";
+            Chart_shebeizhuangtai.Series[0].Points.Clear();
+            Chart_shebeizhuangtai.Series[0].Points.AddY(100);
+            Chart_shebeizhuangtai.Series[0].Points[0].Color = System.Drawing.Color.Blue;
+            Chart_shebeizhuangtai.Series[0].Points[0].Label = "设备正常";
+            Chart_shebeizhuangtai.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+
         }
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            //System.Web.UI.WebControls.Unit width = Panel3.Width;
+            
             HttpBrowserCapabilities bc = Request.Browser;
             int a = bc.ScreenPixelsWidth;
         }
 
         private void Circle_Yanse()
         {
+            // 计算比例
+            float allcount = 0;
+            float count1 = 0;
+            float count2 = 0;
+            float count3 = 0;
+            float count4 = 0;
+
+
             ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
-            // 读取第一个文件作为基准
+            
             string file_jizhun = (string)filelist_1[0];
             string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
 
@@ -72,6 +135,7 @@ namespace newwarningsystem
                 {
                     try
                     {
+                       
                         string line = now_list[i];
                         string position_string = string_caozuo.Get_Table_String(line, 1);
                         string postion_value_string = string_caozuo.Get_Table_String(line, 2);
@@ -123,11 +187,26 @@ namespace newwarningsystem
                             if (value >= circle7_max)
                                 circle7_max = value;
                         }
+
+                        if((position >= 2164 && position <= 2317)||(position >= 2361 && position <= 2558)||(position >= 2934 && position <= 3074)||(position >= 602 && position <= 675)||(position >= 742 && position <= 810)||(position >= 875 && position <= 939)||(position >= 994 && position <= 1069))
+                        {
+                            allcount++;
+                            if (value < value1)
+                                count1++;
+                            else if (value < value2)
+                                count2++;
+                            else if (value < value5)
+                                count3++;
+                            else if (value >= value5)
+                                count4++;
+                           
+                        }
                     }
                     catch { break; }
 
 
                 }
+                
 
                 if (circle1_max <= value1)
                     Circle1.BackColor = System.Drawing.Color.DarkBlue;
@@ -205,10 +284,22 @@ namespace newwarningsystem
                     Circle7.BackColor = System.Drawing.Color.Yellow;
                 else if (circle7_max >= value5)
                     Circle7.BackColor = System.Drawing.Color.Red;
+                if (allcount != 0)
+                {
+                    Label_baifenbi1.Text = (Math.Round(count1 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi2.Text = (Math.Round(count2 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi3.Text = (Math.Round(count3 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi4.Text = (Math.Round(count4 / allcount * 100, 2)).ToString() + "%";
+
+                    Panel_value1.Style["width"] = (70 * (count1 / allcount)).ToString() + "%";
+                    Panel_value2.Style["width"] = (70 * (count2 / allcount)).ToString() + "%";
+                    Panel_value3.Style["width"] = (70 * (count3 / allcount)).ToString() + "%";
+                    Panel_value4.Style["width"] = (70 * (count4 / allcount)).ToString() + "%";
+                }
             }
             catch { }
 
-        }           // 更新圆圈的颜色
+        }           
 
         private void Update_Panel2()
         {
@@ -362,7 +453,7 @@ namespace newwarningsystem
 
 
                         double value =Math.Abs(positon_value - positon_value1) * (1 - Math.Sqrt(3) / 2) / 0.0482;
-
+                        value = Math.Round(value, 3);
                         
                         // 
                         if (position >= 2164 && position <= 2317 && update_panel2_count == 1)
@@ -379,7 +470,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count*5).ToString()+"%";
+                                mylabel.Style["top"] = (count*7).ToString()+"%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString()+"mm";
@@ -404,7 +495,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -428,7 +519,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -452,7 +543,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -476,7 +567,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -500,7 +591,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -524,7 +615,7 @@ namespace newwarningsystem
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
                                 mylabel.Font.Size = FontUnit.Medium;
-                                mylabel.Style["top"] = (count * 5).ToString() + "%";
+                                mylabel.Style["top"] = (count * 7).ToString() + "%";
                                 mylabel.Style["left"] = "0%";
                                 mylabel.Style["z-index"] = "5";
                                 mylabel.Text = "报警信息 位置：" + position_string + "m " + "位移量：" + value.ToString() + "mm";
@@ -547,7 +638,7 @@ namespace newwarningsystem
                 Label label = new Label();
                 label.Style["position"] = "absolute";
                 label.Font.Size = FontUnit.Medium;
-                label.Style["top"] = (count * 5).ToString() + "%";
+                label.Style["top"] = (count * 7).ToString() + "%";
                 label.Style["left"] = "0%";
                 label.Style["z-index"] = "5";
                 label.Text = "位移最大值 位置：" + max_position + "m " + "位移量：" + circle1_max.ToString() + "mm";
@@ -580,8 +671,7 @@ namespace newwarningsystem
             zhuziview.end1 = 638;
             zhuziview.start2 = 638;
             zhuziview.end2 = 674;
-            //view.Set_Start_End(602, 675, 0, 0);
-            //Response.Redirect(view.GetRouteUrl());
+           
             ImageButton mybutton = (ImageButton)sender;
             zhuziview.chafen_title = mybutton.ToolTip;
             Response.Redirect("zhuziview.aspx");

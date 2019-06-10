@@ -852,7 +852,7 @@
     
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
     
-        <asp:ImageButton ID="ImageButton_set" CssClass="auto-style96" runat="server" ImageUrl="~/Resource/settings_64px_1229386_easyicon.net.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" BackColor="#3366FF"/>
+        <asp:ImageButton ID="ImageButton_set" CssClass="auto-style96" runat="server" ImageUrl="~/Resource/settings_64px_1229386_easyicon.net.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" BackColor="#3366FF" OnClick="ImageButton_set_Click"/>
 
     
 

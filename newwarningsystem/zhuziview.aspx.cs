@@ -18,6 +18,8 @@ namespace newwarningsystem
         public static double end1 = 0;
         public static double start2 = 0;
         public static double end2 = 0;
+
+
         public static int selected1 = 0;
         public static int selected2 = 0;
 
@@ -32,11 +34,11 @@ namespace newwarningsystem
 
         public static string listbox3_select = "";
 
-        double value1 = 0;
-        double value2 = 0;
-        double value3 = 0;
-        double value4 = 0;
-        double value5 = 0;
+        static double value1 = 0;
+        static double value2 = 0;
+        static double value3 = 0;
+        static double value4 = 0;
+        static double value5 = 0;
 
         protected void Click(object sender, EventArgs e)
         {
@@ -112,10 +114,10 @@ namespace newwarningsystem
         public void ReShow(double value, double max, double min)
         {
             Chart2.Series[0].Points.Clear();
-            //LinkButton button = (LinkButton)sender;
+            
             try
             {
-                //double value = double.Parse(button.Text);
+                
                 click_value = value;
                 double jizhun = 0;
                 ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
@@ -241,27 +243,27 @@ namespace newwarningsystem
                                 label_value.Style["left"] = "33%";
                                 label_value.Text = position_string;
 
-                                if (value < 0.01)
+                                if (value < value1)
                                 {
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.01 && value <= 0.5)
+                                else if (value >= 0.01 && value <= value2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.5 && value <= 1.0)
+                                else if (value >= 0.5 && value <= value3)
                                 {
                                     label_value.BackColor = System.Drawing.Color.LightGreen;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value > 1.0 && value < 2)
+                                else if (value > 1.0 && value < value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Yellow;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 2)
+                                else if (value >= value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Red;
                                     label_value.ForeColor = System.Drawing.Color.White;
@@ -376,16 +378,56 @@ namespace newwarningsystem
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
             Set_Start_End(start1, end1, start2, end2);
             Label_title.Text = chafen_title;
 
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-            double value1 = 0;
-            double value2 = 0;
-            double value3 = 0;
-            double value4 = 0;
-            double value5 = 0;
+            Chart_bingzhuangtu.Series[0].Points.Clear();
+            Chart_bingzhuangtu.Series[0].Points.AddY(40);
+            Chart_bingzhuangtu.Series[0].Points.AddY(35);
+            Chart_bingzhuangtu.Series[0].Points.AddY(30);
+            Chart_bingzhuangtu.Series[0].Points.AddY(20);
+            Chart_bingzhuangtu.Series[0].Points.AddY(10);
+
+
+            Chart_bingzhuangtu.Style["width"] = "200px";
+            Chart_bingzhuangtu.Style["height"] = "200px";
+
+            Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
+            Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
+            Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
+            Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+
+            Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
+            Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
+            Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
+            Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
+            Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
+
+            Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
+            Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //for(int i=0;i<=4;i++)
+            //{
+            //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
+            //}
+
+            biaozhi1_label.Text = "<" + value1.ToString() + " mm";
+            biaozhi2_label.Text = "<" + value2.ToString() + " mm";
+            biaozhi3_label.Text = "<" + value3.ToString() + " mm";
+            biaozhi4_label.Text = "<" + value5.ToString() + " mm";
+            biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
+
+           
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {

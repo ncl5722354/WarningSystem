@@ -217,7 +217,7 @@
          .auto-style22 {
             position: absolute;
             top: 47%;
-            left: 46.5%;
+            left: 46%;
             z-index: 5;
             width: 3%;
             height: 5%;
@@ -347,8 +347,8 @@
            .auto-style82 {
             position: absolute;
             top: 11%;
-            left: 70%;
-            width: 29%;
+            left: 75%;
+            width: 20%;
             height:81%;
             z-index: 4;
             opacity:0.75;
@@ -433,13 +433,13 @@
              </asp:UpdatePanel>
           <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">  
                 <ContentTemplate>
-                    <asp:Image ID="Circle1" BackColor="Orange" runat="server" CssClass="auto-style16" />
-                    <asp:Image ID="Circle2" BackColor="Orange" runat="server" CssClass="auto-style17" />
-                    <asp:Image ID="Circle3" BackColor="Orange" runat="server" CssClass="auto-style18" />
-                    <asp:Image ID="Circle4" BackColor="Orange" runat="server" CssClass="auto-style19" />
-                    <asp:Image ID="Circle5" BackColor="Orange" runat="server" CssClass="auto-style20" />
-                    <asp:Image ID="Circle6" BackColor="Orange" runat="server" CssClass="auto-style21" />
-                    <asp:Image ID="Circle7" BackColor="Orange" runat="server" CssClass="auto-style22" />
+                    <asp:Image ID="Circle1" BackColor="Orange" runat="server" CssClass="auto-style16" ToolTip="一号坡 2164-2317" />
+                    <asp:Image ID="Circle2" BackColor="Orange" runat="server" CssClass="auto-style17" ToolTip="二号坡 2361-2558" />
+                    <asp:Image ID="Circle3" BackColor="Orange" runat="server" CssClass="auto-style18" ToolTip="三号坡 2934-3074" />
+                    <asp:Image ID="Circle4" BackColor="Orange" runat="server" CssClass="auto-style19" ToolTip="侧斜管标定1号管 602-675" />
+                    <asp:Image ID="Circle5" BackColor="Orange" runat="server" CssClass="auto-style20" ToolTip="侧斜管标定2号管 742-810" />
+                    <asp:Image ID="Circle6" BackColor="Orange" runat="server" CssClass="auto-style21" ToolTip="侧斜管标定3号管 875-939" />
+                    <asp:Image ID="Circle7" BackColor="Orange" runat="server" CssClass="auto-style22" ToolTip="侧斜管标定4号管 994-1069" />
                     <asp:Timer ID="timer" Interval="10000" runat="server"/>
                 </ContentTemplate>
           </asp:UpdatePanel>

@@ -323,6 +323,7 @@
             width: 5%;
             z-index: 7;
             height:8%;
+            right: 358px;
         }
            .auto-style95 {
             position: absolute;
@@ -354,7 +355,7 @@
         <asp:Image ID="Image2"  CssClass="auto-style43" runat="server"   ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"/>
         <asp:Label ID="Label_title" CssClass="auto-style44" runat="server" Font-Names="微软雅黑" Font-Size="20pt" ForeColor="White" Text="Label" BackColor="#FF3300" BorderStyle="Solid" BorderColor="Black" BorderWidth="3px"></asp:Label>
         <asp:Image ID="Image_icon" CssClass="auto-style83" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
-        <asp:ImageButton ID="ImageButton_set" CssClass="auto-style95" runat="server" ImageUrl="~/Resource/settings_64px_1229386_easyicon.net.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" BackColor="#3366FF"/>
+        <asp:ImageButton ID="ImageButton_set" CssClass="auto-style95" runat="server" ImageUrl="~/Resource/settings_64px_1229386_easyicon.net.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" BackColor="#3366FF" OnClick="ImageButton_set_Click"/>
         <asp:Image ID="Image_head" runat="server" CssClass="auto-style67" BackColor="#000066" ImageUrl="~/Resource/图片1.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px"/>
         <asp:Image ID="Image_title" CssClass="auto-style84"  runat="server" ImageUrl="~/Resource/图片3.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
         <asp:Image ID="Image3" CssClass="auto-style91" runat="server" ImageUrl="~/Resource/dise.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
