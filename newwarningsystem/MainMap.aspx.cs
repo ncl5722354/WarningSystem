@@ -22,6 +22,8 @@ namespace newwarningsystem
         static double value4 = 0;
         static double value5 = 0;
 
+        public static bool Panel_Chart_Is;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -93,6 +95,9 @@ namespace newwarningsystem
             Chart_shebeizhuangtai.Series[0].Points[0].Label = "设备正常";
             Chart_shebeizhuangtai.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
 
+
+            
+
         }
 
         protected void Page_LoadComplete(object sender, EventArgs e)
@@ -100,6 +105,10 @@ namespace newwarningsystem
             
             HttpBrowserCapabilities bc = Request.Browser;
             int a = bc.ScreenPixelsWidth;
+            if (Panel_Chart_Is == true)
+                Panel_chart.Visible = true;
+            if (Panel_Chart_Is == false)
+                Panel_chart.Visible = false;
         }
 
         private void Circle_Yanse()
@@ -509,6 +518,14 @@ namespace newwarningsystem
             double circle7_max = 0;
             double count = 0;
             string max_position="";
+            Chart1.Series.Clear();
+            Chart1.Series.Add("坡道1");
+            Chart1.Series.Add("坡道2");
+            Chart1.Series.Add("坡道3");
+            Chart1.Series.Add("管道1");
+            Chart1.Series.Add("管道2");
+            Chart1.Series.Add("管道3");
+            Chart1.Series.Add("管道4");
             panel3.Controls.Clear();
             try
             {
@@ -533,7 +550,8 @@ namespace newwarningsystem
                         value = Math.Round(value, 3);
                         
                         // 
-                        if (position >= 2164 && position <= 2317 && update_panel2_count == 1)
+                        //Chart1.Series.Clear();
+                        if (position >= 2164 && position <= 2317)
                         {
 
                             if (value >= circle1_max)
@@ -542,7 +560,7 @@ namespace newwarningsystem
                                 max_position = position_string;
                             }
 
-                            if(value>=2)
+                            if(value>=value5)
                             {
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
@@ -557,17 +575,17 @@ namespace newwarningsystem
            
                                 count++;
                             }
-                            Chart1.Titles[0].Text = Image_point1.ToolTip;
+                            //Chart1.Titles[0].Text = Image_point1.ToolTip;
                             Chart1.Series[0].Points.AddXY(position, value);
                         }
-                        if (position >= 2361 && position <= 2558 && update_panel2_count == 2)
+                        if (position >= 2361 && position <= 2558)
                         {
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
                                 max_position = position_string;
                             }
-                            if (value >= 2)
+                            if (value >= value5)
                             {
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
@@ -581,17 +599,17 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
-                            Chart1.Titles[0].Text = Image_point2.ToolTip;
-                            Chart1.Series[0].Points.AddXY(position, value);
+                            //Chart1.Titles[0].Text = Image_point2.ToolTip;
+                            Chart1.Series[1].Points.AddXY(position, value);
                         }
-                        if (position >= 2934 && position <= 3074 && update_panel2_count == 3)
+                        if (position >= 2934 && position <= 3074)
                         {
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
                                 max_position = position_string;
                             }
-                            if (value >= 2)
+                            if (value >= value5)
                             {
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
@@ -605,17 +623,17 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
-                            Chart1.Titles[0].Text = Image_point3.ToolTip;
-                            Chart1.Series[0].Points.AddXY(position, value);
+                            //Chart1.Titles[0].Text = Image_point3.ToolTip;
+                            Chart1.Series[2].Points.AddXY(position, value);
                         }
-                        if (position >= 602 && position <= 675 && update_panel2_count == 4)
+                        if (position >= 602 && position <= 675 )
                         {
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
                                 max_position = position_string;
                             }
-                            if (value >= 2)
+                            if (value >= value5)
                             {
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
@@ -629,17 +647,17 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
-                            Chart1.Titles[0].Text = Image_point4.ToolTip;
-                            Chart1.Series[0].Points.AddXY(position, value);
+                           // Chart1.Titles[0].Text = Image_point4.ToolTip;
+                            Chart1.Series[3].Points.AddXY(position, value);
                         }
-                        if (position >= 742 && position <= 810 && update_panel2_count == 5)
+                        if (position >= 742 && position <= 810 )
                         {
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
                                 max_position = position_string;
                             }
-                            if (value >= 2)
+                            if (value >= value5)
                             {
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
@@ -653,17 +671,17 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
-                            Chart1.Titles[0].Text = Image_point5.ToolTip;
-                            Chart1.Series[0].Points.AddXY(position, value);
+                            //Chart1.Titles[0].Text = Image_point5.ToolTip;
+                            Chart1.Series[4].Points.AddXY(position, value);
                         }
-                        if (position >= 875 && position <= 939 && update_panel2_count == 6)
+                        if (position >= 875 && position <= 939)
                         {
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
                                 max_position = position_string;
                             }
-                            if (value >= 2)
+                            if (value >= value5)
                             {
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
@@ -677,17 +695,17 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
-                            Chart1.Titles[0].Text = Image_point6.ToolTip;
-                            Chart1.Series[0].Points.AddXY(position, value);
+                            //Chart1.Titles[0].Text = Image_point6.ToolTip;
+                            Chart1.Series[5].Points.AddXY(position, value);
                         }
-                        if (position >= 994 && position <= 1069 && update_panel2_count == 7)
+                        if (position >= 994 && position <= 1069 )
                         {
                             if (value >= circle1_max)
                             {
                                 circle1_max = value;
                                 max_position = position_string;
                             }
-                            if (value >= 2)
+                            if (value >= value5)
                             {
                                 Label mylabel = new Label();
                                 mylabel.Style["position"] = "absolute";
@@ -701,8 +719,8 @@ namespace newwarningsystem
                                 panel3.Controls.Add(mylabel);
                                 count++;
                             }
-                            Chart1.Titles[0].Text = Image_point7.ToolTip;
-                            Chart1.Series[0].Points.AddXY(position, value);
+                            //Chart1.Titles[0].Text = Image_point7.ToolTip;
+                            Chart1.Series[6].Points.AddXY(position, value);
                         }
 
                     }
@@ -855,6 +873,23 @@ namespace newwarningsystem
             if (update_panel2_count >= 7) update_panel2_count = 1;
             update_panel2_count++;
             
+        }
+
+        protected void image_graft_Click(object sender, ImageClickEventArgs e)
+        {
+            if(Panel_Chart_Is==true)
+            {
+                Panel_Chart_Is = false;
+            }
+            else if(Panel_Chart_Is==false)
+            {
+                Panel_Chart_Is = true;
+            }
+        }
+
+        protected void Image_set_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Set.aspx");
         }
     }
 }

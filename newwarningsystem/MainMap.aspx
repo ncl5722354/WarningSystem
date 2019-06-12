@@ -356,15 +356,6 @@
 
            
         }
-           .auto-style84 {
-            position: absolute;
-            top: 80%;
-            left: 0%;
-            width: 100%;
-            height:20%;
-            z-index: 6; 
-            opacity: 0.75;   
-        }
             .auto-style86 {
             position: absolute;
             top: 0px;
@@ -796,6 +787,15 @@
             z-index:8;
             height:15%;
         }
+        .Panel_chart
+        {
+            position:absolute;
+            top:80%;
+            left:0%;
+            width:80%;
+            z-index:9;
+            height:15%;
+        }
             </style>
      
 <script type="text/javascript">
@@ -821,6 +821,26 @@
                         <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
                         <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
                         
+
+          <asp:Panel ID="Panel_chart" CssClass="Panel_chart" runat="server" BackColor="#3333FF">
+            <asp:Chart ID="Chart1" runat="server" Width="1200px" Height="200px" Visible="true">
+                <Series>
+                    <asp:Series Name="Series1" ChartType="Spline"></asp:Series>
+                </Series>
+                <ChartAreas>
+                    <asp:ChartArea Name="ChartArea1">
+                        <AxisY Title="位移量(毫米)">
+                        </AxisY>
+                        <AxisX Title="位置(米)">
+                        </AxisX>
+                    </asp:ChartArea>
+                </ChartAreas>
+                <Titles>
+                    <asp:Title Name="Title1">
+                    </asp:Title>
+                </Titles>
+            </asp:Chart>
+        </asp:Panel>
                     <!--新界面信息-->
         <asp:Panel ID="Panel_shuliangtongji" CssClass="panel_shuliangtongji" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" >
             <asp:Label ID="Label_danqiantongji" CssClass="Label_dangqiantongji" runat="server" Text="当前统计" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
@@ -888,25 +908,7 @@
                          
                      </asp:Panel>
 
-                    <asp:Panel ID="Panel3" CssClass="auto-style84" runat="server" BackColor="#3333FF">
-            <asp:Chart ID="Chart1" runat="server" Width="1200px" Height="200px" Visible="false">
-                <Series>
-                    <asp:Series Name="Series1" ChartType="Spline"></asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                        <AxisY Title="位移量(毫米)">
-                        </AxisY>
-                        <AxisX Title="位置(米)">
-                        </AxisX>
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Titles>
-                    <asp:Title Name="Title1">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
-        </asp:Panel>
+        
                     <asp:Timer ID="timer2" Interval="4000" runat="server" OnTick="timer2_Tick1"/>
                 </ContentTemplate>
                 <Triggers>
@@ -1004,9 +1006,9 @@
         <!--功能区-->
         <asp:Panel ID="Panel_gongnengqu" CssClass="Panel_gongnengqu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
            <asp:Label ID="Label_gongnengqu" CssClass="Label_dangqiantongji" runat="server" Text="功能区" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-           <asp:ImageButton ID="image_graft" CssClass="image_graft" runat="server" ImageUrl="~/Resource/graph.png" />
+           <asp:ImageButton ID="image_graft" CssClass="image_graft" runat="server" ImageUrl="~/Resource/graph.png" OnClick="image_graft_Click" />
            <asp:ImageButton ID="Image_baojing" CssClass="image_attition" runat="server" ImageUrl="~/Resource/attention.png" />
-           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" />
+           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" OnClick="Image_set_Click" />
         </asp:Panel>
 
         <!--报警信息-->

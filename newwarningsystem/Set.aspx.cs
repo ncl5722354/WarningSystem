@@ -25,6 +25,7 @@ namespace newwarningsystem
                 set_yuzhi.IniWriteValue("yuzhi", "3", TextBox3.Text);
                 set_yuzhi.IniWriteValue("yuzhi", "4", TextBox4.Text);
                 set_yuzhi.IniWriteValue("yuzhi", "5", TextBox5.Text);
+                Response.Redirect("MainMap.aspx");
             }
 
 

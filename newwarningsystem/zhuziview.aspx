@@ -1101,6 +1101,16 @@
             
         }
 
+            .Image_home{
+            position:absolute;
+            top:60%;
+            left:60%;
+            width:40px;
+            height:40px;
+            z-index:7;
+            border-radius:3px;
+        }
+
         </style>
 </head>
 <body  id="body1"  style="height: 1275px; margin-right: 0px;">
@@ -1363,7 +1373,8 @@
            <asp:Label ID="Label_gongnengqu" CssClass="Label_dangqiantongji" runat="server" Text="功能区" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
            <asp:ImageButton ID="image_graft" CssClass="image_graft" runat="server" ImageUrl="~/Resource/graph.png" />
            <asp:ImageButton ID="Image_baojing" CssClass="image_attition" runat="server" ImageUrl="~/Resource/attention.png" />
-           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" />
+           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" OnClick="Image_set_Click" />
+           <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click" />
         </asp:Panel>
 
 

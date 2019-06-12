@@ -643,6 +643,15 @@ namespace newwarningsystem {
         protected global::System.Web.UI.WebControls.ImageButton Image_set;
         
         /// <summary>
+        /// Image_home 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton Image_home;
+        
+        /// <summary>
         /// Panel_baojing 控件。
         /// </summary>
         /// <remarks>

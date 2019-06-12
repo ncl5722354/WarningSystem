@@ -920,5 +920,10 @@ namespace newwarningsystem
         {
             Response.Redirect("Set.aspx");
         }
+
+        protected void Image_set_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Set.aspx");
+        }
     }
 }
