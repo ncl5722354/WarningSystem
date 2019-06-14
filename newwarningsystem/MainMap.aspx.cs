@@ -251,7 +251,7 @@ namespace newwarningsystem
 
                                 labelposition.ForeColor = System.Drawing.Color.White;
                                 labelposition.Style["z-index"] = "8";
-                                labelposition.Style["left"] = "0%";
+                                labelposition.Style["left"] = "10%";
                                 labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
                                 labelposition.Style["width"] = "20%";
                                 labelposition.Style["position"] = "absolute";
@@ -273,7 +273,7 @@ namespace newwarningsystem
                                 labelvalue.Text = value.ToString();
                                 labelvalue.ForeColor = System.Drawing.Color.White;
                                 labelvalue.Style["z-index"] = "8";
-                                labelvalue.Style["left"] = "80%";
+                                labelvalue.Style["left"] = "75%";
                                 labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
                                 labelvalue.Style["width"] = "20%";
                                 labelvalue.Style["position"] = "absolute";
@@ -286,6 +286,42 @@ namespace newwarningsystem
                     catch { break; }
 
 
+                }
+
+                if (warning_count==0)
+                {
+                    warning_count++;
+                    Label labelposition = new Label();
+                    labelposition.Text = "无";
+                    labelposition.ForeColor = System.Drawing.Color.White;
+                    labelposition.Style["z-index"] = "8";
+                    labelposition.Style["left"] = "15%";
+                    labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
+                    labelposition.Style["width"] = "20%";
+                    labelposition.Style["position"] = "absolute";
+                    Panel_baojing_info.Controls.Add(labelposition);
+
+                    // 位置
+                    Label pos = new Label();
+                    pos.Text = "无";
+                    pos.ForeColor = System.Drawing.Color.White;
+                    pos.Style["z-index"] = "8";
+                    pos.Style["left"] = "40%";
+                    pos.Style["top"] = (warning_count * 30).ToString() + "%";
+                    pos.Style["width"] = "20%";
+                    pos.Style["position"] = "absolute";
+                    Panel_baojing_info.Controls.Add(pos);
+
+                    // 位移值
+                    Label labelvalue = new Label();
+                    labelvalue.Text = "无";
+                    labelvalue.ForeColor = System.Drawing.Color.White;
+                    labelvalue.Style["z-index"] = "8";
+                    labelvalue.Style["left"] = "60%";
+                    labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
+                    labelvalue.Style["width"] = "20%";
+                    labelvalue.Style["position"] = "absolute";
+                    Panel_baojing_info.Controls.Add(labelvalue);
                 }
                 
 

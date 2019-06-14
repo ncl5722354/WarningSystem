@@ -50,8 +50,8 @@
 			}
         .auto-style5 {
             position: absolute;
-            top: 30%;
-            left: 28%;
+            top: 25%;
+            left: 32%;
             z-index: 6;
             width: 2%;
             height: 4%;
@@ -62,24 +62,24 @@
         
         .auto-style6 {
             position: absolute;
-            top: 26%;
-            left: 43%;
+            top: 22%;
+            left: 45%;
             z-index:6;
             width:2%;
             height:4%;
         }
         .auto-style7 {
             position: absolute;
-            top: 32%;
-            left: 43%;
+            top: 27%;
+            left: 45%;
             z-index:6;
             width:2%;
             height:4%;
         }
         .auto-style8 {
             position: absolute;
-            top: 46%;
-            left: 25%;
+            top: 37%;
+            left: 32%;
             z-index: 6;
             height: 4%;
             right: 74%;
@@ -87,8 +87,8 @@
         }
         .auto-style9 {
             position: absolute;
-            top: 48%;
-            left: 34%;
+            top: 38%;
+            left: 38%;
             z-index:6;
             width:2%;
             height:4%;
@@ -96,8 +96,8 @@
         }
         .auto-style10 {
             position: absolute;
-            top: 48%;
-            left: 41%;
+            top: 38%;
+            left: 45%;
             z-index: 6;
             width:2%;
             height: 4%;
@@ -105,8 +105,8 @@
         }
         .auto-style11 {
             position: absolute;
-            top: 48%;
-            left: 47%;
+            top: 38%;
+            left: 49%;
             z-index: 6;
             width: 2%;
             height: 4%;
@@ -146,8 +146,8 @@
         }
         .auto-style16 {
             position: absolute;
-            top: 28%;
-            left: 25%;
+            top: 23%;
+            left: 29%;
             z-index: 5;
             width: 10%;
             height: 8%;
@@ -159,7 +159,7 @@
         }
         .auto-style17 {
             position: absolute;
-            top: 26%;
+            top: 22%;
             left: 40.5%;
             z-index: 5;
             width: 9%;
@@ -171,8 +171,8 @@
         }
         .auto-style18 {
             position: absolute;
-            top: 32%;
-            left: 40.5%;
+            top: 28%;
+            left: 41.5%;
             z-index: 5;
             width: 9%;
             height: 5%;
@@ -183,8 +183,8 @@
         }
          .auto-style19 {
             position: absolute;
-            top: 45%;
-            left: 24.5%;
+            top: 36%;
+            left: 31.5%;
             z-index: 5;
             width: 3%;
             height: 5%;
@@ -194,8 +194,8 @@
         }
          .auto-style20 {
             position: absolute;
-            top: 47%;
-            left: 33.5%;
+            top: 37%;
+            left: 37.5%;
             z-index: 5;
             width: 3%;
             height: 5%;
@@ -205,8 +205,8 @@
         }
          .auto-style21 {
             position: absolute;
-            top: 47%;
-            left: 40.5%;
+            top: 38%;
+            left: 44.5%;
             z-index: 5;
             width: 3%;
             height: 5%;
@@ -216,8 +216,8 @@
         }
          .auto-style22 {
             position: absolute;
-            top: 47%;
-            left: 46%;
+            top: 38%;
+            left: 48.5%;
             z-index: 5;
             width: 3%;
             height: 5%;
@@ -355,15 +355,6 @@
            
 
            
-        }
-           .auto-style84 {
-            position: absolute;
-            top: 80%;
-            left: 0%;
-            width: 100%;
-            height:20%;
-            z-index: 6; 
-            opacity: 0.75;   
         }
             .auto-style86 {
             position: absolute;
@@ -512,17 +503,17 @@
         }
             .Panel_mapinfo {
             position: absolute;
-            top: 15%;
+            top: 13%;
             left: 21%;
             width: 50%;
             z-index: 7;
-            height: 10%;
+            height: 6%;
             border-radius:3%;
             opacity:0.8;
         }
             .biaozhi1 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 22%;
             width: 20px;
             z-index: 7;
@@ -531,7 +522,7 @@
         }
              .biaozhi2 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 32%;
             width: 20px;
             z-index: 7;
@@ -540,7 +531,7 @@
         }
              .biaozhi3 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 42%;
             width: 20px;
             z-index: 7;
@@ -549,7 +540,7 @@
         }
              .biaozhi4 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 52%;
             width: 20px;
             z-index: 7;
@@ -558,7 +549,7 @@
         }
              .biaozhi5 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 62%;
             width: 20px;
             z-index: 7;
@@ -567,7 +558,7 @@
         }
              .biaozhi1_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 24%;
             width: 80px;
             z-index: 7;
@@ -576,7 +567,7 @@
         }
             .biaozhi2_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 34%;
             width: 80px;
             z-index: 7;
@@ -585,7 +576,7 @@
         }
             .biaozhi3_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 44%;
             width: 80px;
             z-index: 7;
@@ -594,7 +585,7 @@
         }
             .biaozhi4_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 54%;
             width: 80px;
             z-index: 7;
@@ -603,7 +594,7 @@
         }
             .biaozhi5_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 64%;
             width: 80px;
             z-index: 7;
@@ -751,6 +742,60 @@
             height:20px;
             z-index:6;
         }
+        .Label_baifenbi1
+        {
+            position: absolute;
+            top: 30%;
+            left: 83%;
+            width: 70%;
+            z-index: 7;
+            height: 7%;
+        }
+        .Label_baifenbi2
+        {
+            position: absolute;
+            top: 50%;
+            left: 83%;
+            width: 70%;
+            z-index: 7;
+            height: 7%;
+        }
+        .Label_baifenbi3
+        {
+            position: absolute;
+            top: 70%;
+            left: 83%;
+            width: 70%;
+            z-index: 7;
+            height: 7%;
+        }
+        .Label_baifenbi4
+        {
+            position: absolute;
+            top: 90%;
+            left: 83%;
+            width: 70%;
+            z-index: 7;
+            height: 7%;
+        }
+        .Panel_baojing_info
+        {
+            position:absolute;
+            top:85%;
+            left:20%;
+            width:60%;
+            z-index:8;
+            height:15%;
+        }
+        .Panel_chart
+        {
+            position:absolute;
+            top:80%;
+            left:0%;
+            width:80%;
+            z-index:9;
+            height:15%;
+        }
             </style>
      
 <script type="text/javascript">
@@ -776,46 +821,9 @@
                         <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
                         <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
                         
-                </ContentTemplate>                  
-            </asp:UpdatePanel>  
-        
-        <!--这里加了conditional之后，各自更新更自的-->
-         <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">  
-                <ContentTemplate>
-                    
-                        <asp:ImageButton ID="Image_point1" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/position.png" OnClick="Image_point1_Click" ToolTip="一号坡 2164-2317"/>
-                        <asp:ImageButton ID="Image_point2" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/position.png" OnClick="Image_point2_Click" ToolTip="二号坡 2361-2558" />
-                        <asp:ImageButton ID="Image_point3" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/position.png" OnClick="Image_point3_Click" ToolTip="三号坡 2934-3074" />
-                        <asp:ImageButton ID="Image_point4" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/position.png" OnClick="Image_point4_Click" ToolTip="侧斜管标定1号管 602-675" />
-                        <asp:ImageButton ID="Image_point5" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/position.png" OnClick="Image_point5_Click" ToolTip="侧斜管标定2号管 742-810" />
-                        <asp:ImageButton ID="Image_point6" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/position.png" OnClick="Image_point6_Click" ToolTip="侧斜管标定3号管 875-939" />
-                        <asp:ImageButton ID="Image_point7" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/position.png" OnClick="Image_point7_Click" ToolTip="侧斜管标定4号管 994-1069" />
-                        
-                 </ContentTemplate>
-             </asp:UpdatePanel>
-          <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">  
-                <ContentTemplate>
-                    <asp:Panel ID="Circle1" BackColor="Orange" runat="server" CssClass="auto-style16" ToolTip="一号坡 2164-2317" />
-                    <asp:Panel ID="Circle2" BackColor="Orange" runat="server" CssClass="auto-style17" ToolTip="二号坡 2361-2558" />
-                    <asp:Panel ID="Circle3" BackColor="Orange" runat="server" CssClass="auto-style18" ToolTip="三号坡 2934-3074" />
-                    <asp:Panel ID="Circle4" BackColor="Orange" runat="server" CssClass="auto-style19" ToolTip="侧斜管标定1号管 602-675" />
-                    <asp:Panel ID="Circle5" BackColor="Orange" runat="server" CssClass="auto-style20" ToolTip="侧斜管标定2号管 742-810" />
-                    <asp:Panel ID="Circle6" BackColor="Orange" runat="server" CssClass="auto-style21" ToolTip="侧斜管标定3号管 875-939" />
-                    <asp:Panel ID="Circle7" BackColor="Orange" runat="server" CssClass="auto-style22" ToolTip="侧斜管标定4号管 994-1069" />
-                    <asp:Timer ID="timer" Interval="10000" runat="server"/>
-                </ContentTemplate>
-          </asp:UpdatePanel>
 
-         <asp:UpdatePanel ID="UpdatePanel4" runat="server" UpdateMode="Conditional" OnDataBinding="UpdatePanel4_DataBinding" Visible="false">  
-                <ContentTemplate>
-                     <asp:Panel ID="Panel2" CssClass="auto-style82" BackColor="Blue" runat="server" >
-                         
-                         
-                         
-                     </asp:Panel>
-
-                    <asp:Panel ID="Panel3" CssClass="auto-style84" runat="server" BackColor="#3333FF">
-            <asp:Chart ID="Chart1" runat="server" Width="1200px" Height="200px" Visible="false">
+          <asp:Panel ID="Panel_chart" CssClass="Panel_chart" runat="server" BackColor="#3333FF">
+            <asp:Chart ID="Chart1" runat="server" Width="1200px" Height="200px" Visible="true">
                 <Series>
                     <asp:Series Name="Series1" ChartType="Spline"></asp:Series>
                 </Series>
@@ -833,6 +841,71 @@
                 </Titles>
             </asp:Chart>
         </asp:Panel>
+                    <!--新界面信息-->
+        <asp:Panel ID="Panel_shuliangtongji" CssClass="panel_shuliangtongji" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" >
+            <asp:Label ID="Label_danqiantongji" CssClass="Label_dangqiantongji" runat="server" Text="当前统计" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
+            <asp:Label ID="Label_shuoming" CssClass="Label_shuoming" runat="server" Text="全局各个位移数量占比" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="10pt"></asp:Label>
+            <asp:Label ID="Label_label1" CssClass="Label_label1" runat="server" Text="小于0.01mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
+            <asp:Label ID="Label_label2" CssClass="Label_label2" runat="server" Text="0.01mm到0.1mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
+            <asp:Label ID="Label_label3" CssClass="Label_label3" runat="server" Text="0.1mm到0.2mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
+            <asp:Label ID="Label_label4" CssClass="Label_label4" runat="server" Text="大于0.2mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="Maroon" Font-Size="7pt"></asp:Label>
+            <asp:Panel ID="Panel_process_1" CssClass="Panel_process1" runat="server" BackColor="#041435"></asp:Panel>
+            <asp:Panel ID="Panel_process_2" CssClass="Panel_process2" runat="server" BackColor="#041435"></asp:Panel>
+            <asp:Panel ID="Panel_process_3" CssClass="Panel_process3" runat="server" BackColor="#041435"></asp:Panel>
+            <asp:Panel ID="Panel_process_4" CssClass="Panel_process4" runat="server" BackColor="#041435"></asp:Panel>
+            <asp:Panel ID="Panel_value1" CssClass="Panel_value1" runat="server" BackColor="DarkBlue"></asp:Panel>
+            <asp:Panel ID="Panel_value2" CssClass="Panel_value2" runat="server" BackColor="Blue"></asp:Panel>
+            <asp:Panel ID="Panel_value3" CssClass="Panel_value3" runat="server" BackColor="LightGreen"></asp:Panel>
+            <asp:Panel ID="Panel_value4" CssClass="Panel_value4" runat="server" BackColor="Red"></asp:Panel>
+            <asp:Label ID="Label_baifenbi1" CssClass="Label_baifenbi1" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
+            <asp:Label ID="Label_baifenbi2" CssClass="Label_baifenbi2" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
+            <asp:Label ID="Label_baifenbi3" CssClass="Label_baifenbi3" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
+            <asp:Label ID="Label_baifenbi4" CssClass="Label_baifenbi4" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
+        </asp:Panel>
+                </ContentTemplate>                  
+            </asp:UpdatePanel>  
+        
+        <!--这里加了conditional之后，各自更新更自的-->
+         <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">  
+                <ContentTemplate>
+                    
+                        <asp:ImageButton ID="Image_point1" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/position.png" OnClick="Image_point1_Click" ToolTip="一号坡 2164-2317"/>
+                        <asp:ImageButton ID="Image_point2" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/position.png" OnClick="Image_point2_Click" ToolTip="二号坡 2361-2558" />
+                        <asp:ImageButton ID="Image_point3" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/position.png" OnClick="Image_point3_Click" ToolTip="三号坡 2934-3074" />
+                        <asp:ImageButton ID="Image_point4" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/position.png" OnClick="Image_point4_Click" ToolTip="侧斜管标定1号管 602-675" />
+                        <asp:ImageButton ID="Image_point5" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/position.png" OnClick="Image_point5_Click" ToolTip="侧斜管标定2号管 742-810" />
+                        <asp:ImageButton ID="Image_point6" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/position.png" OnClick="Image_point6_Click" ToolTip="侧斜管标定3号管 875-939" />
+                        <asp:ImageButton ID="Image_point7" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/position.png" OnClick="Image_point7_Click" ToolTip="侧斜管标定4号管 994-1069" />
+                           
+
+
+                 </ContentTemplate>
+             </asp:UpdatePanel>
+          <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">  
+                <ContentTemplate>
+                    <asp:Panel ID="Circle1" BackColor="Orange" runat="server" CssClass="auto-style16" ToolTip="一号坡 2164-2317" />
+                    <asp:Panel ID="Circle2" BackColor="Orange" runat="server" CssClass="auto-style17" ToolTip="二号坡 2361-2558" />
+                    <asp:Panel ID="Circle3" BackColor="Orange" runat="server" CssClass="auto-style18" ToolTip="三号坡 2934-3074" />
+                    <asp:Panel ID="Circle4" BackColor="Orange" runat="server" CssClass="auto-style19" ToolTip="侧斜管标定1号管 602-675" />
+                    <asp:Panel ID="Circle5" BackColor="Orange" runat="server" CssClass="auto-style20" ToolTip="侧斜管标定2号管 742-810" />
+                    <asp:Panel ID="Circle6" BackColor="Orange" runat="server" CssClass="auto-style21" ToolTip="侧斜管标定3号管 875-939" />
+                    <asp:Panel ID="Circle7" BackColor="Orange" runat="server" CssClass="auto-style22" ToolTip="侧斜管标定4号管 994-1069" />
+                    <asp:Panel ID="Panel_baojing_info" CssClass="Panel_baojing_info" runat="server" ScrollBars="Vertical" >
+                        </asp:Panel> 
+                    <asp:Timer ID="timer" Interval="10000" runat="server"/>
+
+                </ContentTemplate>
+          </asp:UpdatePanel>
+
+         <asp:UpdatePanel ID="UpdatePanel4" runat="server" UpdateMode="Conditional" OnDataBinding="UpdatePanel4_DataBinding" Visible="false">  
+                <ContentTemplate>
+                     <asp:Panel ID="Panel2" CssClass="auto-style82" BackColor="Blue" runat="server" >
+                         
+                         
+                         
+                     </asp:Panel>
+
+        
                     <asp:Timer ID="timer2" Interval="4000" runat="server" OnTick="timer2_Tick1"/>
                 </ContentTemplate>
                 <Triggers>
@@ -881,24 +954,7 @@
         <asp:Label ID="biaozhi4_label" CssClass="biaozhi4_label" runat="server" />
         <asp:Label ID="biaozhi5_label" CssClass="biaozhi5_label" runat="server" />
 
-        <!--新界面信息-->
-        <asp:Panel ID="Panel_shuliangtongji" CssClass="panel_shuliangtongji" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" >
-            <asp:Label ID="Label_danqiantongji" CssClass="Label_dangqiantongji" runat="server" Text="当前统计" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-            <asp:Label ID="Label_shuoming" CssClass="Label_shuoming" runat="server" Text="全局各个位移数量占比" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="10pt"></asp:Label>
-            <asp:Label ID="Label_label1" CssClass="Label_label1" runat="server" Text="小于0.01mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
-            <asp:Label ID="Label_label2" CssClass="Label_label2" runat="server" Text="0.01mm到0.1mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
-            <asp:Label ID="Label_label3" CssClass="Label_label3" runat="server" Text="0.1mm到0.2mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
-            <asp:Label ID="Label_label4" CssClass="Label_label4" runat="server" Text="大于0.2mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="Maroon" Font-Size="7pt"></asp:Label>
-            <asp:Panel ID="Panel_process_1" CssClass="Panel_process1" runat="server" BackColor="#041435"></asp:Panel>
-            <asp:Panel ID="Panel_process_2" CssClass="Panel_process2" runat="server" BackColor="#041435"></asp:Panel>
-            <asp:Panel ID="Panel_process_3" CssClass="Panel_process3" runat="server" BackColor="#041435"></asp:Panel>
-            <asp:Panel ID="Panel_process_4" CssClass="Panel_process4" runat="server" BackColor="#041435"></asp:Panel>
-            <asp:Panel ID="Panel_value1" CssClass="Panel_value1" runat="server" BackColor="#2F88E4"></asp:Panel>
-            <asp:Panel ID="Panel_value2" CssClass="Panel_value2" runat="server" BackColor="#2F88E4"></asp:Panel>
-            <asp:Panel ID="Panel_value3" CssClass="Panel_value3" runat="server" BackColor="#2F88E4"></asp:Panel>
-            <asp:Panel ID="Panel_value4" CssClass="Panel_value4" runat="server" BackColor="#2F88E4"></asp:Panel>
-            
-        </asp:Panel>
+        
 
         <!--饼状图-->
         <asp:Panel ID="Panel_bingzhuangtu" CssClass="Panel_bingzhuangtu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
@@ -947,9 +1003,9 @@
         <!--功能区-->
         <asp:Panel ID="Panel_gongnengqu" CssClass="Panel_gongnengqu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
            <asp:Label ID="Label_gongnengqu" CssClass="Label_dangqiantongji" runat="server" Text="功能区" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-           <asp:ImageButton ID="image_graft" CssClass="image_graft" runat="server" ImageUrl="~/Resource/graph.png" />
+           <asp:ImageButton ID="image_graft" CssClass="image_graft" runat="server" ImageUrl="~/Resource/graph.png" OnClick="image_graft_Click" />
            <asp:ImageButton ID="Image_baojing" CssClass="image_attition" runat="server" ImageUrl="~/Resource/attention.png" />
-           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" />
+           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" OnClick="Image_set_Click" />
         </asp:Panel>
 
         <!--报警信息-->
@@ -960,6 +1016,8 @@
         <asp:label ID="Label_header1"  runat="server" CssClass="Label_header1" Text="报警地点" ForeColor="White" />
         <asp:label ID="Label_header2"  runat="server" CssClass="Label_header2" Text="报警位置" ForeColor="White" />
         <asp:label ID="Label_header3"  runat="server" CssClass="Label_header3" Text="位移量" ForeColor="White" />
+
+        
     </div>
     </form>
 </body>

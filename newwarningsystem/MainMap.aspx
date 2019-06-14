@@ -503,17 +503,17 @@
         }
             .Panel_mapinfo {
             position: absolute;
-            top: 15%;
+            top: 13%;
             left: 21%;
             width: 50%;
             z-index: 7;
-            height: 10%;
+            height: 6%;
             border-radius:3%;
             opacity:0.8;
         }
             .biaozhi1 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 22%;
             width: 20px;
             z-index: 7;
@@ -522,7 +522,7 @@
         }
              .biaozhi2 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 32%;
             width: 20px;
             z-index: 7;
@@ -531,7 +531,7 @@
         }
              .biaozhi3 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 42%;
             width: 20px;
             z-index: 7;
@@ -540,7 +540,7 @@
         }
              .biaozhi4 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 52%;
             width: 20px;
             z-index: 7;
@@ -549,7 +549,7 @@
         }
              .biaozhi5 {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 62%;
             width: 20px;
             z-index: 7;
@@ -558,7 +558,7 @@
         }
              .biaozhi1_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 24%;
             width: 80px;
             z-index: 7;
@@ -567,7 +567,7 @@
         }
             .biaozhi2_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 34%;
             width: 80px;
             z-index: 7;
@@ -576,7 +576,7 @@
         }
             .biaozhi3_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 44%;
             width: 80px;
             z-index: 7;
@@ -585,7 +585,7 @@
         }
             .biaozhi4_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 54%;
             width: 80px;
             z-index: 7;
@@ -594,7 +594,7 @@
         }
             .biaozhi5_label {
             position: absolute;
-            top: 17%;
+            top: 14%;
             left: 64%;
             width: 80px;
             z-index: 7;
@@ -853,18 +853,15 @@
             <asp:Panel ID="Panel_process_2" CssClass="Panel_process2" runat="server" BackColor="#041435"></asp:Panel>
             <asp:Panel ID="Panel_process_3" CssClass="Panel_process3" runat="server" BackColor="#041435"></asp:Panel>
             <asp:Panel ID="Panel_process_4" CssClass="Panel_process4" runat="server" BackColor="#041435"></asp:Panel>
-            <asp:Panel ID="Panel_value1" CssClass="Panel_value1" runat="server" BackColor="#2F88E4"></asp:Panel>
-            <asp:Panel ID="Panel_value2" CssClass="Panel_value2" runat="server" BackColor="#2F88E4"></asp:Panel>
-            <asp:Panel ID="Panel_value3" CssClass="Panel_value3" runat="server" BackColor="#2F88E4"></asp:Panel>
-            <asp:Panel ID="Panel_value4" CssClass="Panel_value4" runat="server" BackColor="#2F88E4"></asp:Panel>
+            <asp:Panel ID="Panel_value1" CssClass="Panel_value1" runat="server" BackColor="DarkBlue"></asp:Panel>
+            <asp:Panel ID="Panel_value2" CssClass="Panel_value2" runat="server" BackColor="Blue"></asp:Panel>
+            <asp:Panel ID="Panel_value3" CssClass="Panel_value3" runat="server" BackColor="LightGreen"></asp:Panel>
+            <asp:Panel ID="Panel_value4" CssClass="Panel_value4" runat="server" BackColor="Red"></asp:Panel>
             <asp:Label ID="Label_baifenbi1" CssClass="Label_baifenbi1" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
             <asp:Label ID="Label_baifenbi2" CssClass="Label_baifenbi2" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
             <asp:Label ID="Label_baifenbi3" CssClass="Label_baifenbi3" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
             <asp:Label ID="Label_baifenbi4" CssClass="Label_baifenbi4" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
         </asp:Panel>
-
-
-                        
                 </ContentTemplate>                  
             </asp:UpdatePanel>  
         

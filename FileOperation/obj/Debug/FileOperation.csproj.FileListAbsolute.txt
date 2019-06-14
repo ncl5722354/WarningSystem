@@ -142,3 +142,4 @@ D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.csprojResolveAssem
 D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
 D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.dll
 D:\程序\warningsystem\FileOperation\obj\Debug\FileOperation.pdb
+D:\warningsystem\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
