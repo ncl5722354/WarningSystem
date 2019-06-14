@@ -70,6 +70,7 @@
     <Content Include="Resource\bg.png" />
     <Content Include="Resource\bluedot.ico" />
     <Content Include="Resource\dise.png" />
+    <Content Include="Resource\dotgreen.png" />
     <Content Include="Resource\find_magnifier_magnifying_glass_search_zoom_64px_1225492_easyicon.net.png" />
     <Content Include="Resource\graph.png" />
     <Content Include="Resource\home.png" />
@@ -80,6 +81,7 @@
     <Content Include="Resource\pic.png" />
     <Content Include="Resource\pic1.png" />
     <Content Include="Resource\position.png" />
+    <Content Include="Resource\reddot.png" />
     <Content Include="Resource\settings.png" />
     <Content Include="Resource\settings_64px_1228852_easyicon.net.png" />
     <Content Include="Resource\settings_64px_1229386_easyicon.net.png" />

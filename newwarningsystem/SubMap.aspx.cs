@@ -36,17 +36,20 @@ namespace newwarningsystem
         double start_position = 160;
         double end_postion = 780;
 
-        double value1 = 0;
-        double value2 = 0;
-        double value3 = 0;
-        double value4 = 0;
-        double value5 = 0;
+        static  double value1 = 0;
+        static  double value2 = 0;
+        static  double value3 = 0;
+        static  double value4 = 0;
+        static  double value5 = 0;
 
         public static string listbox3_select = "";
+
+        public static bool Panel_Chart_Is;
         protected void Page_Load(object sender, EventArgs e)
         {
 
           //  Create_Map();
+            Image1.ImageUrl = pic_uri;
             ReFlush_List();
             Create_Map();
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
@@ -96,7 +99,11 @@ namespace newwarningsystem
             biaozhi4_label.Text = "<" + value5.ToString() + " mm";
             biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
 
-
+            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
@@ -113,11 +120,11 @@ namespace newwarningsystem
             Chart2.Style["position"] = "absolute";
             Chart2.Style["left"] = "0%";
 
-            Chart2.Style["top"] = "75%";
+            Chart2.Style["top"] = "0%";
             Chart2.Style["z-index"] = "5";
             Chart2.Width = 1200;
             Chart2.Height = 200;
-            Image1.ImageUrl = pic_uri;
+            
             Label_title.Text = chafen_title;
             ListBox4.Items.Clear();
             ListBox4.Items.Add("00:00-01:00");
@@ -145,7 +152,15 @@ namespace newwarningsystem
             ListBox4.Items.Add("22:00-23:00");
             ListBox4.Items.Add("23:00-23:59");
 
-           
+          
+            
+            HttpBrowserCapabilities bc = Request.Browser;
+            int a = bc.ScreenPixelsWidth;
+            if (Panel_Chart_Is == true)
+                Panel_chart.Visible = true;
+            if (Panel_Chart_Is == false)
+                Panel_chart.Visible = false;
+        
 
         }
 
@@ -171,7 +186,9 @@ namespace newwarningsystem
             string tooltip = ib.ToolTip;
             string position_string_wanzheng = string_caozuo.Get_KongGe_String(tooltip, 1);
             string position_string1 = string_caozuo.Get_Maohao_String(position_string_wanzheng, 2);
-            
+
+            Panel_Chart_Is = true;
+
             try
             {
                 double value = double.Parse(position_string1);
@@ -244,6 +261,13 @@ namespace newwarningsystem
         private void Create_Map()
         { 
             try{
+                Panel_baojing_info.Controls.Clear();
+                int warning_count = 0;
+                double allcount = 0;
+                double  cout1 = 0;
+                double  cout2 = 0;
+                double  cout3 = 0;
+                double  cout4 = 0;
                 int count = int.Parse(MainMap.ini.IniReadValue(map_name, "count"));
                 for (int i = 1; i <= count; i++)
                 {
@@ -292,17 +316,22 @@ namespace newwarningsystem
                             if (position >= rukou && position <= chukou)
                             {
                                 thiscount++;
+                                allcount++;
                                 // 加入一个点
                                 double x1 = double.Parse(MainMap.ini.IniReadValue(linename, "X1"));
                                 double x2 = double.Parse(MainMap.ini.IniReadValue(linename, "X2"));
                                 double y1 = double.Parse(MainMap.ini.IniReadValue(linename, "Y1"));
                                 double y2 = double.Parse(MainMap.ini.IniReadValue(linename, "Y2"));
 
+                               
+                               
+                                
                                 // 点的坐标
                                 double x = (x2 - x1) / mycount * thiscount + x1;
                                 double y = (y2 - y1) / mycount * thiscount + y1;
                                 ImageButton imagebutton = new ImageButton();
-                                imagebutton.ImageUrl = "~/Resource/bluedot.ico";
+                                
+                                
                                 imagebutton.Style["position"] = "absolute";
                                 if (map_name == "一号坡")
                                 {
@@ -311,6 +340,7 @@ namespace newwarningsystem
                                     imagebutton.Style["width"] = "5px";
                                     imagebutton.Style["height"] = "5px";
                                     imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
+                                    imagebutton.Style["z-index"] = "10";
                                     imagebutton.Click += new ImageClickEventHandler(Click);
                                 }
                                 if (map_name == "二号坡上")
@@ -320,6 +350,7 @@ namespace newwarningsystem
                                     imagebutton.Style["width"] = "5px";
                                     imagebutton.Style["height"] = "5px";
                                     imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
+                                    imagebutton.Style["z-index"] = "10";
                                     imagebutton.Click += new ImageClickEventHandler(Click);
                                 }
                                 if (map_name == "二号坡下")
@@ -329,16 +360,164 @@ namespace newwarningsystem
                                     imagebutton.Style["width"] = "5px";
                                     imagebutton.Style["height"] = "5px";
                                     imagebutton.ToolTip = "位置:" + position.ToString("#0.000") + " 位移量:" + value.ToString("#0.000");
+                                    imagebutton.Style["z-index"] = "9";
                                     imagebutton.Click += new ImageClickEventHandler(Click);
                                 }
 
+                                if (value <= value1)
+                                {
+                                    //imagebutton.BackColor = System.Drawing.Color.DarkBlue;
+                                    imagebutton.ImageUrl = "~/Resource/bluedot.ico";
+                                }
+                                else if (value <= value2)
+                                {
+                                    //imagebutton.BackColor = System.Drawing.Color.Blue;
+                                    imagebutton.ImageUrl = "~/Resource/bluedot.ico";
+                                }
+                                else if (value <= value5)
+                                {
+                                    //imagebutton.BackColor = System.Drawing.Color.LightGreen;
+                                    imagebutton.ImageUrl = "~/Resource/dotgreen.png";
+                                }
+                                else if (value > value5)
+                                {
+                                    imagebutton.BackColor = System.Drawing.Color.Red;
+                                    imagebutton.ImageUrl = "~/Resource/reddot.png";
+                                    imagebutton.Style["z-index"] = "10";
+                                    imagebutton.Style["width"] = "10px";
+                                    imagebutton.Style["height"] = "10px";
+                                    imagebutton.CssClass = "";
 
+                                }
+                                if (value >= value5)
+                                {
+                                    warning_count++;
+                                    // 地点
+                                    Label labelposition = new Label();
+                                    if (position >= 2164 && position <= 2317)
+                                    {
+                                        labelposition.Text = "坡道1";
+                                    }
+
+                                    if (position >= 2361 && position <= 2558)
+                                    {
+                                        labelposition.Text = "坡道2";
+                                    }
+
+                                    if (position >= 2934 && position <= 3074)
+                                    {
+                                        labelposition.Text = "坡道3";
+                                    }
+
+                                    if (position >= 602 && position <= 675)
+                                    {
+                                        labelposition.Text = "管道1";
+                                    }
+
+                                    if (position >= 742 && position <= 810)
+                                    {
+                                        labelposition.Text = "管道2";
+                                    }
+
+                                    if (position >= 875 && position <= 939)
+                                    {
+                                        labelposition.Text = "管道3";
+                                    }
+
+                                    if (position >= 994 && position <= 1069)
+                                    {
+                                        labelposition.Text = "管道4";
+                                    }
+
+                                    labelposition.ForeColor = System.Drawing.Color.White;
+                                    labelposition.Style["z-index"] = "8";
+                                    labelposition.Style["left"] = "15%";
+                                    labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    labelposition.Style["width"] = "20%";
+                                    labelposition.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(labelposition);
+
+                                    // 位置
+                                    Label pos = new Label();
+                                    pos.Text = position.ToString();
+                                    pos.ForeColor = System.Drawing.Color.White;
+                                    pos.Style["z-index"] = "8";
+                                    pos.Style["left"] = "40%";
+                                    pos.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    pos.Style["width"] = "20%";
+                                    pos.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(pos);
+
+                                    // 位移值
+                                    Label labelvalue = new Label();
+                                    labelvalue.Text = value.ToString();
+                                    labelvalue.ForeColor = System.Drawing.Color.White;
+                                    labelvalue.Style["z-index"] = "8";
+                                    labelvalue.Style["left"] = "60%";
+                                    labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    labelvalue.Style["width"] = "20%";
+                                    labelvalue.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(labelvalue);
+
+
+                                    
+                                }
+
+                                
                                 form1.Controls.Add(imagebutton);
+
 
                             }
                         }
                         catch { }
                     }
+                }
+                if (allcount != 0)
+                {
+                    Label_baifenbi1.Text = (Math.Round(cout1 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi2.Text = (Math.Round(cout2 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi3.Text = (Math.Round(cout3 / allcount * 100, 2)).ToString() + "%";
+                    Label_baifenbi4.Text = (Math.Round(cout4 / allcount * 100, 2)).ToString() + "%";
+
+                    Panel_value1.Style["width"] = (70 * (cout1 / allcount)).ToString() + "%";
+                    Panel_value2.Style["width"] = (70 * (cout2 / allcount)).ToString() + "%";
+                    Panel_value3.Style["width"] = (70 * (cout3 / allcount)).ToString() + "%";
+                    Panel_value4.Style["width"] = (70 * (cout4 / allcount)).ToString() + "%";
+                }
+                if (warning_count == 0)
+                {
+                    warning_count++;
+                    Label labelposition = new Label();
+                    labelposition.Text = "无";
+                    labelposition.ForeColor = System.Drawing.Color.White;
+                    labelposition.Style["z-index"] = "8";
+                    labelposition.Style["left"] = "10%";
+                    labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
+                    labelposition.Style["width"] = "20%";
+                    labelposition.Style["position"] = "absolute";
+                    Panel_baojing_info.Controls.Add(labelposition);
+
+                    // 位置
+                    Label pos = new Label();
+                    pos.Text = "无";
+                    pos.ForeColor = System.Drawing.Color.White;
+                    pos.Style["z-index"] = "8";
+                    pos.Style["left"] = "40%";
+                    pos.Style["top"] = (warning_count * 30).ToString() + "%";
+                    pos.Style["width"] = "20%";
+                    pos.Style["position"] = "absolute";
+                    Panel_baojing_info.Controls.Add(pos);
+
+                    // 位移值
+                    Label labelvalue = new Label();
+                    labelvalue.Text = "无";
+                    labelvalue.ForeColor = System.Drawing.Color.White;
+                    labelvalue.Style["z-index"] = "8";
+                    labelvalue.Style["left"] = "75%";
+                    labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
+                    labelvalue.Style["width"] = "20%";
+                    labelvalue.Style["position"] = "absolute";
+                    Panel_baojing_info.Controls.Add(labelvalue);
                 }
             }
             catch{}
@@ -666,6 +845,18 @@ namespace newwarningsystem
         protected void Image_set_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("Set.aspx");
+        }
+
+        protected void image_graft_Click(object sender, ImageClickEventArgs e)
+        {
+            //if (Panel_Chart_Is == true)
+            //{
+            //    Panel_Chart_Is = false;
+            //}
+            //else if (Panel_Chart_Is == false)
+            //{
+            //    Panel_Chart_Is = true;
+            //}
         }
 
     }

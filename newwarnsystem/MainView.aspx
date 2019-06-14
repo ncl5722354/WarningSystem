@@ -11,7 +11,7 @@
             position:absolute;
             left:101px;
             top:47px;
-            width:1000px;
+            /*width:1000px;*/
             height: 520px;
         }
     </style>
