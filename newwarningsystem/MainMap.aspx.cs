@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using FileOperation;
 using System.Collections;
 using String_Caozuo;
+using System.Data;
 
 namespace newwarningsystem
 {
@@ -22,6 +23,9 @@ namespace newwarningsystem
         static double value4 = 0;
         static double value5 = 0;
 
+        public  static string x = "";
+        public  static string y = "";
+
         public static bool Panel_Chart_Is;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -32,8 +36,9 @@ namespace newwarningsystem
             Label_timer.Text = mytime.ToString("yyyy-MM-dd HH:mm:ss");
             Circle_Yanse();    // 界面变化颜色
             Update_Panel2();   // 更新panel2
-            
 
+            y = HiddenField1.Value;
+            x = HiddenField2.Value;
 
             value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
             value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
@@ -95,7 +100,7 @@ namespace newwarningsystem
             Chart_shebeizhuangtai.Series[0].Points[0].Label = "设备正常";
             Chart_shebeizhuangtai.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
 
-
+            
             
 
         }
@@ -921,6 +926,7 @@ namespace newwarningsystem
             //{
             //    Panel_Chart_Is = true;
             //}
+            Response.Redirect("Chart.aspx");
         }
 
         protected void Image_set_Click(object sender, ImageClickEventArgs e)

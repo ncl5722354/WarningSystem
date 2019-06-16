@@ -1389,7 +1389,7 @@
                     <asp:Panel ID="Panel_baojing_info" CssClass="Panel_baojing_info" runat="server" ScrollBars="Vertical" >
                         </asp:Panel> 
 
-
+                    <asp:Timer ID="Timer2" runat="server" Interval="5000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->
                 </ContentTemplate>                  
             </asp:UpdatePanel>     
         <!-- 鼠标点到点上 -->

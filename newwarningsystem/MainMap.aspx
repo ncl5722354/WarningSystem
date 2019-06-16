@@ -816,7 +816,7 @@
         <!-- 关于时间的更新-->
         <asp:ScriptManager ID="ScriptManager1" runat="Server" ></asp:ScriptManager><!--必须包含这个控件，否则UpdatePanel无法使用-->  
         <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">  
-                <ContentTemplate>当前时间是：  
+                <ContentTemplate>
             <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
                         <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
                         <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
@@ -883,7 +883,9 @@
              </asp:UpdatePanel>
           <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">  
                 <ContentTemplate>
-                    <asp:Panel ID="Circle1" BackColor="Orange" runat="server" CssClass="auto-style16" ToolTip="一号坡 2164-2317" />
+                    <asp:Panel ID="Circle1" BackColor="Orange" runat="server" CssClass="auto-style16" ToolTip="一号坡 2164-2317" >
+                        
+                    </asp:Panel>
                     <asp:Panel ID="Circle2" BackColor="Orange" runat="server" CssClass="auto-style17" ToolTip="二号坡 2361-2558" />
                     <asp:Panel ID="Circle3" BackColor="Orange" runat="server" CssClass="auto-style18" ToolTip="三号坡 2934-3074" />
                     <asp:Panel ID="Circle4" BackColor="Orange" runat="server" CssClass="auto-style19" ToolTip="侧斜管标定1号管 602-675" />
@@ -934,6 +936,10 @@
         <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/bg.png" BackColor="#333300" />
          <asp:Image ID="Image_icon" CssClass="auto-style86" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
         <asp:Label ID="Label24" runat="server" Text="报警等级" CssClass="auto-style81" BackColor="#000099" ForeColor="White" Visible="false"></asp:Label>
+   
+        
+        <asp:HiddenField ID="HiddenField1" runat="server" />
+        <asp:HiddenField ID="HiddenField2" runat="server" />
    
         
    
@@ -1024,3 +1030,10 @@
 </html>
 
 
+
+<script type="text/javascript">
+    var x = window.screen.height;
+    var y = window.screen.width;
+    document.getElementById("HiddenField1").value = x.toString();
+    document.getElementById("HiddenField2").value = y.toString();
+    </script>

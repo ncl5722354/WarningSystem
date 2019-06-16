@@ -461,11 +461,11 @@ namespace newwarningsystem
                                 {
                                     cout2++;
                                 }
-                                else if (value <= value4)
+                                else if (value <= value5)
                                 {
                                     cout3++;
                                 }
-                                else if (value > value4)
+                                else if (value > value5)
                                 {
                                     cout4++;
                                 }
@@ -622,7 +622,7 @@ namespace newwarningsystem
             value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
             value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
             value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
-            Set_Start_End(start1, end1, start2, end2);
+            
             Label_title.Text = chafen_title;
 
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
@@ -724,7 +724,7 @@ namespace newwarningsystem
             ListBox4.Items.Add("23:00-23:59");
 
             ReFlush_List();
-
+            Set_Start_End(start1, end1, start2, end2);
         }
 
         private void ReFlush_List()
@@ -1176,14 +1176,8 @@ namespace newwarningsystem
 
         protected void image_graft_Click(object sender, ImageClickEventArgs e)
         {
-            //if (Panel_Chart_Is == true)
-            //{
-            //    Panel_Chart_Is = false;
-            //}
-            //else if (Panel_Chart_Is == false)
-            //{
-            //    Panel_Chart_Is = true;
-            //}
+           
+            Response.Redirect("Chart.aspx");
         }
     }
 }

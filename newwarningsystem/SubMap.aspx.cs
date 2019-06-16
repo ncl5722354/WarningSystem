@@ -51,7 +51,7 @@ namespace newwarningsystem
           //  Create_Map();
             Image1.ImageUrl = pic_uri;
             ReFlush_List();
-            Create_Map();
+            
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
             value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
@@ -108,7 +108,7 @@ namespace newwarningsystem
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
             // Set_Start_End(start1, end1, start2, end2);
-
+            Create_Map();
             //Chart1.Style["position"] = "absolute";
             //Chart1.Style["left"] = "700px";
             //Chart1.Style["top"] = "100px";
@@ -368,16 +368,19 @@ namespace newwarningsystem
                                 {
                                     //imagebutton.BackColor = System.Drawing.Color.DarkBlue;
                                     imagebutton.ImageUrl = "~/Resource/bluedot.ico";
+                                    cout1++;
                                 }
                                 else if (value <= value2)
                                 {
                                     //imagebutton.BackColor = System.Drawing.Color.Blue;
                                     imagebutton.ImageUrl = "~/Resource/bluedot.ico";
+                                    cout2++;
                                 }
                                 else if (value <= value5)
                                 {
                                     //imagebutton.BackColor = System.Drawing.Color.LightGreen;
                                     imagebutton.ImageUrl = "~/Resource/dotgreen.png";
+                                    cout3++;
                                 }
                                 else if (value > value5)
                                 {
@@ -387,6 +390,7 @@ namespace newwarningsystem
                                     imagebutton.Style["width"] = "10px";
                                     imagebutton.Style["height"] = "10px";
                                     imagebutton.CssClass = "";
+                                    cout4++;
 
                                 }
                                 if (value >= value5)
@@ -849,14 +853,8 @@ namespace newwarningsystem
 
         protected void image_graft_Click(object sender, ImageClickEventArgs e)
         {
-            //if (Panel_Chart_Is == true)
-            //{
-            //    Panel_Chart_Is = false;
-            //}
-            //else if (Panel_Chart_Is == false)
-            //{
-            //    Panel_Chart_Is = true;
-            //}
+           
+            Response.Redirect("Chart.aspx");
         }
 
     }
