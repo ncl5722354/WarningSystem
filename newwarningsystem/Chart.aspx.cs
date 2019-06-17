@@ -233,5 +233,10 @@ namespace newwarningsystem
         {
             line1= 7;
         }
+
+        protected void ImageButton_home_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainMap.aspx");
+        }
     }
 }

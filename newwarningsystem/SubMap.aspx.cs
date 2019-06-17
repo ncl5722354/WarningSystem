@@ -857,5 +857,10 @@ namespace newwarningsystem
             Response.Redirect("Chart.aspx");
         }
 
+        protected void Image_baojing_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("report.aspx");
+        }
+
     }
 }

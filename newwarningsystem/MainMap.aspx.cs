@@ -933,5 +933,10 @@ namespace newwarningsystem
         {
             Response.Redirect("Set.aspx");
         }
+
+        protected void Image_baojing_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("report.aspx");
+        }
     }
 }

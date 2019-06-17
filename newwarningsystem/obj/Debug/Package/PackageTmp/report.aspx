@@ -8,16 +8,69 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        .auto-style86 {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            width: 3%;
+            z-index: 9;
+            height:5%;
+        }
+        .auto-style12 {
+            position: absolute;
+            top: -2147483648%;
+            left: 0%;
+            z-index: 9;
+            width: 100%;
+            height: 5%;
+        }
+        .auto-style4 {
+            position: absolute;
+            top: 1%;
+            left: 40%;
+            z-index: 9;
+            width: 100%;
+            height: 4%;
+            margin-right: 0px;
+        }
+        .Image_home
+        {
+            position:absolute;
+            top:2%;
+            left:90%;
+            width:3%;
+            height:4%;
+            z-index:9;
+        }
+        .report
+        {
+            position:absolute;
+            top:20%;
+            left:0%;
+            width:60%;
+            height:75%;
+            z-index:9;
+        }
+         .auto-style1 {
+            height: 628px;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
+    <form id="form1" runat="server"  style="width:100%; height:100%">
+    <div class="auto-style1">
+        <asp:Image ID="Image_icon" CssClass="auto-style86" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
+        <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC" ImageUrl="~/Resource/图片1.png"  />
+        <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="15pt" ForeColor="White"></asp:Label>
+        
+         <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click" BackColor="#000066" />
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
-        <rsweb:ReportViewer ID="ReportViewer1" runat="server" Height="571px" ProcessingMode="Remote" Width="948px">
+        <rsweb:ReportViewer ID="ReportViewer1" CssClass="report" runat="server" Width="783px">
         </rsweb:ReportViewer>
+    </div>
+        
     </form>
 </body>
 </html>
