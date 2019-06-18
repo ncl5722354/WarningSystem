@@ -17,7 +17,7 @@
         }
         .auto-style12 {
             position: absolute;
-            top: -2147483648%;
+            top: 0%;
             left: 1%;
             z-index: 3;
             width: 100%;
@@ -35,11 +35,11 @@
 
         .auto-style13 {
             position: absolute;
-            top: -2147483648%;
+            top: 5%;
             left: 0%;
             z-index: 3;
             width: 100%;
-            height: 5%;
+            height: 10%;
         }
         .auto-style14 {
             position: absolute;
@@ -134,7 +134,7 @@
         }
         .auto-style88 {
             position: absolute;
-            top: -2147483648%;
+            top: 0%;
             left: 27%;
             z-index: 6;
             width: 5%;
@@ -143,11 +143,11 @@
         .Image_home
         {
             position:absolute;
-            top:1%;
+            top:0%;
             left:90%;
             width:30px;
             height:30px;
-            z-index:9;
+            z-index:11;
         }
         </style>
 </head>
@@ -161,7 +161,7 @@
         <asp:Button ID="Button5" runat="server" Text="管道2" CssClass="Button5" OnClick="Button5_Click" />
         <asp:Button ID="Button6" runat="server" Text="管道3" CssClass="Button6" OnClick="Button6_Click" />
         <asp:Button ID="Button7" runat="server" Text="管道4" CssClass="Button7" OnClick="Button7_Click" />
-        <asp:Panel  ID="panelbg" Width="100%" Height="100%" runat="server" BorderColor="#003399" CssClass="bg">
+       
         <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click" BackColor="#000066" />
             
            

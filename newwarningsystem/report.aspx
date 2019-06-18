@@ -11,15 +11,15 @@
     <style type="text/css">
         .auto-style86 {
             position: absolute;
-            top: 0px;
+            top: 1px;
             left: 20px;
             width: 3%;
-            z-index: 9;
+            z-index: 10;
             height:5%;
         }
         .auto-style12 {
             position: absolute;
-            top: -2147483648%;
+            top: 0%;
             left: 0%;
             z-index: 9;
             width: 100%;
@@ -37,7 +37,7 @@
         .Image_home
         {
             position:absolute;
-            top:2%;
+            top:0%;
             left:90%;
             width:3%;
             height:4%;
@@ -55,6 +55,15 @@
          .auto-style1 {
             height: 628px;
         }
+         .reportview
+         {
+              position:absolute;
+            top:20%;
+            left:0%;
+            width:80%;
+            height:75%;
+            z-index:10;
+         }
     </style>
 </head>
 <body>
@@ -64,11 +73,19 @@
         <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC" ImageUrl="~/Resource/图片1.png"  />
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="15pt" ForeColor="White"></asp:Label>
         
-         <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click" BackColor="#000066" />
+         <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click"  />
+        
+        <rsweb:ReportViewer ID="ReportViewer1" CssClass="reportview" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" DocumentMapWidth="100%" >
+            <LocalReport>
+                <DataSources>
+                    <rsweb:ReportDataSource DataSourceId="" />
+                </DataSources>
+            </LocalReport>
+        </rsweb:ReportViewer>
+        
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
-        <rsweb:ReportViewer ID="ReportViewer1" CssClass="report" runat="server" Width="783px">
-        </rsweb:ReportViewer>
+        
     </div>
         
     </form>
