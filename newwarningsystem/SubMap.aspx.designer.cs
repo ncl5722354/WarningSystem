@@ -382,6 +382,33 @@ namespace newwarningsystem {
         protected global::System.Web.UI.Timer Timer1;
         
         /// <summary>
+        /// Panel_bingzhuangtu 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel_bingzhuangtu;
+        
+        /// <summary>
+        /// Label_baojingshuoming 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_baojingshuoming;
+        
+        /// <summary>
+        /// Chart_bingzhuangtu 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart_bingzhuangtu;
+        
+        /// <summary>
         /// Panel_chart 控件。
         /// </summary>
         /// <remarks>
@@ -580,6 +607,51 @@ namespace newwarningsystem {
         protected global::System.Web.UI.WebControls.Panel Panel_baojing_info;
         
         /// <summary>
+        /// updatepanel2 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatepanel2;
+        
+        /// <summary>
+        /// Panel_shebeizhuangtai 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel_shebeizhuangtai;
+        
+        /// <summary>
+        /// shebeizhuangtai_table_panel 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel shebeizhuangtai_table_panel;
+        
+        /// <summary>
+        /// label_weizhi_title 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label_weizhi_title;
+        
+        /// <summary>
+        /// label_weiyi_title 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label_weiyi_title;
+        
+        /// <summary>
         /// ListBox3 控件。
         /// </summary>
         /// <remarks>
@@ -605,51 +677,6 @@ namespace newwarningsystem {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label13;
-        
-        /// <summary>
-        /// Panel_bingzhuangtu 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel_bingzhuangtu;
-        
-        /// <summary>
-        /// Label_baojingshuoming 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_baojingshuoming;
-        
-        /// <summary>
-        /// Chart_bingzhuangtu 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart_bingzhuangtu;
-        
-        /// <summary>
-        /// Panel_shebeizhuangtai 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel_shebeizhuangtai;
-        
-        /// <summary>
-        /// Calendar1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
         /// Panel_gongnengqu 控件。

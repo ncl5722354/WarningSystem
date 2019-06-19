@@ -20,6 +20,7 @@ namespace FileOperation
         public static string[] Read_All_Line(string filepath)
         {
             string read_string;
+            
             using(StreamReader sr=File.OpenText(filepath))
             {
                 ArrayList mylist = new ArrayList();        //用来装返回的字符串

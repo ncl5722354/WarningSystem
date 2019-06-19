@@ -44,7 +44,7 @@ namespace newwarningsystem
         protected void Click(object sender, EventArgs e)
         {
             Chart2.Series[0].Points.Clear();
-            Calendar1.SelectedDate = DateTime.Parse("1900-01-01");
+            //Calendar1.SelectedDate = DateTime.Parse("1900-01-01");
 
             Panel_Chart_Is = true;
 
@@ -190,6 +190,7 @@ namespace newwarningsystem
                 double cout3 = 0;
                 double cout4 = 0;
                 int warning_count = 0;
+                int table_rows = 0;
             try
             {
                 
@@ -284,6 +285,38 @@ namespace newwarningsystem
                                 label_value.Click += new EventHandler(Click);
                                 //this.form1.Controls.Add(label_position);
                                 this.Panel2.Controls.Add(label_value);
+
+                               // form1.Controls.Add(imagebutton);
+                                //show_count = 0;
+                                Label weizhi = new Label();
+                                weizhi.Style["position"] = "absolute";
+                                weizhi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weizhi.Style["left"] = "6%";
+                                weizhi.Style["width"] = "40%";
+                                weizhi.Style["z-index"] = "9";
+                                weizhi.Style["text-align"] = "center";
+                                weizhi.Text = position.ToString();
+                                weizhi.BorderColor = System.Drawing.Color.Black;
+                                weizhi.ForeColor = System.Drawing.Color.White;
+                                weizhi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weizhi);
+
+                                Label weiyi = new Label();
+                                weiyi.Style["position"] = "absolute";
+                                weiyi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weiyi.Style["left"] = "55%";
+                                weiyi.Style["width"] = "40%";
+                                weiyi.Style["z-index"] = "9";
+                                weiyi.Style["text-align"] = "center";
+                                weiyi.Text = Math.Round(value, 3).ToString();
+                                weiyi.BorderColor = System.Drawing.Color.Black;
+                                weiyi.ForeColor = System.Drawing.Color.White;
+                                weiyi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weiyi);
+                                table_rows++;
+
+
+
 
                                 if (value <= value1)
                                 {
@@ -480,6 +513,34 @@ namespace newwarningsystem
 
                                 //this.form1.Controls.Add(label_position);
                                 this.Panel2.Controls.Add(label_value);
+                                Label weizhi = new Label();
+                                weizhi.Style["position"] = "absolute";
+                                weizhi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weizhi.Style["left"] = "6%";
+                                weizhi.Style["width"] = "40%";
+                                weizhi.Style["z-index"] = "9";
+                                weizhi.Style["text-align"] = "center";
+                                weizhi.Text = position.ToString();
+                                weizhi.BorderColor = System.Drawing.Color.Black;
+                                weizhi.ForeColor = System.Drawing.Color.White;
+                                weizhi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weizhi);
+
+                                Label weiyi = new Label();
+                                weiyi.Style["position"] = "absolute";
+                                weiyi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weiyi.Style["left"] = "55%";
+                                weiyi.Style["width"] = "40%";
+                                weiyi.Style["z-index"] = "9";
+                                weiyi.Style["text-align"] = "center";
+                                weiyi.Text = Math.Round(value, 3).ToString();
+                                weiyi.BorderColor = System.Drawing.Color.Black;
+                                weiyi.ForeColor = System.Drawing.Color.White;
+                                weiyi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weiyi);
+                                table_rows++;
+
+
                                 if (value >= value5)
                                 {
                                     warning_count++;
@@ -666,6 +727,11 @@ namespace newwarningsystem
             biaozhi4_label.Text = "<" + value5.ToString() + " mm";
             biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
 
+            Label_label1.Text = "小于" + value1.ToString() + "mm";
+            Label_label2.Text = "大于" + value1.ToString() + "mm 小于" + value2.ToString() + "mm";
+            Label_label3.Text = "大于" + value2.ToString() + "mm 小于" + value5.ToString() + "mm";
+            Label_label4.Text = "大于" + value5.ToString() + "mm";
+
             if (Panel_Chart_Is == true)
                 Panel_chart.Visible = true;
             if (Panel_Chart_Is == false)
@@ -725,6 +791,12 @@ namespace newwarningsystem
 
             ReFlush_List();
             Set_Start_End(start1, end1, start2, end2);
+            try
+            {
+                Chart_bingzhuangtu.Style["width"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+                Chart_bingzhuangtu.Style["height"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+            }
+            catch { }
         }
 
         private void ReFlush_List()
@@ -1071,14 +1143,14 @@ namespace newwarningsystem
                 }
 
             }
-            if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
+            //if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
             if (e.Day.IsSelected == true)
             {
 
                 // 选择了某日
                 #region
-                DateTime select_datetime = Calendar1.SelectedDate;
-                string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
+               // DateTime select_datetime = Calendar1.SelectedDate;
+                //string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
 
                 ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
@@ -1103,7 +1175,7 @@ namespace newwarningsystem
                     }
                 }
 
-                listbox3_select = date_string;
+                //listbox3_select = date_string;
                 // 查询一天的
                 Chart2.Series[0].Points.Clear();
                 try

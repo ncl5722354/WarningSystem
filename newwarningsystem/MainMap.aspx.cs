@@ -53,9 +53,15 @@ namespace newwarningsystem
             Chart_bingzhuangtu.Series[0].Points.AddY(20);
             Chart_bingzhuangtu.Series[0].Points.AddY(10);
 
-
-            Chart_bingzhuangtu.Style["width"] = "200px";
-            Chart_bingzhuangtu.Style["height"] = "200px";
+            try
+            {
+                if (IsPostBack == false)
+                {
+                   
+                }
+                
+            }
+            catch { }
 
             Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
             Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
@@ -92,13 +98,13 @@ namespace newwarningsystem
             
 
             // 设备状态饼状图
-            Chart_shebeizhuangtai.Style["width"] = "200px";
-            Chart_shebeizhuangtai.Style["height"] = "200px";
-            Chart_shebeizhuangtai.Series[0].Points.Clear();
-            Chart_shebeizhuangtai.Series[0].Points.AddY(100);
-            Chart_shebeizhuangtai.Series[0].Points[0].Color = System.Drawing.Color.Blue;
-            Chart_shebeizhuangtai.Series[0].Points[0].Label = "设备正常";
-            Chart_shebeizhuangtai.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            //Chart_shebeizhuangtai.Style["width"] = "200px";
+            //Chart_shebeizhuangtai.Style["height"] = "200px";
+            //Chart_shebeizhuangtai.Series[0].Points.Clear();
+            //Chart_shebeizhuangtai.Series[0].Points.AddY(100);
+            //Chart_shebeizhuangtai.Series[0].Points[0].Color = System.Drawing.Color.Blue;
+            //Chart_shebeizhuangtai.Series[0].Points[0].Label = "设备正常";
+            //Chart_shebeizhuangtai.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
 
             
             
@@ -114,6 +120,12 @@ namespace newwarningsystem
                 Panel_chart.Visible = true;
             if (Panel_Chart_Is == false)
                 Panel_chart.Visible = false;
+            try
+            {
+                Chart_bingzhuangtu.Style["width"] = (double.Parse(x) * 0.17).ToString() + "px";
+                Chart_bingzhuangtu.Style["height"] = (double.Parse(x) * 0.17).ToString() + "px";
+            }
+            catch { }
         }
 
         private void Circle_Yanse()
@@ -143,6 +155,14 @@ namespace newwarningsystem
             double circle5_max = 0;
             double circle6_max = 0;
             double circle7_max = 0;
+
+            double max_point1 = 0;
+            double max_point2 = 0;
+            double max_point3 = 0;
+            double max_point4 = 0;
+            double max_point5 = 0;
+            double max_point6 = 0;
+            double max_point7 = 0;
             Panel_baojing_info.Controls.Clear();
             try
             {
@@ -170,37 +190,59 @@ namespace newwarningsystem
                         if (position >= 2164 && position <= 2317)
                         {
                             if (value >= circle1_max)
+                            {
                                 circle1_max = value;
+                                max_point1 = position;
+                            }
+
                         }
                         if (position >= 2361 && position <= 2558)
                         {
                             if (value >= circle2_max)
+                            {
                                 circle2_max = value;
+                                max_point2 = position;
+                            }
                         }
                         if (position >= 2934 && position <= 3074)
                         {
                             if (value >= circle3_max)
+                            {
                                 circle3_max = value;
+                                max_point3 = position;
+                            }
                         }
                         if (position >= 602 && position <= 675)
                         {
                             if (value >= circle4_max)
+                            {
                                 circle4_max = value;
+                                max_point4 = position;
+                            }
                         }
                         if (position >= 742 && position <= 810)
                         {
                             if (value >= circle5_max)
+                            {
                                 circle5_max = value;
+                                max_point5 = position;
+                            }
                         }
                         if (position >= 875 && position <= 939)
                         {
                             if (value >= circle6_max)
+                            {
                                 circle6_max = value;
+                                max_point6 = position;
+                            }
                         }
                         if (position >= 994 && position <= 1069)
                         {
                             if (value >= circle7_max)
+                            {
                                 circle7_max = value;
+                                max_point7 = position;
+                            }
                         }
 
                         if((position >= 2164 && position <= 2317)||(position >= 2361 && position <= 2558)||(position >= 2934 && position <= 3074)||(position >= 602 && position <= 675)||(position >= 742 && position <= 810)||(position >= 875 && position <= 939)||(position >= 994 && position <= 1069))
@@ -345,6 +387,7 @@ namespace newwarningsystem
                    
 
                 }
+                
 
                 if (circle2_max <= value1)
                     Circle2.BackColor = System.Drawing.Color.DarkBlue;
@@ -411,6 +454,16 @@ namespace newwarningsystem
                     Circle7.BackColor = System.Drawing.Color.Yellow;
                 else if (circle7_max >= value5)
                     Circle7.BackColor = System.Drawing.Color.Red;
+
+                // 有关坡道的
+                label_quyu1.Text = "坡道1 " + Math.Round(max_point1, 1).ToString().PadLeft(6,'0') + "m   " + Math.Round(circle1_max, 3).ToString() + "mm";
+                label_quyu2.Text = "坡道2 " + Math.Round(max_point2, 1).ToString().PadLeft(6, '0') + "m   " + Math.Round(circle2_max, 3).ToString() + "mm";
+                label_quyu3.Text = "坡道3 " + Math.Round(max_point3, 1).ToString().PadLeft(6, '0') + "m   " + Math.Round(circle3_max, 3).ToString() + "mm";
+                label_quyu4.Text = "管道1 " + Math.Round(max_point4, 1).ToString().PadLeft(6, '0') + "m   " + Math.Round(circle4_max, 3).ToString() + "mm";
+                label_quyu5.Text = "管道2 " + Math.Round(max_point5, 1).ToString().PadLeft(6, '0') + "m   " + Math.Round(circle5_max, 3).ToString() + "mm";
+                label_quyu6.Text = "管道3 " + Math.Round(max_point6, 1).ToString().PadLeft(6, '0') + "m   " + Math.Round(circle6_max, 3).ToString() + "mm";
+                label_quyu7.Text = "管道4 " + Math.Round(max_point7, 1).ToString().PadLeft(6, '0') + "m   " + Math.Round(circle7_max, 3).ToString() + "mm";
+
                 if (allcount != 0)
                 {
                     Label_baifenbi1.Text = (Math.Round(count1 / allcount * 100, 2)).ToString() + "%";

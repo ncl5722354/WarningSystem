@@ -79,6 +79,10 @@
     <Content Include="Resource\loginbg.png" />
     <Content Include="Resource\login_over.png" />
     <Content Include="Resource\minibg.png" />
+    <Content Include="Resource\p1.png" />
+    <Content Include="Resource\p2.png" />
+    <Content Include="Resource\p3.png" />
+    <Content Include="Resource\p4.png" />
     <Content Include="Resource\pic.png" />
     <Content Include="Resource\pic1.png" />
     <Content Include="Resource\position.png" />

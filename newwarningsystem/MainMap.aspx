@@ -44,6 +44,7 @@
                     
 				}
 				to {
+
 				   width:2%;
                    height:4%;
 				}
@@ -796,6 +797,78 @@
             z-index:9;
             height:15%;
         }
+        .label_zuidaweiyixinxi
+        {
+            position:absolute;
+            top:5%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:10%;
+        }
+        .label_quyu1
+        {
+            position:absolute;
+            top:18%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:5%;
+        }
+        .label_quyu2
+        {
+            position:absolute;
+            top:29%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:5%;
+        }
+        .label_quyu3
+        {
+            position:absolute;
+            top:40%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:5%;
+        }
+        .label_quyu4
+        {
+            position:absolute;
+            top:51%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:5%;
+        }
+        .label_quyu5
+        {
+            position:absolute;
+            top:62%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:5%;
+        }
+        .label_quyu6
+        {
+            position:absolute;
+            top:73%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:5%;
+        }
+        .label_quyu7
+        {
+            position:absolute;
+            top:84%;
+            left:0%;
+            width:100%;
+            z-index:9;
+            height:5%;
+        }
             </style>
      
 <script type="text/javascript">
@@ -819,9 +892,27 @@
                 <ContentTemplate>
             <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
                   <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
+                  
+                   
                   <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
                         
-
+                    <asp:Panel ID="Panel_bingzhuangtu" CssClass="Panel_bingzhuangtu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
+            <asp:Label ID="Label_baojingshuoming" CssClass="Label_dangqiantongji" runat="server" Text="报警说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
+            <asp:Chart ID="Chart_bingzhuangtu" runat="server" CssClass="Chart_bingzhuangtu" BackColor="Transparent">
+                <Series>
+                    <asp:Series Name="Series1" ChartType="Pie"></asp:Series>
+                </Series>
+                <ChartAreas>
+                    <asp:ChartArea Name="ChartArea1">
+                       
+                    </asp:ChartArea>
+                </ChartAreas>
+                <Titles>
+                    <asp:Title Name="报警图示">
+                    </asp:Title>
+                </Titles>
+            </asp:Chart>
+        </asp:Panel>
           <asp:Panel ID="Panel_chart" CssClass="Panel_chart" runat="server" BackColor="#3333FF">
             <asp:Chart ID="Chart1" runat="server" Width="1200px" Height="200px" Visible="true">
                 <Series>
@@ -894,6 +985,18 @@
                     <asp:Panel ID="Circle7" BackColor="Orange" runat="server" CssClass="auto-style22" ToolTip="侧斜管标定4号管 994-1069" />
                     <asp:Panel ID="Panel_baojing_info" CssClass="Panel_baojing_info" runat="server" ScrollBars="Vertical" >
                         </asp:Panel> 
+
+                    <!--区域最大位移信息-->
+        <asp:Panel ID="Panel_shebeizhuangtai" CssClass="Panel_shebeizhuangtai" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
+              <asp:Label ID="label_zuidaweiyixinxi" runat="server" ForeColor="White" Font-Size="Small" CssClass="label_zuidaweiyixinxi" Text="区域###位置###最大位移" Font-Names="微软雅黑"></asp:Label>
+              <asp:Label ID="label_quyu1" runat="server" ForeColor="White" Font-Size="Smaller" CssClass="label_quyu1" Text="一号坡" Font-Names="微软雅黑"> </asp:Label>
+              <asp:Label ID="label_quyu2" runat="server" ForeColor="White" Font-Size="Smaller" CssClass="label_quyu2" Text="二号坡" Font-Names="微软雅黑"> </asp:Label>
+              <asp:Label ID="label_quyu3" runat="server" ForeColor="White" Font-Size="Smaller" CssClass="label_quyu3" Text="三号坡" Font-Names="微软雅黑"> </asp:Label>
+              <asp:Label ID="label_quyu4" runat="server" ForeColor="White" Font-Size="Smaller" CssClass="label_quyu4" Text="一号管" Font-Names="微软雅黑"> </asp:Label>
+              <asp:Label ID="label_quyu5" runat="server" ForeColor="White" Font-Size="Smaller" CssClass="label_quyu5" Text="二号管" Font-Names="微软雅黑"> </asp:Label>
+              <asp:Label ID="label_quyu6" runat="server" ForeColor="White" Font-Size="Smaller" CssClass="label_quyu6" Text="三号管" Font-Names="微软雅黑"> </asp:Label>
+              <asp:Label ID="label_quyu7" runat="server" ForeColor="White" Font-Size="Smaller" CssClass="label_quyu7" Text="四号管" Font-Names="微软雅黑"> </asp:Label>
+        </asp:Panel>
                     <asp:Timer ID="timer" Interval="5000" runat="server"/>
 
                 </ContentTemplate>
@@ -960,51 +1063,12 @@
         <asp:Label ID="biaozhi4_label" CssClass="biaozhi4_label" runat="server" />
         <asp:Label ID="biaozhi5_label" CssClass="biaozhi5_label" runat="server" />
 
+        <!--饼状图-->
         
 
-        <!--饼状图-->
-        <asp:Panel ID="Panel_bingzhuangtu" CssClass="Panel_bingzhuangtu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
-            <asp:Label ID="Label_baojingshuoming" CssClass="Label_dangqiantongji" runat="server" Text="报警说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-            <asp:Chart ID="Chart_bingzhuangtu" runat="server" CssClass="Chart_bingzhuangtu" BackColor="Transparent">
-                <Series>
-                    <asp:Series Name="Series1" ChartType="Pie"></asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                       
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Titles>
-                    <asp:Title Name="报警图示">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
-        </asp:Panel>
+        
 
-        <!--设备在线-->
-        <asp:Panel ID="Panel_shebeizhuangtai" CssClass="Panel_shebeizhuangtai" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
-              <asp:Label ID="Label_shebaizhuangtai" CssClass="Label_dangqiantongji" runat="server" Text="设备状态" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-            <asp:Chart ID="Chart_shebeizhuangtai" runat="server" CssClass="Chart_bingzhuangtu" BackColor="Transparent">
-                <Series>
-                    <asp:Series Name="Series1" ChartType="Pie"></asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                       
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Titles>
-                    <asp:Title Name="设备状态">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
-            <asp:Label ID="Label_zaixian" runat="server" Text="在线数量"  Font-Size="12" ForeColor="White" CssClass="Label_zaixian" Font-Italic="True" />
-            <asp:Label ID="Label_lixian" runat="server" Text="离线数量"  Font-Size="12" ForeColor="White" CssClass="Label_lixian" Font-Italic="True" />
-            <asp:Label ID="Label_zaixianbisai" runat="server" Text="在线比例"  Font-Size="12" ForeColor="White" CssClass="Label_zaixianbili" Font-Italic="True" />
-            <asp:Label ID="Label_zaixianshow" runat="server" Text="7个"  Font-Size="12" ForeColor="White" CssClass="Label_zaixianshow" Font-Italic="True" />
-            <asp:Label ID="Label_lixianshow" runat="server" Text="0个"  Font-Size="12" ForeColor="White" CssClass="Label_lixianshow" Font-Italic="True" />
-            <asp:Label ID="Label_zaixianbilishow" runat="server" Text="100%"  Font-Size="12" ForeColor="White" CssClass="Label_zaixianbilishow" Font-Italic="True" />
-        </asp:Panel>
+        
 
         <!--功能区-->
         <asp:Panel ID="Panel_gongnengqu" CssClass="Panel_gongnengqu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
