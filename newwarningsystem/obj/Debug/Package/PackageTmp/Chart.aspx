@@ -17,7 +17,7 @@
         }
         .auto-style12 {
             position: absolute;
-            top: -2147483648%;
+            top: 0%;
             left: 1%;
             z-index: 3;
             width: 100%;
@@ -35,11 +35,11 @@
 
         .auto-style13 {
             position: absolute;
-            top: -2147483648%;
+            top: 5%;
             left: 0%;
             z-index: 3;
             width: 100%;
-            height: 5%;
+            height: 10%;
         }
         .auto-style14 {
             position: absolute;
@@ -134,7 +134,7 @@
         }
         .auto-style88 {
             position: absolute;
-            top: -2147483648%;
+            top: 0%;
             left: 27%;
             z-index: 6;
             width: 5%;
@@ -143,11 +143,55 @@
         .Image_home
         {
             position:absolute;
-            top:1%;
+            top:0%;
             left:90%;
             width:30px;
             height:30px;
-            z-index:9;
+            z-index:11;
+        }
+        .Label_line1
+        {
+            position:absolute;
+            top:15%;
+            left:75%;
+            width:20%;
+            height:5%;
+            z-index:11;
+            text-align:center;
+        }
+        .Panel_line1{
+            position:absolute;
+            top:20%;
+            left:72%;
+            width:27%;
+            height:35%;
+            z-index:11;
+            text-align:center;
+        }
+        .Label_line2
+        {
+            position:absolute;
+            top:55%;
+            left:75%;
+            width:20%;
+            height:5%;
+            z-index:11;
+            text-align:center;
+        }
+        .Panel_line2{
+            position:absolute;
+            top:60%;
+            left:72%;
+            width:27%;
+            height:35%;
+            z-index:11;
+            text-align:center;
+        }
+        .calender1{
+            position:absolute;
+        }
+        .calender2{
+            position:absolute;
         }
         </style>
 </head>
@@ -161,12 +205,12 @@
         <asp:Button ID="Button5" runat="server" Text="管道2" CssClass="Button5" OnClick="Button5_Click" />
         <asp:Button ID="Button6" runat="server" Text="管道3" CssClass="Button6" OnClick="Button6_Click" />
         <asp:Button ID="Button7" runat="server" Text="管道4" CssClass="Button7" OnClick="Button7_Click" />
-        <asp:Panel  ID="panelbg" Width="100%" Height="100%" runat="server" BorderColor="#003399" CssClass="bg">
+       
         <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click" BackColor="#000066" />
             
            
             
-        </asp:Panel>
+        
         <asp:Image ID="Image_icon" CssClass="auto-style86" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
         <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC" ImageUrl="~/Resource/图片1.png"  />
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="15pt" ForeColor="White"></asp:Label>
@@ -176,13 +220,13 @@
             <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
                         <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
                         <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
-
+                   
                    </ContentTemplate>
             </asp:UpdatePanel>
         <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">  
                 <ContentTemplate> 
            
-               <asp:Chart ID="Chart1" runat="server" CssClass="zongchar" BorderlineColor="Black" BorderlineDashStyle="Solid" BorderlineWidth="3" Height="193px" Width="834px">
+                <asp:Chart ID="Chart1" runat="server" CssClass="zongchar" BorderlineColor="Black" BorderlineDashStyle="Solid" BorderlineWidth="3" Height="193px" Width="834px">
                 <Series>
                     <asp:Series Name="Series1">
                     </asp:Series>
@@ -223,6 +267,17 @@
 
                    </ContentTemplate>
             </asp:UpdatePanel>
+        <asp:Label ID="Label_line1" runat="server" CssClass="Label_line1" BorderStyle="Solid" BorderWidth="2px" Font-Names="微软雅黑" ForeColor="Black" Text="曲线1日期"></asp:Label>
+        <asp:Panel ID="Panel_line1" runat="server" CssClass="Panel_line1" BorderStyle="Solid" BorderWidth="2px" Font-Size="8pt">
+            <asp:Calendar ID="calender1" CssClass="calender1" runat="server" BackColor="#00FFCC" OnDayRender="calender1_DayRender" Width="100%" Height="100%">
+            </asp:Calendar>
+        </asp:Panel>
+        <asp:Label ID="Label_line2" runat="server" CssClass="Label_line2" BorderStyle="Solid" BorderWidth="2px" Font-Names="微软雅黑" ForeColor="Black" Text="曲线2日期"></asp:Label>
+        <asp:Panel ID="Panel_line2" runat="server" CssClass="Panel_line2" BorderStyle="Solid" BorderWidth="2px">
+            <asp:Calendar ID="Calendar2" CssClass="calender2" runat="server" BackColor="#00FFCC" OnDayRender="Calendar2_DayRender" OnSelectionChanged="Calendar2_SelectionChanged" Width="100%" Height="100%" Font-Size="7pt">
+            </asp:Calendar>
+        </asp:Panel>
+
         <asp:Image ID="Image_time" CssClass="auto-style13" runat="server" BackColor="#0066FF" />
     </div>
     </form>

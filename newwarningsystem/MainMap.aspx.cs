@@ -984,7 +984,9 @@ namespace newwarningsystem
 
         protected void Image_set_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Set.aspx");
+            //Response.Redirect("Set.aspx");
+            //Response.Write("<script>window.showModelessDialog('Set.aspx')</script>");
+            
         }
 
         protected void Image_baojing_Click(object sender, ImageClickEventArgs e)

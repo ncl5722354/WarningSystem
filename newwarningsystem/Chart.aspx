@@ -162,8 +162,8 @@
         .Panel_line1{
             position:absolute;
             top:20%;
-            left:75%;
-            width:20%;
+            left:72%;
+            width:27%;
             height:35%;
             z-index:11;
             text-align:center;
@@ -181,11 +181,17 @@
         .Panel_line2{
             position:absolute;
             top:60%;
-            left:75%;
-            width:20%;
+            left:72%;
+            width:27%;
             height:35%;
             z-index:11;
             text-align:center;
+        }
+        .calender1{
+            position:absolute;
+        }
+        .calender2{
+            position:absolute;
         }
         </style>
 </head>
@@ -262,13 +268,13 @@
                    </ContentTemplate>
             </asp:UpdatePanel>
         <asp:Label ID="Label_line1" runat="server" CssClass="Label_line1" BorderStyle="Solid" BorderWidth="2px" Font-Names="微软雅黑" ForeColor="Black" Text="曲线1日期"></asp:Label>
-        <asp:Panel ID="Panel_line1" runat="server" CssClass="Panel_line1" BorderStyle="Solid" BorderWidth="2px">
-            <asp:Calendar ID="calender1" runat="server" BackColor="#00FFCC" OnDayRender="calender1_DayRender">
+        <asp:Panel ID="Panel_line1" runat="server" CssClass="Panel_line1" BorderStyle="Solid" BorderWidth="2px" Font-Size="8pt">
+            <asp:Calendar ID="calender1" CssClass="calender1" runat="server" BackColor="#00FFCC" OnDayRender="calender1_DayRender" Width="100%" Height="100%">
             </asp:Calendar>
         </asp:Panel>
         <asp:Label ID="Label_line2" runat="server" CssClass="Label_line2" BorderStyle="Solid" BorderWidth="2px" Font-Names="微软雅黑" ForeColor="Black" Text="曲线2日期"></asp:Label>
         <asp:Panel ID="Panel_line2" runat="server" CssClass="Panel_line2" BorderStyle="Solid" BorderWidth="2px">
-            <asp:Calendar ID="Calendar2" runat="server" BackColor="#00FFCC" OnDayRender="Calendar2_DayRender">
+            <asp:Calendar ID="Calendar2" CssClass="calender2" runat="server" BackColor="#00FFCC" OnDayRender="Calendar2_DayRender" OnSelectionChanged="Calendar2_SelectionChanged" Width="100%" Height="100%" Font-Size="7pt">
             </asp:Calendar>
         </asp:Panel>
 

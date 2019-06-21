@@ -15,6 +15,9 @@ namespace newwarningsystem
         static int line1 = 1;
         static DateTime datetime1 = DateTime.Parse("1900-01-01");
         static DateTime datetime2 = DateTime.Parse("1900-01-01");
+
+        static DateTime datetime1_old = DateTime.Parse("1900-01-01");
+        static DateTime datetime2_old = DateTime.Parse("1900-01-01");
         protected void Page_Load(object sender, EventArgs e)
         {
             DateTime mytime = DateTime.Now;
@@ -542,6 +545,11 @@ namespace newwarningsystem
             if (e.Day.IsSelected == true)
             {
                 datetime1 = e.Day.Date;
+                if (datetime1 != datetime1_old) 
+                {
+                    Response.AddHeader("Refresh", "0");
+                }
+                datetime1_old = datetime1;
             }
         }
 
@@ -550,7 +558,17 @@ namespace newwarningsystem
             if (e.Day.IsSelected == true)
             {
                 datetime2 = e.Day.Date;
+                if(datetime2!=datetime2_old)
+                {
+                    Response.AddHeader("Refresh", "0");
+                }
+                datetime2_old = datetime2;
             }
+        }
+
+        protected void Calendar2_SelectionChanged(object sender, EventArgs e)
+        {
+            DateTime mytime = Calendar2.SelectedDate;
         }
     }
 }

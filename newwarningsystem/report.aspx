@@ -64,6 +64,44 @@
             height:75%;
             z-index:10;
          }
+         .Panel_port
+         {
+             position:absolute;
+            top:20%;
+            left:10%;
+            width:60%;
+            height:75%;
+            z-index:10;
+         }
+         .Panel_rili
+         {
+             position:absolute;
+            top:20%;
+            left:75%;
+            width:24%;
+            height:75%;
+            z-index:10;
+         }
+         .Label_Title
+         {
+              position:absolute;
+            top:10%;
+            left:10%;
+            width:60%;
+            height:8%;
+            z-index:10;
+            text-align:center;
+         }
+         .Label_rili
+         {
+             position:absolute;
+            top:10%;
+            left:75%;
+            width:24%;
+            height:8%;
+            z-index:10;
+            text-align:center;
+         }
     </style>
 </head>
 <body>
@@ -75,16 +113,17 @@
         
          <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click"  />
         
-        <rsweb:ReportViewer ID="ReportViewer1" CssClass="reportview" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" DocumentMapWidth="100%" >
-            <LocalReport>
-                <DataSources>
-                    <rsweb:ReportDataSource DataSourceId="" />
-                </DataSources>
-            </LocalReport>
-        </rsweb:ReportViewer>
-        
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
+        
+        <asp:Panel ID="Panel_port" CssClass="Panel_port" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ScrollBars="Vertical">
+        </asp:Panel>
+        <asp:Label ID="Label_Title1" CssClass="Label_Title" runat="server"  BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" Text="详情报表"></asp:Label>
+        <asp:Label ID="Label_rili" CssClass="Label_rili" runat="server"  BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" Text="日期选择"></asp:Label>
+        <asp:Panel ID="Panel_rili" CssClass="Panel_rili" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ScrollBars="Vertical">
+            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+
+        </asp:Panel>
         
     </div>
         
