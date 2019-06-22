@@ -8,21 +8,21 @@
     <title></title>
     <style type="text/css">
         #form1 {
-            width: 332px;
-            height: 26px;
+            width: 1303px;
+            height: 601px;
         }
         .auto-style1 {
             position: absolute;
-            top: 39px;
-            left: 388px;
+            top: 106px;
+            left: 0px;
             z-index: 1;
             width: 310px;
             height: 49px;
         }
         .auto-style2 {
             position: absolute;
-            top: 106px;
-            left: 37px;
+            top: 0px;
+            left: 0px;
             z-index: 1;
         }
         .auto-style3 {
@@ -54,13 +54,11 @@
         }
     </style>
 </head>
-<body style="width: 1011px; height: 722px; margin-left: 25px; margin-top: 35px">
+<body style="width: 1011px; height: 722px; margin-left: auto; margin-top:auto">
     <form id="form1" runat="server">
         <asp:Label ID="Label1" runat="server" BackColor="White" CssClass="auto-style1" Font-Names="黑体" Font-Size="XX-Large" Text="坝体预警系统"></asp:Label>
         <asp:Button ID="Button1" runat="server" CssClass="auto-style2" OnClick="Button1_Click" Text="主画面" />
-        <p>
-            <asp:Button ID="Button3" runat="server" CssClass="auto-style3" OnClick="Button3_Click" Text="差分查询" />
-        </p>
+        <asp:Button ID="Button3" runat="server" CssClass="auto-style3" OnClick="Button3_Click" Text="差分查询" />
         <asp:Button ID="Button4" runat="server" CssClass="auto-style4" Text="报警记录" />
         <asp:Button ID="Button5" runat="server" CssClass="auto-style3" OnClick="Button5_Click" style="height: 21px" Text="差分查询" />
         <asp:Panel ID="Panel1" runat="server" BorderStyle="Solid" CssClass="auto-style5">

@@ -29,6 +29,7 @@ namespace webWarningsystem
            // c1.Rufresh();
             this.Panel1.Controls.Clear();
             this.Panel1.Controls.Add(c1);
+            
         }
 
         protected void Button3_Click(object sender, EventArgs e)

@@ -2,8 +2,8 @@
 <style type="text/css">
     .auto-style1 {
         position: absolute;
-        top: 15px;
-        left: 10px;
+        top: 0px;
+        left: 0px;
         z-index: 1;
         width: 978px;
         height: 512px;

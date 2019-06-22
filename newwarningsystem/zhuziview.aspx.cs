@@ -18,6 +18,8 @@ namespace newwarningsystem
         public static double end1 = 0;
         public static double start2 = 0;
         public static double end2 = 0;
+
+
         public static int selected1 = 0;
         public static int selected2 = 0;
 
@@ -32,11 +34,19 @@ namespace newwarningsystem
 
         public static string listbox3_select = "";
 
+        static double value1 = 0;
+        static double value2 = 0;
+        static double value3 = 0;
+        static double value4 = 0;
+        static double value5 = 0;
 
+        public static bool Panel_Chart_Is;
         protected void Click(object sender, EventArgs e)
         {
             Chart2.Series[0].Points.Clear();
-            Calendar1.SelectedDate = DateTime.Parse("1900-01-01");
+            //Calendar1.SelectedDate = DateTime.Parse("1900-01-01");
+
+            Panel_Chart_Is = true;
 
             Button button = (Button)sender;
             try
@@ -76,9 +86,6 @@ namespace newwarningsystem
                 foreach (DirectoryInfo dirinfo in alldirs)
                 {
 
-
-
-
                     try
                     {
                         ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
@@ -110,10 +117,10 @@ namespace newwarningsystem
         public void ReShow(double value, double max, double min)
         {
             Chart2.Series[0].Points.Clear();
-            //LinkButton button = (LinkButton)sender;
+            
             try
             {
-                //double value = double.Parse(button.Text);
+                
                 click_value = value;
                 double jizhun = 0;
                 ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
@@ -170,36 +177,24 @@ namespace newwarningsystem
                     }
                     catch { }
                 }
-                //ArrayList alldirs = FileCaozuo.Read_All_Files("D:\\data\\","*.txt");
-                //foreach (DirectoryInfo dirinfo in alldirs)
-                //{
-                //    ArrayList allfiles = FileCaozuo.Read_All_Files(dirinfo.FullName, "*.txt");
-                //    //string[] alllines = FileCaozuo.Read_All_Line("D:\\data\\"+alldirs[0].ToString());
-                //    string myline = FileCaozuo.Get_Line("D:\\data\\" + allfiles[0].ToString(), count - 1);
-                //    string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                //    double myvalue = double.Parse(myvalue_string);
-                //    string time_string = string_caozuo.Get_Dian_String(allfiles[0].ToString(), 1);
-                //    string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                //    string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                //    string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                //    string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                //    DateTime time = DateTime.Parse(year + "-" + month + "-" + day);
-                //    Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                //}
-                //Chart2.ChartAreas[0].AxisX.Maximum = max;
-                //Chart2.ChartAreas[0].AxisX.Minimum = min;
-                //Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd";
-                //max = Chart2.ChartAreas[0].AxisX.Maximum;
-                //min = Chart2.ChartAreas[0].AxisX.Minimum;
+                
             }
             catch { }
         }
 
         public void Set_Start_End(double start1, double end1, double start2, double end2)
         {
-
+            double allcount = 0;
+                double cout1 = 0;
+                double cout2 = 0;
+                double cout3 = 0;
+                double cout4 = 0;
+                int warning_count = 0;
+                int table_rows = 0;
             try
             {
+                
+
 
                 // 读取文件夹中的文件
                 ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
@@ -227,6 +222,8 @@ namespace newwarningsystem
                         {
                             try
                             {
+                                allcount++;
+
                                 string value_jizhun_string = string_caozuo.Get_Table_String(jizhun_list[i], 2);
                                 string value_now_string = string_caozuo.Get_Table_String(now_list[i], 2);
                                 double jizhun = double.Parse(value_jizhun_string);
@@ -259,27 +256,27 @@ namespace newwarningsystem
                                 label_value.Style["left"] = "33%";
                                 label_value.Text = position_string;
 
-                                if (value < 0.01)
+                                if (value < value1)
                                 {
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.01 && value <= 0.5)
+                                else if (value >= 0.01 && value <= value2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.5 && value <= 1.0)
+                                else if (value >= 0.5 && value <= value3)
                                 {
                                     label_value.BackColor = System.Drawing.Color.LightGreen;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value > 1.0 && value < 2)
+                                else if (value > 1.0 && value < value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Yellow;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 2)
+                                else if (value >= value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Red;
                                     label_value.ForeColor = System.Drawing.Color.White;
@@ -288,6 +285,125 @@ namespace newwarningsystem
                                 label_value.Click += new EventHandler(Click);
                                 //this.form1.Controls.Add(label_position);
                                 this.Panel2.Controls.Add(label_value);
+
+                               // form1.Controls.Add(imagebutton);
+                                //show_count = 0;
+                                Label weizhi = new Label();
+                                weizhi.Style["position"] = "absolute";
+                                weizhi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weizhi.Style["left"] = "6%";
+                                weizhi.Style["width"] = "40%";
+                                weizhi.Style["z-index"] = "9";
+                                weizhi.Style["text-align"] = "center";
+                                weizhi.Text = position.ToString();
+                                weizhi.BorderColor = System.Drawing.Color.Black;
+                                weizhi.ForeColor = System.Drawing.Color.White;
+                                weizhi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weizhi);
+
+                                Label weiyi = new Label();
+                                weiyi.Style["position"] = "absolute";
+                                weiyi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weiyi.Style["left"] = "55%";
+                                weiyi.Style["width"] = "40%";
+                                weiyi.Style["z-index"] = "9";
+                                weiyi.Style["text-align"] = "center";
+                                weiyi.Text = Math.Round(value, 3).ToString();
+                                weiyi.BorderColor = System.Drawing.Color.Black;
+                                weiyi.ForeColor = System.Drawing.Color.White;
+                                weiyi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weiyi);
+                                table_rows++;
+
+
+
+
+                                if (value <= value1)
+                                {
+                                    cout1++;
+                                }
+                                else if (value <= value2)
+                                {
+                                    cout2++;
+                                }
+                                else if (value <= value4)
+                                {
+                                    cout3++;
+                                }
+                                else if (value > value4)
+                                {
+                                    cout4++;
+                                }
+                                if (value >= value5)
+                                {
+                                    warning_count++;
+                                    // 地点
+                                    Label labelposition = new Label();
+                                    if (position >= 2164 && position <= 2317)
+                                    {
+                                        labelposition.Text = "坡道1";
+                                    }
+
+                                    if (position >= 2361 && position <= 2558)
+                                    {
+                                        labelposition.Text = "坡道2";
+                                    }
+
+                                    if (position >= 2934 && position <= 3074)
+                                    {
+                                        labelposition.Text = "坡道3";
+                                    }
+
+                                    if (position >= 602 && position <= 675)
+                                    {
+                                        labelposition.Text = "管道1";
+                                    }
+
+                                    if (position >= 742 && position <= 810)
+                                    {
+                                        labelposition.Text = "管道2";
+                                    }
+
+                                    if (position >= 875 && position <= 939)
+                                    {
+                                        labelposition.Text = "管道3";
+                                    }
+
+                                    if (position >= 994 && position <= 1069)
+                                    {
+                                        labelposition.Text = "管道4";
+                                    }
+
+                                    labelposition.ForeColor = System.Drawing.Color.White;
+                                    labelposition.Style["z-index"] = "8";
+                                    labelposition.Style["left"] = "15%";
+                                    labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    labelposition.Style["width"] = "20%";
+                                    labelposition.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(labelposition);
+
+                                    // 位置
+                                    Label pos = new Label();
+                                    pos.Text = position.ToString();
+                                    pos.ForeColor = System.Drawing.Color.White;
+                                    pos.Style["z-index"] = "8";
+                                    pos.Style["left"] = "40%";
+                                    pos.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    pos.Style["width"] = "20%";
+                                    pos.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(pos);
+
+                                    // 位移值
+                                    Label labelvalue = new Label();
+                                    labelvalue.Text = value.ToString();
+                                    labelvalue.ForeColor = System.Drawing.Color.White;
+                                    labelvalue.Style["z-index"] = "8";
+                                    labelvalue.Style["left"] = "60%";
+                                    labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    labelvalue.Style["width"] = "20%";
+                                    labelvalue.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(labelvalue);
+                                }
                             }
                             catch { }
                         }
@@ -322,6 +438,7 @@ namespace newwarningsystem
                         {
                             try
                             {
+                                allcount++;
                                 string value_jizhun_string = string_caozuo.Get_Table_String(jizhun_list[i], 2);
                                 string value_now_string = string_caozuo.Get_Table_String(now_list[i], 2);
                                 double jizhun = double.Parse(value_jizhun_string);
@@ -341,35 +458,50 @@ namespace newwarningsystem
                                 Button label_value = new Button();
                                 label_value.Text = "1";
 
-                                if (value < 0.01)
+                                if (value < value1)
                                 {
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.01 && value <= 0.5)
+                                else if (value >= value1 && value <= value2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.5 && value <= 1.0)
+                                else if (value >= value2 && value <= value3)
                                 {
                                     label_value.BackColor = System.Drawing.Color.LightGreen;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value > 1.0 && value < 2)
+                                else if (value > value3 && value < value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Yellow;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
 
-                                else if (value >= 2)
+                                else if (value >= value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Red;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 double danwei = (end_postion - start_position) / (end1 - start1);
                                 count2++;
-
+                                if (value <= value1)
+                                {
+                                    cout1++;
+                                }
+                                else if (value <= value2)
+                                {
+                                    cout2++;
+                                }
+                                else if (value <= value5)
+                                {
+                                    cout3++;
+                                }
+                                else if (value > value5)
+                                {
+                                    cout4++;
+                                }
 
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count2 * danwei).ToString() + "px";
@@ -381,6 +513,107 @@ namespace newwarningsystem
 
                                 //this.form1.Controls.Add(label_position);
                                 this.Panel2.Controls.Add(label_value);
+                                Label weizhi = new Label();
+                                weizhi.Style["position"] = "absolute";
+                                weizhi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weizhi.Style["left"] = "6%";
+                                weizhi.Style["width"] = "40%";
+                                weizhi.Style["z-index"] = "9";
+                                weizhi.Style["text-align"] = "center";
+                                weizhi.Text = position.ToString();
+                                weizhi.BorderColor = System.Drawing.Color.Black;
+                                weizhi.ForeColor = System.Drawing.Color.White;
+                                weizhi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weizhi);
+
+                                Label weiyi = new Label();
+                                weiyi.Style["position"] = "absolute";
+                                weiyi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
+                                weiyi.Style["left"] = "55%";
+                                weiyi.Style["width"] = "40%";
+                                weiyi.Style["z-index"] = "9";
+                                weiyi.Style["text-align"] = "center";
+                                weiyi.Text = Math.Round(value, 3).ToString();
+                                weiyi.BorderColor = System.Drawing.Color.Black;
+                                weiyi.ForeColor = System.Drawing.Color.White;
+                                weiyi.BorderWidth = 2;
+                                shebeizhuangtai_table_panel.Controls.Add(weiyi);
+                                table_rows++;
+
+
+                                if (value >= value5)
+                                {
+                                    warning_count++;
+                                    // 地点
+                                    Label labelposition = new Label();
+                                    if (position >= 2164 && position <= 2317)
+                                    {
+                                        labelposition.Text = "坡道1";
+                                    }
+
+                                    if (position >= 2361 && position <= 2558)
+                                    {
+                                        labelposition.Text = "坡道2";
+                                    }
+
+                                    if (position >= 2934 && position <= 3074)
+                                    {
+                                        labelposition.Text = "坡道3";
+                                    }
+
+                                    if (position >= 602 && position <= 675)
+                                    {
+                                        labelposition.Text = "管道1";
+                                    }
+
+                                    if (position >= 742 && position <= 810)
+                                    {
+                                        labelposition.Text = "管道2";
+                                    }
+
+                                    if (position >= 875 && position <= 939)
+                                    {
+                                        labelposition.Text = "管道3";
+                                    }
+
+                                    if (position >= 994 && position <= 1069)
+                                    {
+                                        labelposition.Text = "管道4";
+                                    }
+
+                                    labelposition.ForeColor = System.Drawing.Color.White;
+                                    labelposition.Style["z-index"] = "8";
+                                    labelposition.Style["left"] = "15%";
+                                    labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    labelposition.Style["width"] = "20%";
+                                    labelposition.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(labelposition);
+
+                                    // 位置
+                                    Label pos = new Label();
+                                    pos.Text = position.ToString();
+                                    pos.ForeColor = System.Drawing.Color.White;
+                                    pos.Style["z-index"] = "8";
+                                    pos.Style["left"] = "40%";
+                                    pos.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    pos.Style["width"] = "20%";
+                                    pos.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(pos);
+
+                                    // 位移值
+                                    Label labelvalue = new Label();
+                                    labelvalue.Text = value.ToString();
+                                    labelvalue.ForeColor = System.Drawing.Color.White;
+                                    labelvalue.Style["z-index"] = "8";
+                                    labelvalue.Style["left"] = "60%";
+                                    labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
+                                    labelvalue.Style["width"] = "20%";
+                                    labelvalue.Style["position"] = "absolute";
+                                    Panel_baojing_info.Controls.Add(labelvalue);
+
+
+                                    //form1.Controls.Add(imagebutton);
+                                }
                             }
                             catch { }
                         }
@@ -391,15 +624,124 @@ namespace newwarningsystem
 
             }
             catch { }
+            if (allcount != 0)
+            {
+                Label_baifenbi1.Text = (Math.Round(cout1 / allcount * 100, 2)).ToString() + "%";
+                Label_baifenbi2.Text = (Math.Round(cout2 / allcount * 100, 2)).ToString() + "%";
+                Label_baifenbi3.Text = (Math.Round(cout3 / allcount * 100, 2)).ToString() + "%";
+                Label_baifenbi4.Text = (Math.Round(cout4 / allcount * 100, 2)).ToString() + "%";
+
+                Panel_value1.Style["width"] = (70 * (cout1 / allcount)).ToString() + "%";
+                Panel_value2.Style["width"] = (70 * (cout2 / allcount)).ToString() + "%";
+                Panel_value3.Style["width"] = (70 * (cout3 / allcount)).ToString() + "%";
+                Panel_value4.Style["width"] = (70 * (cout4 / allcount)).ToString() + "%";
+
+                
+            }
+            if (warning_count == 0)
+            {
+                warning_count++;
+                Label labelposition = new Label();
+                labelposition.Text = "无";
+                labelposition.ForeColor = System.Drawing.Color.White;
+                labelposition.Style["z-index"] = "8";
+                labelposition.Style["left"] = "10%";
+                labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
+                labelposition.Style["width"] = "20%";
+                labelposition.Style["position"] = "absolute";
+                Panel_baojing_info.Controls.Add(labelposition);
+
+                // 位置
+                Label pos = new Label();
+                pos.Text = "无";
+                pos.ForeColor = System.Drawing.Color.White;
+                pos.Style["z-index"] = "8";
+                pos.Style["left"] = "40%";
+                pos.Style["top"] = (warning_count * 30).ToString() + "%";
+                pos.Style["width"] = "20%";
+                pos.Style["position"] = "absolute";
+                Panel_baojing_info.Controls.Add(pos);
+
+                // 位移值
+                Label labelvalue = new Label();
+                labelvalue.Text = "无";
+                labelvalue.ForeColor = System.Drawing.Color.White;
+                labelvalue.Style["z-index"] = "8";
+                labelvalue.Style["left"] = "75%";
+                labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
+                labelvalue.Style["width"] = "20%";
+                labelvalue.Style["position"] = "absolute";
+                Panel_baojing_info.Controls.Add(labelvalue);
+            }
+
+
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            Set_Start_End(start1, end1, start2, end2);
+            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
+            
             Label_title.Text = chafen_title;
 
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
+            Chart_bingzhuangtu.Series[0].Points.Clear();
+            Chart_bingzhuangtu.Series[0].Points.AddY(40);
+            Chart_bingzhuangtu.Series[0].Points.AddY(35);
+            Chart_bingzhuangtu.Series[0].Points.AddY(30);
+            Chart_bingzhuangtu.Series[0].Points.AddY(20);
+            Chart_bingzhuangtu.Series[0].Points.AddY(10);
 
+
+            Chart_bingzhuangtu.Style["width"] = "200px";
+            Chart_bingzhuangtu.Style["height"] = "200px";
+
+            Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
+            Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
+            Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
+            Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+
+            Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
+            Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
+            Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
+            Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
+            Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
+
+            Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
+            Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
+            Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
+            Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //for(int i=0;i<=4;i++)
+            //{
+            //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
+            //}
+
+            biaozhi1_label.Text = "<" + value1.ToString() + " mm";
+            biaozhi2_label.Text = "<" + value2.ToString() + " mm";
+            biaozhi3_label.Text = "<" + value3.ToString() + " mm";
+            biaozhi4_label.Text = "<" + value5.ToString() + " mm";
+            biaozhi5_label.Text = ">=" + value5.ToString() + " mm";
+
+            Label_label1.Text = "小于" + value1.ToString() + "mm";
+            Label_label2.Text = "大于" + value1.ToString() + "mm 小于" + value2.ToString() + "mm";
+            Label_label3.Text = "大于" + value2.ToString() + "mm 小于" + value5.ToString() + "mm";
+            Label_label4.Text = "大于" + value5.ToString() + "mm";
+
+            if (Panel_Chart_Is == true)
+                Panel_chart.Visible = true;
+            if (Panel_Chart_Is == false)
+                Panel_chart.Visible = false;
+
+            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
@@ -414,7 +756,7 @@ namespace newwarningsystem
             Chart2.Style["position"] = "absolute";
             Chart2.Style["left"] = "0%";
             Chart2.Style["z-index"] = "5";
-            Chart2.Style["top"] = "80%";
+            Chart2.Style["top"] = "0%";
             string a = Panel2.Style["width"];
             Chart2.Width = 1200;
             Chart2.Height = 200;
@@ -448,7 +790,13 @@ namespace newwarningsystem
             ListBox4.Items.Add("23:00-23:59");
 
             ReFlush_List();
-
+            Set_Start_End(start1, end1, start2, end2);
+            try
+            {
+                Chart_bingzhuangtu.Style["width"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+                Chart_bingzhuangtu.Style["height"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+            }
+            catch { }
         }
 
         private void ReFlush_List()
@@ -795,14 +1143,14 @@ namespace newwarningsystem
                 }
 
             }
-            if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
+            //if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
             if (e.Day.IsSelected == true)
             {
 
                 // 选择了某日
                 #region
-                DateTime select_datetime = Calendar1.SelectedDate;
-                string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
+               // DateTime select_datetime = Calendar1.SelectedDate;
+                //string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
 
                 ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
@@ -827,7 +1175,7 @@ namespace newwarningsystem
                     }
                 }
 
-                listbox3_select = date_string;
+                //listbox3_select = date_string;
                 // 查询一天的
                 Chart2.Series[0].Points.Clear();
                 try
@@ -886,6 +1234,27 @@ namespace newwarningsystem
             ChaFenSearch.end2 = end2;
             ChaFenSearch.title = chafen_title + "差分查询";
             Response.Redirect("ChaFenSearch.aspx");
+        }
+
+        protected void ImageButton_set_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Set.aspx");
+        }
+
+        protected void Image_set_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Set.aspx");
+        }
+
+        protected void image_graft_Click(object sender, ImageClickEventArgs e)
+        {
+           
+            Response.Redirect("Chart.aspx");
+        }
+
+        protected void Image_baojing_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("report.aspx");
         }
     }
 }

@@ -102,3 +102,10 @@ D:\程序\warningsystem\voice\obj\Debug\voice.voiceControls.resources
 D:\程序\warningsystem\voice\obj\Debug\voice.csproj.GenerateResource.Cache
 D:\程序\warningsystem\voice\obj\Debug\voice.dll
 D:\程序\warningsystem\voice\obj\Debug\voice.pdb
+D:\warningsystem\voice\bin\Debug\voice.dll
+D:\warningsystem\voice\bin\Debug\voice.pdb
+D:\warningsystem\voice\obj\Debug\voice.csprojResolveAssemblyReference.cache
+D:\warningsystem\voice\obj\Debug\voice.voiceControls.resources
+D:\warningsystem\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+D:\warningsystem\voice\obj\Debug\voice.dll
+D:\warningsystem\voice\obj\Debug\voice.pdb
