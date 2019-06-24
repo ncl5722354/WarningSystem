@@ -11,15 +11,15 @@
     <style type="text/css">
         .auto-style86 {
             position: absolute;
-            top: 0px;
+            top: 1px;
             left: 20px;
             width: 3%;
-            z-index: 9;
+            z-index: 10;
             height:5%;
         }
         .auto-style12 {
             position: absolute;
-            top: -2147483648%;
+            top: 0%;
             left: 0%;
             z-index: 9;
             width: 100%;
@@ -37,7 +37,7 @@
         .Image_home
         {
             position:absolute;
-            top:2%;
+            top:0%;
             left:90%;
             width:3%;
             height:4%;
@@ -55,6 +55,53 @@
          .auto-style1 {
             height: 628px;
         }
+         .reportview
+         {
+              position:absolute;
+            top:20%;
+            left:0%;
+            width:80%;
+            height:75%;
+            z-index:10;
+         }
+         .Panel_port
+         {
+             position:absolute;
+            top:20%;
+            left:10%;
+            width:60%;
+            height:75%;
+            z-index:10;
+         }
+         .Panel_rili
+         {
+             position:absolute;
+            top:20%;
+            left:75%;
+            width:24%;
+            height:75%;
+            z-index:10;
+         }
+         .Label_Title
+         {
+              position:absolute;
+            top:10%;
+            left:10%;
+            width:60%;
+            height:8%;
+            z-index:10;
+            text-align:center;
+         }
+         .Label_rili
+         {
+             position:absolute;
+            top:10%;
+            left:75%;
+            width:24%;
+            height:8%;
+            z-index:10;
+            text-align:center;
+         }
     </style>
 </head>
 <body>
@@ -64,11 +111,20 @@
         <asp:Image ID="Image_title" CssClass="auto-style12" runat="server" BackColor="#0000CC" ImageUrl="~/Resource/图片1.png"  />
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="15pt" ForeColor="White"></asp:Label>
         
-         <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click" BackColor="#000066" />
+         <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click"  />
+        
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
-        <rsweb:ReportViewer ID="ReportViewer1" CssClass="report" runat="server" Width="783px">
-        </rsweb:ReportViewer>
+        
+        <asp:Panel ID="Panel_port" CssClass="Panel_port" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ScrollBars="Vertical">
+        </asp:Panel>
+        <asp:Label ID="Label_Title1" CssClass="Label_Title" runat="server"  BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" Text="详情报表"></asp:Label>
+        <asp:Label ID="Label_rili" CssClass="Label_rili" runat="server"  BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" Text="日期选择"></asp:Label>
+        <asp:Panel ID="Panel_rili" CssClass="Panel_rili" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ScrollBars="Vertical">
+            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+
+        </asp:Panel>
+        
     </div>
         
     </form>

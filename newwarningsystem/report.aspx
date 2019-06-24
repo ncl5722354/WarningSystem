@@ -121,7 +121,7 @@
         <asp:Label ID="Label_Title1" CssClass="Label_Title" runat="server"  BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" Text="详情报表"></asp:Label>
         <asp:Label ID="Label_rili" CssClass="Label_rili" runat="server"  BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" Text="日期选择"></asp:Label>
         <asp:Panel ID="Panel_rili" CssClass="Panel_rili" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ScrollBars="Vertical">
-            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+            <asp:Calendar ID="Calendar1" runat="server" OnDayRender="Calendar1_DayRender"></asp:Calendar>
 
         </asp:Panel>
         
