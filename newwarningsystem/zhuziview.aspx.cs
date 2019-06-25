@@ -191,6 +191,7 @@ namespace newwarningsystem
                 double cout4 = 0;
                 int warning_count = 0;
                 int table_rows = 0;
+                int level = 0;
             try
             {
                 
@@ -261,17 +262,17 @@ namespace newwarningsystem
                                     label_value.BackColor = System.Drawing.Color.DarkBlue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.01 && value <= value2)
+                                else if (value >= value1 && value <= value2)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Blue;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value >= 0.5 && value <= value3)
+                                else if (value >= value2 && value <= value3)
                                 {
                                     label_value.BackColor = System.Drawing.Color.LightGreen;
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
-                                else if (value > 1.0 && value < value5)
+                                else if (value > value3 && value < value5)
                                 {
                                     label_value.BackColor = System.Drawing.Color.Yellow;
                                     label_value.ForeColor = System.Drawing.Color.White;
@@ -321,21 +322,30 @@ namespace newwarningsystem
                                 if (value <= value1)
                                 {
                                     cout1++;
+                                    level = 0;
                                 }
                                 else if (value <= value2)
                                 {
                                     cout2++;
+                                    if (level <= 1)
+                                        level = 1;
                                 }
                                 else if (value <= value4)
                                 {
                                     cout3++;
+                                    if (level <= 2)
+                                        level = 2;
                                 }
                                 else if (value > value4)
                                 {
                                     cout4++;
+                                    if (level <= 3)
+                                        level = 3;
                                 }
                                 if (value >= value5)
                                 {
+                                    if (level <= 4)
+                                        level = 4;
                                     warning_count++;
                                     // 地点
                                     Label labelposition = new Label();
@@ -489,18 +499,25 @@ namespace newwarningsystem
                                 if (value <= value1)
                                 {
                                     cout1++;
+                                    level = 0;
                                 }
                                 else if (value <= value2)
                                 {
                                     cout2++;
+                                    if (level <= 1)
+                                        level = 1;
                                 }
                                 else if (value <= value5)
                                 {
                                     cout3++;
+                                    if (level <= 3)
+                                        level = 3;
                                 }
                                 else if (value > value5)
                                 {
                                     cout4++;
+                                    if (level <= 4)
+                                        level = 4;
                                 }
 
                                 label_value.Style["position"] = "absolute";
@@ -618,12 +635,38 @@ namespace newwarningsystem
                             catch { }
                         }
 
+
                     }
                     catch { }
                 }
 
             }
             catch { }
+            if (level == 0)
+            {
+                Label_baojingshuoming1.Text = "整体状况：稳定";
+                Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+            }
+            if (level == 1)
+            {
+                Label_baojingshuoming1.Text = "整体状况：良好";
+                Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+            }
+            if (level == 2)
+            {
+                Label_baojingshuoming1.Text = "整体状况：正常";
+                Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+            }
+            if (level == 3)
+            {
+                Label_baojingshuoming1.Text = "整体状况：正常";
+                Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+            }
+            if (level == 4)
+            {
+                Label_baojingshuoming1.Text = "整体状况：报警";
+                Label_baojingshuoming1.ForeColor = System.Drawing.Color.Red;
+            }
             if (allcount != 0)
             {
                 Label_baifenbi1.Text = (Math.Round(cout1 / allcount * 100, 2)).ToString() + "%";
@@ -688,34 +731,34 @@ namespace newwarningsystem
 
             Label_timer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-            Chart_bingzhuangtu.Series[0].Points.Clear();
-            Chart_bingzhuangtu.Series[0].Points.AddY(40);
-            Chart_bingzhuangtu.Series[0].Points.AddY(35);
-            Chart_bingzhuangtu.Series[0].Points.AddY(30);
-            Chart_bingzhuangtu.Series[0].Points.AddY(20);
-            Chart_bingzhuangtu.Series[0].Points.AddY(10);
+            //Chart_bingzhuangtu.Series[0].Points.Clear();
+            //Chart_bingzhuangtu.Series[0].Points.AddY(40);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(35);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(30);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(20);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(10);
 
 
-            Chart_bingzhuangtu.Style["width"] = "200px";
-            Chart_bingzhuangtu.Style["height"] = "200px";
+            //Chart_bingzhuangtu.Style["width"] = "200px";
+            //Chart_bingzhuangtu.Style["height"] = "200px";
 
-            Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
-            Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
-            Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
-            Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
-            Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+            //Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
+            //Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
+            //Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
+            //Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
 
-            Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
-            Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
-            Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
-            Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
-            Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
+            //Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
+            //Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
+            //Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
+            //Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
+            //Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
 
-            Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
-            Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
-            Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
-            Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
-            Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            //Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
+            //Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
+            //Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
             //for(int i=0;i<=4;i++)
             //{
             //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
@@ -793,8 +836,8 @@ namespace newwarningsystem
             Set_Start_End(start1, end1, start2, end2);
             try
             {
-                Chart_bingzhuangtu.Style["width"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
-                Chart_bingzhuangtu.Style["height"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+                //Chart_bingzhuangtu.Style["width"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+                //Chart_bingzhuangtu.Style["height"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
             }
             catch { }
         }

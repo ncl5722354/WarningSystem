@@ -527,7 +527,7 @@
         {
             position:absolute;
             top:60%;
-            left:20%;
+            left:21%;
             width:40px;
             height:40px;
             z-index:7;
@@ -771,6 +771,16 @@
             height: 10%;
             text-align:center; 
          }
+         .Label_baojingshuoming1
+        {
+            position:absolute;
+            top:74%;
+            left:2%;
+            width:10%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
              </style>
 </head>
 
@@ -825,24 +835,12 @@
                 <ContentTemplate>
             <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
                     <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White" Font-Size="Large"></asp:Label>  <!--用于显示时间-->  
+                     <asp:Label ID="Label_baojingshuoming1" CssClass="Label_baojingshuoming1" runat="server" Text="总体说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
+                    
                     <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
                     <!--饼状图-->
         <asp:Panel ID="Panel_bingzhuangtu" CssClass="Panel_bingzhuangtu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
-            <asp:Label ID="Label_baojingshuoming" CssClass="Label_dangqiantongji" runat="server" Text="报警说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-            <asp:Chart ID="Chart_bingzhuangtu" runat="server" CssClass="Chart_bingzhuangtu" BackColor="Transparent">
-                <Series>
-                    <asp:Series Name="Series1" ChartType="Pie"></asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                       
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Titles>
-                    <asp:Title Name="报警图示">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
+            <asp:Label ID="Label_baojingshuoming" CssClass="Label_dangqiantongji" runat="server" Text="总体说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
         </asp:Panel>
 
                     <asp:Panel ID="Panel_chart" CssClass="Panel_chart" runat="server" BackColor="#3333FF">
@@ -926,7 +924,7 @@
            <asp:Label ID="Label_gongnengqu" CssClass="Label_dangqiantongji" runat="server" Text="功能区" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
            <asp:ImageButton ID="image_graft" CssClass="image_graft" runat="server" ImageUrl="~/Resource/graph.png" OnClick="image_graft_Click" />
            <asp:ImageButton ID="Image_baojing" CssClass="image_attition" runat="server" ImageUrl="~/Resource/attention.png" OnClick="Image_baojing_Click" />
-           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" OnClick="Image_set_Click" />
+           <asp:ImageButton ID="Image_set" CssClass="Image_set" runat="server" ImageUrl="~/Resource/settings_64px_1228852_easyicon.net.png" OnClick="Image_set_Click" Visible="False" />
            <asp:ImageButton ID="Image_home" CssClass="Image_home" runat="server" ImageUrl="~/Resource/home.png" OnClick="ImageButton_home_Click" />
         </asp:Panel>
 

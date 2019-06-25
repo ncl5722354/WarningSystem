@@ -17,11 +17,20 @@ namespace newwarningsystem
 
         public static int update_panel2_count = 1;
 
+        public static bool set_visible = false;
+
         static double value1 = 0;
         static double value2 = 0;
         static double value3 = 0;
         static double value4 = 0;
         static double value5 = 0;
+
+        public static IniFile set_yuzhi = new IniFile("D:\\config\\yuzhi.ini");
+        static string value1_string;
+        static string value2_string;
+        static string value3_string;
+        static string value4_string;
+        static string value5_string;
 
         public  static string x = "";
         public  static string y = "";
@@ -40,18 +49,14 @@ namespace newwarningsystem
             y = HiddenField1.Value;
             x = HiddenField2.Value;
 
-            value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
-            value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
-            value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
-            value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
-            value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
+            
 
-            Chart_bingzhuangtu.Series[0].Points.Clear();
-            Chart_bingzhuangtu.Series[0].Points.AddY(40);
-            Chart_bingzhuangtu.Series[0].Points.AddY(35);
-            Chart_bingzhuangtu.Series[0].Points.AddY(30);
-            Chart_bingzhuangtu.Series[0].Points.AddY(20);
-            Chart_bingzhuangtu.Series[0].Points.AddY(10);
+            //Chart_bingzhuangtu.Series[0].Points.Clear();
+            //Chart_bingzhuangtu.Series[0].Points.AddY(40);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(35);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(30);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(20);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(10);
 
             try
             {
@@ -63,28 +68,58 @@ namespace newwarningsystem
             }
             catch { }
 
-            Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
-            Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
-            Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
-            Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
-            Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+            if (IsPostBack == false)
+            {
+                TextBox_level1.Text = set_yuzhi.IniReadValue("yuzhi", "1");
+                TextBox_level2.Text = set_yuzhi.IniReadValue("yuzhi", "2");
+                TextBox_level3.Text = set_yuzhi.IniReadValue("yuzhi", "3");
+                TextBox_level4.Text = set_yuzhi.IniReadValue("yuzhi", "4");
+                TextBox_level5.Text = set_yuzhi.IniReadValue("yuzhi", "5");
+            }
 
-            Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
-            Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
-            Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
-            Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
-            Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
+            if (IsPostBack == true )
+            {
+                set_yuzhi.IniWriteValue("yuzhi", "1", TextBox_level1.Text);
+                set_yuzhi.IniWriteValue("yuzhi", "2", TextBox_level2.Text);
+                set_yuzhi.IniWriteValue("yuzhi", "3", TextBox_level3.Text);
+                set_yuzhi.IniWriteValue("yuzhi", "4", TextBox_level4.Text);
+                set_yuzhi.IniWriteValue("yuzhi", "5", TextBox_level5.Text);
+                //Response.Redirect("MainMap.aspx");
+                try
+                {
+                    value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
+                    value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
+                    value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
+                    value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
+                    value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
+                }
+                catch { }
+            }
+
+            
+
+            //Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
+            //Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
+            //Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
+            //Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+
+            //Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
+            //Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
+            //Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
+            //Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
+            //Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
 
             Label_label1.Text = "小于" + value1.ToString() + "mm";
             Label_label2.Text = "大于" + value1.ToString() + "mm 小于" + value2.ToString() + "mm";
             Label_label3.Text = "大于" + value2.ToString() + "mm 小于" + value5.ToString() + "mm";
             Label_label4.Text = "大于" + value5.ToString()+"mm";
 
-            Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
-            Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
-            Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
-            Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
-            Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            //Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
+            //Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
+            //Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
             //for(int i=0;i<=4;i++)
             //{
             //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
@@ -113,10 +148,15 @@ namespace newwarningsystem
                 Panel_chart.Visible = true;
             if (Panel_Chart_Is == false)
                 Panel_chart.Visible = false;
+
+            if (set_visible == true)
+                panel_yuzhiset.Visible = true;
+            if (set_visible == false)
+                panel_yuzhiset.Visible = false;
             try
             {
-                Chart_bingzhuangtu.Style["width"] = (double.Parse(x) * 0.17).ToString() + "px";
-                Chart_bingzhuangtu.Style["height"] = (double.Parse(x) * 0.17).ToString() + "px";
+                //Chart_bingzhuangtu.Style["width"] = (double.Parse(x) * 0.17).ToString() + "px";
+                //Chart_bingzhuangtu.Style["height"] = (double.Parse(x) * 0.17).ToString() + "px";
             }
             catch { }
         }
@@ -131,6 +171,8 @@ namespace newwarningsystem
             float count4 = 0;
             int warning_count = 0;
 
+            int level = 0; 
+
             ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
             
@@ -140,7 +182,7 @@ namespace newwarningsystem
 
             string file_now = (string)filelist_1[filelist_1.Count - 1];
             string[] now_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_now);
-            Chart1.Series[0].Points.Clear();
+            //Chart1.Series[0].Points.Clear();
             double circle1_max = 0; 
             double circle2_max = 0;
             double circle3_max = 0;
@@ -369,28 +411,31 @@ namespace newwarningsystem
                 {
                     Circle1.BackColor = System.Drawing.Color.DarkBlue;
                     Label_title_podao1.Text = "坡道1 状态：稳定";
+                    level = 0;
                 }
                 else if (circle1_max <= value2)
                 {
                     Circle1.BackColor = System.Drawing.Color.Blue;
                     Label_title_podao1.Text = "坡道1 状态：良好";
+                    level = 1;
                 }
                 else if (circle1_max <= value3)
                 {
                     Circle1.BackColor = System.Drawing.Color.LightGreen;
                     Label_title_podao1.Text = "坡道1 状态：正常";
+                    level = 2;
                 }
                 else if (circle1_max < value5)
                 {
-
-
                     Circle1.BackColor = System.Drawing.Color.Yellow;
                     Label_title_podao1.Text = "坡道1 状态：正常";
+                    level = 3;
                 }
                 else if (circle1_max >= value5)
                 {
                     Circle1.BackColor = System.Drawing.Color.Red;
                     Label_title_podao1.Text = "坡道1 状态：位移预警";
+                    level = 4;
                 }
 
 
@@ -398,158 +443,239 @@ namespace newwarningsystem
                 {
                     Circle2.BackColor = System.Drawing.Color.DarkBlue;
                     Label_title_podao2.Text = "坡道2 状态：稳定";
+                    //level = 0;
                 }
                 else if (circle2_max <= value2)
                 {
                     Circle2.BackColor = System.Drawing.Color.Blue;
                     Label_title_podao2.Text = "坡道2 状态：良好";
+                    if(level<=1)
+                    level = 1;
                 }
                 else if (circle2_max <= value3)
                 {
                     Circle2.BackColor = System.Drawing.Color.LightGreen;
                     Label_title_podao2.Text = "坡道2 状态：正常";
+                    if (level <= 2)
+                    level = 2;
                 }
                 else if (circle2_max < value5)
                 {
                     Circle2.BackColor = System.Drawing.Color.Yellow;
                     Label_title_podao2.Text = "坡道2 状态：正常";
+                    if (level <= 3)
+                    level = 3;
                 }
                 else if (circle2_max >= value5)
                 {
                     Circle2.BackColor = System.Drawing.Color.Red;
                     Label_title_podao2.Text = "坡道2 状态：位移预警";
+                    if (level <= 4)
+                    level = 4;
                 }
 
                 if (circle3_max <= 0.01)
                 {
                     Circle3.BackColor = System.Drawing.Color.DarkBlue;
                     Label_title_podao3.Text = "坡道3 状态：稳定";
+                    
                 }
                 else if (circle3_max <= 0.1)
                 {
                     Circle3.BackColor = System.Drawing.Color.Blue;
                     Label_title_podao3.Text = "坡道3 状态：良好";
+                    if (level <= 1)
+                    level = 1;
                 }
                 else if (circle3_max <= 1.0)
                 {
                     Circle3.BackColor = System.Drawing.Color.LightGreen;
                     Label_title_podao3.Text = "坡道3 状态：正常";
+                    if (level <= 2)
+                    level = 2;
                 }
                 else if (circle3_max < 2)
                 {
                     Circle3.BackColor = System.Drawing.Color.Yellow;
                     Label_title_podao3.Text = "坡道3 状态：正常";
+                    if (level <= 3)
+                    level = 3;
                 }
                 else if (circle3_max >= 2)
                 {
                     Circle3.BackColor = System.Drawing.Color.Red; 
                     Label_title_podao3.Text = "坡道3 状态：位移预警";
+                    if (level <= 4)
+                    level = 4;
                 }
 
                 if (circle4_max <= 0.01)
                 {
                     Circle4.BackColor = System.Drawing.Color.DarkBlue;
                     Label_title_podao4.Text = "管道1 状态：稳定";
+                    //level = 0;
                 }
                 else if (circle4_max <= 0.1)
                 {
                     Circle4.BackColor = System.Drawing.Color.Blue;
                     Label_title_podao4.Text = "管道1 状态：良好";
+                    if (level <= 1)
+                    level = 1;
                 }
                 else if (circle4_max <= 1.0)
                 {
                     Circle4.BackColor = System.Drawing.Color.LightGreen;
                     Label_title_podao4.Text = "管道1 状态：正常";
+                    if (level <= 2)
+                    level = 2;
                 }
                 else if (circle4_max < 2)
                 {
                     Circle4.BackColor = System.Drawing.Color.Yellow;
                     Label_title_podao4.Text = "管道1 状态：正常";
+                    if (level <= 3)
+                    level = 3;
                 }
                 else if (circle4_max >= 2)
                 {
                     Circle4.BackColor = System.Drawing.Color.Red;
                     Label_title_podao4.Text = "管道3 状态：位移预警";
+                    if (level <= 4)
+                    level = 4;
                 }
 
                 if (circle5_max <= value1)
                 {
                     Circle5.BackColor = System.Drawing.Color.DarkBlue;
                     Label_title_podao5.Text = "管道2 状态：稳定";
+                    //level = 0;
                 }
                 else if (circle5_max <= value2)
                 {
                     Circle5.BackColor = System.Drawing.Color.Blue;
                     Label_title_podao5.Text = "管道2 状态：良好";
+                    if (level <= 1)
+                    level = 1;
                 }
                 else if (circle5_max <= value3)
                 {
                     Circle5.BackColor = System.Drawing.Color.LightGreen;
                     Label_title_podao5.Text = "管道2 状态：正常";
+                    if (level <= 2)
+                    level = 2;
                 }
                 else if (circle5_max < value5)
                 {
                     Circle5.BackColor = System.Drawing.Color.Yellow;
                     Label_title_podao5.Text = "管道2 状态：正常";
+                    if (level <= 3)
+                    level = 3;
                 }
                 else if (circle5_max >= value5)
                 {
                     Circle5.BackColor = System.Drawing.Color.Red;
                     Label_title_podao5.Text = "管道2 状态：位移预警";
+                    if (level <= 4)
+                    level = 4;
                 }
 
                 if (circle6_max <= value1)
                 {
                     Circle6.BackColor = System.Drawing.Color.DarkBlue;
                     Label_title_podao6.Text = "管道3 状态：稳定";
+                    //level = 0;
                 }
                 else if (circle6_max <= value2)
                 {
                     Circle6.BackColor = System.Drawing.Color.Blue;
                     Label_title_podao6.Text = "管道3 状态：良好";
+                    if (level <= 1)
+                    level = 1;
                 }
                 else if (circle6_max <= value3)
                 {
                     Circle6.BackColor = System.Drawing.Color.LightGreen;
                     Label_title_podao6.Text = "管道3 状态：正常";
+                    if (level <= 2)
+                    level = 2;
                 }
                 else if (circle6_max < value5)
                 {
                     Circle6.BackColor = System.Drawing.Color.Yellow;
                     Label_title_podao6.Text = "管道3 状态：正常";
+                    if (level <= 3)
+                    level = 3;
                 }
                 else if (circle6_max >= value5)
                 {
                     Circle6.BackColor = System.Drawing.Color.Red;
                     Label_title_podao6.Text = "管道3 状态：位移预警";
+                    if (level <= 4)
+                    level = 4;
                 }
 
                 if (circle7_max <= value1)
                 {
                     Circle7.BackColor = System.Drawing.Color.DarkBlue;
                     Label_title_podao7.Text = "管道4 状态：稳定";
+                    //level = 0;
                 }
                 else if (circle7_max <= value2)
                 {
                     Circle7.BackColor = System.Drawing.Color.Blue;
                     Label_title_podao7.Text = "管道4 状态：良好";
+                    if (level <= 1)
+                    level = 1;
                 }
                 else if (circle7_max <= value3)
                 {
                     Circle7.BackColor = System.Drawing.Color.LightGreen;
                     Label_title_podao7.Text = "管道4 状态：正常";
+                    if (level <= 2)
+                    level = 2;
                 }
                 else if (circle7_max < value5)
                 {
                     Circle7.BackColor = System.Drawing.Color.Yellow;
                     Label_title_podao7.Text = "管道4 状态：正常";
+                    if (level <= 3)
+                    level = 3;
 
                 }
                 else if (circle7_max >= value5)
                 {
                     Circle7.BackColor = System.Drawing.Color.Red;
                     Label_title_podao7.Text = "管道4 状态：位移预警";
+                    if (level <= 4)
+                    level = 4;
                 }
+
+                if (level == 0)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：稳定";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 1)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：良好";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 2)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：正常";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 3)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：正常";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 4)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：报警";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.Red;
+                }
+
 
                 // 有关坡道的
                 label_quyu1.Text = "坡道1 " + Math.Round(max_point1, 1).ToString().PadLeft(6,'0') + "m   " + Math.Round(circle1_max, 3).ToString() + "mm";
@@ -708,14 +834,14 @@ namespace newwarningsystem
             double circle7_max = 0;
             double count = 0;
             string max_position="";
-            Chart1.Series.Clear();
-            Chart1.Series.Add("坡道1");
-            Chart1.Series.Add("坡道2");
-            Chart1.Series.Add("坡道3");
-            Chart1.Series.Add("管道1");
-            Chart1.Series.Add("管道2");
-            Chart1.Series.Add("管道3");
-            Chart1.Series.Add("管道4");
+            //Chart1.Series.Clear();
+            //Chart1.Series.Add("坡道1");
+            //Chart1.Series.Add("坡道2");
+            //Chart1.Series.Add("坡道3");
+            //Chart1.Series.Add("管道1");
+            //Chart1.Series.Add("管道2");
+            //Chart1.Series.Add("管道3");
+            //Chart1.Series.Add("管道4");
             panel3.Controls.Clear();
             try
             {
@@ -766,7 +892,7 @@ namespace newwarningsystem
                                 count++;
                             }
                             //Chart1.Titles[0].Text = Image_point1.ToolTip;
-                            Chart1.Series[0].Points.AddXY(position, value);
+                            //Chart1.Series[0].Points.AddXY(position, value);
                         }
                         if (position >= 2361 && position <= 2558)
                         {
@@ -790,7 +916,7 @@ namespace newwarningsystem
                                 count++;
                             }
                             //Chart1.Titles[0].Text = Image_point2.ToolTip;
-                            Chart1.Series[1].Points.AddXY(position, value);
+                            //Chart1.Series[1].Points.AddXY(position, value);
                         }
                         if (position >= 2934 && position <= 3074)
                         {
@@ -814,7 +940,7 @@ namespace newwarningsystem
                                 count++;
                             }
                             //Chart1.Titles[0].Text = Image_point3.ToolTip;
-                            Chart1.Series[2].Points.AddXY(position, value);
+                            //Chart1.Series[2].Points.AddXY(position, value);
                         }
                         if (position >= 602 && position <= 675 )
                         {
@@ -838,7 +964,7 @@ namespace newwarningsystem
                                 count++;
                             }
                            // Chart1.Titles[0].Text = Image_point4.ToolTip;
-                            Chart1.Series[3].Points.AddXY(position, value);
+                            //Chart1.Series[3].Points.AddXY(position, value);
                         }
                         if (position >= 742 && position <= 810 )
                         {
@@ -862,7 +988,7 @@ namespace newwarningsystem
                                 count++;
                             }
                             //Chart1.Titles[0].Text = Image_point5.ToolTip;
-                            Chart1.Series[4].Points.AddXY(position, value);
+                            //Chart1.Series[4].Points.AddXY(position, value);
                         }
                         if (position >= 875 && position <= 939)
                         {
@@ -886,7 +1012,7 @@ namespace newwarningsystem
                                 count++;
                             }
                             //Chart1.Titles[0].Text = Image_point6.ToolTip;
-                            Chart1.Series[5].Points.AddXY(position, value);
+                            //Chart1.Series[5].Points.AddXY(position, value);
                         }
                         if (position >= 994 && position <= 1069 )
                         {
@@ -910,7 +1036,7 @@ namespace newwarningsystem
                                 count++;
                             }
                             //Chart1.Titles[0].Text = Image_point7.ToolTip;
-                            Chart1.Series[6].Points.AddXY(position, value);
+                            //Chart1.Series[6].Points.AddXY(position, value);
                         }
 
                     }
@@ -1082,12 +1208,44 @@ namespace newwarningsystem
         {
             //Response.Redirect("Set.aspx");
             //Response.Write("<script>window.showModelessDialog('Set.aspx')</script>");
-            
+            if(set_visible==true)
+            {
+                set_visible =false;
+            }
+            else if(set_visible == false)
+            {
+                set_visible = true;
+            }
         }
 
         protected void Image_baojing_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("report.aspx");
+        }
+
+        protected void TextBox_level1_TextChanged(object sender, EventArgs e)
+        {
+            value1_string = TextBox_level1.Text;
+        }
+
+        protected void TextBox_level2_TextChanged(object sender, EventArgs e)
+        {
+            value2_string = TextBox_level2.Text;
+        }
+
+        protected void TextBox_level3_TextChanged(object sender, EventArgs e)
+        {
+            value3_string = TextBox_level3.Text;
+        }
+
+        protected void TextBox_level4_TextChanged(object sender, EventArgs e)
+        {
+            value4_string = TextBox_level4.Text;
+        }
+
+        protected void TextBox_level5_TextChanged(object sender, EventArgs e)
+        {
+            value5_string = TextBox_level5.Text;
         }
     }
 }

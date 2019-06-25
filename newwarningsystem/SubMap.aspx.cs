@@ -60,34 +60,34 @@ namespace newwarningsystem
             value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
 
 
-            Chart_bingzhuangtu.Series[0].Points.Clear();
-            Chart_bingzhuangtu.Series[0].Points.AddY(40);
-            Chart_bingzhuangtu.Series[0].Points.AddY(35);
-            Chart_bingzhuangtu.Series[0].Points.AddY(30);
-            Chart_bingzhuangtu.Series[0].Points.AddY(20);
-            Chart_bingzhuangtu.Series[0].Points.AddY(10);
+            //Chart_bingzhuangtu.Series[0].Points.Clear();
+            //Chart_bingzhuangtu.Series[0].Points.AddY(40);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(35);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(30);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(20);
+            //Chart_bingzhuangtu.Series[0].Points.AddY(10);
 
 
-            Chart_bingzhuangtu.Style["width"] = "200px";
-            Chart_bingzhuangtu.Style["height"] = "200px";
+            //Chart_bingzhuangtu.Style["width"] = "200px";
+            //Chart_bingzhuangtu.Style["height"] = "200px";
 
-            Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
-            Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
-            Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
-            Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
-            Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+            //Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
+            //Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
+            //Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
+            //Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
 
-            Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
-            Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
-            Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
-            Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
-            Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
+            //Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
+            //Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
+            //Chart_bingzhuangtu.Series[0].Points[2].Label = "绿色预警";
+            //Chart_bingzhuangtu.Series[0].Points[3].Label = "黄色预警";
+            //Chart_bingzhuangtu.Series[0].Points[4].Label = "红色预警";
 
-            Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
-            Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
-            Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
-            Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
-            Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+            //Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
+            //Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
+            //Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
             //for(int i=0;i<=4;i++)
             //{
             //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
@@ -167,8 +167,8 @@ namespace newwarningsystem
                 Panel_chart.Visible = false;
             try
             {
-                Chart_bingzhuangtu.Style["width"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
-                Chart_bingzhuangtu.Style["height"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+                //Chart_bingzhuangtu.Style["width"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+                //Chart_bingzhuangtu.Style["height"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
             }
             catch { }
 
@@ -278,7 +278,7 @@ namespace newwarningsystem
                 shebeizhuangtai_table_panel.Controls.Clear();
                 int table_rows = 0;
 
-
+                int level = 0; 
                 
                 int warning_count = 0;
                 double allcount = 0;
@@ -391,18 +391,24 @@ namespace newwarningsystem
                                     //imagebutton.BackColor = System.Drawing.Color.DarkBlue;
                                     imagebutton.ImageUrl = "~/Resource/p1.png";
                                     cout1++;
+                                    level = 0;
+                                   
                                 }
                                 else if (value <= value2)
                                 {
                                     //imagebutton.BackColor = System.Drawing.Color.Blue;
                                     imagebutton.ImageUrl = "~/Resource/p2.png";
                                     cout2++;
+                                    if (level <= 1)
+                                        level = 1;
                                 }
                                 else if (value <= value5)
                                 {
                                     //imagebutton.BackColor = System.Drawing.Color.LightGreen;
                                     imagebutton.ImageUrl = "~/Resource/p3.png";
                                     cout3++;
+                                    if (level <= 2)
+                                        level = 2;
                                 }
                                 else if (value > value5)
                                 {
@@ -412,11 +418,15 @@ namespace newwarningsystem
                                     
                                     //imagebutton.CssClass = "";
                                     cout4++;
+                                    if (level <= 3)
+                                        level = 3;
 
                                 }
                                 if (value >= value5)
                                 {
                                     warning_count++;
+                                    if (level <= 4)
+                                        level = 4;
                                     // 地点
                                     Label labelposition = new Label();
                                     if (position >= 2164 && position <= 2317)
@@ -539,6 +549,32 @@ namespace newwarningsystem
                         }
                         catch { }
                     }
+                }
+
+                if (level == 0)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：稳定";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 1)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：良好";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 2)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：正常";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 3)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：正常";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.White;
+                }
+                if (level == 4)
+                {
+                    Label_baojingshuoming1.Text = "整体状况：报警";
+                    Label_baojingshuoming1.ForeColor = System.Drawing.Color.Red;
                 }
                 if (allcount != 0)
                 {

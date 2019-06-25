@@ -26,3 +26,5 @@ D:\warningsystem\update\obj\Debug\update.exe
 D:\warningsystem\update\obj\Debug\update.pdb
 D:\程序\warningsystem\update\bin\Debug\SqlConnect.dll
 D:\程序\warningsystem\update\bin\Debug\SqlConnect.pdb
+D:\warningsystem\update\bin\Debug\SqlConnect.dll
+D:\warningsystem\update\bin\Debug\SqlConnect.pdb

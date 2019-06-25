@@ -19,14 +19,6 @@
             height: 60%;
             
         }
-        .auto-style3 {
-            position: absolute;
-            top: 0px;
-            left: -1px;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-        }
         .auto-style4 {
             position: absolute;
             top: 1%;
@@ -939,6 +931,135 @@
             height:4%;
             text-align:center;
         }
+        .Label_baojingshuoming1
+        {
+            position:absolute;
+            top:74%;
+            left:2%;
+            width:10%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
+
+        .panel_yuzhise
+        {
+            position:absolute;
+            top:50%;
+            left:90%;
+            width:10%;
+            z-index:10;
+            height:45%;
+            
+        }
+        .Label_yuzhi_title
+        {
+            position:absolute;
+            top:0%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:10%;
+        }
+        .Label_level1
+        {
+            position:absolute;
+            top:11%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .TextBox_level1
+        {
+            position:absolute;
+            top:19%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .Label_level2
+        {
+            position:absolute;
+            top:27%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .TextBox_level2
+        {
+            position:absolute;
+            top:35%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .Label_level3
+        {
+            position:absolute;
+            top:43%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .TextBox_level3
+        {
+            position:absolute;
+            top:51%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .Label_level4
+        {
+            position:absolute;
+            top:59%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .TextBox_level4
+        {
+            position:absolute;
+            top:67%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .Label_level5
+        {
+            position:absolute;
+            top:75%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .TextBox_level5
+        {
+            position:absolute;
+            top:83%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
+        .Button1
+        {
+            position:absolute;
+            top:91%;
+            left:0%;
+            width:100%;
+            z-index:10;
+            height:7%;
+        }
             </style>
      
 <script type="text/javascript">
@@ -962,45 +1083,18 @@
                 <ContentTemplate>
             <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
                   <asp:Label ID="Label_timer" CssClass="auto-style14" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White"></asp:Label>  <!--用于显示时间-->  
-                  
+                  <asp:Label ID="Label_baojingshuoming1" CssClass="Label_baojingshuoming1" runat="server" Text="总体说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
+                  <!--阈值设置-->
+
                    
+
+
                   <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
                         
                     <asp:Panel ID="Panel_bingzhuangtu" CssClass="Panel_bingzhuangtu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
-            <asp:Label ID="Label_baojingshuoming" CssClass="Label_dangqiantongji" runat="server" Text="报警说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-            <asp:Chart ID="Chart_bingzhuangtu" runat="server" CssClass="Chart_bingzhuangtu" BackColor="Transparent">
-                <Series>
-                    <asp:Series Name="Series1" ChartType="Pie"></asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                       
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Titles>
-                    <asp:Title Name="报警图示">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
+            <asp:Label ID="Label_baojingshuoming" CssClass="Label_dangqiantongji" runat="server" Text="总体说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
         </asp:Panel>
           <asp:Panel ID="Panel_chart" CssClass="Panel_chart" runat="server" BackColor="#3333FF">
-            <asp:Chart ID="Chart1" runat="server" Width="1200px" Height="200px" Visible="true">
-                <Series>
-                    <asp:Series Name="Series1" ChartType="Spline"></asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                        <AxisY Title="位移量(毫米)">
-                        </AxisY>
-                        <AxisX Title="位置(米)">
-                        </AxisX>
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Titles>
-                    <asp:Title Name="Title1">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
         </asp:Panel>
 
                      <!--地图上报警标志-->
@@ -1116,7 +1210,7 @@
         
         <asp:Image ID="Image_time" CssClass="auto-style13" runat="server" BackColor="#0066FF" />
         
-        <asp:Image ID="Imagebg" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/bg.png" BackColor="#333300" />
+        
          <asp:Image ID="Image_icon" CssClass="auto-style86" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
         <asp:Label ID="Label24" runat="server" Text="报警等级" CssClass="auto-style81" BackColor="#000099" ForeColor="White" Visible="false"></asp:Label>
    
@@ -1147,7 +1241,20 @@
 
         <!--饼状图-->
         
-
+        <asp:Panel ID="panel_yuzhiset" CssClass="panel_yuzhise" runat="server" BackColor="Blue">
+                       <asp:Label ID="Label_yuzhi_title" runat="server" Text="设定报警阈值" CssClass="Label_yuzhi_title" ForeColor="White"></asp:Label>
+                       <asp:Label ID="Label_level1" runat="server" Text="一级阈值" CssClass="Label_level1" ForeColor="White"></asp:Label>
+                       <asp:Label ID="Label_level2" runat="server" Text="二级阈值" CssClass="Label_level2" ForeColor="White"></asp:Label>
+                       <asp:Label ID="Label_level3" runat="server" Text="三级阈值" CssClass="Label_level3"  ForeColor="White"></asp:Label>
+                       <asp:Label ID="Label_level4" runat="server" Text="四级阈值" CssClass="Label_level4"  ForeColor="White"></asp:Label>
+                       <asp:Label ID="Label_level5" runat="server" Text="五级阈值" CssClass="Label_level5"  ForeColor="White"></asp:Label>
+                       <asp:TextBox ID="TextBox_level1" runat="server" CssClass="TextBox_level1" OnTextChanged="TextBox_level1_TextChanged" ></asp:TextBox>
+                       <asp:TextBox ID="TextBox_level2" runat="server" CssClass="TextBox_level2" OnTextChanged="TextBox_level2_TextChanged" ></asp:TextBox>
+                       <asp:TextBox ID="TextBox_level3" runat="server" CssClass="TextBox_level3" OnTextChanged="TextBox_level3_TextChanged" ></asp:TextBox>
+                       <asp:TextBox ID="TextBox_level4" runat="server" CssClass="TextBox_level4" OnTextChanged="TextBox_level4_TextChanged" ></asp:TextBox>
+                       <asp:TextBox ID="TextBox_level5" runat="server" CssClass="TextBox_level5" OnTextChanged="TextBox_level5_TextChanged" ></asp:TextBox>
+                       <asp:Button ID="Button1" runat="server" Text="确定" CssClass="Button1" UseSubmitBehavior="False" />
+                   </asp:Panel>
         
 
         
