@@ -51,8 +51,8 @@
 			}
         .auto-style5 {
             position: absolute;
-            top: 25%;
-            left: 32%;
+            top: 37%;
+            left: 39%;
             z-index: 6;
             width: 2%;
             height: 4%;
@@ -63,33 +63,33 @@
         
         .auto-style6 {
             position: absolute;
-            top: 22%;
-            left: 45%;
+            top: 29%;
+            left: 63%;
             z-index:6;
             width:2%;
             height:4%;
         }
         .auto-style7 {
             position: absolute;
-            top: 27%;
-            left: 45%;
+            top: 40%;
+            left: 62%;
             z-index:6;
             width:2%;
             height:4%;
         }
         .auto-style8 {
             position: absolute;
-            top: 37%;
+            top: 57%;
             left: 32%;
             z-index: 6;
             height: 4%;
-            right: 74%;
+            right: 68%;
             width:2%;
         }
         .auto-style9 {
             position: absolute;
-            top: 38%;
-            left: 38%;
+            top: 57%;
+            left: 44%;
             z-index:6;
             width:2%;
             height:4%;
@@ -97,8 +97,8 @@
         }
         .auto-style10 {
             position: absolute;
-            top: 38%;
-            left: 45%;
+            top: 56%;
+            left: 57%;
             z-index: 6;
             width:2%;
             height: 4%;
@@ -106,8 +106,8 @@
         }
         .auto-style11 {
             position: absolute;
-            top: 38%;
-            left: 49%;
+            top: 55%;
+            left: 70%;
             z-index: 6;
             width: 2%;
             height: 4%;
@@ -147,8 +147,8 @@
         }
         .auto-style16 {
             position: absolute;
-            top: 23%;
-            left: 29%;
+            top: 35%;
+            left: 36%;
             z-index: 5;
             width: 10%;
             height: 8%;
@@ -160,8 +160,8 @@
         }
         .auto-style17 {
             position: absolute;
-            top: 22%;
-            left: 40.5%;
+            top: 28%;
+            left: 60%;
             z-index: 5;
             width: 9%;
             height: 5%;
@@ -172,8 +172,8 @@
         }
         .auto-style18 {
             position: absolute;
-            top: 28%;
-            left: 41.5%;
+            top: 39%;
+            left: 58%;
             z-index: 5;
             width: 9%;
             height: 5%;
@@ -184,10 +184,10 @@
         }
          .auto-style19 {
             position: absolute;
-            top: 36%;
-            left: 31.5%;
+            top: 55%;
+            left: 31%;
             z-index: 5;
-            width: 3%;
+            width: 4%;
             height: 5%;
              opacity:0.5;
              border-radius:100%;
@@ -195,10 +195,10 @@
         }
          .auto-style20 {
             position: absolute;
-            top: 37%;
-            left: 37.5%;
+            top: 55%;
+            left: 43%;
             z-index: 5;
-            width: 3%;
+            width: 4%;
             height: 5%;
             opacity:0.5;
              border-radius:100%;
@@ -206,10 +206,10 @@
         }
          .auto-style21 {
             position: absolute;
-            top: 38%;
-            left: 44.5%;
+            top: 55%;
+            left: 56%;
             z-index: 5;
-            width: 3%;
+            width: 4%;
             height: 5%;
             opacity:0.5;
              border-radius:100%;
@@ -217,10 +217,10 @@
         }
          .auto-style22 {
             position: absolute;
-            top: 38%;
-            left: 48.5%;
+            top: 54%;
+            left: 69%;
             z-index: 5;
-            width: 3%;
+            width: 4%;
             height: 5%;
             opacity:0.5;
              border-radius:100%;
@@ -869,6 +869,76 @@
             z-index:9;
             height:5%;
         }
+        .Label_title_podao1
+        {
+            position:absolute;
+            top:25%;
+            left:30%;
+            width:20%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
+        .Label_title_podao2
+        {
+            position:absolute;
+            top:20%;
+            left:53%;
+            width:20%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
+        .Label_title_podao3
+        {
+            position:absolute;
+            top:35%;
+            left:53%;
+            width:20%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
+        .Label_title_podao4
+        {
+            position:absolute;
+            top:65%;
+            left:27%;
+            width:10%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
+        .Label_title_podao5
+        {
+            position:absolute;
+            top:65%;
+            left:39%;
+            width:10%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
+        .Label_title_podao6
+        {
+            position:absolute;
+            top:65%;
+            left:53%;
+            width:10%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
+        .Label_title_podao7
+        {
+            position:absolute;
+            top:65%;
+            left:65%;
+            width:10%;
+            z-index:10;
+            height:4%;
+            text-align:center;
+        }
             </style>
      
 <script type="text/javascript">
@@ -932,6 +1002,16 @@
                 </Titles>
             </asp:Chart>
         </asp:Panel>
+
+                     <!--地图上报警标志-->
+        <asp:Label ID="Label_title_podao1" CssClass="Label_title_podao1" runat="server" Text="Label" BackColor="Blue" Font-Names="微软雅黑" Font-Size="Larger" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title_podao2" CssClass="Label_title_podao2" runat="server" Text="Label" BackColor="Blue" Font-Names="微软雅黑" Font-Size="Larger" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title_podao3" CssClass="Label_title_podao3" runat="server" Text="Label" BackColor="Blue" Font-Names="微软雅黑" Font-Size="Larger" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title_podao4" CssClass="Label_title_podao4" runat="server" Text="Label" BackColor="Blue" Font-Names="微软雅黑" Font-Size="Larger" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title_podao5" CssClass="Label_title_podao5" runat="server" Text="Label" BackColor="Blue" Font-Names="微软雅黑" Font-Size="Larger" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title_podao6" CssClass="Label_title_podao6" runat="server" Text="Label" BackColor="Blue" Font-Names="微软雅黑" Font-Size="Larger" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_title_podao7" CssClass="Label_title_podao7" runat="server" Text="Label" BackColor="Blue" Font-Names="微软雅黑" Font-Size="Larger" ForeColor="White"></asp:Label>
+                   
                     <!--新界面信息-->
         <asp:Panel ID="Panel_shuliangtongji" CssClass="panel_shuliangtongji" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" >
             <asp:Label ID="Label_danqiantongji" CssClass="Label_dangqiantongji" runat="server" Text="当前统计" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
@@ -1046,7 +1126,9 @@
    
         
    
-        <asp:Image ID="Imagemap" runat="server" CssClass="auto-style2" ImageUrl="~/Resource/pic.png" OnDataBinding="Imagemap_DataBinding" BorderStyle="Ridge" BorderColor="#00CCFF" BorderWidth="4px" />
+        
+   
+        <asp:Image ID="Imagemap" runat="server" CssClass="auto-style2" ImageUrl="~/Resource/map.png" OnDataBinding="Imagemap_DataBinding" BorderStyle="Ridge" BorderColor="#00CCFF" BorderWidth="4px" />
         <asp:Label ID="Label_title" runat="server" CssClass="auto-style4" Text="坝光收费站边坡防护预警系统" Font-Names="黑体" Font-Size="15pt" ForeColor="White"></asp:Label>
          
         <asp:Panel ID="mapinfo" CssClass="Panel_mapinfo" BackColor="White"  runat="server" >

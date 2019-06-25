@@ -78,6 +78,7 @@
     <Content Include="Resource\home_29.1328px_1217329_easyicon.net.png" />
     <Content Include="Resource\loginbg.png" />
     <Content Include="Resource\login_over.png" />
+    <Content Include="Resource\map.png" />
     <Content Include="Resource\minibg.png" />
     <Content Include="Resource\p1.png" />
     <Content Include="Resource\p2.png" />
@@ -99,6 +100,7 @@
     <Content Include="Resource\图片2.png" />
     <Content Include="Resource\图片3.png" />
     <Content Include="Resource\图片4.png" />
+    <Content Include="Resource\微信截图_20190622132618.png" />
     <Content Include="Set.aspx" />
     <Content Include="SubMap.aspx" />
     <Content Include="Web.config" />

@@ -97,14 +97,7 @@ namespace newwarningsystem
 
             
 
-            // 设备状态饼状图
-            //Chart_shebeizhuangtai.Style["width"] = "200px";
-            //Chart_shebeizhuangtai.Style["height"] = "200px";
-            //Chart_shebeizhuangtai.Series[0].Points.Clear();
-            //Chart_shebeizhuangtai.Series[0].Points.AddY(100);
-            //Chart_shebeizhuangtai.Series[0].Points[0].Color = System.Drawing.Color.Blue;
-            //Chart_shebeizhuangtai.Series[0].Points[0].Label = "设备正常";
-            //Chart_shebeizhuangtai.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
+           
 
             
             
@@ -298,7 +291,7 @@ namespace newwarningsystem
 
                                 labelposition.ForeColor = System.Drawing.Color.White;
                                 labelposition.Style["z-index"] = "8";
-                                labelposition.Style["left"] = "10%";
+                                labelposition.Style["left"] = "5%";
                                 labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
                                 labelposition.Style["width"] = "20%";
                                 labelposition.Style["position"] = "absolute";
@@ -306,7 +299,7 @@ namespace newwarningsystem
 
                                 // 位置
                                 Label pos = new Label();
-                                pos.Text = position_string;
+                                pos.Text = position_string+"m";
                                 pos.ForeColor = System.Drawing.Color.White;
                                 pos.Style["z-index"] = "8";
                                 pos.Style["left"] = "40%";
@@ -317,10 +310,10 @@ namespace newwarningsystem
 
                                 // 位移值
                                 Label labelvalue = new Label();
-                                labelvalue.Text = value.ToString();
+                                labelvalue.Text = value.ToString()+"mm";
                                 labelvalue.ForeColor = System.Drawing.Color.White;
                                 labelvalue.Style["z-index"] = "8";
-                                labelvalue.Style["left"] = "75%";
+                                labelvalue.Style["left"] = "74%";
                                 labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
                                 labelvalue.Style["width"] = "20%";
                                 labelvalue.Style["position"] = "absolute";
@@ -342,7 +335,7 @@ namespace newwarningsystem
                     labelposition.Text = "无";
                     labelposition.ForeColor = System.Drawing.Color.White;
                     labelposition.Style["z-index"] = "8";
-                    labelposition.Style["left"] = "15%";
+                    labelposition.Style["left"] = "5%";
                     labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
                     labelposition.Style["width"] = "20%";
                     labelposition.Style["position"] = "absolute";
@@ -364,96 +357,199 @@ namespace newwarningsystem
                     labelvalue.Text = "无";
                     labelvalue.ForeColor = System.Drawing.Color.White;
                     labelvalue.Style["z-index"] = "8";
-                    labelvalue.Style["left"] = "60%";
+                    labelvalue.Style["left"] = "75%";
                     labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
                     labelvalue.Style["width"] = "20%";
                     labelvalue.Style["position"] = "absolute";
                     Panel_baojing_info.Controls.Add(labelvalue);
                 }
-                
+
 
                 if (circle1_max <= value1)
+                {
                     Circle1.BackColor = System.Drawing.Color.DarkBlue;
+                    Label_title_podao1.Text = "坡道1 状态：稳定";
+                }
                 else if (circle1_max <= value2)
+                {
                     Circle1.BackColor = System.Drawing.Color.Blue;
+                    Label_title_podao1.Text = "坡道1 状态：良好";
+                }
                 else if (circle1_max <= value3)
+                {
                     Circle1.BackColor = System.Drawing.Color.LightGreen;
+                    Label_title_podao1.Text = "坡道1 状态：正常";
+                }
                 else if (circle1_max < value5)
+                {
+
+
                     Circle1.BackColor = System.Drawing.Color.Yellow;
+                    Label_title_podao1.Text = "坡道1 状态：正常";
+                }
                 else if (circle1_max >= value5)
                 {
                     Circle1.BackColor = System.Drawing.Color.Red;
-
-                   
-
+                    Label_title_podao1.Text = "坡道1 状态：位移预警";
                 }
-                
+
 
                 if (circle2_max <= value1)
+                {
                     Circle2.BackColor = System.Drawing.Color.DarkBlue;
+                    Label_title_podao2.Text = "坡道2 状态：稳定";
+                }
                 else if (circle2_max <= value2)
+                {
                     Circle2.BackColor = System.Drawing.Color.Blue;
+                    Label_title_podao2.Text = "坡道2 状态：良好";
+                }
                 else if (circle2_max <= value3)
+                {
                     Circle2.BackColor = System.Drawing.Color.LightGreen;
+                    Label_title_podao2.Text = "坡道2 状态：正常";
+                }
                 else if (circle2_max < value5)
+                {
                     Circle2.BackColor = System.Drawing.Color.Yellow;
+                    Label_title_podao2.Text = "坡道2 状态：正常";
+                }
                 else if (circle2_max >= value5)
+                {
                     Circle2.BackColor = System.Drawing.Color.Red;
+                    Label_title_podao2.Text = "坡道2 状态：位移预警";
+                }
 
                 if (circle3_max <= 0.01)
+                {
                     Circle3.BackColor = System.Drawing.Color.DarkBlue;
+                    Label_title_podao3.Text = "坡道3 状态：稳定";
+                }
                 else if (circle3_max <= 0.1)
+                {
                     Circle3.BackColor = System.Drawing.Color.Blue;
+                    Label_title_podao3.Text = "坡道3 状态：良好";
+                }
                 else if (circle3_max <= 1.0)
+                {
                     Circle3.BackColor = System.Drawing.Color.LightGreen;
+                    Label_title_podao3.Text = "坡道3 状态：正常";
+                }
                 else if (circle3_max < 2)
+                {
                     Circle3.BackColor = System.Drawing.Color.Yellow;
+                    Label_title_podao3.Text = "坡道3 状态：正常";
+                }
                 else if (circle3_max >= 2)
-                    Circle3.BackColor = System.Drawing.Color.Red;
+                {
+                    Circle3.BackColor = System.Drawing.Color.Red; 
+                    Label_title_podao3.Text = "坡道3 状态：位移预警";
+                }
 
                 if (circle4_max <= 0.01)
+                {
                     Circle4.BackColor = System.Drawing.Color.DarkBlue;
+                    Label_title_podao4.Text = "管道1 状态：稳定";
+                }
                 else if (circle4_max <= 0.1)
+                {
                     Circle4.BackColor = System.Drawing.Color.Blue;
+                    Label_title_podao4.Text = "管道1 状态：良好";
+                }
                 else if (circle4_max <= 1.0)
+                {
                     Circle4.BackColor = System.Drawing.Color.LightGreen;
+                    Label_title_podao4.Text = "管道1 状态：正常";
+                }
                 else if (circle4_max < 2)
+                {
                     Circle4.BackColor = System.Drawing.Color.Yellow;
+                    Label_title_podao4.Text = "管道1 状态：正常";
+                }
                 else if (circle4_max >= 2)
+                {
                     Circle4.BackColor = System.Drawing.Color.Red;
+                    Label_title_podao4.Text = "管道3 状态：位移预警";
+                }
 
                 if (circle5_max <= value1)
+                {
                     Circle5.BackColor = System.Drawing.Color.DarkBlue;
+                    Label_title_podao5.Text = "管道2 状态：稳定";
+                }
                 else if (circle5_max <= value2)
+                {
                     Circle5.BackColor = System.Drawing.Color.Blue;
+                    Label_title_podao5.Text = "管道2 状态：良好";
+                }
                 else if (circle5_max <= value3)
+                {
                     Circle5.BackColor = System.Drawing.Color.LightGreen;
+                    Label_title_podao5.Text = "管道2 状态：正常";
+                }
                 else if (circle5_max < value5)
+                {
                     Circle5.BackColor = System.Drawing.Color.Yellow;
+                    Label_title_podao5.Text = "管道2 状态：正常";
+                }
                 else if (circle5_max >= value5)
+                {
                     Circle5.BackColor = System.Drawing.Color.Red;
+                    Label_title_podao5.Text = "管道2 状态：位移预警";
+                }
 
                 if (circle6_max <= value1)
+                {
                     Circle6.BackColor = System.Drawing.Color.DarkBlue;
+                    Label_title_podao6.Text = "管道3 状态：稳定";
+                }
                 else if (circle6_max <= value2)
+                {
                     Circle6.BackColor = System.Drawing.Color.Blue;
+                    Label_title_podao6.Text = "管道3 状态：良好";
+                }
                 else if (circle6_max <= value3)
+                {
                     Circle6.BackColor = System.Drawing.Color.LightGreen;
+                    Label_title_podao6.Text = "管道3 状态：正常";
+                }
                 else if (circle6_max < value5)
+                {
                     Circle6.BackColor = System.Drawing.Color.Yellow;
+                    Label_title_podao6.Text = "管道3 状态：正常";
+                }
                 else if (circle6_max >= value5)
+                {
                     Circle6.BackColor = System.Drawing.Color.Red;
+                    Label_title_podao6.Text = "管道3 状态：位移预警";
+                }
 
                 if (circle7_max <= value1)
+                {
                     Circle7.BackColor = System.Drawing.Color.DarkBlue;
+                    Label_title_podao7.Text = "管道4 状态：稳定";
+                }
                 else if (circle7_max <= value2)
+                {
                     Circle7.BackColor = System.Drawing.Color.Blue;
+                    Label_title_podao7.Text = "管道4 状态：良好";
+                }
                 else if (circle7_max <= value3)
+                {
                     Circle7.BackColor = System.Drawing.Color.LightGreen;
+                    Label_title_podao7.Text = "管道4 状态：正常";
+                }
                 else if (circle7_max < value5)
+                {
                     Circle7.BackColor = System.Drawing.Color.Yellow;
+                    Label_title_podao7.Text = "管道4 状态：正常";
+
+                }
                 else if (circle7_max >= value5)
+                {
                     Circle7.BackColor = System.Drawing.Color.Red;
+                    Label_title_podao7.Text = "管道4 状态：位移预警";
+                }
 
                 // 有关坡道的
                 label_quyu1.Text = "坡道1 " + Math.Round(max_point1, 1).ToString().PadLeft(6,'0') + "m   " + Math.Round(circle1_max, 3).ToString() + "mm";

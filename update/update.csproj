@@ -82,6 +82,10 @@
       <Project>{9ed43ee0-8a99-4c7d-bbac-464573da4dd9}</Project>
       <Name>FileOperation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SqlConnect\SqlConnect\SqlConnect.csproj">
+      <Project>{a220dcc6-9e02-4060-818e-1d71c24570ca}</Project>
+      <Name>SqlConnect</Name>
+    </ProjectReference>
     <ProjectReference Include="..\String_Caozuo\String_Caozuo.csproj">
       <Project>{200df22a-670b-410b-9887-4d43abf185f9}</Project>
       <Name>String_Caozuo</Name>

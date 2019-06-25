@@ -583,7 +583,7 @@ namespace newwarningsystem
 
                                     labelposition.ForeColor = System.Drawing.Color.White;
                                     labelposition.Style["z-index"] = "8";
-                                    labelposition.Style["left"] = "15%";
+                                    labelposition.Style["left"] = "5%";
                                     labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
                                     labelposition.Style["width"] = "20%";
                                     labelposition.Style["position"] = "absolute";
@@ -605,7 +605,7 @@ namespace newwarningsystem
                                     labelvalue.Text = value.ToString();
                                     labelvalue.ForeColor = System.Drawing.Color.White;
                                     labelvalue.Style["z-index"] = "8";
-                                    labelvalue.Style["left"] = "60%";
+                                    labelvalue.Style["left"] = "75%";
                                     labelvalue.Style["top"] = (warning_count * 30).ToString() + "%";
                                     labelvalue.Style["width"] = "20%";
                                     labelvalue.Style["position"] = "absolute";
@@ -645,7 +645,7 @@ namespace newwarningsystem
                 labelposition.Text = "无";
                 labelposition.ForeColor = System.Drawing.Color.White;
                 labelposition.Style["z-index"] = "8";
-                labelposition.Style["left"] = "10%";
+                labelposition.Style["left"] = "5%";
                 labelposition.Style["top"] = (warning_count * 30).ToString() + "%";
                 labelposition.Style["width"] = "20%";
                 labelposition.Style["position"] = "absolute";

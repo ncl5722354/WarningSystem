@@ -103,6 +103,69 @@ namespace newwarningsystem {
         protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
         
         /// <summary>
+        /// Label_title_podao1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_title_podao1;
+        
+        /// <summary>
+        /// Label_title_podao2 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_title_podao2;
+        
+        /// <summary>
+        /// Label_title_podao3 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_title_podao3;
+        
+        /// <summary>
+        /// Label_title_podao4 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_title_podao4;
+        
+        /// <summary>
+        /// Label_title_podao5 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_title_podao5;
+        
+        /// <summary>
+        /// Label_title_podao6 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_title_podao6;
+        
+        /// <summary>
+        /// Label_title_podao7 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_title_podao7;
+        
+        /// <summary>
         /// Panel_shuliangtongji 控件。
         /// </summary>
         /// <remarks>

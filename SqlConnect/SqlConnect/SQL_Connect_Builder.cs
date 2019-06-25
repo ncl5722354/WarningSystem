@@ -23,7 +23,7 @@ namespace SqlConnect
             // 构造函数，用来构造一个连接
             connStr.DataSource = DataSource;                 // 设置连接源
             connStr.InitialCatalog = InitialCatalog;         // 设置数库据
-            connStr.IntegratedSecurity = false;               // true是以windows方式进行访问，false是以用户名密码的方式进行访问
+            connStr.IntegratedSecurity = true;               // true是以windows方式进行访问，false是以用户名密码的方式进行访问
             connStr.MinPoolSize = minpoolsize;               // 设置最小的连接数
             connStr.MaxPoolSize = maxpoolsize;               // 设置最大的连接数
             connStr.UserID = "sa";
